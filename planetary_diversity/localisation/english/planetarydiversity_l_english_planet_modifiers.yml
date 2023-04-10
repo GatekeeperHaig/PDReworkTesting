@@ -1,0 +1,20 @@
+﻿l_english:
+
+ #Modifiers
+ #Wet Worlds
+ pd_continental:0 "Continetal World"
+ pd_continental_desc:0 "REPLACE_ME"
+ pd_lake:0 "Lake World"
+ pd_lake_desc:0 "The landmass is a single area covered in millions of lakes of all sizes while the climate ranges from subtropical to subartic."
+ pd_forest:0 "Forest World"
+ pd_forest_desc:0 "Active and stable hydrosphere. Great land masses are almost completely covered in dense forests"
+ pd_tepid:0 "Tepid World"
+ pd_tepid_desc:0 "Having almost no axis tilt, this world's ideal growing conditions has allowed for the evolution of many types of photosynthetic processes."
+ pd_mushroom:0 "Mushroom World"
+ pd_mushroom_desc:0 "Fungal life rule the ecosystem of this planet. Vast areas of the planet are covered in mushroom forests and fields."
+ pd_temperate:0 "Temperate World"
+ pd_temperate_desc:0 "A mild climate and rich biodiveristy makes this world an ideal plance."
+ pd_megaflora:0 "Megaflora World"
+ pd_megaflora_desc:0 "The dense megaflora world has an abundance of gigantic flora whose giant roots often unearth valuable deposits, and also produce energy-rich sap to utilize. Building around the megaflora means construction costs are higher than normal."
+ pd_petrified:0 "Petrified Woods World"
+ pd_petrified_desc:0 "The petrified woods can be used for building materials, but take considerable effort to remove for construction."

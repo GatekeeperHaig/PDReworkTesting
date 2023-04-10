@@ -1,0 +1,48 @@
+pd_continental = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_continental.dds"
+	icon_frame = 1
+}
+
+pd_lake = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lake.dds"
+	icon_frame = 1
+}
+
+pd_forest = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_forest.dds"
+	icon_frame = 1
+}
+
+pd_tepid = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tepid.dds"
+	icon_frame = 1
+}
+
+pd_mushroom = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mushroom.dds"
+	icon_frame = 1
+}
+
+pd_temperate = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_temperate.dds"
+	icon_frame = 1
+}
+
+pd_megaflora = {	
+	district_mining_max = 2
+	district_generator_max = 2
+	planet_buildings_upkeep_mult = 0.05
+	planet_districts_upkeep_mult = 0.05
+	planet_buildings_cost_mult = 0.1 
+	planet_districts_cost_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_megaflora.dds"
+	icon_frame = 1
+}
+
+pd_petrified = {	
+	district_mining_max = 4
+	planet_building_build_speed_mult = -0.1
+	planet_housing_mult = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_petrified.dds"
+	icon_frame = 1
+}
