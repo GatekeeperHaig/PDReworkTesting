@@ -4,6 +4,8 @@
  #Wet Worlds
  pd_continental:0 "Continetal World"
  pd_continental_desc:0 "REPLACE_ME"
+ pd_retinal: "Retinal World"
+ pd_retinal_desc: "Plant life is retinaldehyde-based instead of chlorophyll-based giving the planet a distinctive purple hue."
  pd_lake:0 "Lake World"
  pd_lake_desc:0 "The landmass is a single area covered in millions of lakes of all sizes while the climate ranges from subtropical to subartic."
  pd_forest:0 "Forest World"

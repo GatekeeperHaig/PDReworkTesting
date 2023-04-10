@@ -16,31 +16,77 @@ country_event = {
 	#Continental
 	immediate = {
 
-		#Wet Planets
-		every_galaxy_planet = {                 
-            limit = { is_planet_class = pc_continental system_star = { OR = { is_star_class = sc_k is_star_class = sc_trinary_3 is_star_class = sc_binary_7 } } is_homeworld = no is_moon = no NOR = { has_planet_flag = prescripted_ideal has_planet_flag = pd_ignore has_planet_flag = planet_earth solar_system = { has_star_flag = empire_cluster } solar_system = { has_star_flag = empire_home_system } solar_system = { has_star_flag = sol_system } solar_system = { has_star_flag = sol } } } #TODO 80/20, no 0/100
-            change_pc = pc_superhabitable 
-			reroll_planet = yes 
-			clear_planet_modifiers = yes
-			random_list = {
-				20 = { set_planet_size = 31 }
-				20 = { set_planet_size = 32 }
-				20 = { set_planet_size = 33 }
-				20 = { set_planet_size = 34 }
-				20 = { set_planet_size = 35 }
-			}
-        }
+		#Continetal Planets
         every_galaxy_planet = {                 
-            limit = { is_planet_class = pc_continental is_homeworld = no NOR = { has_planet_flag = prescripted_ideal has_planet_flag = pd_ignore has_planet_flag = planet_earth solar_system = { has_star_flag = empire_cluster } solar_system = { has_star_flag = empire_home_system } solar_system = { has_star_flag = sol_system } solar_system = { has_star_flag = sol } } }
-            random_list = {
-                20 = { }    
-                20 = { change_pc = pc_retinal reroll_planet = yes }
-                20 = { change_pc = pc_forest reroll_planet = yes }        
-                20 = { change_pc = pc_lake reroll_planet = yes }    
-                20 = { change_pc = pc_tepid reroll_planet = yes }    
-                20 = { change_pc = pc_megaflora reroll_planet = yes clear_planet_modifiers = yes add_modifier = { modifier = pdmegaflora } }  
-                20 = { change_pc = pc_pd_petrified reroll_planet = yes clear_planet_modifiers = yes add_modifier = { modifier = pdpetrified } }                       
-            }
+            limit = { 
+				is_planet_class = pc_continental 
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						NOR = {
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					} 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_continental }	 
+				}    
+				25 = { 
+					add_modifier = { modifier = pd_retinal }	
+					set_planet_entity = {
+						picture = pc_retinal
+						entity = "retinal_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_lake }
+					set_planet_entity = {
+						picture = pc_lake
+						entity = "lake_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_tepid }
+					set_planet_entity = {
+						picture = pc_tepid
+						entity = "tepid_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_forest }
+					set_planet_entity = {
+						picture = pc_forest
+						entity = "forest_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_temperate }
+					set_planet_entity = {
+						picture = pc_temperate
+						entity = "temperate_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_megaflora }
+					set_planet_entity = {
+						picture = pc_megaflora
+						entity = "megaflora_planet_01_entity"
+					}
+				}
+				25 = { 
+					add_modifier = { modifier = pd_petrified }
+					set_planet_entity = {
+						picture = pc_pd_petrified						
+						entity = "pd_petrified_planet_01_entity"
+					}
+				}                       
+			}
         }
 	}
 }

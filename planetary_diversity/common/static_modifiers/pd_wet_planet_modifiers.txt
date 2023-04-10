@@ -3,6 +3,11 @@ pd_continental = {
 	icon_frame = 1
 }
 
+pd_retinal = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_retinal.dds"
+	icon_frame = 1
+}
+
 pd_lake = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lake.dds"
 	icon_frame = 1
