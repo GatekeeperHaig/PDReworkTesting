@@ -22,10 +22,12 @@ country_event = {
 				is_planet_class = pc_continental 
 				is_homeworld = no 
 				NOR = { 
+					#has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
 					solar_system = { 
 						NOR = {
+							has_star_flag = empire_cluster 
 							has_star_flag = empire_home_system
 							has_star_flag = sol_system
 							has_star_flag = sol
@@ -38,55 +40,107 @@ country_event = {
 					add_modifier = { modifier = pd_continental }	 
 				}    
 				25 = { 
-					add_modifier = { modifier = pd_retinal }	
-					set_planet_entity = {
-						picture = pc_retinal
-						entity = "retinal_planet_01_entity"
-					}
+					pd_retinal_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_lake }
-					set_planet_entity = {
-						picture = pc_lake
-						entity = "lake_planet_01_entity"
-					}
+					pd_lake_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_tepid }
-					set_planet_entity = {
-						picture = pc_tepid
-						entity = "tepid_planet_01_entity"
-					}
+					pd_forest_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_forest }
-					set_planet_entity = {
-						picture = pc_forest
-						entity = "forest_planet_01_entity"
-					}
+					pd_termperate_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_temperate }
-					set_planet_entity = {
-						picture = pc_temperate
-						entity = "temperate_planet_01_entity"
-					}
+					pd_tepid_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_megaflora }
-					set_planet_entity = {
-						picture = pc_megaflora
-						entity = "megaflora_planet_01_entity"
-					}
+					pd_megaflora_world_effect = yes
 				}
 				25 = { 
-					add_modifier = { modifier = pd_petrified }
-					set_planet_entity = {
-						picture = pc_pd_petrified						
-						entity = "pd_petrified_planet_01_entity"
-					}
+					pd_pd_petrified_world_effect = yes
 				}                       
 			}
+        }
+	}
+}
+
+#This Event Changes any planest that slipped through/Homeworlds
+country_event = {
+	id = pdengine.02
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Continental
+	immediate = {
+
+		#Continetal Planets
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_continetal
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_continental }
+				}
+				add_modifier = { modifier = pd_continental }
+			}       
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_retinal
+			}        
+			change_pc = pc_continenetal
+			pd_retinal_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_lake
+			}      
+			change_pc = pc_continenetal
+			pd_lake_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_tepid
+			}      
+			change_pc = pc_continenetal
+			pd_tepid_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_temperate
+			}      
+			change_pc = pc_continenetal
+			pd_temperate_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_forest
+			}      
+			change_pc = pc_continenetal
+			pd_forest_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_forest
+			}      
+			change_pc = pc_continenetal
+			pd_forest_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_megaflora
+			}      
+			change_pc = pc_continenetal
+			pd_megaflora_world_effect = yes
+        }
+        every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pd_petrified
+			}      
+			change_pc = pc_continenetal
+			pd_pd_petrified_world_effect = yes
         }
 	}
 }

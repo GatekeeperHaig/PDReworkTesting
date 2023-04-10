@@ -81,6 +81,7 @@ empire_init_capital_planet = {
 on_press_begin = { 
 	events = { 
 		pdengine.01
+		pdengine.02
 	}
 }
 
