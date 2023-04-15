@@ -1,0 +1,14 @@
+﻿l_english:
+
+#Policy
+ policy_pd_terraforming:0 "Terraforming"
+ policy_pd_terraforming_desc:0 "We can decide how our scientists appoarch terraform our planets."
+ pd_choose_every_planet_terraforming_name:0 "Choose Every Biome"
+ pd_choose_every_planet:0 "Choose Every Biome"
+ pd_choose_every_planet_desc:0 "We will be able to make a choice about biome selection at the end of each terraforming project."
+ pd_same_as_homeworld_terraforming_name:0 "Homeworld Homogeneous"
+ pd_same_as_homeworld:0 "Homeworld Homogeneous"
+ pd_same_as_homeworld_desc:0 "Any apporiate planets will be terraformed to the same class, the rest will terraformed to random classes."
+ pd_random_same_class_terraforming_name:0 "Random Similar Biome"
+ pd_random_same_class:0 "Random Similar Biome"
+ pd_random_same_class_desc:0 "We will randomly select any biome in the same planet group."

@@ -13,7 +13,6 @@ on_terraforming_complete = {
 
 on_planet_class_changed = {
 	events = {
-		pdengine.03
 	}
 }
 

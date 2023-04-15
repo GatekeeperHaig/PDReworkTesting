@@ -92,95 +92,13 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		IF = {
+		#Continetal Planets
+		every_galaxy_planet = {         
 			limit = {
+				is_planet_class = pc_continental
 				has_pd_modifier = no
 				is_homeworld = no 
 				NOT = { has_planet_flag = prescripted_ideal }
-			}
-			#Continetal Planets
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_continental
-				} 
-				IF = {
-					limit = {
-						NOT = { has_modifier = pd_continental }
-					}
-					add_modifier = { modifier = pd_continental }
-				}  
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_retinal
-				}   
-				change_pc = pc_continental          
-				pd_retinal_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_lake
-				}  
-				change_pc = pc_continental         
-				pd_lake_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_tepid
-				}      
-				change_pc = pc_continental     
-				pd_tepid_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_temperate
-				}     
-				change_pc = pc_continental      
-				pd_temperate_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_forest
-				}  
-				change_pc = pc_continental         
-				pd_forest_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_forest
-				}   
-				change_pc = pc_continental        
-				pd_forest_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_megaflora
-				}  
-				change_pc = pc_continental         
-				pd_megaflora_world_effect = yes
-			}
-			every_galaxy_planet = {         
-				limit = {
-					is_planet_class = pc_pd_petrified
-				}  
-				change_pc = pc_continental         
-				pd_pd_petrified_world_effect = yes
-			}
-		}
-	}
-}
-
-#This Event Changes any terraformed planets to their vanilla classes, this preserves user terraforming interface
-country_event = {
-	id = pdengine.03
-	hide_window = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-		#Continetal Planets
-        every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_continental
 			} 
 			IF = {
 				limit = {
@@ -188,62 +106,292 @@ country_event = {
 				}
 				add_modifier = { modifier = pd_continental }
 			}  
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_retinal
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}   
 			change_pc = pc_continental          
 			pd_retinal_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_lake
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}  
 			change_pc = pc_continental         
 			pd_lake_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_tepid
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}      
 			change_pc = pc_continental     
 			pd_tepid_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_temperate
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}     
 			change_pc = pc_continental      
 			pd_temperate_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_forest
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}  
 			change_pc = pc_continental         
 			pd_forest_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_forest
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}   
 			change_pc = pc_continental        
 			pd_forest_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_megaflora
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}  
 			change_pc = pc_continental         
 			pd_megaflora_world_effect = yes
-        }
-        every_galaxy_planet = {         
+		}
+		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_pd_petrified
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			}  
 			change_pc = pc_continental         
 			pd_pd_petrified_world_effect = yes
-        }
+		}
+	}
+}
+
+##This Event Changes any terraformed planets to their vanilla classes, this preserves user terraforming interface
+#planet_event = {
+#	id = pdengine.03
+#	hide_window = yes
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	immediate = {
+#		IF = {
+#			limit = {
+#				has_pd_modifier = yes
+#			}
+#			remove_pd_modifier = yes
+#		}
+#		#Continetal Planets
+#		IF = { 
+#			limit = {
+#				is_planet_class = pc_continental
+#			} 
+#			IF = {
+#				limit = {
+#					NOR = { 
+#						has_pd_modifier = yes
+#						has_modifier = pd_continental 
+#					}
+#				}
+#				add_modifier = { modifier = pd_continental }
+#			}  
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_retinal
+#			}   
+#			change_pc = pc_continental          
+#			pd_retinal_world_effect = yes
+#		}
+#		IF = { 
+#			limit = {
+#				is_planet_class = pc_lake
+#			}  
+#			change_pc = pc_continental         
+#			pd_lake_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_tepid
+#			}      
+#			change_pc = pc_continental     
+#			pd_tepid_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_temperate
+#			}     
+#			change_pc = pc_continental      
+#			pd_temperate_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_forest
+#			}  
+#			change_pc = pc_continental         
+#			pd_forest_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_forest
+#			}   
+#			change_pc = pc_continental        
+#			pd_forest_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_megaflora
+#			}  
+#			change_pc = pc_continental         
+#			pd_megaflora_world_effect = yes
+#		}
+#		IF = {
+#			limit = {
+#				is_planet_class = pc_pd_petrified
+#			}  
+#			change_pc = pc_continental         
+#			pd_pd_petrified_world_effect = yes
+#		}
+#	}
+#}
+
+#This Event Fires After Terraforming to let you choose PD classes
+planet_event = {
+	id = pdengine.03
+	title = pdengine.03.name
+	desc = pdengine.03.desc
+	picture = GFX_evt_shattered_planet
+	show_sound = event_ship_bridge
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_continental
+	}
+
+	immediate = {
+		remove_pd_modifier = yes
+	}
+
+	#Continetal
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.continental
+		hidden_effect = {
+			add_modifier = { modifier = pd_continental }
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.retinal
+		hidden_effect = {         
+			pd_retinal_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.lake
+		hidden_effect = {         
+			pd_lake_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.forest
+		hidden_effect = {         
+			pd_forest_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.tepid
+		hidden_effect = {         
+			pd_tepid_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.temperate
+		hidden_effect = {         
+			pd_temperate_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+		}
+		name = pdengine.03.temperate
+		hidden_effect = {         
+			pd_temperate_world_effect = yes
+		}
+	}
+	#Rare Continetal
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+			OR = {
+				owner = {
+					has_ascension_perk = ap_world_shaper
+				}
+				space_owner = {
+					has_ascension_perk = ap_world_shaper
+				}
+			}
+		}
+		name = pdengine.03.megaflora
+		hidden_effect = {         
+			pd_megaflora_world_effect = yes
+		}
+	}
+	option = {
+		trigger = {
+			is_planet_class = pc_continental
+			OR = {
+				owner = {
+					has_ascension_perk = ap_world_shaper
+				}
+				space_owner = {
+					has_ascension_perk = ap_world_shaper
+				}
+			}
+		}
+		name = pdengine.03.petrified
+		hidden_effect = {         
+			pd_pd_petrified_world_effect = yes
+		}
 	}
 }

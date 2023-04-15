@@ -1,3 +1,15 @@
+#Removes PD Modifiers
+remove_pd_modifier = {
+	remove_modifier = pd_continental
+	remove_modifier = pd_retinal
+	remove_modifier = pd_lake
+	remove_modifier = pd_tepid
+	remove_modifier = pd_forest
+	remove_modifier = pd_megaflora
+	remove_modifier = pd_petrified
+}
+
+#Create Visual Planets Effects
 pd_retinal_world_effect = {
 	add_modifier = { modifier = pd_retinal }	
 	set_planet_entity = {

@@ -2,7 +2,8 @@
 ### Planet Class Triggers ###
 #############################
 has_planetary_diversity = { always = yes }
- 
+
+#Categories
 is_pd_continental = {
  	OR = {
  		is_planet_class = pc_continental
@@ -17,22 +18,15 @@ is_pd_continental = {
  	}
 }
  
+#Any PD Modifier
 has_pd_modifier = {
  	OR = {
-		is_pd_continental_modifier = yes
- 	}
-}
- 
-is_pd_continental_modifier = {
- 	OR = {
- 		is_planet_class = pc_continental
- 		is_planet_class = pc_forest
- 		is_planet_class = pc_tepid
- 		is_planet_class = pc_retinal
- 		is_planet_class = pc_lake
- 		is_planet_class = pc_temperate
- 		#is_planet_class = pc_mushroom
-		is_planet_class = pc_pd_petrified
- 		is_planet_class = pc_megaflora
+		has_modifier = pd_continental
+		has_modifier = pd_retinal
+		has_modifier = pd_lake
+		has_modifier = pd_tepid
+		has_modifier = pd_forest
+		has_modifier = pd_megaflora
+		has_modifier = pd_petrified
  	}
 }

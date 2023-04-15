@@ -1,0 +1,28 @@
+@basicTypeCost = 2000
+
+#########
+## Wet ##
+#########
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_continental"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basicTypeCost
+		}
+	}
+
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
