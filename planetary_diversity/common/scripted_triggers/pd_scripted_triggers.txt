@@ -11,7 +11,27 @@ is_pd_continental = {
  		is_planet_class = pc_retinal
  		is_planet_class = pc_lake
  		is_planet_class = pc_temperate
- 		is_planet_class = pc_mushroom
+ 		#is_planet_class = pc_mushroom
+		is_planet_class = pc_pd_petrified
+ 		is_planet_class = pc_megaflora
+ 	}
+}
+ 
+has_pd_modifier = {
+ 	OR = {
+		is_pd_continental_modifier = yes
+ 	}
+}
+ 
+is_pd_continental_modifier = {
+ 	OR = {
+ 		is_planet_class = pc_continental
+ 		is_planet_class = pc_forest
+ 		is_planet_class = pc_tepid
+ 		is_planet_class = pc_retinal
+ 		is_planet_class = pc_lake
+ 		is_planet_class = pc_temperate
+ 		#is_planet_class = pc_mushroom
 		is_planet_class = pc_pd_petrified
  		is_planet_class = pc_megaflora
  	}

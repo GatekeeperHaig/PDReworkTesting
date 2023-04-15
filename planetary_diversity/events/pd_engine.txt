@@ -13,16 +13,15 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-	#Continental
-	immediate = {
 
-		#Continetal Planets
+	immediate = {
+		#Continetal, non-ideal
         every_galaxy_planet = {                 
             limit = { 
 				is_planet_class = pc_continental 
 				is_homeworld = no 
 				NOR = { 
-					#has_planet_flag = prescripted_ideal 
+					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
 					solar_system = { 
@@ -49,7 +48,7 @@ country_event = {
 					pd_forest_world_effect = yes
 				}
 				25 = { 
-					pd_termperate_world_effect = yes
+					pd_temperate_world_effect = yes
 				}
 				25 = { 
 					pd_tepid_world_effect = yes
@@ -62,10 +61,38 @@ country_event = {
 				}                       
 			}
         }
+		#Continetal, ideal
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_continental 
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_continental }	 
+				}    
+				25 = { 
+					pd_retinal_world_effect = yes
+				}
+				25 = { 
+					pd_lake_world_effect = yes
+				}
+				25 = { 
+					pd_forest_world_effect = yes
+				}
+				25 = { 
+					pd_temperate_world_effect = yes
+				}
+				25 = { 
+					pd_tepid_world_effect = yes
+				}                    
+			}
+        }
 	}
 }
 
-#This Event Changes any planest that slipped through/Homeworlds
+#This Event Changes any planets that slipped through/Homeworlds
 country_event = {
 	id = pdengine.02
 	hide_window = yes
@@ -77,69 +104,72 @@ country_event = {
 		#Continetal Planets
         every_galaxy_planet = {         
 			limit = {
-				is_planet_class = pc_continetal
+				is_planet_class = pc_continental
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
 			} 
 			IF = {
 				limit = {
 					NOT = { has_modifier = pd_continental }
 				}
 				add_modifier = { modifier = pd_continental }
-			}       
+			}  
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_retinal
-			}        
-			change_pc = pc_continenetal
+			}   
+			change_pc = pc_continental          
 			pd_retinal_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_lake
-			}      
-			change_pc = pc_continenetal
+			}  
+			change_pc = pc_continental         
 			pd_lake_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_tepid
 			}      
-			change_pc = pc_continenetal
+			change_pc = pc_continental     
 			pd_tepid_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_temperate
-			}      
-			change_pc = pc_continenetal
+			}     
+			change_pc = pc_continental      
 			pd_temperate_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_forest
-			}      
-			change_pc = pc_continenetal
+			}  
+			change_pc = pc_continental         
 			pd_forest_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_forest
-			}      
-			change_pc = pc_continenetal
+			}   
+			change_pc = pc_continental        
 			pd_forest_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_megaflora
-			}      
-			change_pc = pc_continenetal
+			}  
+			change_pc = pc_continental         
 			pd_megaflora_world_effect = yes
         }
         every_galaxy_planet = {         
 			limit = {
-				is_planet_class = pd_petrified
-			}      
-			change_pc = pc_continenetal
+				is_planet_class = pc_pd_petrified
+			}  
+			change_pc = pc_continental         
 			pd_pd_petrified_world_effect = yes
         }
 	}
