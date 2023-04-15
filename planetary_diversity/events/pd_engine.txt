@@ -8,6 +8,7 @@ event = {
 	immediate = { set_global_flag = planetarydiversity }
 }
 
+#This event changes all non homeworld, non prescripted to PD classes
 country_event = {
 	id = pdengine.01
 	hide_window = yes
@@ -24,14 +25,6 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
-					solar_system = { 
-						NOR = {
-							has_star_flag = empire_cluster 
-							has_star_flag = empire_home_system
-							has_star_flag = sol_system
-							has_star_flag = sol
-						}
-					} 
 				}
 			}	
 			random_list = {
@@ -52,13 +45,13 @@ country_event = {
 				}
 				25 = { 
 					pd_tepid_world_effect = yes
-				}
+				}  
 				25 = { 
 					pd_megaflora_world_effect = yes
 				}
 				25 = { 
 					pd_pd_petrified_world_effect = yes
-				}                       
+				}                    
 			}
         }
 		#Continetal, ideal
@@ -86,28 +79,108 @@ country_event = {
 				}
 				25 = { 
 					pd_tepid_world_effect = yes
-				}                    
+				}                     
 			}
         }
 	}
 }
 
-#This Event Changes any planets that slipped through/Homeworlds
+#This Event Changes any planets that slipped through, and any non homeworld planets
 country_event = {
 	id = pdengine.02
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-	#Continental
 	immediate = {
+		IF = {
+			limit = {
+				has_pd_modifier = no
+				is_homeworld = no 
+				NOT = { has_planet_flag = prescripted_ideal }
+			}
+			#Continetal Planets
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_continental
+				} 
+				IF = {
+					limit = {
+						NOT = { has_modifier = pd_continental }
+					}
+					add_modifier = { modifier = pd_continental }
+				}  
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_retinal
+				}   
+				change_pc = pc_continental          
+				pd_retinal_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_lake
+				}  
+				change_pc = pc_continental         
+				pd_lake_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_tepid
+				}      
+				change_pc = pc_continental     
+				pd_tepid_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_temperate
+				}     
+				change_pc = pc_continental      
+				pd_temperate_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_forest
+				}  
+				change_pc = pc_continental         
+				pd_forest_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_forest
+				}   
+				change_pc = pc_continental        
+				pd_forest_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_megaflora
+				}  
+				change_pc = pc_continental         
+				pd_megaflora_world_effect = yes
+			}
+			every_galaxy_planet = {         
+				limit = {
+					is_planet_class = pc_pd_petrified
+				}  
+				change_pc = pc_continental         
+				pd_pd_petrified_world_effect = yes
+			}
+		}
+	}
+}
 
+#This Event Changes any terraformed planets to their vanilla classes, this preserves user terraforming interface
+country_event = {
+	id = pdengine.03
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
 		#Continetal Planets
         every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_continental
-				has_pd_modifier = no
-				is_homeworld = no 
-				NOT = { has_planet_flag = prescripted_ideal }
 			} 
 			IF = {
 				limit = {

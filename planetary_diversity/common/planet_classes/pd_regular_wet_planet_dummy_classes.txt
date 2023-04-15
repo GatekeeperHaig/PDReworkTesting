@@ -140,6 +140,7 @@ pc_pd_petrified = {
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 	uses_alternative_skies_for_moons = no
+	starting_planet = no
 }
 
 pc_megaflora = {
@@ -162,4 +163,5 @@ pc_megaflora = {
 	#modifier = { pop_environment_tolerance = 0.50 }	
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
+	starting_planet = no
 }
