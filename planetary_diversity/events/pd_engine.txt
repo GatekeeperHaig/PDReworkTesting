@@ -190,94 +190,8 @@ country_event = {
 	}
 }
 
-##This Event Changes any terraformed planets to their vanilla classes, this preserves user terraforming interface
-#planet_event = {
-#	id = pdengine.03
-#	hide_window = yes
-#	is_triggered_only = yes
-#	fire_only_once = yes
-#	immediate = {
-#		IF = {
-#			limit = {
-#				has_pd_modifier = yes
-#			}
-#			remove_pd_modifier = yes
-#		}
-#		#Continetal Planets
-#		IF = { 
-#			limit = {
-#				is_planet_class = pc_continental
-#			} 
-#			IF = {
-#				limit = {
-#					NOR = { 
-#						has_pd_modifier = yes
-#						has_modifier = pd_continental 
-#					}
-#				}
-#				add_modifier = { modifier = pd_continental }
-#			}  
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_retinal
-#			}   
-#			change_pc = pc_continental          
-#			pd_retinal_world_effect = yes
-#		}
-#		IF = { 
-#			limit = {
-#				is_planet_class = pc_lake
-#			}  
-#			change_pc = pc_continental         
-#			pd_lake_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_tepid
-#			}      
-#			change_pc = pc_continental     
-#			pd_tepid_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_temperate
-#			}     
-#			change_pc = pc_continental      
-#			pd_temperate_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_forest
-#			}  
-#			change_pc = pc_continental         
-#			pd_forest_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_forest
-#			}   
-#			change_pc = pc_continental        
-#			pd_forest_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_megaflora
-#			}  
-#			change_pc = pc_continental         
-#			pd_megaflora_world_effect = yes
-#		}
-#		IF = {
-#			limit = {
-#				is_planet_class = pc_pd_petrified
-#			}  
-#			change_pc = pc_continental         
-#			pd_pd_petrified_world_effect = yes
-#		}
-#	}
-#}
-
 #This Event Fires After Terraforming to let you choose PD classes
+#Has Planet Flag = pd_choose_every_planet_terraforming
 planet_event = {
 	id = pdengine.03
 	title = pdengine.03.name
@@ -288,7 +202,19 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_planet_class = pc_continental
+		exists = space_owner
+		can_have_habitable_deposits = yes
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_tropical
+			is_planet_class = pc_ocean
+			is_planet_class = pc_arid
+			is_planet_class = pc_desert
+			is_planet_class = pc_savannah
+			is_planet_class = pc_arctic
+			is_planet_class = pc_alpine
+			is_planet_class = pc_tundra
+		}
 	}
 
 	immediate = {
@@ -392,6 +318,92 @@ planet_event = {
 		name = pdengine.03.petrified
 		hidden_effect = {         
 			pd_pd_petrified_world_effect = yes
+		}
+	}
+}
+
+#This Event Fires After Terraforming to let you choose PD classes
+#Has Planet Flag = pd_same_as_homeworld_terraforming
+#Removed from Protype for now
+#planet_event = {
+#	id = pdengine.04
+#	hide_window = yes
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		OR = {
+#			owner = { 
+#				has_policy_flag = pd_same_as_homeworld_terraforming 
+#			}
+#			space_owner = {
+#				has_policy_flag = pd_same_as_homeworld_terraforming 
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		remove_pd_modifier = yes
+#	}
+#
+#	#Continetal
+#}
+
+#This Event Fires After Terraforming to let you choose PD classes
+#Has Planet Flag = pd_choose_every_planet_terraforming
+planet_event = {
+	id = pdengine.05
+	hide_window = yes
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		can_have_habitable_deposits = yes
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_tropical
+			is_planet_class = pc_ocean
+			is_planet_class = pc_arid
+			is_planet_class = pc_desert
+			is_planet_class = pc_savannah
+			is_planet_class = pc_arctic
+			is_planet_class = pc_alpine
+			is_planet_class = pc_tundra
+		}
+	}
+
+	immediate = {
+		remove_pd_modifier = yes
+		IF = {
+			limit = { 
+				is_planet_class = pc_continental
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_continental }	 
+				}    
+				25 = { 
+					pd_retinal_world_effect = yes
+				}
+				25 = { 
+					pd_lake_world_effect = yes
+				}
+				25 = { 
+					pd_forest_world_effect = yes
+				}
+				25 = { 
+					pd_temperate_world_effect = yes
+				}
+				25 = { 
+					pd_tepid_world_effect = yes
+				}  
+				25 = { 
+					pd_megaflora_world_effect = yes
+				}
+				25 = { 
+					pd_pd_petrified_world_effect = yes
+				}                    
+			}
 		}
 	}
 }

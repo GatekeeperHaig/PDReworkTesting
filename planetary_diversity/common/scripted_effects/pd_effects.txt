@@ -1,12 +1,33 @@
 #Removes PD Modifiers
 remove_pd_modifier = {
-	remove_modifier = pd_continental
-	remove_modifier = pd_retinal
-	remove_modifier = pd_lake
-	remove_modifier = pd_tepid
-	remove_modifier = pd_forest
-	remove_modifier = pd_megaflora
-	remove_modifier = pd_petrified
+	if = {
+		limit = { has_modifier = pd_continental }
+		remove_modifier = pd_continental
+	}
+	if = {
+		limit = { has_modifier = pd_retinal }
+		remove_modifier = pd_retinal
+	}
+	if = {
+		limit = { has_modifier = pd_lake }
+		remove_modifier = pd_lake
+	}
+	if = {
+		limit = { has_modifier = pd_tepid }
+		remove_modifier = pd_tepid
+	}
+	if = {
+		limit = { has_modifier = pd_forest }
+		remove_modifier = pd_forest
+	}
+	if = {
+		limit = { has_modifier = pd_megaflora }
+		remove_modifier = pd_megaflora
+	}
+	if = {
+		limit = { has_modifier = pd_petrified }
+		remove_modifier = pd_petrified
+	}
 }
 
 #Create Visual Planets Effects

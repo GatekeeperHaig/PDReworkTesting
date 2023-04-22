@@ -43,25 +43,25 @@ pd_terraforming = {
 		}
 	}
 
-	option = {
-		name = "pd_same_as_homeworld"
-
-		policy_flags = {
-			pd_same_as_homeworld_terraforming
-		}
-
-		on_enabled = {
-			hidden_effect = { 
-				set_country_flag = pd_same_as_homeworld_terraforming
-				remove_country_flag = pd_choose_every_planet_terraforming
-				remove_country_flag = pd_random_same_class_terraforming
-			}
-		}
-
-		AI_weight = {
-			weight = 0
-		}
-	}
+	#option = {
+	#	name = "pd_same_as_homeworld"
+	#
+	#	policy_flags = {
+	#		pd_same_as_homeworld_terraforming
+	#	}
+	#
+	#	on_enabled = {
+	#		hidden_effect = { 
+	#			set_country_flag = pd_same_as_homeworld_terraforming
+	#			remove_country_flag = pd_choose_every_planet_terraforming
+	#			remove_country_flag = pd_random_same_class_terraforming
+	#		}
+	#	}
+	#
+	#	AI_weight = {
+	#		weight = 0
+	#	}
+	#}
 
 	option = {
 		name = "pd_random_same_class"
