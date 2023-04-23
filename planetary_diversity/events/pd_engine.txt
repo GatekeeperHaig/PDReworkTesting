@@ -194,159 +194,132 @@ country_event = {
 #Has Planet Flag = pd_choose_every_planet_terraforming
 planet_event = {
 	id = pdengine.03
-	title = pdengine.03.name
-	desc = pdengine.03.desc
-	picture = GFX_evt_shattered_planet
-	show_sound = event_ship_bridge
+	hide_window = yes
 	location = root
 	is_triggered_only = yes
 
 	trigger = {
 		exists = space_owner
-		can_have_habitable_deposits = yes
-		OR = {
-			is_planet_class = pc_continental
-			is_planet_class = pc_tropical
-			is_planet_class = pc_ocean
-			is_planet_class = pc_arid
-			is_planet_class = pc_desert
-			is_planet_class = pc_savannah
-			is_planet_class = pc_arctic
-			is_planet_class = pc_alpine
-			is_planet_class = pc_tundra
+		space_owner = {
+			OR = {
+				has_policy_flag = pd_choose_every_planet_terraforming
+				has_country_flag = pd_choose_every_planet_terraforming
+			}
 		}
+		is_planet_class = pc_continental
 	}
 
 	immediate = {
 		remove_pd_modifier = yes
+		space_owner = { country_event = { id = pdengine.04 } }
 	}
+}
+planet_event = {
+	id = pdengine.04
+	title = pdengine.04.name
+	desc = pdengine.04.desc
+	picture = GFX_evt_shattered_planet
+	show_sound = event_ship_bridge
+	location = root
+	is_triggered_only = yes
 
 	#Continetal
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
+			from = { is_planet_class = pc_continental }
 		}
-		name = pdengine.03.continental
+		name = pdengine.04.continental
 		hidden_effect = {
-			add_modifier = { modifier = pd_continental }
+			from = { 
+				add_modifier = { modifier = pd_continental }
+			}
 		}
 	}
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
+			from = { is_planet_class = pc_continental }
 		}
-		name = pdengine.03.retinal
-		hidden_effect = {         
-			pd_retinal_world_effect = yes
-		}
-	}
-	option = {
-		trigger = {
-			is_planet_class = pc_continental
-		}
-		name = pdengine.03.lake
-		hidden_effect = {         
-			pd_lake_world_effect = yes
+		name = pdengine.04.retinal
+		hidden_effect = {   
+			from = {       
+				pd_retinal_world_effect = yes
+			}
 		}
 	}
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
+			from = { is_planet_class = pc_continental }
 		}
-		name = pdengine.03.forest
-		hidden_effect = {         
-			pd_forest_world_effect = yes
-		}
-	}
-	option = {
-		trigger = {
-			is_planet_class = pc_continental
-		}
-		name = pdengine.03.tepid
-		hidden_effect = {         
-			pd_tepid_world_effect = yes
+		name = pdengine.04.lake
+		hidden_effect = {      
+			from = {       
+				pd_lake_world_effect = yes
+			}    
 		}
 	}
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
+			from = { is_planet_class = pc_continental }
 		}
-		name = pdengine.03.temperate
-		hidden_effect = {         
-			pd_temperate_world_effect = yes
+		name = pdengine.04.forest
+		hidden_effect = {   
+			from = {       
+				pd_forest_world_effect = yes
+			}       
 		}
 	}
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
+			from = { is_planet_class = pc_continental }
 		}
-		name = pdengine.03.temperate
-		hidden_effect = {         
-			pd_temperate_world_effect = yes
+		name = pdengine.04.tepid
+		hidden_effect = {   
+			from = {       
+				pd_tepid_world_effect = yes
+			}       
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_continental }
+		}
+		name = pdengine.04.temperate
+		hidden_effect = {  
+			from = {       
+				pd_temperate_world_effect = yes
+			}        
 		}
 	}
 	#Rare Continetal
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
-			OR = {
-				owner = {
-					has_ascension_perk = ap_world_shaper
-				}
-				space_owner = {
-					has_ascension_perk = ap_world_shaper
-				}
+			from = { is_planet_class = pc_continental }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
 			}
 		}
-		name = pdengine.03.megaflora
-		hidden_effect = {         
-			pd_megaflora_world_effect = yes
+		name = pdengine.04.megaflora
+		hidden_effect = {   
+			from = {       
+				pd_megaflora_world_effect = yes
+			}       
 		}
 	}
 	option = {
 		trigger = {
-			is_planet_class = pc_continental
-			OR = {
-				owner = {
-					has_ascension_perk = ap_world_shaper
-				}
-				space_owner = {
-					has_ascension_perk = ap_world_shaper
-				}
+			from = { is_planet_class = pc_continental }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
 			}
 		}
-		name = pdengine.03.petrified
-		hidden_effect = {         
-			pd_pd_petrified_world_effect = yes
+		name = pdengine.04.petrified
+		hidden_effect = {   
+			from = {       
+				pd_pd_petrified_world_effect = yes
+			}       
 		}
 	}
 }
-
-#This Event Fires After Terraforming to let you choose PD classes
-#Has Planet Flag = pd_same_as_homeworld_terraforming
-#Removed from Protype for now
-#planet_event = {
-#	id = pdengine.04
-#	hide_window = yes
-#	is_triggered_only = yes
-#
-#	trigger = {
-#		OR = {
-#			owner = { 
-#				has_policy_flag = pd_same_as_homeworld_terraforming 
-#			}
-#			space_owner = {
-#				has_policy_flag = pd_same_as_homeworld_terraforming 
-#			}
-#		}
-#	}
-#
-#	immediate = {
-#		remove_pd_modifier = yes
-#	}
-#
-#	#Continetal
-#}
 
 #This Event Fires After Terraforming to let you choose PD classes
 #Has Planet Flag = pd_choose_every_planet_terraforming
@@ -358,6 +331,12 @@ planet_event = {
 
 	trigger = {
 		exists = space_owner
+		space_owner = {
+			OR = {
+				has_policy_flag = pd_random_same_class_terraforming
+				has_country_flag = pd_random_same_class_terraforming
+			}
+		}
 		can_have_habitable_deposits = yes
 		OR = {
 			is_planet_class = pc_continental
@@ -397,10 +376,22 @@ planet_event = {
 				25 = { 
 					pd_tepid_world_effect = yes
 				}  
-				25 = { 
+				0 = { 
+					modifier = {
+						factor = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
 					pd_megaflora_world_effect = yes
 				}
-				25 = { 
+				0 = { 
+					modifier = {
+						factor = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
 					pd_pd_petrified_world_effect = yes
 				}                    
 			}

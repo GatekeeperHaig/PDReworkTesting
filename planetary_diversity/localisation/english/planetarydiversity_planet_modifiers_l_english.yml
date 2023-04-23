@@ -1,9 +1,9 @@
 ﻿l_english:
 
- #Modifiers
+###Modifiers
  #Wet Worlds
  pd_continental:0 "Continetal World"
- pd_continental_desc:0 "REPLACE_ME"
+ pd_continental_desc:0 "Great landmasses are separated by oceans, with large climate variations depending on latitude and precipitation."
  pd_retinal: "Retinal World"
  pd_retinal_desc: "Plant life is retinaldehyde-based instead of chlorophyll-based giving the planet a distinctive purple hue."
  pd_lake:0 "Lake World"

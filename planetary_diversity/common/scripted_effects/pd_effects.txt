@@ -32,7 +32,10 @@ remove_pd_modifier = {
 
 #Create Visual Planets Effects
 pd_retinal_world_effect = {
-	add_modifier = { modifier = pd_retinal }	
+	add_modifier = { 
+		modifier = pd_retinal 
+		days = -1
+	}	
 	set_planet_entity = {
 		picture = pc_retinal
 		entity = "retinal_planet_01_entity"
@@ -40,7 +43,10 @@ pd_retinal_world_effect = {
 }
 
 pd_lake_world_effect = {
-	add_modifier = { modifier = pd_lake }	
+	add_modifier = { 
+		modifier = pd_lake 
+		days = -1
+	}	
 	set_planet_entity = {
 		picture = pc_lake
 		entity = "lake_planet_01_entity"
@@ -48,7 +54,10 @@ pd_lake_world_effect = {
 }
 
 pd_tepid_world_effect = {
-	add_modifier = { modifier = pd_tepid }	
+	add_modifier = { 
+		modifier = pd_tepid 
+		days = -1
+	}	
 	set_planet_entity = {
 		picture = pc_tepid
 		entity = "tepid_planet_01_entity"
@@ -56,7 +65,10 @@ pd_tepid_world_effect = {
 }
 
 pd_temperate_world_effect = {
-	add_modifier = { modifier = pd_temperate }	
+	add_modifier = { 
+		modifier = pd_temperate 
+		days = -1
+	}	
 	set_planet_entity = {
 		picture = pc_temperate
 		entity = "temperate_planet_01_entity"
@@ -64,7 +76,10 @@ pd_temperate_world_effect = {
 }
 
 pd_forest_world_effect = {
-	add_modifier = { modifier = pd_forest }	
+	add_modifier = { 
+		modifier = pd_forest 
+		days = -1
+	}	
 	set_planet_entity = {
 		picture = pc_forest
 		entity = "forest_planet_01_entity"
@@ -72,7 +87,10 @@ pd_forest_world_effect = {
 }
 
 pd_megaflora_world_effect = {
-	add_modifier = { modifier = pd_megaflora }
+	add_modifier = { 
+		modifier = pd_megaflora
+		days = -1 
+	}
 	set_planet_entity = {
 		picture = pc_megaflora
 		entity = "megaflora_planet_01_entity"
@@ -80,7 +98,10 @@ pd_megaflora_world_effect = {
 }
 
 pd_pd_petrified_world_effect = {
-	add_modifier = { modifier = pd_petrified }
+	add_modifier = { 
+		modifier = pd_petrified 
+		days = -1
+	}
 	set_planet_entity = {
 		picture = pc_pd_petrified						
 		entity = "pd_petrified_planet_01_entity"

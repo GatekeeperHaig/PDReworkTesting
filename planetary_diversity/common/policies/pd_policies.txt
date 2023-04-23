@@ -33,7 +33,7 @@ pd_terraforming = {
 		on_enabled = {
 			hidden_effect = { 
 				set_country_flag = pd_choose_every_planet_terraforming
-				remove_country_flag = pd_same_as_homeworld_terraforming
+				#remove_country_flag = pd_same_as_homeworld_terraforming
 				remove_country_flag = pd_random_same_class_terraforming
 			}
 		}
@@ -73,7 +73,7 @@ pd_terraforming = {
 		on_enabled = {
 			hidden_effect = { 
 				set_country_flag = pd_random_same_class_terraforming
-				remove_country_flag = pd_same_as_homeworld_terraforming
+				#remove_country_flag = pd_same_as_homeworld_terraforming
 				remove_country_flag = pd_choose_every_planet_terraforming
 			}
 		}

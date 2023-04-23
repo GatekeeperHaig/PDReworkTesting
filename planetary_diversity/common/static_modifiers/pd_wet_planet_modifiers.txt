@@ -1,36 +1,50 @@
 pd_continental = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_continental.dds"
 	icon_frame = 1
+	planet_max_districts_add = 1
+	planet_housing_mult = 0.05
 }
 
 pd_retinal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_retinal.dds"
 	icon_frame = 1
+	district_mining_max = 1
+	planet_jobs_physics_research_produces_mult = 0.05
 }
 
 pd_lake = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lake.dds"
 	icon_frame = 1
+	district_generator_max = 1
+	pop_growth_from_immigration = 0.05
 }
 
 pd_forest = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_forest.dds"
 	icon_frame = 1
+	district_mining_max = 1
+	planet_jobs_engineering_research_produces_mult = 0.05
 }
 
 pd_tepid = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tepid.dds"
 	icon_frame = 1
+	district_farming_max = 1
+	pop_environment_tolerance = 0.05
 }
 
 pd_mushroom = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mushroom.dds"
 	icon_frame = 1
+	district_mining_max = 1
+	planet_jobs_society_research_produces_mult = 0.05
 }
 
 pd_temperate = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_temperate.dds"
 	icon_frame = 1
+	district_farming_max = 1
+	pop_growth_speed = 0.05
 }
 
 pd_megaflora = {	

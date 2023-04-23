@@ -1,6 +1,6 @@
 ﻿l_english:
 
-#Policy
+###Policy
  policy_pd_terraforming:0 "Terraforming"
  policy_pd_terraforming_desc:0 "We can decide how our scientists appoarch terraform our planets."
  pd_choose_every_planet_terraforming_name:0 "Choose Every Biome"
