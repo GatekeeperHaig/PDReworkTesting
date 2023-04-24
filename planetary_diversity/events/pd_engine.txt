@@ -1,5 +1,5 @@
 namespace = pdengine
-
+#This event sets a flag at game start
 event = {
 	id = pdengine.00
 	hide_window = yes
@@ -8,7 +8,7 @@ event = {
 	immediate = { set_global_flag = planetarydiversity }
 }
 
-###These events fire at game start, creating the planet diversity
+###These events fire at game start, changing all classes to PD classes, and changing starting classes to normal classes
 #This event changes all non homeworld, non prescripted to PD classes
 country_event = {
 	id = pdengine.10
@@ -205,7 +205,7 @@ country_event = {
 		}
 	}
 }
-#This Event Changes any homeworlds
+#This Event Changes any homeworlds back into normal classes after game start
 country_event = {
 	id = pdengine.12
 	hide_window = yes
@@ -227,15 +227,21 @@ country_event = {
 				add_modifier = { modifier = pd_continental }
 			}  
 		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_retinal
-				has_pd_modifier = no
-				is_homeworld = yes 
-			}   
-			change_pc = pc_continental          
-			pd_retinal_world_effect = yes
-		}
+        every_galaxy_planet = {         
+            limit = {
+                is_planet_class = pc_retinal
+                has_pd_modifier = no
+                is_homeworld = yes 
+            }   
+            change_pc = pc_continental          
+            pd_retinal_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_retinal_preference
+					add_trait = trait_pc_continental_preference
+                }
+            }
+        }
 		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_lake
@@ -244,6 +250,12 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_lake_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_lake_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -253,6 +265,12 @@ country_event = {
 			}      
 			change_pc = pc_continental     
 			pd_tepid_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_tepid_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -262,6 +280,12 @@ country_event = {
 			}      
 			change_pc = pc_continental   
 			pd_mushroom_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_mushroom_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -271,6 +295,12 @@ country_event = {
 			}     
 			change_pc = pc_continental      
 			pd_temperate_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_temperate_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -280,15 +310,12 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_forest_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_forest
-				has_pd_modifier = no
-				is_homeworld = yes 
-			}   
-			change_pc = pc_continental        
-			pd_forest_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_forest_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -298,6 +325,12 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_megaflora_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_megaflora_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -307,10 +340,17 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_pd_petrified_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_petrified_preference
+					add_trait = trait_pc_continental_preference
+                }
+			}
 		}
 	}
 }
 
+###These are the Terraforming Events
 #This Event Fires After Terraforming to let you choose PD classes
 #Has Planet Flag = pd_choose_every_planet_terraforming
 planet_event = {
