@@ -17,6 +17,10 @@ remove_pd_modifier = {
 		remove_modifier = pd_tepid
 	}
 	if = {
+		limit = { has_modifier = pd_mushroom }
+		remove_modifier = pd_mushroom
+	}
+	if = {
 		limit = { has_modifier = pd_forest }
 		remove_modifier = pd_forest
 	}
@@ -61,6 +65,17 @@ pd_tepid_world_effect = {
 	set_planet_entity = {
 		picture = pc_tepid
 		entity = "tepid_planet_01_entity"
+	}
+}
+
+pd_mushroom_world_effect = {
+	add_modifier = { 
+		modifier = pd_mushroom 
+		days = -1
+	}	
+	set_planet_entity = {
+		picture = pc_mushroom
+		entity = "mushroom_planet_01_entity"
 	}
 }
 
