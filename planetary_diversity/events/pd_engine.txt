@@ -232,6 +232,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
             }
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
         }
 		every_galaxy_planet = {         
 			limit = {
@@ -247,6 +252,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -262,6 +272,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -277,6 +292,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -292,6 +312,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -307,6 +332,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -322,6 +352,11 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
 		every_galaxy_planet = {         
 			limit = {
@@ -337,7 +372,13 @@ country_event = {
 					add_trait = trait_pc_continental_preference
                 }
 			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
 		}
+
 	}
 }
 

@@ -68,10 +68,14 @@ on_colony_10_years_old = {
 	events ={
 	}
 }
+ 
+empire_init_add_technologies = {
+	events = {
+	}
+}
 
 on_game_start = {
 	events = { 
-		pdengine.00
 	}
 }
 
