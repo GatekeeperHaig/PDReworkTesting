@@ -507,52 +507,52 @@ guiTypes = {
 				#pdx_tooltip = "pc_continental"
 			}
 			buttonType = {
-				name = "pc_retinal"
+				name = "pc_pd_retinal"
 				position = { x = @planet_col1 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_retinal"
+				pdx_tooltip = "pc_pd_retinal"
 			}	
 			buttonType = {
-				name = "pc_lake"
+				name = "pc_pd_lake"
 				position = { x = @planet_col1 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_lake"
+				pdx_tooltip = "pc_pd_lake"
 			}	
 			buttonType = {
-				name = "pc_forest"
+				name = "pc_pd_forest"
 				position = { x = @planet_col1 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_forest"
+				pdx_tooltip = "pc_pd_forest"
 			}
 			buttonType = {
-				name = "pc_tepid"
+				name = "pc_pd_tepid"
 				position = { x = @planet_col1 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_tepid"
+				pdx_tooltip = "pc_pd_tepid"
 			}
 			buttonType = {
-				name = "pc_mushroom"
+				name = "pc_pd_mushroom"
 				position = { x = @planet_col1 y = @planet_row6 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_mushroom"
+				pdx_tooltip = "pc_pd_mushroom"
 			}
 			buttonType = {
-				name = "pc_megaflora"
+				name = "pc_pd_megaflora"
 				position = { x = @planet_col1 y = @planet_row7 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_megaflora"
+				pdx_tooltip = "pc_pd_megaflora"
 			}
 			buttonType = {
 				name = "pc_pd_petrified"
@@ -1038,12 +1038,12 @@ guiTypes = {
 				pdx_tooltip = "pc_swamp"
 			}	
 			buttonType = {
-				name = "pc_mushroomcold"
+				name = "pc_pd_mushroomcold"
 				position = { x = @planet_col9 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_mushroomcold"
+				pdx_tooltip = "pc_pd_mushroomcold"
 			}
 			buttonType = {
 				name = "pc_mud"

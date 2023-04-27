@@ -41,7 +41,7 @@ pd_retinal_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_retinal
+		picture = pc_pd_retinal
 		entity = "retinal_planet_01_entity"
 	}
 }
@@ -52,7 +52,7 @@ pd_lake_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_lake
+		picture = pc_pd_lake
 		entity = "lake_planet_01_entity"
 	}
 }
@@ -63,7 +63,7 @@ pd_tepid_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_tepid
+		picture = pc_pd_tepid
 		entity = "tepid_planet_01_entity"
 	}
 }
@@ -74,7 +74,7 @@ pd_mushroom_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_mushroom
+		picture = pc_pd_mushroom
 		entity = "mushroom_planet_01_entity"
 	}
 }
@@ -85,7 +85,7 @@ pd_temperate_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_temperate
+		picture = pc_pd_temperate
 		entity = "temperate_planet_01_entity"
 	}
 }
@@ -96,7 +96,7 @@ pd_forest_world_effect = {
 		days = -1
 	}	
 	set_planet_entity = {
-		picture = pc_forest
+		picture = pc_pd_forest
 		entity = "forest_planet_01_entity"
 	}
 }
@@ -107,7 +107,7 @@ pd_megaflora_world_effect = {
 		days = -1 
 	}
 	set_planet_entity = {
-		picture = pc_megaflora
+		picture = pc_pd_megaflora
 		entity = "megaflora_planet_01_entity"
 	}
 }

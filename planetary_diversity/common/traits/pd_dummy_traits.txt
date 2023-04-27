@@ -3,7 +3,7 @@
 @tertiary = 0.20
 
 #Continental
-trait_pc_forest_preference = {
+trait_pc_pd_forest_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -29,7 +29,7 @@ trait_pc_forest_preference = {
 	}
 }
 
-trait_pc_tepid_preference = {
+trait_pc_pd_tepid_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -55,7 +55,7 @@ trait_pc_tepid_preference = {
 	}
 }
 
-trait_pc_retinal_preference = {
+trait_pc_pd_retinal_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -81,7 +81,7 @@ trait_pc_retinal_preference = {
 	}
 }
 
-trait_pc_lake_preference = {
+trait_pc_pd_lake_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -107,7 +107,7 @@ trait_pc_lake_preference = {
 	}
 }
 
-trait_pc_temperate_preference = {
+trait_pc_pd_temperate_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -133,7 +133,7 @@ trait_pc_temperate_preference = {
 	}
 }
 
-trait_pc_mushroom_preference = {
+trait_pc_pd_mushroom_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
@@ -185,7 +185,7 @@ trait_pc_pd_petrified_preference = {
 	}
 }
 
-trait_pc_megaflora_preference = {
+trait_pc_pd_megaflora_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_continental_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {

@@ -2,9 +2,9 @@
 # These are dummy classes and are not to be used, they are just for reference for the engine to turn them into the correct class. 
 # Used in terraforming, and on game start.
 
-#Continental
+###Continental
 
-pc_retinal = {
+pc_pd_retinal = {
 	entity = "retinal_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
@@ -23,7 +23,7 @@ pc_retinal = {
 	carry_cap_per_free_district = @carry_cap_normal
 }
 
-pc_lake = {
+pc_pd_lake = {
 	entity = "lake_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
@@ -43,7 +43,7 @@ pc_lake = {
 	carry_cap_per_free_district = @carry_cap_normal
 }
 
-pc_forest = {
+pc_pd_forest = {
 	entity = "forest_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
@@ -63,7 +63,7 @@ pc_forest = {
 	carry_cap_per_free_district = @carry_cap_normal
 }
 
-pc_tepid = {
+pc_pd_tepid = {
 	entity = "tepid_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
@@ -84,7 +84,7 @@ pc_tepid = {
 	carry_cap_per_free_district = @carry_cap_normal
 }
 
-pc_mushroom = {
+pc_pd_mushroom = {
 	entity = "mushroom_planet"
 	icon = GFX_planet_type_mushroom
 	entity_scale = @planet_standard_scale
@@ -102,7 +102,7 @@ pc_mushroom = {
 	carry_cap_per_free_district = @carry_cap_normal
 }
 
-pc_temperate = {
+pc_pd_temperate = {
 	entity = "temperate_planet"
 	icon = GFX_planet_type_continental
 	entity_scale = @planet_standard_scale
@@ -143,13 +143,13 @@ pc_pd_petrified = {
 	starting_planet = no
 }
 
-pc_megaflora = {
+pc_pd_megaflora = {
 	entity = "megaflora_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
 	climate = "wet"
 	#appearance
-	picture = pc_megaflora
+	picture = pc_pd_megaflora
 	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
@@ -165,3 +165,5 @@ pc_megaflora = {
 	carry_cap_per_free_district = @carry_cap_normal
 	starting_planet = no
 }
+
+###Tropical

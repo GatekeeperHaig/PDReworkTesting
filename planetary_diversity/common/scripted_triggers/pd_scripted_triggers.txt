@@ -7,14 +7,14 @@ has_planetary_diversity = { always = yes }
 is_pd_continental = {
  	OR = {
  		is_planet_class = pc_continental
- 		is_planet_class = pc_forest
- 		is_planet_class = pc_tepid
- 		is_planet_class = pc_retinal
- 		is_planet_class = pc_lake
- 		is_planet_class = pc_temperate
- 		is_planet_class = pc_mushroom
+ 		is_planet_class = pc_pd_forest
+ 		is_planet_class = pc_pd_tepid
+ 		is_planet_class = pc_pd_retinal
+ 		is_planet_class = pc_pd_lake
+ 		is_planet_class = pc_pd_temperate
+ 		is_planet_class = pc_pd_mushroom
 		is_planet_class = pc_pd_petrified
- 		is_planet_class = pc_megaflora
+ 		is_planet_class = pc_pd_megaflora
  	}
 }
  
