@@ -34,7 +34,8 @@ remove_pd_modifier = {
 	}
 }
 
-#Create Visual Planets Effects
+###Create Visual Planets Effects
+#Continetal
 pd_retinal_world_effect = {
 	add_modifier = { 
 		modifier = pd_retinal 

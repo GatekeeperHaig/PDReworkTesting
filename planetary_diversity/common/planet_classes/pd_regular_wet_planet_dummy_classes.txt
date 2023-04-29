@@ -166,4 +166,139 @@ pc_pd_megaflora = {
 	starting_planet = no
 }
 
-###Tropical
+###Ocean
+
+pc_pd_cascadian = {
+	entity = "cascadian_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_cascadian
+	#appearance
+	picture = pc_pd_cascadian
+	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_alpine.dds"
+	#planet defines
+	climate = "wet"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = yes
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}		
+
+pc_pd_swamp = {
+	entity = "wetswamp_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_wetswamp 
+	#appearance
+	picture = pc_pd_swamp
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }	
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+	#planet defines
+	climate = "wet"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = no
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+pc_pd_crag = {
+	entity = "subarctic_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_crag
+	#appearance
+	picture = pc_pd_crag
+	atmosphere_color 		= hsv { 0.50 0.2 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_alpine.dds"
+	#planet defines
+	climate = "wet"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}		
+	
+pc_pd_fog = {
+	entity = "fog_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_fog
+	#appearance
+	picture = pc_pd_fog
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
+	#planet defines
+	climate = "wet"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = no
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+pc_pd_reef = {
+	entity = "reef_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_pdreef
+	climate = "wet"
+	#appearance
+	picture = pc_pd_reef
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+	uses_alternative_skies_for_moons = yes
+}
+
+pc_pd_archipelago = {
+	entity = "pd_archipelago_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_pd_archipelago
+	climate = "wet"
+	#appearance
+	picture = pc_pd_archipelago
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+	uses_alternative_skies_for_moons = no
+}

@@ -572,36 +572,36 @@ guiTypes = {
 				pdx_tooltip = "pc_ocean"
 			}	
 			buttonType = {
-				name = "pc_cascadian"
+				name = "pc_pd_cascadian"
 				position = { x = @planet_col2 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_cascadian"
+				pdx_tooltip = "pc_pd_cascadian"
 			}
 			buttonType = {
-				name = "pc_wetswamp"
+				name = "pc_pd_swamp"
 				position = { x = @planet_col2 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_wetswamp"
+				pdx_tooltip = "pc_pd_swamp"
 			}
 			buttonType = {
-				name = "pc_subarctic"
+				name = "pc_pd_crag"
 				position = { x = @planet_col2 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_subarctic"
+				pdx_tooltip = "pc_pd_crag"
 			}	
 			buttonType = {
-				name = "pc_fog"
+				name = "pc_pd_fog"
 				position = { x = @planet_col2 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_fog"
+				pdx_tooltip = "pc_pd_fog"
 			}	
 			buttonType = {
 				name = "pc_pd_archipelago"
@@ -612,12 +612,12 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_archipelago"
 			}	
 			buttonType = {
-				name = "pc_reef"
+				name = "pc_pd_reef"
 				position = { x = @planet_col2 y = @planet_row7 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_reef"
+				pdx_tooltip = "pc_pd_reef"
 			}
 
 
