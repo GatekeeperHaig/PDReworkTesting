@@ -9,7 +9,7 @@ event = {
 }
 
 ###These events fire at game start, changing all classes to PD classes, and changing starting classes to normal classes
-#This event changes all non homeworld, non prescripted to PD classes
+#This event changes all non homeworld, non prescripted to PD classes, Non ideal
 country_event = {
 	id = pdengine.10
 	hide_window = yes
@@ -17,13 +17,13 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		#Continetal, non-ideal
+		#Continetal
         every_galaxy_planet = {                 
             limit = { 
 				is_planet_class = pc_continental 
 				is_homeworld = no 
 				NOR = { 
-					has_planet_flag = prescripted_ideal 
+					#has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
 				}
@@ -51,20 +51,88 @@ country_event = {
 					pd_mushroom_world_effect = yes
 				}  
 				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
 					pd_megaflora_world_effect = yes
 				}
 				25 = { 
-					pd_pd_petrified_world_effect = yes
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_petrified_world_effect = yes
 				}                    
 			}
         }
-		#Continetal, ideal
+		#Ocean
         every_galaxy_planet = {                 
             limit = { 
-				is_planet_class = pc_continental 
+				is_planet_class = pc_ocean 
 				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					has_planet_flag = living_planet 
+				}
 			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_ocean }	 
+				}    
+				25 = { 
+					pd_cascadian_world_effect = yes
+				}
+				25 = { 
+					pd_swamp_world_effect = yes
+				}
+				25 = { 
+					pd_crag_world_effect = yes
+				}
+				25 = { 
+					pd_fog_world_effect = yes
+				} 
+				25 = { 
+					pd_reef_world_effect = yes
+				}
+				25 = { 
+					pd_archipelago_world_effect = yes
+				} 
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_reef_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_archipelago_world_effect = yes
+				}                      
+			}
+        }
+	}
+}
+#This Event Changes any planets that slipped through, and any non homeworld planets
+country_event = {
+	id = pdengine.11
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#Continetal Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_continental = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_continental
 			random_list = {
 				25 = {
 					add_modifier = { modifier = pd_continental }	 
@@ -83,116 +151,43 @@ country_event = {
 				}
 				25 = { 
 					pd_tepid_world_effect = yes
-				} 
+				}  
 				25 = { 
 					pd_mushroom_world_effect = yes
-				}                       
+				}  
 			}
-        }
-	}
-}
-#This Event Changes any planets that slipped through, and any non homeworld planets
-country_event = {
-	id = pdengine.11
-	hide_window = yes
-	is_triggered_only = yes
-	fire_only_once = yes
-	immediate = {
-		#Continetal Planets
+		}
+		#Ocean Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_planet_class = pc_continental
+				is_pd_ocean = yes
 				has_pd_modifier = no
 				is_homeworld = no 
-				NOT = { has_planet_flag = prescripted_ideal }
 			} 
-			IF = {
-				limit = {
-					NOT = { has_modifier = pd_continental }
+			change_pc = pc_ocean
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_ocean }	 
+				}    
+				25 = { 
+					pd_cascadian_world_effect = yes
 				}
-				add_modifier = { modifier = pd_continental }
-			}  
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_retinal
-				has_pd_modifier = no
-				is_homeworld = no 
-			}   
-			change_pc = pc_continental          
-			pd_retinal_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_lake
-				has_pd_modifier = no
-				is_homeworld = no 
-			}  
-			change_pc = pc_continental         
-			pd_lake_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_tepid
-				has_pd_modifier = no
-				is_homeworld = no 
-			}      
-			change_pc = pc_continental     
-			pd_tepid_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_mushroom
-				has_pd_modifier = no
-				is_homeworld = no 
-			}      
-			change_pc = pc_continental   
-			pd_mushroom_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_temperate
-				has_pd_modifier = no
-				is_homeworld = no 
-			}     
-			change_pc = pc_continental      
-			pd_temperate_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_forest
-				has_pd_modifier = no
-				is_homeworld = no 
-			}  
-			change_pc = pc_continental         
-			pd_forest_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_forest
-				has_pd_modifier = no
-				is_homeworld = no 
-			}   
-			change_pc = pc_continental        
-			pd_forest_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_megaflora
-				has_pd_modifier = no
-				is_homeworld = no 
-			}  
-			change_pc = pc_continental         
-			pd_megaflora_world_effect = yes
-		}
-		every_galaxy_planet = {         
-			limit = {
-				is_planet_class = pc_pd_petrified
-				has_pd_modifier = no
-				is_homeworld = no 
-			}  
-			change_pc = pc_continental         
-			pd_pd_petrified_world_effect = yes
+				25 = { 
+					pd_swamp_world_effect = yes
+				}
+				25 = { 
+					pd_crag_world_effect = yes
+				}
+				25 = { 
+					pd_fog_world_effect = yes
+				} 
+				25 = { 
+					pd_reef_world_effect = yes
+				}
+				25 = { 
+					pd_archipelago_world_effect = yes
+				} 
+			}
 		}
 	}
 }
@@ -365,7 +360,7 @@ country_event = {
 				is_homeworld = yes 
 			}  
 			change_pc = pc_continental         
-			pd_pd_petrified_world_effect = yes
+			pd_petrified_world_effect = yes
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_petrified_preference
@@ -378,7 +373,141 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
-
+		#Ocean Worlds
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_ocean
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_ocean }
+				}
+				add_modifier = { modifier = pd_ocean }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_cascadian
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_cascadian_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_cascadian_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_swamp
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_swamp_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_swamp_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_crag
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_crag_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_crag_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_fog
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_fog_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fog_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_reef
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_reef_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_reef_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_archipelago
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_archipelago_world_effect = yes
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_archipelago_preference
+					add_trait = trait_pc_ocean_preference
+                }
+			}
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 
@@ -521,7 +650,7 @@ country_event = {
 		name = pdengine.21.petrified
 		hidden_effect = {   
 			from = {       
-				pd_pd_petrified_world_effect = yes
+				pd_petrified_world_effect = yes
 			}       
 		}
 	}
@@ -600,7 +729,7 @@ planet_event = {
 							has_ascension_perk = ap_world_shaper
 						}
 					}
-					pd_pd_petrified_world_effect = yes
+					pd_petrified_world_effect = yes
 				}                    
 			}
 		}

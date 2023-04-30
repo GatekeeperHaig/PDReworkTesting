@@ -65,3 +65,54 @@ pd_petrified = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_petrified.dds"
 	icon_frame = 1
 }
+
+#Ocean
+pd_ocean = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_ocean.dds"
+	icon_frame = 1
+	district_farming_max = 1
+	pop_growth_speed = 0.05
+}
+
+pd_cascadian = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cascadian.dds"
+	icon_frame = 1
+	district_farming_max = 1
+	pop_growth_speed = 0.05
+}
+
+pd_swamp = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_swamp.dds"
+	icon_frame = 1
+	district_mining_max = 4
+	planet_housing_mult = -0.2
+}
+
+pd_crag = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_crag.dds"
+	icon_frame = 1
+	district_farming_max = 1
+	pop_growth_speed = 0.05
+}
+
+pd_fog = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fog.dds"
+	icon_frame = 1
+	district_mining_max = 4
+	planet_housing_mult = -0.2
+}
+
+pd_reef = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_reef.dds"
+	icon_frame = 1
+	district_mining_max = 4
+	planet_housing_mult = -0.2
+}
+
+pd_archipelago = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_archipelago.dds"
+	icon_frame = 1
+	district_farming_max = 4
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+}

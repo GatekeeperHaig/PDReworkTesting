@@ -113,7 +113,7 @@ pd_megaflora_world_effect = {
 	}
 }
 
-pd_pd_petrified_world_effect = {
+pd_petrified_world_effect = {
 	add_modifier = { 
 		modifier = pd_petrified 
 		days = -1
@@ -121,5 +121,71 @@ pd_pd_petrified_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_petrified						
 		entity = "pd_petrified_planet_01_entity"
+	}
+}
+#Ocean
+pd_cascadian_world_effect = {
+	add_modifier = { 
+		modifier = pd_cascadian
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_cascadian	
+		entity = "cascadian_planet_01_entity"
+	}
+}
+
+pd_swamp_world_effect = {
+	add_modifier = { 
+		modifier = pd_swamp
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_swamp	
+		entity = "wetswamp_planet_01_entity"
+	}
+}
+
+pd_crag_world_effect = {
+	add_modifier = { 
+		modifier = pd_crag
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_crag	
+		entity = "subarctic_planet_01_entity"
+	}
+}
+
+pd_fog_world_effect = {
+	add_modifier = { 
+		modifier = pd_fog
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_fog	
+		entity = "fog_planet_01_entity"
+	}
+}
+
+pd_reef_world_effect = {
+	add_modifier = { 
+		modifier = pd_reef
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_reef	
+		entity = "reef_planet_01_entity"
+	}
+}
+
+pd_archipelago_world_effect = {
+	add_modifier = { 
+		modifier = pd_archipelago
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_archipelago	
+		entity = "pd_archipelago_planet_01_entity"
 	}
 }

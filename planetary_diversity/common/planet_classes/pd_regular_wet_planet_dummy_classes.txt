@@ -167,11 +167,10 @@ pc_pd_megaflora = {
 }
 
 ###Ocean
-
 pc_pd_cascadian = {
 	entity = "cascadian_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_cascadian
+	icon = GFX_planet_type_ocean
 	#appearance
 	picture = pc_pd_cascadian
 	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
@@ -194,7 +193,7 @@ pc_pd_cascadian = {
 pc_pd_swamp = {
 	entity = "wetswamp_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_wetswamp 
+	icon = GFX_planet_type_ocean 
 	#appearance
 	picture = pc_pd_swamp
 	atmosphere_color 		= hsv { 0.58 0.3 0.7 }	
@@ -217,7 +216,7 @@ pc_pd_swamp = {
 pc_pd_crag = {
 	entity = "subarctic_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_crag
+	icon = GFX_planet_type_ocean
 	#appearance
 	picture = pc_pd_crag
 	atmosphere_color 		= hsv { 0.50 0.2 0.8 }		
@@ -239,7 +238,7 @@ pc_pd_crag = {
 pc_pd_fog = {
 	entity = "fog_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_fog
+	icon = GFX_planet_type_ocean
 	#appearance
 	picture = pc_pd_fog
 	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
@@ -262,7 +261,7 @@ pc_pd_fog = {
 pc_pd_reef = {
 	entity = "reef_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_pdreef
+	icon = GFX_planet_type_ocean
 	climate = "wet"
 	#appearance
 	picture = pc_pd_reef
@@ -284,7 +283,7 @@ pc_pd_reef = {
 pc_pd_archipelago = {
 	entity = "pd_archipelago_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_pd_archipelago
+	icon = GFX_planet_type_ocean
 	climate = "wet"
 	#appearance
 	picture = pc_pd_archipelago
