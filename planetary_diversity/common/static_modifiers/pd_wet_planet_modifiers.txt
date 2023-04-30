@@ -50,10 +50,8 @@ pd_temperate = {
 pd_megaflora = {	
 	district_mining_max = 2
 	district_generator_max = 2
-	planet_buildings_upkeep_mult = 0.05
-	planet_districts_upkeep_mult = 0.05
-	planet_buildings_cost_mult = 0.1 
-	planet_districts_cost_mult = 0.1
+	planet_structures_upkeep_mult = 0.05
+	planet_structures_cost_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_megaflora.dds"
 	icon_frame = 1
 }
@@ -70,36 +68,36 @@ pd_petrified = {
 pd_ocean = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_ocean.dds"
 	icon_frame = 1
-	district_farming_max = 1
-	pop_growth_speed = 0.05
+	planet_max_districts_add = 1
+	planet_jobs_society_research_produces_mult = 0.05
 }
 
 pd_cascadian = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cascadian.dds"
 	icon_frame = 1
-	district_farming_max = 1
-	pop_growth_speed = 0.05
+	district_mining_max = 1
+	planet_jobs_engineering_research_produces_mult = 0.05
 }
 
 pd_swamp = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_swamp.dds"
 	icon_frame = 1
-	district_mining_max = 4
-	planet_housing_mult = -0.2
+	district_farming_max = 1
+	planet_jobs_society_research_produces_mult = 0.05
 }
 
 pd_crag = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_crag.dds"
 	icon_frame = 1
-	district_farming_max = 1
-	pop_growth_speed = 0.05
+	district_generator_max = 2
+	planet_structures_upkeep_mult = 0.1
 }
 
 pd_fog = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fog.dds"
 	icon_frame = 1
-	district_mining_max = 4
-	planet_housing_mult = -0.2
+	district_mining_max = 1
+	pop_environment_tolerance = 0.05
 }
 
 pd_reef = {
@@ -107,12 +105,13 @@ pd_reef = {
 	icon_frame = 1
 	district_mining_max = 4
 	planet_housing_mult = -0.2
+	planet_structures_cost_mult = 0.1
 }
 
 pd_archipelago = {	
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_archipelago.dds"
 	icon_frame = 1
 	district_farming_max = 4
-	planet_buildings_upkeep_mult = 0.1
-	planet_districts_upkeep_mult = 0.1
+	planet_structures_cost_mult = 0.1
+	planet_structures_upkeep_mult = 0.1
 }

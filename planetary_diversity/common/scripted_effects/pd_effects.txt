@@ -32,6 +32,34 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_petrified }
 		remove_modifier = pd_petrified
 	}
+	if = {
+		limit = { has_modifier = pd_ocean }
+		remove_modifier = pd_ocean
+	}
+	if = {
+		limit = { has_modifier = pd_cascadian }
+		remove_modifier = pd_cascadian
+	}
+	if = {
+		limit = { has_modifier = pd_swamp }
+		remove_modifier = pd_swamp
+	}
+	if = {
+		limit = { has_modifier = pd_crag }
+		remove_modifier = pd_crag
+	}
+	if = {
+		limit = { has_modifier = pd_fog }
+		remove_modifier = pd_fog
+	}
+	if = {
+		limit = { has_modifier = pd_reef }
+		remove_modifier = pd_reef
+	}
+	if = {
+		limit = { has_modifier = pd_archipelago }
+		remove_modifier = pd_archipelagos
+	}
 }
 
 ###Create Visual Planets Effects

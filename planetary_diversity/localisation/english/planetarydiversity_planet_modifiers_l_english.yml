@@ -27,7 +27,7 @@
  pd_swamp:0 "Swamp World"
  pd_swamp_desc:0 "Most of the planet is covered with dense forested wetlands. Hydrosphere is strong and stable mainly in shallow seas, swamps and bogs and supports a great abundance of plant and animal life."
  pd_crag:0 "Crag World"
- pd_crag_desc:0 "Oceans and polar ice caps cover more than §Y90%§! of the surface, with rugged scattered islands dotting its surface."
+ pd_crag_desc:0 "Oceans and polar ice caps cover most of the surface, with rugged scattered seismically active  islands dotting its surface."
  pd_fog:0 "Fog World"
  pd_fog_desc:0 "Oceans cover much of the surface and extreme humity causes near constant fog moving over the moist forests and grasslands."
  pd_reef:0 "Reef World"

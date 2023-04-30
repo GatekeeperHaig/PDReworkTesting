@@ -23,7 +23,6 @@ country_event = {
 				is_planet_class = pc_continental 
 				is_homeworld = no 
 				NOR = { 
-					#has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
 				}
@@ -72,7 +71,6 @@ country_event = {
 				is_planet_class = pc_ocean 
 				is_homeworld = no 
 				NOR = { 
-					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
 					has_planet_flag = living_planet 
@@ -163,6 +161,7 @@ country_event = {
 				is_pd_ocean = yes
 				has_pd_modifier = no
 				is_homeworld = no 
+				NOT = { has_planet_flag = living_planet }
 			} 
 			change_pc = pc_ocean
 			random_list = {
@@ -180,12 +179,6 @@ country_event = {
 				}
 				25 = { 
 					pd_fog_world_effect = yes
-				} 
-				25 = { 
-					pd_reef_world_effect = yes
-				}
-				25 = { 
-					pd_archipelago_world_effect = yes
 				} 
 			}
 		}
@@ -528,11 +521,13 @@ planet_event = {
 				has_country_flag = pd_choose_every_planet_terraforming
 			}
 		}
-		is_planet_class = pc_continental
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_ocean
+		}
 	}
 
 	immediate = {
-		remove_pd_modifier = yes
 		space_owner = { 
 			country_event = { id = pdengine.21 } 
 		}
@@ -546,6 +541,10 @@ country_event = {
 	show_sound = event_ship_bridge
 	location = root
 	is_triggered_only = yes
+
+	immediate = {
+		remove_pd_modifier = yes
+	}
 
 	#Continetal
 	option = {
@@ -625,7 +624,6 @@ country_event = {
 			}        
 		}
 	}
-	#Rare Continetal
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_continental }
@@ -654,9 +652,93 @@ country_event = {
 			}       
 		}
 	}
+	#Ocean
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.ocean
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_ocean }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.cascadian
+		hidden_effect = {   
+			from = {       
+				pd_cascadian_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.swamp
+		hidden_effect = {   
+			from = {       
+				pd_swamp_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.crag
+		hidden_effect = {   
+			from = {       
+				pd_crag_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.fog
+		hidden_effect = {   
+			from = {       
+				pd_fog_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
+		}
+		name = pdengine.21.reef
+		hidden_effect = {   
+			from = {       
+				pd_reef_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
+		}
+		name = pdengine.21.archipelago
+		hidden_effect = {   
+			from = {       
+				pd_archipelago_world_effect = yes
+			}
+		}
+	}
 }
-#This Event Fires After Terraforming to let you choose PD classes
-#Has Planet Flag = pd_choose_every_planet_terraforming
+#This Event Fires After Terraforming and fires a random class
+#Has Planet Flag = pd_random_same_class_terraforming
 planet_event = {
 	id = pdengine.22
 	hide_window = yes
@@ -730,6 +812,46 @@ planet_event = {
 						}
 					}
 					pd_petrified_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_ocean
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_ocean }	 
+				}    
+				25 = { 
+					pd_cascadian_world_effect = yes
+				}
+				25 = { 
+					pd_swamp_world_effect = yes
+				}
+				25 = { 
+					pd_crag_world_effect = yes
+				}
+				25 = { 
+					pd_fog_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_reef_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_archipelago_world_effect = yes
 				}                    
 			}
 		}
