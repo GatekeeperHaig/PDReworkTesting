@@ -57,8 +57,32 @@ remove_pd_modifier = {
 		remove_modifier = pd_reef
 	}
 	if = {
-		limit = { has_modifier = pd_archipelago }
-		remove_modifier = pd_archipelagos
+		limit = { has_modifier = pd_atoll }
+		remove_modifier = pd_atoll
+	}
+	if = {
+		limit = { has_modifier = pd_tepui }
+		remove_modifier = pd_tepui
+	}
+	if = {
+		limit = { has_modifier = pd_mangrove }
+		remove_modifier = pd_mangrove
+	}
+	if = {
+		limit = { has_modifier = pd_cenote }
+		remove_modifier = pd_cenote
+	}
+	if = {
+		limit = { has_modifier = pd_fungal }
+		remove_modifier = pd_fungal
+	}
+	if = {
+		limit = { has_modifier = pd_geothermal }
+		remove_modifier = pd_geothermal
+	}
+	if = {
+		limit = { has_modifier = pd_biolumen }
+		remove_modifier = pd_biolumen
 	}
 }
 
@@ -74,7 +98,6 @@ pd_retinal_world_effect = {
 		entity = "retinal_planet_01_entity"
 	}
 }
-
 pd_lake_world_effect = {
 	add_modifier = { 
 		modifier = pd_lake 
@@ -85,7 +108,6 @@ pd_lake_world_effect = {
 		entity = "lake_planet_01_entity"
 	}
 }
-
 pd_tepid_world_effect = {
 	add_modifier = { 
 		modifier = pd_tepid 
@@ -96,7 +118,6 @@ pd_tepid_world_effect = {
 		entity = "tepid_planet_01_entity"
 	}
 }
-
 pd_mushroom_world_effect = {
 	add_modifier = { 
 		modifier = pd_mushroom 
@@ -107,7 +128,6 @@ pd_mushroom_world_effect = {
 		entity = "mushroom_planet_01_entity"
 	}
 }
-
 pd_temperate_world_effect = {
 	add_modifier = { 
 		modifier = pd_temperate 
@@ -118,7 +138,6 @@ pd_temperate_world_effect = {
 		entity = "temperate_planet_01_entity"
 	}
 }
-
 pd_forest_world_effect = {
 	add_modifier = { 
 		modifier = pd_forest 
@@ -129,7 +148,6 @@ pd_forest_world_effect = {
 		entity = "forest_planet_01_entity"
 	}
 }
-
 pd_megaflora_world_effect = {
 	add_modifier = { 
 		modifier = pd_megaflora
@@ -140,7 +158,6 @@ pd_megaflora_world_effect = {
 		entity = "megaflora_planet_01_entity"
 	}
 }
-
 pd_petrified_world_effect = {
 	add_modifier = { 
 		modifier = pd_petrified 
@@ -151,6 +168,7 @@ pd_petrified_world_effect = {
 		entity = "pd_petrified_planet_01_entity"
 	}
 }
+
 #Ocean
 pd_cascadian_world_effect = {
 	add_modifier = { 
@@ -162,7 +180,6 @@ pd_cascadian_world_effect = {
 		entity = "cascadian_planet_01_entity"
 	}
 }
-
 pd_swamp_world_effect = {
 	add_modifier = { 
 		modifier = pd_swamp
@@ -173,7 +190,6 @@ pd_swamp_world_effect = {
 		entity = "wetswamp_planet_01_entity"
 	}
 }
-
 pd_crag_world_effect = {
 	add_modifier = { 
 		modifier = pd_crag
@@ -184,7 +200,6 @@ pd_crag_world_effect = {
 		entity = "subarctic_planet_01_entity"
 	}
 }
-
 pd_fog_world_effect = {
 	add_modifier = { 
 		modifier = pd_fog
@@ -195,7 +210,6 @@ pd_fog_world_effect = {
 		entity = "fog_planet_01_entity"
 	}
 }
-
 pd_reef_world_effect = {
 	add_modifier = { 
 		modifier = pd_reef
@@ -206,7 +220,6 @@ pd_reef_world_effect = {
 		entity = "reef_planet_01_entity"
 	}
 }
-
 pd_archipelago_world_effect = {
 	add_modifier = { 
 		modifier = pd_archipelago
@@ -215,5 +228,77 @@ pd_archipelago_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_archipelago	
 		entity = "pd_archipelago_planet_01_entity"
+	}
+}
+
+#Tropical
+pd_atoll_world_effect = {
+	add_modifier = { 
+		modifier = pd_atoll
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_atoll	
+		entity = "desertislands_planet_01_entity"
+	}
+}
+pd_tepui_world_effect = {
+	add_modifier = { 
+		modifier = pd_tepui
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_tepui	
+		entity = "hajungle_planet_01_entity"
+	}
+}
+pd_mangrove_world_effect = {
+	add_modifier = { 
+		modifier = pd_mangrove
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_mangrove
+		entity = "mangrove_planet_01_entity"
+	}
+}
+pd_cenote_world_effect = {
+	add_modifier = { 
+		modifier = pd_cenote
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_cenote
+		entity = "cenote_planet_01_entity"
+	}
+}
+pd_fungal_world_effect = {
+	add_modifier = { 
+		modifier = pd_fungal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_fungal
+		entity = "fungal_planet_01_entity"
+	}
+}
+pd_geothermal_world_effect = {
+	add_modifier = { 
+		modifier = pd_geothermal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_geothermal
+		entity = "geothermal_planet_01_entity"
+	}
+}
+pd_biolumen_world_effect = {
+	add_modifier = { 
+		modifier = pd_biolumen
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_biolumen
+		entity = "biolumen_planet_01_entity"
 	}
 }

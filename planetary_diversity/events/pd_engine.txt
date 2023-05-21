@@ -93,12 +93,6 @@ country_event = {
 					pd_fog_world_effect = yes
 				} 
 				25 = { 
-					pd_reef_world_effect = yes
-				}
-				25 = { 
-					pd_archipelago_world_effect = yes
-				} 
-				25 = { 
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal 
@@ -111,6 +105,51 @@ country_event = {
 						has_planet_flag = prescripted_ideal 
 					}
 					pd_archipelago_world_effect = yes
+				}                      
+			}
+        }
+		#Tropical
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_tropical 
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tropical }	 
+				}    
+				25 = { 
+					pd_atoll_world_effect = yes
+				}
+				25 = { 
+					pd_tepui_world_effect = yes
+				}
+				25 = { 
+					pd_mangrove_world_effect = yes
+				}
+				25 = { 
+					pd_cenote_world_effect = yes
+				} 
+				25 = { 
+					pd_fungal_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_geothermal_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_biolumen_world_effect = yes
 				}                      
 			}
         }
@@ -182,6 +221,35 @@ country_event = {
 				} 
 			}
 		}
+		#Tropical Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_ocean = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_tropical
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tropical }	 
+				}    
+				25 = { 
+					pd_atoll_world_effect = yes
+				}
+				25 = { 
+					pd_tepui_world_effect = yes
+				}
+				25 = { 
+					pd_mangrove_world_effect = yes
+				}
+				25 = { 
+					pd_cenote_world_effect = yes
+				} 
+				25 = { 
+					pd_fungal_world_effect = yes
+				}
+			}
+		}
 	}
 }
 #This Event Changes any homeworlds back into normal classes after game start
@@ -214,12 +282,6 @@ country_event = {
             }   
             change_pc = pc_continental          
             pd_retinal_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_retinal_preference
-					add_trait = trait_pc_continental_preference
-                }
-            }
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -234,12 +296,6 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_lake_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_lake_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -254,12 +310,6 @@ country_event = {
 			}      
 			change_pc = pc_continental     
 			pd_tepid_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_tepid_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -274,12 +324,6 @@ country_event = {
 			}      
 			change_pc = pc_continental   
 			pd_mushroom_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_mushroom_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -294,12 +338,6 @@ country_event = {
 			}     
 			change_pc = pc_continental      
 			pd_temperate_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_temperate_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -314,12 +352,6 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_forest_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_forest_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -334,12 +366,6 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_megaflora_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_megaflora_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -354,12 +380,6 @@ country_event = {
 			}  
 			change_pc = pc_continental         
 			pd_petrified_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_petrified_preference
-					add_trait = trait_pc_continental_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -389,12 +409,6 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_cascadian_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_cascadian_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -409,12 +423,6 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_swamp_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_swamp_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -429,12 +437,6 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_crag_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_crag_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -449,12 +451,6 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_fog_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_fog_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -469,12 +465,6 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_reef_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_reef_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -489,17 +479,422 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_archipelago_world_effect = yes
-			every_owned_species = {	
-				change_species_characteristics = {
-					remove_trait = trait_pc_pd_archipelago_preference
-					add_trait = trait_pc_ocean_preference
-                }
-			}
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
+		}
+		#Tropical Worlds
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_tropical
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_tropical }
+				}
+				add_modifier = { modifier = pd_tropical }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_atoll
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_atoll_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_tepui
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_tepui_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_mangrove
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_mangrove_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_cenote
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_cenote_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_fungal
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_fungal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_geothermal
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_geothermal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_biolumen
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_biolumen_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+	}
+}
+#This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
+country_event = {
+	id = pdengine.13
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#Continental
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_retinal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_retinal_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_lake_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_lake_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_tepid_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_tepid_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mushroom_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mushroom_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_temperate_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_temperate_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_forest_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_forest_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_megaflora_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_megaflora_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_petrified_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_petrified_preference
+					add_trait = trait_pc_continental_preference
+				}
+			}
+		}
+		#Ocean
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_cascadian_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_cascadian_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_swamp_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_swamp_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_crag_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_crag_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mushroom_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mushroom_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_fog_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fog_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_reef_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_reef_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_archipelago_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_archipelago_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		#Tropical
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_atoll_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_atoll_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_tepui_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_tepui_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mangrove_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mangrove_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_cenote_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_cenote_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_fungal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fungal_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_geothermal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_geothermal_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_biolumen_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_biolumen_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
 		}
 	}
 }
@@ -524,6 +919,7 @@ planet_event = {
 		OR = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_ocean
+			is_planet_class = pc_tropical
 		}
 	}
 
@@ -736,6 +1132,95 @@ country_event = {
 			}
 		}
 	}
+	#Tropical
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tropical }
+		}
+		name = pdengine.21.tropical
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_tropical }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.atoll
+		hidden_effect = {   
+			from = {       
+				pd_atoll_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.tepui
+		hidden_effect = {   
+			from = {       
+				pd_tepui_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.mangrove
+		hidden_effect = {   
+			from = {       
+				pd_mangrove_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.cenote
+		hidden_effect = {   
+			from = {       
+				pd_cenote_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.fungal
+		hidden_effect = {   
+			from = {       
+				pd_fungal_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.geothermal
+		hidden_effect = {   
+			from = {       
+				pd_geothermal_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.biolumen
+		hidden_effect = {   
+			from = {       
+				pd_biolumen_world_effect = yes
+			}
+		}
+	}
 }
 #This Event Fires After Terraforming and fires a random class
 #Has Planet Flag = pd_random_same_class_terraforming
@@ -852,6 +1337,49 @@ planet_event = {
 						}
 					}
 					pd_archipelago_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_tropical
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tropical }	 
+				}    
+				25 = { 
+					pd_atoll_world_effect = yes
+				}
+				25 = { 
+					pd_tepui_world_effect = yes
+				}
+				25 = { 
+					pd_mangrove_world_effect = yes
+				}
+				25 = { 
+					pd_cenote_world_effect = yes
+				}
+				25 = { 
+					pd_fungal_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_geothermal_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_biolumen_world_effect = yes
 				}                    
 			}
 		}

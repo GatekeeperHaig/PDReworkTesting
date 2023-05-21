@@ -1,52 +1,46 @@
+#Continental
 pd_continental = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_continental.dds"
 	icon_frame = 1
 	planet_max_districts_add = 1
 	planet_housing_mult = 0.05
 }
-
 pd_retinal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_retinal.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	planet_jobs_physics_research_produces_mult = 0.05
 }
-
 pd_lake = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lake.dds"
 	icon_frame = 1
 	district_generator_max = 1
 	pop_growth_from_immigration = 0.05
 }
-
 pd_forest = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_forest.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	planet_jobs_engineering_research_produces_mult = 0.05
 }
-
 pd_tepid = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tepid.dds"
 	icon_frame = 1
 	district_farming_max = 1
 	pop_environment_tolerance = 0.05
 }
-
 pd_mushroom = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mushroom.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	planet_jobs_society_research_produces_mult = 0.05
 }
-
 pd_temperate = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_temperate.dds"
 	icon_frame = 1
 	district_farming_max = 1
 	pop_growth_speed = 0.05
 }
-
 pd_megaflora = {	
 	district_mining_max = 2
 	district_generator_max = 2
@@ -55,7 +49,6 @@ pd_megaflora = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_megaflora.dds"
 	icon_frame = 1
 }
-
 pd_petrified = {	
 	district_mining_max = 4
 	planet_building_build_speed_mult = -0.1
@@ -71,35 +64,30 @@ pd_ocean = {
 	planet_max_districts_add = 1
 	planet_jobs_society_research_produces_mult = 0.05
 }
-
 pd_cascadian = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cascadian.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	planet_jobs_engineering_research_produces_mult = 0.05
 }
-
 pd_swamp = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_swamp.dds"
 	icon_frame = 1
 	district_farming_max = 1
 	planet_jobs_society_research_produces_mult = 0.05
 }
-
 pd_crag = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_crag.dds"
 	icon_frame = 1
 	district_generator_max = 2
 	planet_structures_upkeep_mult = 0.1
 }
-
 pd_fog = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fog.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	pop_environment_tolerance = 0.05
 }
-
 pd_reef = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_reef.dds"
 	icon_frame = 1
@@ -107,11 +95,66 @@ pd_reef = {
 	planet_housing_mult = -0.2
 	planet_structures_cost_mult = 0.1
 }
-
 pd_archipelago = {	
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_archipelago.dds"
 	icon_frame = 1
 	district_farming_max = 4
 	planet_structures_cost_mult = 0.1
 	planet_structures_upkeep_mult = 0.1
+}
+
+#Tropical
+pd_tropical = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tropical.dds"
+	icon_frame = 1
+	planet_max_districts_add = 1
+	planet_jobs_society_research_produces_mult = 0.05
+}
+pd_atoll = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_atoll.dds"
+	icon_frame = 1
+	district_farming_max = 1
+	biological_pop_happiness = 0.1
+}
+pd_tepui = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tepui.dds"
+	icon_frame = 1
+	district_generator_max = 1
+	planet_jobs_society_research_produces_mult = 0.05
+}
+pd_mangrove = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mangrove.dds"
+	icon_frame = 1
+	district_farming_max = 1
+	planet_jobs_society_research_produces_mult = 0.05
+}
+pd_cenote = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cenote.dds"
+	icon_frame = 1
+	district_mining_max = 1
+	planet_jobs_society_research_produces_mult = 0.05
+}
+pd_fungal = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fungal.dds"
+	icon_frame = 1
+	planet_max_districts_add = 1
+	planet_jobs_society_research_produces_mult = 0.05
+}
+pd_geothermal = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_geothermal.dds"
+	icon_frame = 1
+	district_generator_max = 4
+	planet_housing_mult = -0.2
+	planet_amenities_mult = 0.1
+	planet_buildings_cost_mult = 0.1
+	planet_districts_cost_mult = 0.1
+}
+pd_biolumen = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_biolumen.dds"
+	icon_frame = 1
+	district_farming_max = 4
+	biological_pop_happiness = 0.05
+	lithoid_pop_happiness = 0.05
+	planet_immigration_pull_mult = 0.25
+	planet_building_build_speed_mult = -0.10
 }
