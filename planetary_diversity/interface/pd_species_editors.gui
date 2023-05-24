@@ -612,6 +612,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_fog"
 			}	
 			buttonType = {
+				name = "pc_pd_kelp"
+				position = { x = @planet_col2 y = @planet_row6 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_kelp"
+			}	
+			buttonType = {
 				name = "pc_pd_archipelago"
 				position = { x = @planet_col2 y = @planet_row7 }
 				spriteType = "GFX_dummy_3d_home_world_new"

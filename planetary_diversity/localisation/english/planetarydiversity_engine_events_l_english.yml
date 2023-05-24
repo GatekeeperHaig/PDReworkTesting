@@ -17,6 +17,7 @@
  pdengine.21.swamp:0 "$pc_pd_swamp$"
  pdengine.21.crag:0 "$pc_pd_crag$"
  pdengine.21.fog:0 "$pc_pd_fog$"
+ pdengine.21.kelp:0 "$pc_pd_kelp$"
  pdengine.21.reef:0 "$pc_pd_reef$"
  pdengine.21.archipelago:0 "$pc_pd_archipelago$"
  pdengine.21.tropical:0 "$pc_tropical$"

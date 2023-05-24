@@ -2,7 +2,7 @@
 pd_continental = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_continental.dds"
 	icon_frame = 1
-	planet_max_districts_add = 1
+	planet_max_districts_add = 2
 	planet_housing_mult = 0.05
 }
 pd_retinal = {
@@ -84,6 +84,12 @@ pd_crag = {
 }
 pd_fog = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fog.dds"
+	icon_frame = 1
+	district_mining_max = 1
+	pop_environment_tolerance = 0.05
+}
+pd_kelp = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_kelp.dds"
 	icon_frame = 1
 	district_mining_max = 1
 	pop_environment_tolerance = 0.05

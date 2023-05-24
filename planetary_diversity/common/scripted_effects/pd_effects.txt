@@ -53,6 +53,10 @@ remove_pd_modifier = {
 		remove_modifier = pd_fog
 	}
 	if = {
+		limit = { has_modifier = pd_kelp }
+		remove_modifier = pd_kelp
+	}
+	if = {
 		limit = { has_modifier = pd_reef }
 		remove_modifier = pd_reef
 	}
@@ -208,6 +212,16 @@ pd_fog_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_fog	
 		entity = "fog_planet_01_entity"
+	}
+}
+pd_kelp_world_effect = {
+	add_modifier = { 
+		modifier = pd_kelp
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_kelp
+		entity = "kelp_planet_01_entity"
 	}
 }
 pd_reef_world_effect = {
