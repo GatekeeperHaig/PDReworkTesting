@@ -1,0 +1,162 @@
+###PD Base Classes	
+# These are dummy classes and are not to be used, they are just for reference for the engine to turn them into the correct class. 
+# Used in terraforming, and on game start.
+
+###Desert
+#Dune
+pc_pd_dune = {
+	entity = "sandsea_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_dune
+	#appearance
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
+	#planet defines
+	climate = "dry"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = yes
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}	
+
+#Oasis
+pc_pd_oasis = {
+	entity = "oasis_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_oasis
+	#appearance
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	#planet defines
+	climate = "dry"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Outback
+pc_pd_outback = {
+	entity = "outback_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_outback
+	#appearance
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	#planet defines
+	climate = "dry"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = yes
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}	
+
+#Coastal
+pc_pd_coastal = {
+	entity = "coastal_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_coastal
+	#appearance
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	#planet defines
+	climate = "dry"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = no
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Fungi
+pc_pd_fungi = {
+	entity = "fungi_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_coastal
+	#appearance
+	picture = pc_coastal
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	#planet defines
+	climate = "dry"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	uses_alternative_skies_for_moons = no
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Salt
+pc_pd_salt = {
+	entity = "salt_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_salt
+	climate = "dry"
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_salt.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	#modifier = { pop_environment_tolerance = 0.40 }	
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Aquifer
+pc_pd_aquifer = {
+	entity = "aquifer_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_aquifer
+	climate = "dry"
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}

@@ -2,7 +2,7 @@
 
 ###Modifiers
  #Wet Worlds
- pd_continental:0 "Continetal World"
+ pd_continental:0 "Continental World"
  pd_continental_desc:0 "Great landmasses are separated by oceans, with large climate variations depending on latitude and precipitation."
  pd_retinal: "Retinal World"
  pd_retinal_desc: "Plant life is retinaldehyde-based instead of chlorophyll-based giving the planet a distinctive purple hue."
@@ -20,6 +20,8 @@
  pd_megaflora_desc:0 "The dense megaflora world has an abundance of gigantic flora whose giant roots often unearth valuable deposits, and also produce energy-rich sap to utilize. Building around the megaflora means construction costs are higher than normal."
  pd_petrified:0 "Petrified Woods World"
  pd_petrified_desc:0 "The petrified woods can be used for building materials, but take considerable effort to remove for construction."
+
+ #Ocean
  pd_ocean:0 "Ocean World"
  pd_ocean_desc:0 "Oceans cover more than §Y90%§! of the surface, with scattered islands making up the remaining percentage."
  pd_cascadian:0 "Cascadian World"
@@ -37,6 +39,7 @@
  pd_archipelago:0 "Archipelago World"
  pd_archipelago_desc:0 "One planet-wide ocean with scattered island archipelagos covers the surface. The rich volcanic activity causes islands to appear and disappear at a comparatively high rate, creating an always changing landscape."
 
+ #Tropical
  pd_tropical:0 "Tropical World"
  pd_tropical_desc:0 "Seasons with significant precipitation are interchanged with drier periods. Most landmasses are covered in dense vegetation."
  pd_atoll:0 "Atoll World"
@@ -53,3 +56,21 @@
  pd_geothermal_desc:0 "Tropical rifts that break up the expanses of ice, heated by natural geothermal vents with a nitrogen-oxygen atmosphere. The hydrosphere is in melt water and steam rising from vents"
  pd_biolumen:0 "Bioluminescent World"
  pd_biolumen_desc:0 "Particles in the atmosphere cause almost constant cloud cover on this planet but despite this life thrives on the surface. Almost all of the flora and fauna exhibit Bioluminescent traits."
+
+ #Desert
+ pd_desert:0 "Desert World"
+ pd_desert_desc:0 "Precipitation and major bodies of surface water are relatively rare. Significant temperature variations between day and night cycles. Vegetation is scarce, but even moderate precipitation can make the desert bloom."
+ pd_dune:0 "Dune World"
+ pd_dune_desc:0 "Seas of sand dunes cover a considerable portion of the surface. Hydrosphere is mainly in underground aquifers that rise up in oasis and mountain springs."
+ pd_oasis:0 "Oasis World"
+ pd_oasis_desc:0 "Hydrosphere only supports one large body of water which has a band vegetation around it. Rain barely reaches the inland desert that covers the majority of the planet."
+ pd_outback:0 "Outback World"
+ pd_outback_desc:0 "Most of the planet is covered in arid or semi-arid shrublands and deserts, while areas around water have more vegetation. Hydrosphere is mostly confined to a few inland seas and natural underground springs."
+ pd_coastal:0 "Coastal World"
+ pd_coastal_desc:0 "Hydrosphere is in deep cold oceans with currents that cause high atmospheric stability reducing rainfall on the land, but allowing fog and haze which provides sufficient moisture to sustain a variety of lichens, succulents, and shrubs."
+ pd_fungi:0 "Desert Fungi World"
+ pd_fungi_desc:0 "Dry and covered in volcanic ash, this world is covered in desert fungi which are resistant to high temptures, dryness and low nutrition."
+ pd_salt:0 "Salt World"
+ pd_salt_desc:0 "While rich mineral deposits can be found all over this planet much of the surface is inhospitable to most forms of plant and animal life."
+ pd_aquifer:0 "Aquifer World"
+ pd_aquifer_desc:0 "While the sands do not provide much shelter, the ever moving lagoons and underwater river systems are full of unique lifeforms and are excellent places for water based agriculture."

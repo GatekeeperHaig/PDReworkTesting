@@ -61,5 +61,14 @@ has_pd_modifier = {
 		has_modifier = pd_fungal
 		has_modifier = pd_geothermal
 		has_modifier = pd_biolumen
+		#Desert
+		has_modifier = pd_desery
+		has_modifier = pd_dune
+		has_modifier = pd_oasis
+		has_modifier = pd_outback
+		has_modifier = pd_coastal
+		has_modifier = pd_fungi
+		has_modifier = pd_salt
+		has_modifier = pd_aquifer
  	}
 }

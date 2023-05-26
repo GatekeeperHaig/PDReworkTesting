@@ -17,7 +17,7 @@ country_event = {
 	fire_only_once = yes
 
 	immediate = {
-		#Continetal
+		#Continental
         every_galaxy_planet = {                 
             limit = { 
 				is_planet_class = pc_continental 
@@ -156,6 +156,51 @@ country_event = {
 				}                      
 			}
         }
+		#Desert
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_desert
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_desert }	 
+				}    
+				25 = { 
+					pd_dune_world_effect = yes
+				}
+				25 = { 
+					pd_oasis_world_effect = yes
+				}
+				25 = { 
+					pd_outback_world_effect = yes
+				}
+				25 = { 
+					pd_coastal_world_effect = yes
+				} 
+				25 = { 
+					pd_fungi_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_salt_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_aquifer_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -165,7 +210,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		#Continetal Planets
+		#Continental Planets
 		every_galaxy_planet = {         
 			limit = {
 				is_pd_continental = yes
@@ -256,6 +301,35 @@ country_event = {
 				}
 			}
 		}
+		#Desert Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_desert = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_desert
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_desert }	 
+				}    
+				25 = { 
+					pd_dune_world_effect = yes
+				}
+				25 = { 
+					pd_oasis_world_effect = yes
+				}
+				25 = { 
+					pd_outback_world_effect = yes
+				}
+				25 = { 
+					pd_coastal_world_effect = yes
+				} 
+				25 = { 
+					pd_fungi_world_effect = yes
+				}
+			}
+		}
 	}
 }
 #This Event Changes any homeworlds back into normal classes after game start
@@ -265,7 +339,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		#Continetal Planets
+		#Continental Planets
 		every_galaxy_planet = {         
 			limit = {
 				is_planet_class = pc_continental
@@ -618,6 +692,119 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Desert
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_desert
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_desert }
+				}
+				add_modifier = { modifier = pd_desert }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_dune
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert         
+			pd_dune_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_oasis
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert         
+			pd_oasis_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_outback
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert      
+			pd_outback_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_coastal
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert      
+			pd_coastal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_fungi
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert      
+			pd_fungi_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_salt
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert      
+			pd_salt_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_aquifer
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_desert      
+			pd_aquifer_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -929,6 +1116,98 @@ country_event = {
 				}
 			}
 		}
+		#Desert
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_dune_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_dune_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_oasis_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_oasis_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_outback_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_outback_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_coastal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_coastal_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_fungi_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fungi_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_salt_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_salt_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_aquifer_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_aquifer_preference
+					add_trait = trait_pc_desert_preference
+				}
+			}
+		}
 	}
 }
 
@@ -953,6 +1232,7 @@ planet_event = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_ocean
 			is_planet_class = pc_tropical
+			is_planet_class = pc_desert
 		}
 	}
 
@@ -975,7 +1255,7 @@ country_event = {
 		remove_pd_modifier = yes
 	}
 
-	#Continetal
+	#Continental
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_continental }
@@ -1190,7 +1470,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.atoll
 		hidden_effect = {   
@@ -1201,7 +1481,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.tepui
 		hidden_effect = {   
@@ -1212,7 +1492,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.mangrove
 		hidden_effect = {   
@@ -1223,7 +1503,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.cenote
 		hidden_effect = {   
@@ -1234,7 +1514,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.fungal
 		hidden_effect = {   
@@ -1245,7 +1525,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.geothermal
 		hidden_effect = {   
@@ -1256,12 +1536,101 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_ocean }
+			from = { is_planet_class = pc_tropical }
 		}
 		name = pdengine.21.biolumen
 		hidden_effect = {   
 			from = {       
 				pd_biolumen_world_effect = yes
+			}
+		}
+	}
+	#Desert
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.desert
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_desert }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.dune
+		hidden_effect = {   
+			from = {       
+				pd_dune_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.oasis
+		hidden_effect = {   
+			from = {       
+				pd_oasis_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.outback
+		hidden_effect = {   
+			from = {       
+				pd_outback_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.coastal
+		hidden_effect = {   
+			from = {       
+				pd_coastal_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.fungi
+		hidden_effect = {   
+			from = {       
+				pd_fungi_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.salt
+		hidden_effect = {   
+			from = {       
+				pd_salt_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_desert }
+		}
+		name = pdengine.21.aquifer
+		hidden_effect = {   
+			from = {       
+				pd_aquifer_world_effect = yes
 			}
 		}
 	}
@@ -1427,6 +1796,49 @@ planet_event = {
 						}
 					}
 					pd_biolumen_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_desert
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_desert }	 
+				}    
+				25 = { 
+					pd_dune_world_effect = yes
+				}
+				25 = { 
+					pd_oasis_world_effect = yes
+				}
+				25 = { 
+					pd_outback_world_effect = yes
+				}
+				25 = { 
+					pd_coastal_world_effect = yes
+				}
+				25 = { 
+					pd_fungi_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_salt_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_salt_world_effect = yes
 				}                    
 			}
 		}

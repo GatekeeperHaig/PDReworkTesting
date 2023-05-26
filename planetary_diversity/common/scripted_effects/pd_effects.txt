@@ -1,5 +1,6 @@
 #Removes PD Modifiers
 remove_pd_modifier = {
+	#Continental
 	if = {
 		limit = { has_modifier = pd_continental }
 		remove_modifier = pd_continental
@@ -25,6 +26,10 @@ remove_pd_modifier = {
 		remove_modifier = pd_forest
 	}
 	if = {
+		limit = { has_modifier = pd_temperate }
+		remove_modifier = pd_temperate
+	}
+	if = {
 		limit = { has_modifier = pd_megaflora }
 		remove_modifier = pd_megaflora
 	}
@@ -32,6 +37,7 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_petrified }
 		remove_modifier = pd_petrified
 	}
+	#Ocean
 	if = {
 		limit = { has_modifier = pd_ocean }
 		remove_modifier = pd_ocean
@@ -61,6 +67,15 @@ remove_pd_modifier = {
 		remove_modifier = pd_reef
 	}
 	if = {
+		limit = { has_modifier = pd_archipelgo }
+		remove_modifier = pd_archipelgo
+	}
+	#Tropical
+	if = {
+		limit = { has_modifier = pd_tropical }
+		remove_modifier = pd_tropical
+	}
+	if = {
 		limit = { has_modifier = pd_atoll }
 		remove_modifier = pd_atoll
 	}
@@ -88,10 +103,43 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_biolumen }
 		remove_modifier = pd_biolumen
 	}
+	#Desert
+	if = {
+		limit = { has_modifier = pd_desert }
+		remove_modifier = pd_desert
+	}
+	if = {
+		limit = { has_modifier = pd_dune }
+		remove_modifier = pd_dune
+	}
+	if = {
+		limit = { has_modifier = pd_oasis }
+		remove_modifier = pd_oasis
+	}
+	if = {
+		limit = { has_modifier = pd_outback }
+		remove_modifier = pd_outback
+	}
+	if = {
+		limit = { has_modifier = pd_coastal }
+		remove_modifier = pd_coastal
+	}
+	if = {
+		limit = { has_modifier = pd_fungi }
+		remove_modifier = pd_fungi
+	}
+	if = {
+		limit = { has_modifier = pd_salt }
+		remove_modifier = pd_salt
+	}
+	if = {
+		limit = { has_modifier = pd_aquifer }
+		remove_modifier = pd_aquifer
+	}
 }
 
 ###Create Visual Planets Effects
-#Continetal
+#Continental
 pd_retinal_world_effect = {
 	add_modifier = { 
 		modifier = pd_retinal 
@@ -314,5 +362,87 @@ pd_biolumen_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_biolumen
 		entity = "biolumen_planet_01_entity"
+	}
+}
+
+#Desert
+pd_dune_world_effect = {
+	add_modifier = { 
+		modifier = pd_dune
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_dune
+		entity = "sandsea_planet_01_entity"
+	}
+}
+pd_oasis_world_effect = {
+	add_modifier = { 
+		modifier = pd_oasis
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_oasis
+		entity = "oasis_planet_01_entity"
+	}
+}
+pd_outback_world_effect = {
+	add_modifier = { 
+		modifier = pd_outback
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_outback
+		entity = "outback_planet_01_entity"
+	}
+}
+pd_coastal_world_effect = {
+	add_modifier = { 
+		modifier = pd_coastal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_coastal
+		entity = "coastal_planet_01_entity"
+	}
+}
+pd_coastal_world_effect = {
+	add_modifier = { 
+		modifier = pd_coastal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_coastal
+		entity = "coastal_planet_01_entity"
+	}
+}
+pd_fungi_world_effect = {
+	add_modifier = { 
+		modifier = pd_fungi
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_fungi
+		entity = "fungi_planet_01_entity"
+	}
+}
+pd_salt_world_effect = {
+	add_modifier = { 
+		modifier = pd_salt
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_salt
+		entity = "salt_planet_01_entity"
+	}
+}
+pd_aquifer_world_effect = {
+	add_modifier = { 
+		modifier = pd_aquifer
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_aquifer
+		entity = "aquifer_planet_01_entity"
 	}
 }
