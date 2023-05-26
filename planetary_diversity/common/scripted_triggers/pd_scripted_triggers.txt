@@ -29,6 +29,30 @@ is_pd_ocean = {
  		is_planet_class = pc_pd_archipelago
  	}
 }
+is_pd_tropical = {
+ 	OR = {
+ 		is_planet_class = pc_tropical
+ 		is_planet_class = pc_pd_atoll
+ 		is_planet_class = pc_pd_tepui
+ 		is_planet_class = pc_pd_mangrove
+ 		is_planet_class = pc_pd_cenote
+ 		is_planet_class = pc_pd_fungal
+		is_planet_class = pc_pd_geothermal
+ 		is_planet_class = pc_pd_biolumen
+ 	}
+}
+is_pd_desert = {
+ 	OR = {
+ 		is_planet_class = pc_desert
+ 		is_planet_class = pc_pd_dune
+ 		is_planet_class = pc_pd_oasis
+ 		is_planet_class = pc_pd_outback
+ 		is_planet_class = pc_pd_coastal
+ 		is_planet_class = pc_pd_fungi
+		is_planet_class = pc_pd_salt
+ 		is_planet_class = pc_pd_aquifer
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -62,7 +86,7 @@ has_pd_modifier = {
 		has_modifier = pd_geothermal
 		has_modifier = pd_biolumen
 		#Desert
-		has_modifier = pd_desery
+		has_modifier = pd_desert
 		has_modifier = pd_dune
 		has_modifier = pd_oasis
 		has_modifier = pd_outback

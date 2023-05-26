@@ -35,7 +35,7 @@ pc_pd_oasis = {
 	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	climate = "dry"
 	colonizable = yes
@@ -57,7 +57,7 @@ pc_pd_outback = {
 	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	climate = "dry"
 	colonizable = yes
@@ -80,7 +80,7 @@ pc_pd_coastal = {
 	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	climate = "dry"
 	colonizable = yes
@@ -100,11 +100,10 @@ pc_pd_fungi = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_coastal
 	#appearance
-	picture = pc_coastal
 	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	climate = "dry"
 	colonizable = yes
@@ -128,7 +127,7 @@ pc_pd_salt = {
 	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_salt.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	colonizable = yes
 	initial = yes
