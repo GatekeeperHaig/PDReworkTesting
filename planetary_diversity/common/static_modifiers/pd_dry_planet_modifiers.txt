@@ -39,3 +39,44 @@ pd_aquifer = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aquifer.dds"
 	icon_frame = 1
 }
+
+#Arid
+pd_arid = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_arid.dds"
+	icon_frame = 1
+}
+pd_mesa = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mesa.dds"
+	icon_frame = 1
+}
+pd_fog_desert = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fog_desert.dds"
+	icon_frame = 1
+}
+pd_mediterranean = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mediterranean.dds"
+	icon_frame = 1
+}
+pd_badlands = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_badlands.dds"
+	icon_frame = 1
+}
+pd_succulent = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_succulent.dds"
+	icon_frame = 1
+}
+pd_coral = {	
+	district_mining_max = 4
+	pop_growth_speed = -0.05
+	pop_environment_tolerance = -0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_coral.dds"
+	icon_frame = 1
+}
+pd_primal = {	
+	district_generator_max = 4
+	pop_environment_tolerance = -0.1
+	planet_buildings_cost_mult = 0.10
+	planet_districts_cost_mult = 0.10
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_primal.dds"
+	icon_frame = 1
+}

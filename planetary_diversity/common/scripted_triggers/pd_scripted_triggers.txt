@@ -53,6 +53,18 @@ is_pd_desert = {
  		is_planet_class = pc_pd_aquifer
  	}
 }
+is_pd_arid = {
+ 	OR = {
+ 		is_planet_class = pc_arid
+ 		is_planet_class = pc_pd_mesa
+ 		is_planet_class = pc_pd_fog_desert
+ 		is_planet_class = pc_pd_mediterranean
+ 		is_planet_class = pc_pd_badlands
+ 		is_planet_class = pc_pd_succulent
+		is_planet_class = pc_pd_coral
+ 		is_planet_class = pc_pd_primal
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -94,5 +106,14 @@ has_pd_modifier = {
 		has_modifier = pd_fungi
 		has_modifier = pd_salt
 		has_modifier = pd_aquifer
+		#Arid
+		has_modifier = pd_arid
+		has_modifier = pd_mesa
+		has_modifier = pd_fog_desert
+		has_modifier = pd_mediterranean
+		has_modifier = pd_badlands
+		has_modifier = pd_succulent
+		has_modifier = pd_coral
+		has_modifier = pd_primal
  	}
 }

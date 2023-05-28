@@ -201,6 +201,51 @@ country_event = {
 				}                      
 			}
         }
+		#Arid
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_arid
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pc_arid }	 
+				}    
+				25 = { 
+					pd_mesa_world_effect = yes
+				}
+				25 = { 
+					pd_fog_desert_world_effect = yes
+				}
+				25 = { 
+					pd_mediterranean_world_effect = yes
+				}
+				25 = { 
+					pd_badlands_world_effect = yes
+				} 
+				25 = { 
+					pd_succulent_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_coral_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_primal_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -327,6 +372,35 @@ country_event = {
 				} 
 				25 = { 
 					pd_fungi_world_effect = yes
+				}
+			}
+		}
+		#Arid Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_arid = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_arid
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_arid }	 
+				}    
+				25 = { 
+					pd_mesa_world_effect = yes
+				}
+				25 = { 
+					pd_fog_desert_world_effect = yes
+				}
+				25 = { 
+					pd_mediterranean_world_effect = yes
+				}
+				25 = { 
+					pd_badlands_world_effect = yes
+				} 
+				25 = { 
+					pd_succulent_world_effect = yes
 				}
 			}
 		}
@@ -805,6 +879,119 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Arid
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_arid
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_arid }
+				}
+				add_modifier = { modifier = pd_arid }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_mesa
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_mesa_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_fog_desert
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_fog_desert_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_mediterranean
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_mediterranean_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_badlands
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_badlands_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_succulent
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_succulent_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_coral
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_coral_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_primal
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_primal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -1208,6 +1395,98 @@ country_event = {
 				}
 			}
 		}
+		#Arid
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mesa_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mesa_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_fog_desert_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fog_desert_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mediterranean_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mediterranean_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_badlands_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_badlands_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_succulent_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_succulent_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_coral_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_coral_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_primal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_primal_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
 	}
 }
 
@@ -1233,6 +1512,7 @@ planet_event = {
 			is_planet_class = pc_ocean
 			is_planet_class = pc_tropical
 			is_planet_class = pc_desert
+			is_planet_class = pc_arid
 		}
 	}
 
@@ -1634,6 +1914,95 @@ country_event = {
 			}
 		}
 	}
+	#Arid
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.arid
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_arid }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.mesa
+		hidden_effect = {   
+			from = {       
+				pd_mesa_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.fog_desert
+		hidden_effect = {   
+			from = {       
+				pd_fog_desert_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.mediterranean
+		hidden_effect = {   
+			from = {       
+				pd_mediterranean_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.badlands
+		hidden_effect = {   
+			from = {       
+				pd_badlands_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.succulent
+		hidden_effect = {   
+			from = {       
+				pd_succulent_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.coral
+		hidden_effect = {   
+			from = {       
+				pd_coral_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
+		name = pdengine.21.primal
+		hidden_effect = {   
+			from = {       
+				pd_primal_world_effect = yes
+			}
+		}
+	}
 }
 #This Event Fires After Terraforming and fires a random class
 #Has Planet Flag = pd_random_same_class_terraforming
@@ -1654,14 +2023,14 @@ planet_event = {
 		can_have_habitable_deposits = yes
 		OR = {
 			is_planet_class = pc_continental
-			is_planet_class = pc_tropical
 			is_planet_class = pc_ocean
-			is_planet_class = pc_arid
+			is_planet_class = pc_tropical
 			is_planet_class = pc_desert
+			is_planet_class = pc_arid
 			is_planet_class = pc_savannah
 			is_planet_class = pc_arctic
-			is_planet_class = pc_alpine
 			is_planet_class = pc_tundra
+			is_planet_class = pc_alpine
 		}
 	}
 
@@ -1839,6 +2208,49 @@ planet_event = {
 						}
 					}
 					pd_salt_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_arid
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_arid }	 
+				}    
+				25 = { 
+					pd_mesa_world_effect = yes
+				}
+				25 = { 
+					pd_fog_desert_world_effect = yes
+				}
+				25 = { 
+					pd_mediterranean_world_effect = yes
+				}
+				25 = { 
+					pd_badlands_world_effect = yes
+				}
+				25 = { 
+					pd_succulent_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_coral_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_primal_world_effect = yes
 				}                    
 			}
 		}

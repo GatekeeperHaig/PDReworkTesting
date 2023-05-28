@@ -794,52 +794,60 @@ guiTypes = {
 				pdx_tooltip = "pc_arid"
 			}
 			buttonType = {
-				name = "pc_mesa"
+				name = "pc_pd_mesa"
 				position = { x = @planet_col5 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_mesa"
+				pdx_tooltip = "pc_pd_mesa"
 			}
 			buttonType = {
-				name = "pc_hadesert"
+				name = "pc_pd_fog_desert"
 				position = { x = @planet_col5 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_hadesert"
+				pdx_tooltip = "pc_pd_fog_desert"
 			}
 			buttonType = {
-				name = "pc_med"
+				name = "pc_pd_mediterranean"
 				position = { x = @planet_col5 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_med"
+				pdx_tooltip = "pc_pd_mediterranean"
 			}
 			buttonType = {
-				name = "pc_badlands"
+				name = "pc_pd_badlands"
 				position = { x = @planet_col5 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "interface"
-				pdx_tooltip = "pc_badlands"
+				pdx_tooltip = "pc_pd_badlands"
 			}
 			buttonType = {
-				name = "pc_coral"
+				name = "pc_pd_succulent"
 				position = { x = @planet_col5 y = @planet_row6 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
-				clicksound = "select_click"
-				pdx_tooltip = "pc_coral"
+				clicksound = "interface"
+				pdx_tooltip = "pc_pd_succulent"
 			}
 			buttonType = {
-				name = "pc_primal"
+				name = "pc_pd_coral"
 				position = { x = @planet_col5 y = @planet_row7 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_primal"
+				pdx_tooltip = "pc_pd_coral"
+			}
+			buttonType = {
+				name = "pc_pd_primal"
+				position = { x = @planet_col5 y = @planet_row8 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_primal"
 			}
 
 

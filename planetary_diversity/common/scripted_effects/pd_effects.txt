@@ -136,6 +136,39 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_aquifer }
 		remove_modifier = pd_aquifer
 	}
+	#Arid
+	if = {
+		limit = { has_modifier = pd_arid }
+		remove_modifier = pd_arid
+	}
+	if = {
+		limit = { has_modifier = pd_mesa }
+		remove_modifier = pd_mesa
+	}
+	if = {
+		limit = { has_modifier = pd_fog_desert }
+		remove_modifier = pd_fog_desert
+	}
+	if = {
+		limit = { has_modifier = pd_mediterranean }
+		remove_modifier = pd_mediterranean
+	}
+	if = {
+		limit = { has_modifier = pd_badlands }
+		remove_modifier = pd_badlands
+	}
+	if = {
+		limit = { has_modifier = pd_succulent }
+		remove_modifier = pd_succulent
+	}
+	if = {
+		limit = { has_modifier = pd_coral }
+		remove_modifier = pd_coral
+	}
+	if = {
+		limit = { has_modifier = pd_primal }
+		remove_modifier = pd_primal
+	}
 }
 
 ###Create Visual Planets Effects
@@ -434,5 +467,77 @@ pd_aquifer_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_aquifer
 		entity = "aquifer_planet_01_entity"
+	}
+}
+
+#Arid
+pd_mesa_world_effect = {
+	add_modifier = { 
+		modifier = pd_mesa
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_mesa
+		entity = "mesa_planet_01_entity"
+	}
+}
+pd_fog_desert_world_effect = {
+	add_modifier = { 
+		modifier = pd_fog_desert
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_fog_desert
+		entity = "hadesert_planet_01_entity"
+	}
+}
+pd_mediterranean_world_effect = {
+	add_modifier = { 
+		modifier = pd_mediterranean
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_mediterranean
+		entity = "med_planet_01_entity"
+	}
+}
+pd_badlands_world_effect = {
+	add_modifier = { 
+		modifier = pd_badlands
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_badlands
+		entity = "badlands_planet_01_entity"
+	}
+}
+pd_succulent_world_effect = {
+	add_modifier = { 
+		modifier = pd_succulent
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_succulent
+		entity = "succulent_planet_01_entity"
+	}
+}
+pd_coral_world_effect = {
+	add_modifier = { 
+		modifier = pd_coral
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_coral
+		entity = "coral_planet_01_entity"
+	}
+}
+pd_primal_world_effect = {
+	add_modifier = { 
+		modifier = pd_primal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_primal
+		entity = "primal_planet_01_entity"
 	}
 }
