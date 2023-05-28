@@ -163,7 +163,7 @@
  mod_pc_pd_coastal_habitability:0 "Desert Habitability"
  trait_pc_pd_coastal_preference:0 "Desert Preference"
  trait_pc_pd_coastal_preference_desc:0 "trait_pc_arctic_preference_desc"
- pc_pd_fungi:0 "Funig World"
+ pc_pd_fungi:0 "Fungi World"
  pc_pd_fungi_desc:0 "Rocky world with a nitrogen-oxygen atmosphere. The volcanic ash coved terrain suppoort large colonies of desert fungi. Much of the surface is inhospitable to most forms of plant and animal life."
  pc_pd_fungi_adj:0 "fungied"
  mod_pc_pd_fungi_habitability:0 "Desert Habitability"
