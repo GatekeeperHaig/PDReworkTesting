@@ -87,7 +87,7 @@
  pd_badlands:0 "Badlands World"
  pd_badlands_desc:0 "The dry terrain consists mainly of sedimentary rocks and clay-rich soils eroded by wind and water. The vegetation is primarily in shrubs and hardy grasses"
  pd_succulent:0 "Succulent World"
- pd_succulent_desc:0 " High temperatures and low sporadic rainfall has caused vegetation to adapt to water-retaining techniques."
+ pd_succulent_desc:0 " High temperatures and low sporadic rainfall has caused vegetation to adapt water-retaining techniques."
  pd_coral:0 "Coral World"
  pd_coral_desc:0 "Once covered in oceans, it has almost wholly lost its hydrosphere due to ecological factors. The corals of this world have adapted to the dry environment."
  pd_primal:0 "Primal World"

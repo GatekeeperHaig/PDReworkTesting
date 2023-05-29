@@ -213,7 +213,7 @@ country_event = {
 			}	
 			random_list = {
 				25 = {
-					add_modifier = { modifier = pc_arid }	 
+					add_modifier = { modifier = pd_arid }	 
 				}    
 				25 = { 
 					pd_mesa_world_effect = yes
