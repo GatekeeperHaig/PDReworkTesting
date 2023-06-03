@@ -77,6 +77,18 @@ is_pd_savannah = {
  		is_planet_class = pc_pd_sinkhole
  	}
 }
+is_pd_arctic = {
+ 	OR = {
+ 		is_planet_class = pc_arctic
+ 		is_planet_class = pc_pd_cold_desert
+ 		is_planet_class = pc_pd_glacial
+ 		is_planet_class = pc_pd_antarctic
+ 		is_planet_class = pc_pd_aeolian
+ 		is_planet_class = pc_pd_ice_spike
+		is_planet_class = pc_pd_storm
+ 		is_planet_class = pc_pd_iceberg
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -136,5 +148,14 @@ has_pd_modifier = {
 		has_modifier = pd_aspen
 		has_modifier = pd_supercontinent
 		has_modifier = pd_sinkhole
+		#Arctic
+		has_modifier = pd_arctic
+		has_modifier = pd_cold_desert
+		has_modifier = pd_glacial
+		has_modifier = pd_antarctic
+		has_modifier = pd_aeolian
+		has_modifier = pd_ice_spike
+		has_modifier = pd_storm
+		has_modifier = pd_iceberg
  	}
 }

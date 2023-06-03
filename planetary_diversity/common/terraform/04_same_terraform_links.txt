@@ -118,3 +118,26 @@ terraform_link = {
 		weight = 0
 	}
 }
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_arctic"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @basicTypeCost
+		}
+	}
+
+	duration = 1800
+
+	condition = {
+		has_technology = "tech_terrestrial_sculpting"
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

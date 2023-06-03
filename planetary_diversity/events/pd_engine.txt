@@ -291,6 +291,51 @@ country_event = {
 				}                      
 			}
         }
+		#Arctic
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_arctic
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_arctic }	 
+				}    
+				25 = { 
+					pd_cold_desert_world_effect = yes
+				}
+				25 = { 
+					pd_glacial_world_effect = yes
+				}
+				25 = { 
+					pd_antarctic_world_effect = yes
+				}
+				25 = { 
+					pd_aeolian_world_effect = yes
+				} 
+				25 = { 
+					pd_ice_spike_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_storm_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_iceberg_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -475,6 +520,35 @@ country_event = {
 				} 
 				25 = { 
 					pd_aspen_world_effect = yes
+				}
+			}
+		}
+		#Arctic Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_arctic = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_arctic
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_arctic }	 
+				}    
+				25 = { 
+					pd_cold_desert_world_effect = yes
+				}
+				25 = { 
+					pd_glacial_world_effect = yes
+				}
+				25 = { 
+					pd_antarctic_world_effect = yes
+				}
+				25 = { 
+					pd_aeolian_world_effect = yes
+				} 
+				25 = { 
+					pd_ice_spike_world_effect = yes
 				}
 			}
 		}
@@ -1179,6 +1253,119 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Arctic
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_arctic
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_arctic }
+				}
+				add_modifier = { modifier = pd_arctic }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_cold_desert
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_cold_desert_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_glacial
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_glacial_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_antarctic
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_antarctic_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_aeolian
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_aeolian_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_ice_spike
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_ice_spike_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_storm
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_storm_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_iceberg
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_iceberg_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -1766,6 +1953,98 @@ country_event = {
 				}
 			}
 		}
+		#Arctic
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_cold_desert_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_cold_desert_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_glacial_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_glacial_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_antarctic_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_antarctic_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_aeolian_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_aeolian_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_ice_spike_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_ice_spike_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_storm_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_storm_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_iceberg_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_iceberg_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
 	}
 }
 
@@ -1793,6 +2072,7 @@ planet_event = {
 			is_planet_class = pc_desert
 			is_planet_class = pc_arid
 			is_planet_class = pc_savannah
+			is_planet_class = pc_arctic
 		}
 	}
 
@@ -2372,6 +2652,95 @@ country_event = {
 			}
 		}
 	}
+	#Arctic
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.arctic
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_arctic }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.cold_desert
+		hidden_effect = {   
+			from = {       
+				pd_cold_desert_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.glacial
+		hidden_effect = {   
+			from = {       
+				pd_glacial_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.antarctic
+		hidden_effect = {   
+			from = {       
+				pd_antarctic_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.aeolian
+		hidden_effect = {   
+			from = {       
+				pd_aeolian_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.ice_spike
+		hidden_effect = {   
+			from = {       
+				pd_ice_spike_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.storm
+		hidden_effect = {   
+			from = {       
+				pd_storm_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.iceberg
+		hidden_effect = {   
+			from = {       
+				pd_iceberg_world_effect = yes
+			}
+		}
+	}
 }
 
 #This Event Fires After Terraforming and fires a random class
@@ -2664,6 +3033,49 @@ planet_event = {
 						}
 					}
 					pd_sinkhole_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_arctic
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_arctic }	 
+				}    
+				25 = { 
+					pd_cold_desert_world_effect = yes
+				}
+				25 = { 
+					pd_glacial_world_effect = yes
+				}
+				25 = { 
+					pd_antarctic_world_effect = yes
+				}
+				25 = { 
+					pd_aeolian_arid_world_effect = yes
+				}
+				25 = { 
+					pd_ice_spike_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_storm_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_iceberg_world_effect = yes
 				}                    
 			}
 		}

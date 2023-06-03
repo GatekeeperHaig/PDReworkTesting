@@ -1,17 +1,17 @@
 #####    Planets    ######
 @ringworld_segment_size = 50
 
-###Arid
-#Mesa
+###Arctic
+#Cold Desert
 entity = {
-	name = "mesa_planet_01_entity"
+	name = "frozen_desert_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "mesa_01_diffuse.dds"
-	texture_normal = "arid_01_normal.dds"
-	texture_specular = "arid_01_spec.dds"
+	texture_diffuse = "frozen_desert_01_diffuse.dds"
+	texture_normal = "desert_01_normal.dds"
+	texture_specular = "desert_01_spec.dds"
 	}
 	
 	##cloud texture override
@@ -37,51 +37,16 @@ entity = {
 	}
 }
 
-#Fog Desert
+#Glacial
 entity = {
-	name = "hadesert_planet_01_entity"
+	name = "glacial_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "hadesert_01_diffuse.dds"
-	texture_normal = "alpine_01_normal.dds"
-	texture_specular = "alpine_01_specular.dds"
-	}
-	
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "clouds_thin_diffuse.dds"
-	texture_normal = "clouds_thin_normal.dds"
-	texture_specular = "clouds_thin_specular.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	default_state = "idle"
-	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
-	}
-}
-
-#Mediterranean
-entity = {
-	name = "med_planet_01_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
-	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "med_01_diffuse.dds"
-	texture_normal = "continental_02_normals.dds"
-	texture_specular = "continental_02_spec.dds"
+	texture_diffuse = "glacial_01_diffuse.dds"
+	texture_normal = "glacial_01_normal.dds"
+	texture_specular = "glacial_01_spec.dds"
 	}
 	
 	##cloud texture override
@@ -115,16 +80,40 @@ entity = {
 	}
 }
 
-#Badlands
+#Antarctic
 entity = {
-	name = "badlands_planet_01_entity"
+	name = "antarctic_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "badlands_01_diffuse.dds"
-	texture_normal = "arid_03_normal.dds"
-	texture_specular = "arid_03_spec.dds"
+	texture_diffuse = "antarctic_01_diffuse.dds"
+	texture_normal = "alpine_01_normal.dds"
+	texture_specular = "alpine_01_specular.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
 	}
 	
 	default_state = "idle"
@@ -134,16 +123,40 @@ entity = {
 	}
 }
 
-#Coral
+#Aeolian
 entity = {
-	name = "coral_planet_01_entity"
+	name = "aeolian_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "coral_01_diffuse.dds"
-	texture_normal = "arid_01_normal.dds"
-	texture_specular = "arid_01_spec.dds"
+	texture_diffuse = "aeolian_01_diffuse.dds"
+	texture_normal = "aeolian_01_normals.dds"
+	texture_specular = "aeolian_01_spec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
 	}
 	
 	default_state = "idle"
@@ -153,16 +166,75 @@ entity = {
 	}
 }
 
-#Primal
+#Ice Spike
 entity = {
-	name = "primal_planet_01_entity"
+	name = "ice_spike_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "primal_01_diffuse.dds"
-	texture_normal = "arid_03_normal.dds"
-	texture_specular = "arid_03_spec.dds"
+	texture_diffuse = "ice_spike_01_diffuse.dds"
+	texture_normal = "frozen_01_normals.dds"
+	texture_specular = "frozen_01_spec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
+#Storm
+entity = {
+	name = "storm_planet_01_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "storm_01_diffuse.dds"
+	texture_normal = "storm_01_normal.dds"
+	texture_specular = "storm_01_spec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_storm_diffuse.dds"
+	texture_normal = "clouds_storm_normal.dds"
+	texture_specular = "clouds_storm_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_storm_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
 	}
 	
 	default_state = "idle"
@@ -172,16 +244,40 @@ entity = {
 	}
 } 
 
-#Succulent
+#Iceberg
 entity = {
-	name = "succulent_planet_01_entity"
+	name = "pd_iceberg_planet_01_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "succulent_01_diffuse.dds"
-	texture_normal = "arid_02_normal.dds"
-	texture_specular = "arid_02_spec.dds"
+	texture_diffuse = "pd_iceberg_01_diffuse.dds"
+	texture_normal = "pd_iceberg_01_normal.dds"
+	texture_specular = "pd_iceberg_01_spec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
 	}
 	
 	default_state = "idle"
@@ -189,4 +285,4 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
-} 
+}

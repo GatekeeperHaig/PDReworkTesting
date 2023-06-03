@@ -202,6 +202,39 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_sinkhole }
 		remove_modifier = pd_sinkhole
 	}
+	#Arctic
+	if = {
+		limit = { has_modifier = pd_arctic }
+		remove_modifier = pd_arctic
+	}
+	if = {
+		limit = { has_modifier = pd_cold_desert }
+		remove_modifier = pd_cold_desert
+	}
+	if = {
+		limit = { has_modifier = pd_glacial }
+		remove_modifier = pd_glacial
+	}
+	if = {
+		limit = { has_modifier = pd_antarctic }
+		remove_modifier = pd_antarctic
+	}
+	if = {
+		limit = { has_modifier = pc_aeolian }
+		remove_modifier = pc_aeolian
+	}
+	if = {
+		limit = { has_modifier = pd_ice_spike }
+		remove_modifier = pd_ice_spike
+	}
+	if = {
+		limit = { has_modifier = pd_storm }
+		remove_modifier = pd_storm
+	}
+	if = {
+		limit = { has_modifier = pd_iceberg }
+		remove_modifier = pd_iceberg
+	}
 }
 
 ###Create Visual Planets Effects
@@ -644,5 +677,77 @@ pd_sinkhole_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_sinkhole
 		entity = "pd_sinkhole_planet_01_entity"
+	}
+}
+
+#Arctic
+pd_cold_desert_world_effect = {
+	add_modifier = { 
+		modifier = pd_cold_desert
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_cold_desert
+		entity = "frozen_desert_planet_01_entity"
+	}
+}
+pd_glacial_world_effect = {
+	add_modifier = { 
+		modifier = pd_glacial
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_glacial
+		entity = "glacial_planet_01_entity"
+	}
+}
+pd_antarctic_world_effect = {
+	add_modifier = { 
+		modifier = pd_antarctic
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_antarctic
+		entity = "antarctic_planet_01_entity"
+	}
+}
+pd_aeolian_world_effect = {
+	add_modifier = { 
+		modifier = pd_aeolian
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_aeolian
+		entity = "aeolian_planet_01_entity"
+	}
+}
+pd_ice_spike_world_effect = {
+	add_modifier = { 
+		modifier = pd_ice_spike
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_ice_spike
+		entity = "ice_spike_planet_01_entity"
+	}
+}
+pd_storm_world_effect = {
+	add_modifier = { 
+		modifier = pd_storm
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_storm
+		entity = "storm_planet_01_entity"
+	}
+}
+pd_iceberg_world_effect = {
+	add_modifier = { 
+		modifier = pd_iceberg
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_iceberg
+		entity = "pd_iceberg_planet_01_entity"
 	}
 }

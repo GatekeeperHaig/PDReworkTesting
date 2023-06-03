@@ -1,0 +1,43 @@
+#Arctic
+pd_arctic = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_arctic.dds"
+	icon_frame = 1
+}
+pd_cold_desert = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cold_desert.dds"
+	icon_frame = 1
+}
+pd_glacial = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_glacial.dds"
+	icon_frame = 1
+}
+pd_antarctic = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_antarctic.dds"
+	icon_frame = 1
+}
+pd_aeolian = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aeolian.dds"
+	icon_frame = 1
+}
+pd_ice_spike = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_ice_spike.dds"
+	icon_frame = 1
+}
+pd_storm = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_storm.dds"
+	icon_frame = 1
+	district_generator_max = 6
+	district_farming_max = -2
+	planet_amenities_mult = -0.15
+	planet_buildings_cost_mult = 0.1 
+	planet_districts_cost_mult = 0.1
+	planet_housing_mult = -0.2
+}
+pd_iceberg = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_iceberg.dds"
+	icon_frame = 1
+	district_farming_max = 4
+	planet_housing_mult = -0.1
+	planet_buildings_cost_mult = 0.1 
+	planet_districts_cost_mult = 0.1
+}

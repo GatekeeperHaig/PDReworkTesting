@@ -941,7 +941,7 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_dry_cave"
 			}
 
-			#Cold
+			#Frozen
 			buttonType = {
 				name = "pc_arctic"
 				position = { x = @planet_col7 y = @planet_row1 }
@@ -951,48 +951,56 @@ guiTypes = {
 				pdx_tooltip = "pc_arctic"
 			}
 			buttonType = {
-				name = "pc_frozen_desert"
+				name = "pc_pd_cold_desert"
 				position = { x = @planet_col7 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_frozen_desert"
+				pdx_tooltip = "pc_pd_cold_desert"
 			}
 			buttonType = {
-				name = "pc_glacial"
+				name = "pc_pd_glacial"
 				position = { x = @planet_col7 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_glacial"
+				pdx_tooltip = "pc_pd_glacial"
 			}
 			buttonType = {
-				name = "pc_antarctic"
+				name = "pc_pd_antarctic"
 				position = { x = @planet_col7 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_antarctic"
+				pdx_tooltip = "pc_pd_antarctic"
 			}
 			buttonType = {
-				name = "pc_aeolian"
+				name = "pc_pd_aeolian"
 				position = { x = @planet_col7 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_aeolian"
+				pdx_tooltip = "pc_pd_aeolian"
 			}
 			buttonType = {
-				name = "pc_storm"
+				name = "pc_pd_ice_spike"
 				position = { x = @planet_col7 y = @planet_row6 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_storm"
+				pdx_tooltip = "pc_pd_ice_spike"
+			}
+			buttonType = {
+				name = "pc_pd_storm"
+				position = { x = @planet_col7 y = @planet_row7 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_storm"
 			}
 			buttonType = {
 				name = "pc_pd_iceberg"
-				position = { x = @planet_col7 y = @planet_row7 }
+				position = { x = @planet_col7 y = @planet_row8 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
