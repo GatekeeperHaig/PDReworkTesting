@@ -860,48 +860,56 @@ guiTypes = {
 				pdx_tooltip = "pc_savannah"
 			}	
 			buttonType = {
-				name = "pc_steppe"
+				name = "pc_pd_steppe"
 				position = { x = @planet_col6 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_steppe"
+				pdx_tooltip = "pc_pd_steppe"
 			}
 			buttonType = {
-				name = "pc_prairie"
+				name = "pc_pd_prairie"
 				position = { x = @planet_col6 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_prairie"
+				pdx_tooltip = "pc_pd_prairie"
 			}
 			buttonType = {
-				name = "pc_veld"
+				name = "pc_pd_veld"
 				position = { x = @planet_col6 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_veld"
+				pdx_tooltip = "pc_pd_veld"
 			}
 			buttonType = {
-				name = "pc_semiarid"
+				name = "pc_pd_semi_arid"
 				position = { x = @planet_col6 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_semiarid"
+				pdx_tooltip = "pc_pd_semi_arid"
 			}
 			buttonType = {
-				name = "pc_supercon"
+				name = "pc_pd_aspen"
 				position = { x = @planet_col6 y = @planet_row6 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_supercon"
+				pdx_tooltip = "pc_pd_aspen"
+			}
+			buttonType = {
+				name = "pc_pd_supercontinent"
+				position = { x = @planet_col6 y = @planet_row7 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_supercontinent"
 			}
 			buttonType = {
 				name = "pc_pd_sinkhole"
-				position = { x = @planet_col6 y = @planet_row7 }
+				position = { x = @planet_col6 y = @planet_row8 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"

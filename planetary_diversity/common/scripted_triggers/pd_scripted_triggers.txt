@@ -65,6 +65,18 @@ is_pd_arid = {
  		is_planet_class = pc_pd_primal
  	}
 }
+is_pd_savannah = {
+ 	OR = {
+ 		is_planet_class = pc_savannah
+ 		is_planet_class = pc_pd_steppe
+ 		is_planet_class = pc_pd_prairie
+ 		is_planet_class = pc_pd_semi_arid
+ 		is_planet_class = pc_pd_veld
+ 		is_planet_class = pc_pd_aspen
+		is_planet_class = pc_pd_supercontinent
+ 		is_planet_class = pc_pd_sinkhole
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -115,5 +127,14 @@ has_pd_modifier = {
 		has_modifier = pd_succulent
 		has_modifier = pd_coral
 		has_modifier = pd_primal
+		#Savannah
+		has_modifier = pd_savannah
+		has_modifier = pd_steppe
+		has_modifier = pd_prairie
+		has_modifier = pd_veld
+		has_modifier = pd_semi_arid
+		has_modifier = pd_aspen
+		has_modifier = pd_supercontinent
+		has_modifier = pd_sinkhole
  	}
 }

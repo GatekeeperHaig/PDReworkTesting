@@ -246,6 +246,51 @@ country_event = {
 				}                      
 			}
         }
+		#Savannah
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_savannah
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_savannah }	 
+				}    
+				25 = { 
+					pd_steppe_world_effect = yes
+				}
+				25 = { 
+					pd_prairie_world_effect = yes
+				}
+				25 = { 
+					pd_veld_world_effect = yes
+				}
+				25 = { 
+					pd_semi_arid_world_effect = yes
+				} 
+				25 = { 
+					pd_aspen_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_supercontinent_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_sinkhole_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -401,6 +446,35 @@ country_event = {
 				} 
 				25 = { 
 					pd_succulent_world_effect = yes
+				}
+			}
+		}
+		#Savannah Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_savannah = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_savannah
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_savannah }	 
+				}    
+				25 = { 
+					pd_steppe_world_effect = yes
+				}
+				25 = { 
+					pd_prairie_world_effect = yes
+				}
+				25 = { 
+					pd_veld_world_effect = yes
+				}
+				25 = { 
+					pd_semi_arid_world_effect = yes
+				} 
+				25 = { 
+					pd_aspen_world_effect = yes
 				}
 			}
 		}
@@ -992,6 +1066,119 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Savannah
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_savannah
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_savannah }
+				}
+				add_modifier = { modifier = pd_savannah }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_steppe
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah        
+			pd_steppe_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_prairie
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_prairie_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_veld
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_veld_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_semi_arid
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_semi_arid_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_aspen
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_aspen_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_supercontinent
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_supercontinent_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_sinkhole
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_savannah         
+			pd_sinkhole_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -1487,6 +1674,98 @@ country_event = {
 				}
 			}
 		}
+		#Savannah
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_steppe_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_steppe_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_prairie_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_prairie_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_veld_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_veld_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_semi_arid_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_semi_arid_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_aspen_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_aspen_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_supercontinent_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_supercontinent_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_sinkhole_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_sinkhole_preference
+					add_trait = trait_pc_savannah_preference
+				}
+			}
+		}
 	}
 }
 
@@ -1513,6 +1792,7 @@ planet_event = {
 			is_planet_class = pc_tropical
 			is_planet_class = pc_desert
 			is_planet_class = pc_arid
+			is_planet_class = pc_savannah
 		}
 	}
 
@@ -2003,7 +2283,97 @@ country_event = {
 			}
 		}
 	}
+	#Savannah
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.savannah
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_savannah }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.steppe
+		hidden_effect = {   
+			from = {       
+				pd_steppe_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.prairie
+		hidden_effect = {   
+			from = {       
+				pd_prairie_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.veld
+		hidden_effect = {   
+			from = {       
+				pd_veld_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.semi_arid
+		hidden_effect = {   
+			from = {       
+				pd_semi_arid_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.aspen
+		hidden_effect = {   
+			from = {       
+				pd_aspen_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.supercontinent
+		hidden_effect = {   
+			from = {       
+				pd_supercontinent_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_savannah }
+		}
+		name = pdengine.21.sinkhole
+		hidden_effect = {   
+			from = {       
+				pd_sinkhole_world_effect = yes
+			}
+		}
+	}
 }
+
 #This Event Fires After Terraforming and fires a random class
 #Has Planet Flag = pd_random_same_class_terraforming
 planet_event = {
@@ -2251,6 +2621,49 @@ planet_event = {
 						}
 					}
 					pd_primal_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_savannah
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_savannah }	 
+				}    
+				25 = { 
+					pd_steppe_world_effect = yes
+				}
+				25 = { 
+					pd_prairie_world_effect = yes
+				}
+				25 = { 
+					pd_veld_world_effect = yes
+				}
+				25 = { 
+					pd_semi_arid_world_effect = yes
+				}
+				25 = { 
+					pd_aspen_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_supercontinent_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_sinkhole_world_effect = yes
 				}                    
 			}
 		}

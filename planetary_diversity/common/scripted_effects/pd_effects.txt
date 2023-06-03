@@ -169,6 +169,39 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_primal }
 		remove_modifier = pd_primal
 	}
+	#Savannah
+	if = {
+		limit = { has_modifier = pd_savannah }
+		remove_modifier = pd_savannah
+	}
+	if = {
+		limit = { has_modifier = pd_steppe }
+		remove_modifier = pd_steppe
+	}
+	if = {
+		limit = { has_modifier = pd_prairie }
+		remove_modifier = pd_prairie
+	}
+	if = {
+		limit = { has_modifier = pd_veld }
+		remove_modifier = pd_veld
+	}
+	if = {
+		limit = { has_modifier = pd_semi_arid }
+		remove_modifier = pd_semi_arid
+	}
+	if = {
+		limit = { has_modifier = pd_aspen }
+		remove_modifier = pd_aspen
+	}
+	if = {
+		limit = { has_modifier = pd_supercontinent }
+		remove_modifier = pd_supercontinent
+	}
+	if = {
+		limit = { has_modifier = pd_sinkhole }
+		remove_modifier = pd_sinkhole
+	}
 }
 
 ###Create Visual Planets Effects
@@ -539,5 +572,77 @@ pd_primal_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_primal
 		entity = "primal_planet_01_entity"
+	}
+}
+
+#Savannah
+pd_steppe_world_effect = {
+	add_modifier = { 
+		modifier = pd_steppe
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_steppe
+		entity = "steppe_planet_01_entity"
+	}
+}
+pd_prairie_world_effect = {
+	add_modifier = { 
+		modifier = pd_prairie
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_prairie
+		entity = "prairie_planet_01_entity"
+	}
+}
+pd_veld_world_effect = {
+	add_modifier = { 
+		modifier = pd_veld
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_veld
+		entity = "veld_planet_01_entity"
+	}
+}
+pd_semi_arid_world_effect = {
+	add_modifier = { 
+		modifier = pd_semi_arid
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_semi_arid
+		entity = "semiarid_planet_01_entity"
+	}
+}
+pd_aspen_world_effect = {
+	add_modifier = { 
+		modifier = pd_aspen
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_aspen
+		entity = "aspen_planet_01_entity"
+	}
+}
+pd_supercontinent_world_effect = {
+	add_modifier = { 
+		modifier = pd_supercontinent
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_supercontinent
+		entity = "supercon_planet_01_entity"
+	}
+}
+pd_sinkhole_world_effect = {
+	add_modifier = { 
+		modifier = pd_sinkhole
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_sinkhole
+		entity = "pd_sinkhole_planet_01_entity"
 	}
 }

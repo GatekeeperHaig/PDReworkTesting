@@ -80,3 +80,45 @@ pd_primal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_primal.dds"
 	icon_frame = 1
 }
+
+#Savannah
+pd_savannah = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_savannah.dds"
+	icon_frame = 1
+}
+pd_steppe = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_steppe.dds"
+	icon_frame = 1
+}
+pd_prairie = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_prairie.dds"
+	icon_frame = 1
+}
+pd_veld = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_veld.dds"
+	icon_frame = 1
+}
+pd_semi_arid = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_semi_arid.dds"
+	icon_frame = 1
+}
+pd_aspen = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aspen.dds"
+	icon_frame = 1
+}
+pd_supercontinent = {
+	district_farming_max = 4
+	planet_housing_mult = 0.1
+	planet_amenities_mult = -0.1
+	pop_environment_tolerance = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_supercon.dds"
+	icon_frame = 1
+}
+pd_sinkhole = {
+	district_mining_max = 4
+	planet_max_districts_add = 2
+	planet_districts_upkeep_mult = 0.1
+	planet_districts_cost_mult = 0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_pdsinkhole.dds"
+	icon_frame = 1
+}
