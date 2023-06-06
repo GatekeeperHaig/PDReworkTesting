@@ -1963,7 +1963,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_cold_desert_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -1976,7 +1976,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_glacial_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -1989,7 +1989,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_antarctic_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -2002,7 +2002,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_aeolian_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -2015,7 +2015,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_ice_spike_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -2028,7 +2028,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_storm_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -2041,7 +2041,7 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_iceberg_preference
-					add_trait = trait_pc_savannah_preference
+					add_trait = trait_pc_arctic_preference
 				}
 			}
 		}
@@ -3054,7 +3054,7 @@ planet_event = {
 					pd_antarctic_world_effect = yes
 				}
 				25 = { 
-					pd_aeolian_arid_world_effect = yes
+					pd_aeolian_world_effect = yes
 				}
 				25 = { 
 					pd_ice_spike_world_effect = yes

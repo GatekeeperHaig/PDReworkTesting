@@ -220,8 +220,8 @@ remove_pd_modifier = {
 		remove_modifier = pd_antarctic
 	}
 	if = {
-		limit = { has_modifier = pc_aeolian }
-		remove_modifier = pc_aeolian
+		limit = { has_modifier = pd_aeolian }
+		remove_modifier = pd_aeolian
 	}
 	if = {
 		limit = { has_modifier = pd_ice_spike }
