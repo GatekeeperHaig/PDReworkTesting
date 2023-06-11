@@ -235,6 +235,39 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_iceberg }
 		remove_modifier = pd_iceberg
 	}
+	#Alpine
+	if = {
+		limit = { has_modifier = pd_alpine }
+		remove_modifier = pd_alpine
+	}
+	if = {
+		limit = { has_modifier = pd_boreal }
+		remove_modifier = pd_boreal
+	}
+	if = {
+		limit = { has_modifier = pd_snow }
+		remove_modifier = pd_snow
+	}
+	if = {
+		limit = { has_modifier = pd_highland }
+		remove_modifier = pd_highland
+	}
+	if = {
+		limit = { has_modifier = pd_dune_forest }
+		remove_modifier = pd_dune_forest
+	}
+	if = {
+		limit = { has_modifier = pd_fjord }
+		remove_modifier = pd_fjord
+	}
+	if = {
+		limit = { has_modifier = pd_glaciovolcanic }
+		remove_modifier = pd_glaciovolcanic
+	}
+	if = {
+		limit = { has_modifier = pd_lanthanide }
+		remove_modifier = pd_lanthanide
+	}
 }
 
 ###Create Visual Planets Effects
@@ -749,5 +782,77 @@ pd_iceberg_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_iceberg
 		entity = "pd_iceberg_planet_01_entity"
+	}
+}
+
+#Alpine
+pd_boreal_world_effect = {
+	add_modifier = { 
+		modifier = pd_boreal
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_boreal
+		entity = "boreal_planet_01_entity"
+	}
+}
+pd_snow_world_effect = {
+	add_modifier = { 
+		modifier = pd_snow
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_snow
+		entity = "snow_planet_01_entity"
+	}
+}
+pd_highland_world_effect = {
+	add_modifier = { 
+		modifier = pd_highland
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_highland
+		entity = "highland_planet_01_entity"
+	}
+}
+pd_dune_forest_world_effect = {
+	add_modifier = { 
+		modifier = pd_dune_forest
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_dune_forest
+		entity = "duneforest_planet_01_entity"
+	}
+}
+pd_fjord_world_effect = {
+	add_modifier = { 
+		modifier = pd_fjord
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_fjord
+		entity = "fjord_planet_01_entity"
+	}
+}
+pd_glaciovolcanic_world_effect = {
+	add_modifier = { 
+		modifier = pd_glaciovolcanic
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_glaciovolcanic
+		entity = "glacio_planet_01_entity"
+	}
+}
+pd_lanthanide_world_effect = {
+	add_modifier = { 
+		modifier = pd_lanthanide
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_lanthanide
+		entity = "lanthanide_planet_01_entity"
 	}
 }

@@ -111,7 +111,7 @@ pd_supercontinent = {
 	planet_housing_mult = 0.1
 	planet_amenities_mult = -0.1
 	pop_environment_tolerance = 0.05
-	icon = "gfx/interface/icons/planet_modifiers/pm_pd_supercon.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_supercontinent.dds"
 	icon_frame = 1
 }
 pd_sinkhole = {

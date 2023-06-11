@@ -41,3 +41,44 @@ pd_iceberg = {
 	planet_buildings_cost_mult = 0.1 
 	planet_districts_cost_mult = 0.1
 }
+
+#Alpine
+pd_alpine = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_alpine.dds"
+	icon_frame = 1
+}
+pd_boreal = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_boreal.dds"
+	icon_frame = 1
+}
+pd_snow = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_snow.dds"
+	icon_frame = 1
+}
+pd_highland = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_highland.dds"
+	icon_frame = 1
+}
+pd_dune_forest = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_dune_forest.dds"
+	icon_frame = 1
+}
+pd_fjord = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fjord.dds"
+	icon_frame = 1
+}
+pd_glaciovolcanic = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_glaciovolcanic.dds"
+	icon_frame = 1
+	district_mining_max = 2
+	district_farming_max = 2
+	pop_environment_tolerance = -0.1
+	planet_housing_mult = -0.1
+}
+pd_lanthanide = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lanthanide.dds"
+	icon_frame = 1
+	district_mining_max = 4
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+}

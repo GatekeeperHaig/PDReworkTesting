@@ -1017,52 +1017,60 @@ guiTypes = {
 				pdx_tooltip = "pc_alpine"
 			}
 			buttonType = {
-				name = "pc_highland"
+				name = "pc_pd_highland"
 				position = { x = @planet_col8 y = @planet_row2 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_highland"
+				pdx_tooltip = "pc_pd_highland"
 			}
 			buttonType = {
-				name = "pc_boreal"
+				name = "pc_pd_boreal"
 				position = { x = @planet_col8 y = @planet_row3 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_boreal"
+				pdx_tooltip = "pc_pd_boreal"
 			}
 			buttonType = {
-				name = "pc_snow"
+				name = "pc_pd_snow"
 				position = { x = @planet_col8 y = @planet_row4 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_snow"
+				pdx_tooltip = "pc_pd_snow"
 			}
 			buttonType = {
-				name = "pc_duneforest"
+				name = "pc_pd_dune_forest"
 				position = { x = @planet_col8 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_duneforest"
+				pdx_tooltip = "pc_pd_dune_forest"
 			}
 			buttonType = {
-				name = "pc_glacio"
+				name = "pc_pd_fjord"
 				position = { x = @planet_col8 y = @planet_row6 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_glacio"
+				pdx_tooltip = "pc_pd_fjord"
 			}
 			buttonType = {
-				name = "pc_lanthanide"
+				name = "pc_pd_glaciovolcanic"
 				position = { x = @planet_col8 y = @planet_row7 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
-				pdx_tooltip = "pc_lanthanide"
+				pdx_tooltip = "pc_pd_glaciovolcanic"
+			}
+			buttonType = {
+				name = "pc_pd_lanthanide"
+				position = { x = @planet_col8 y = @planet_row8 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_lanthanide"
 			}
 
 

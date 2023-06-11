@@ -89,6 +89,18 @@ is_pd_arctic = {
  		is_planet_class = pc_pd_iceberg
  	}
 }
+is_pd_alpine = {
+ 	OR = {
+ 		is_planet_class = pc_alpine
+ 		is_planet_class = pc_pd_boreal
+ 		is_planet_class = pc_pd_snow
+ 		is_planet_class = pc_pd_highland
+ 		is_planet_class = pc_pd_dune_forest
+ 		is_planet_class = pc_pd_fjord
+		is_planet_class = pc_pd_glaciovolcanic
+ 		is_planet_class = pc_pd_lanthanide
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -157,5 +169,14 @@ has_pd_modifier = {
 		has_modifier = pd_ice_spike
 		has_modifier = pd_storm
 		has_modifier = pd_iceberg
+		#Arctic
+		has_modifier = pd_alpine
+		has_modifier = pd_boreal
+		has_modifier = pd_snow
+		has_modifier = pd_highland
+		has_modifier = pd_dune_forest
+		has_modifier = pd_fjord
+		has_modifier = pd_glaciovolcanic
+		has_modifier = pd_lanthanide
  	}
 }

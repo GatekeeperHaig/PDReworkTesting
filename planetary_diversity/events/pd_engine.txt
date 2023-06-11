@@ -336,6 +336,51 @@ country_event = {
 				}                      
 			}
         }
+		#Alpine
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_alpine
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_alpine }	 
+				}    
+				25 = { 
+					pd_boreal_world_effect = yes
+				}
+				25 = { 
+					pd_snow_world_effect = yes
+				}
+				25 = { 
+					pd_highland_world_effect = yes
+				}
+				25 = { 
+					pd_dune_forest_world_effect = yes
+				} 
+				25 = { 
+					pd_fjord_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_glaciovolcanic_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_lanthanide_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -549,6 +594,35 @@ country_event = {
 				} 
 				25 = { 
 					pd_ice_spike_world_effect = yes
+				}
+			}
+		}
+		#Alpine Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_alpine = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_alpine
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_alpine }	 
+				}    
+				25 = { 
+					pd_boreal_world_effect = yes
+				}
+				25 = { 
+					pd_snow_world_effect = yes
+				}
+				25 = { 
+					pd_highland_world_effect = yes
+				}
+				25 = { 
+					pd_dune_forest_world_effect = yes
+				} 
+				25 = { 
+					pd_fjord_world_effect = yes
 				}
 			}
 		}
@@ -1366,6 +1440,119 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Alpine
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_alpine
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_alpine }
+				}
+				add_modifier = { modifier = pd_alpine }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_boreal
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_boreal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_snow
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_snow_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_highland
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_highland_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_dune_forest
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_dune_forest_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_fjord
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_fjord_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_glaciovolcanic
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_glaciovolcanic_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_lanthanide
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_alpine         
+			pd_lanthanide_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -2045,6 +2232,98 @@ country_event = {
 				}
 			}
 		}
+		#Alpine
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_boreal_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_boreal_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_snow_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_snow_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_highland_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_highland_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_dune_forest_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_dune_forest_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_fjord_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_fjord_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_glaciovolcanic_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_glaciovolcanic_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_lanthanide_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_lanthanide_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
 	}
 }
 
@@ -2073,6 +2352,7 @@ planet_event = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_savannah
 			is_planet_class = pc_arctic
+			is_planet_class = pc_alpine
 		}
 	}
 
@@ -2741,6 +3021,95 @@ country_event = {
 			}
 		}
 	}
+	#Alpine
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.alpine
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_alpine }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.boreal
+		hidden_effect = {   
+			from = {       
+				pd_boreal_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.snow
+		hidden_effect = {   
+			from = {       
+				pd_snow_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.highland
+		hidden_effect = {   
+			from = {       
+				pd_highland_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.dune_forest
+		hidden_effect = {   
+			from = {       
+				pd_dune_forest_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.fjord
+		hidden_effect = {   
+			from = {       
+				pd_fjord_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.glaciovolcanic
+		hidden_effect = {   
+			from = {       
+				pd_glaciovolcanic_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.lanthanide
+		hidden_effect = {   
+			from = {       
+				pd_lanthanide_world_effect = yes
+			}
+		}
+	}
 }
 
 #This Event Fires After Terraforming and fires a random class
@@ -2768,8 +3137,8 @@ planet_event = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_savannah
 			is_planet_class = pc_arctic
-			is_planet_class = pc_tundra
 			is_planet_class = pc_alpine
+			is_planet_class = pc_tundra
 		}
 	}
 
@@ -3076,6 +3445,49 @@ planet_event = {
 						}
 					}
 					pd_iceberg_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_alpine
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_alpine }	 
+				}    
+				25 = { 
+					pd_boreal_world_effect = yes
+				}
+				25 = { 
+					pd_snow_world_effect = yes
+				}
+				25 = { 
+					pd_highland_world_effect = yes
+				}
+				25 = { 
+					pd_dune_forest_world_effect = yes
+				}
+				25 = { 
+					pd_fjord_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_glaciovolcanic_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_lanthanide_world_effect = yes
 				}                    
 			}
 		}
