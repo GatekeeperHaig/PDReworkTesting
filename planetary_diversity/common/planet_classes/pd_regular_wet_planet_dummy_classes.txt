@@ -173,7 +173,7 @@ pc_pd_cascadian = {
 	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_alpine.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
@@ -217,7 +217,7 @@ pc_pd_crag = {
 	atmosphere_color 		= hsv { 0.50 0.2 0.8 }		
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_alpine.dds"
+	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes

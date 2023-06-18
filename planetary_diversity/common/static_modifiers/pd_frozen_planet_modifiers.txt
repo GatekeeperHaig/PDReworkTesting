@@ -82,3 +82,46 @@ pd_lanthanide = {
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
 }
+
+#Tundra
+pd_tundra = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tundra.dds"
+	icon_frame = 1
+}
+pd_bog = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_bog.dds"
+	icon_frame = 1
+}
+pd_mycelium = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mycelium.dds"
+	icon_frame = 1
+}
+pd_mud = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_mud.dds"
+	icon_frame = 1
+}
+pd_basalt = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_basalt.dds"
+	icon_frame = 1
+}
+pd_tuya = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tuya.dds"
+	icon_frame = 1
+}
+pd_cryoflora = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cryoflora.dds"
+	icon_frame = 1
+	pop_environment_tolerance = -0.1
+	pop_happiness = 0.1
+	district_generator_max = 4
+}
+pd_lichen = {	
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lichen.dds"
+	icon_frame = 1
+	pop_environment_tolerance = 0.1
+	planet_jobs_minerals_produces_mult = -0.25
+	district_farming_max = 6
+	district_mining_max = -2
+	planet_buildings_upkeep_mult = 0.20
+	planet_districts_upkeep_mult = 0.20
+}

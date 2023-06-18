@@ -320,3 +320,153 @@ pc_pd_lanthanide = {
 	uses_alternative_skies_for_moons = no
 	carry_cap_per_free_district = @carry_cap_normal
 }
+
+###Tundra
+#Bog
+pc_pd_bog = {
+	entity = "swamp_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	#planet defines
+	climate = "cold"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Mycelium
+pc_pd_mycelium = {
+	entity = "mycelium_planet"
+	icon = GFX_planet_type_tundra
+	entity_scale = @planet_standard_scale
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	colonizable = yes
+	climate = "cold"
+	initial = yes
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Mud
+pc_pd_mud = {
+	entity = "mud_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	#planet defines
+	climate = "cold"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Basalt
+pc_pd_basalt = {
+	entity = "basalt_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	#planet defines
+	climate = "cold"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}	
+
+#Tuya
+pc_pd_tuya = {
+	entity = "tuya_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	#planet defines
+	climate = "cold"
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Cryoflora
+pc_pd_cryoflora = {
+	entity = "cryoflora_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	climate = "cold"
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_cryoflora.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
+
+#Lichen
+pc_pd_lichen = {
+	entity = "lichen_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tundra
+	climate = "cold"
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"
+	#planet defines
+	colonizable = yes
+	initial = yes
+	#colonization_tech = { }		
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}

@@ -268,6 +268,39 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_lanthanide }
 		remove_modifier = pd_lanthanide
 	}
+	#Tundra
+	if = {
+		limit = { has_modifier = pd_tundra }
+		remove_modifier = pd_tundra
+	}
+	if = {
+		limit = { has_modifier = pd_bog }
+		remove_modifier = pd_bog
+	}
+	if = {
+		limit = { has_modifier = pd_mycelium }
+		remove_modifier = pd_mycelium
+	}
+	if = {
+		limit = { has_modifier = pd_mud }
+		remove_modifier = pd_mud
+	}
+	if = {
+		limit = { has_modifier = pd_basalt }
+		remove_modifier = pd_basalt
+	}
+	if = {
+		limit = { has_modifier = pd_tuya }
+		remove_modifier = pd_tuya
+	}
+	if = {
+		limit = { has_modifier = pd_cryoflora }
+		remove_modifier = pd_cryoflora
+	}
+	if = {
+		limit = { has_modifier = pd_lichen }
+		remove_modifier = pd_lichen
+	}
 }
 
 ###Create Visual Planets Effects
@@ -854,5 +887,77 @@ pd_lanthanide_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_lanthanide
 		entity = "lanthanide_planet_01_entity"
+	}
+}
+
+#Tundra
+pd_bog_world_effect = {
+	add_modifier = { 
+		modifier = pd_bog
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_bog
+		entity = "swamp_planet_01_entity"
+	}
+}
+pd_mycelium_world_effect = {
+	add_modifier = { 
+		modifier = pd_mycelium
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_mycelium
+		entity = "mycelium_planet_01_entity"
+	}
+}
+pd_mud_world_effect = {
+	add_modifier = { 
+		modifier = pd_mud
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_mud
+		entity = "mud_planet_01_entity"
+	}
+}
+pd_basalt_world_effect = {
+	add_modifier = { 
+		modifier = pd_basalt
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_basalt
+		entity = "basalt_planet_01_entity"
+	}
+}
+pd_tuya_world_effect = {
+	add_modifier = { 
+		modifier = pd_tuya
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_tuya
+		entity = "tuya_planet_01_entity"
+	}
+}
+pd_cryoflora_world_effect = {
+	add_modifier = { 
+		modifier = pd_cryoflora
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_cryoflora
+		entity = "cryoflora_planet_01_entity"
+	}
+}
+pd_lichen_world_effect = {
+	add_modifier = { 
+		modifier = pd_lichen
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_lichen
+		entity = "lichen_planet_01_entity"
 	}
 }

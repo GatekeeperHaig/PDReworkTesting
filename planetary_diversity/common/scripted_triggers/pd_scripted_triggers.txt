@@ -101,6 +101,18 @@ is_pd_alpine = {
  		is_planet_class = pc_pd_lanthanide
  	}
 }
+is_pd_tundra = {
+ 	OR = {
+ 		is_planet_class = pc_tundra
+ 		is_planet_class = pc_pd_bog
+ 		is_planet_class = pc_pd_mycelium
+ 		is_planet_class = pc_pd_mud
+ 		is_planet_class = pc_pd_basalt
+ 		is_planet_class = pc_pd_tuya
+		is_planet_class = pc_pd_cryoflora
+ 		is_planet_class = pc_pd_lichen
+ 	}
+}
  
 #Any PD Modifier
 has_pd_modifier = {
@@ -169,7 +181,7 @@ has_pd_modifier = {
 		has_modifier = pd_ice_spike
 		has_modifier = pd_storm
 		has_modifier = pd_iceberg
-		#Arctic
+		#Alpine
 		has_modifier = pd_alpine
 		has_modifier = pd_boreal
 		has_modifier = pd_snow
@@ -178,5 +190,14 @@ has_pd_modifier = {
 		has_modifier = pd_fjord
 		has_modifier = pd_glaciovolcanic
 		has_modifier = pd_lanthanide
+		#Tundra
+		has_modifier = pd_tundra
+		has_modifier = pd_bog
+		has_modifier = pd_mycelium
+		has_modifier = pd_mud
+		has_modifier = pd_basalt
+		has_modifier = pd_tuya
+		has_modifier = pd_cryoflora
+		has_modifier = pd_lichen
  	}
 }

@@ -381,6 +381,51 @@ country_event = {
 				}                      
 			}
         }
+		#Tundra
+        every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_tundra
+				is_homeworld = no 
+				NOR = { 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+				}
+			}	
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tundra }	 
+				}    
+				25 = { 
+					pd_bog_world_effect = yes
+				}
+				25 = { 
+					pd_mycelium_world_effect = yes
+				}
+				25 = { 
+					pd_mud_world_effect = yes
+				}
+				25 = { 
+					pd_basalt_world_effect = yes
+				} 
+				25 = { 
+					pd_tuya_world_effect = yes
+				}
+				25 = { 
+					modifier = {
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_cryoflora_world_effect = yes
+				}
+				25 = { 
+					modifier = { 
+						factor = 0
+						has_planet_flag = prescripted_ideal 
+					}
+					pd_lichen_world_effect = yes
+				}                      
+			}
+        }
 	}
 }
 #This Event Changes any planets that slipped through, and any non homeworld planets
@@ -623,6 +668,35 @@ country_event = {
 				} 
 				25 = { 
 					pd_fjord_world_effect = yes
+				}
+			}
+		}
+		#Tundra Planets
+		every_galaxy_planet = {         
+			limit = {
+				is_pd_tundra = yes
+				has_pd_modifier = no
+				is_homeworld = no 
+			} 
+			change_pc = pc_tundra
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tundra }	 
+				}    
+				25 = { 
+					pd_bog_world_effect = yes
+				}
+				25 = { 
+					pd_mycelium_world_effect = yes
+				}
+				25 = { 
+					pd_mud_world_effect = yes
+				}
+				25 = { 
+					pd_basalt_world_effect = yes
+				} 
+				25 = { 
+					pd_tuya_world_effect = yes
 				}
 			}
 		}
@@ -1553,6 +1627,118 @@ country_event = {
 			generate_start_deposits_and_blockers = yes
 			generate_start_buildings_and_districts = yes
 		}
+		#Tundra
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_tundra
+				has_pd_modifier = no
+				is_homeworld = yes 
+				NOT = { has_planet_flag = prescripted_ideal }
+			} 
+			IF = {
+				limit = {
+					NOT = { has_modifier = pd_tundra }
+				}
+				add_modifier = { modifier = pd_tundra }
+			}  
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_bog
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_bog_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_mycelium
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_mycelium_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_mud
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_mud_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_basalt
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_basalt_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_tuya
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_tuya_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_cryoflora
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_cryoflora_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_lichen
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tundra         
+			pd_lichen_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
 	}
 }
 #This Event Changes any other traits, but with other homeworlds (relic, tomb etc)
@@ -2324,6 +2510,98 @@ country_event = {
 				}
 			}
 		}
+		#Tundra
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_bog_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_bog_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mycelium_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mycelium_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_mud_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_mud_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_basalt_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_basalt_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_tuya_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_tuya_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_cryoflora_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_cryoflora_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_lichen_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_lichen_preference
+					add_trait = trait_pc_tundra_preference
+				}
+			}
+		}
 	}
 }
 
@@ -2353,6 +2631,7 @@ planet_event = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_arctic
 			is_planet_class = pc_alpine
+			is_planet_class = pc_tundra
 		}
 	}
 
@@ -3110,6 +3389,95 @@ country_event = {
 			}
 		}
 	}
+	#Tundra
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.tundra
+		hidden_effect = {
+			from = { 
+				add_modifier = { modifier = pd_tundra }
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.bog
+		hidden_effect = {   
+			from = {       
+				pd_bog_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.mycelium
+		hidden_effect = {   
+			from = {       
+				pd_mycelium_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.mud
+		hidden_effect = {   
+			from = {       
+				pd_mud_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.basalt
+		hidden_effect = {   
+			from = {       
+				pd_basalt_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.tuya
+		hidden_effect = {   
+			from = {       
+				pd_tuya_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.cryoflora
+		hidden_effect = {   
+			from = {       
+				pd_cryoflora_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tundra }
+		}
+		name = pdengine.21.lichen
+		hidden_effect = {   
+			from = {       
+				pd_lichen_world_effect = yes
+			}
+		}
+	}
 }
 
 #This Event Fires After Terraforming and fires a random class
@@ -3488,6 +3856,49 @@ planet_event = {
 						}
 					}
 					pd_lanthanide_world_effect = yes
+				}                    
+			}
+		}
+		IF = {
+			limit = { 
+				is_planet_class = pc_tundra
+			}
+			random_list = {
+				25 = {
+					add_modifier = { modifier = pd_tundra }	 
+				}    
+				25 = { 
+					pd_bog_world_effect = yes
+				}
+				25 = { 
+					pd_mycelium_world_effect = yes
+				}
+				25 = { 
+					pd_mud_world_effect = yes
+				}
+				25 = { 
+					pd_basalt_world_effect = yes
+				}
+				25 = { 
+					pd_tuya_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_cryoflora_world_effect = yes
+				}
+				0 = { 
+					modifier = {
+						add = 25
+						space_owner = {
+							has_ascension_perk = ap_world_shaper
+						}
+					}
+					pd_lichen_world_effect = yes
 				}                    
 			}
 		}

@@ -12,3 +12,17 @@
  pd_random_same_class_terraforming_name:0 "Random Similar Biome"
  pd_random_same_class:0 "Random Similar Biome"
  pd_random_same_class_desc:0 "We will randomly select any biome in the same planet group."
+
+ climate_superhabitables: "Superhabitable"
+ climate_cavern: "Cavern"
+ climate_tidallyocked: "Tidally-Locked"
+
+ climate_continental: "Continental"
+ climate_ocean: "Ocean"
+ climate_tropical: "Tropical"
+ climate_desert: "Desert"
+ climate_arid: "Arid"
+ climate_savannah: "Savannah"
+ climate_arctic: "Arctic"
+ climate_alpine: "Alpine"
+ climate_tundra: "Tundra"
