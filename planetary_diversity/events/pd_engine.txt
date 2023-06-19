@@ -500,7 +500,7 @@ country_event = {
 		#Tropical Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_ocean = yes
+				is_pd_tropical = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
