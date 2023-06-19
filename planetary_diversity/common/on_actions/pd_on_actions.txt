@@ -88,6 +88,9 @@ on_press_begin = {
 	events = { 
 		pdengine.10
 		pdengine.11
+		pdengine.30
+		pdengine.31
+		pdengine.32
 	}
 }
 

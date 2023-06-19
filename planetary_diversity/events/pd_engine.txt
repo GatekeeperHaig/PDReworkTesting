@@ -3904,3 +3904,263 @@ planet_event = {
 		}
 	}
 }
+
+#These Events are for Uncommon Worlds
+#This event changes some planets from Regular into Uncommon Worlds
+country_event = {
+	id = pdengine.30
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	#Superhabitable
+	immediate = {
+		every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_continental 
+				system_star = { 
+					OR = { 
+						is_star_class = sc_k 
+						is_star_class = sc_trinary_3 
+						is_star_class = sc_binary_7 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			change_pc = pc_pd_wet_superhabitable 
+			reroll_planet = yes 
+			clear_planet_modifiers = yes
+			random_list = {
+				20 = { set_planet_size = 31 }
+				20 = { set_planet_size = 32 }
+				20 = { set_planet_size = 33 }
+				20 = { set_planet_size = 34 }
+				20 = { set_planet_size = 35 }
+			}
+		}
+		every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_arid
+				system_star = { 
+					OR = { 
+						is_star_class = sc_k 
+						is_star_class = sc_trinary_3 
+						is_star_class = sc_binary_7 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			change_pc = pc_pd_dry_superhabitable 
+			reroll_planet = yes 
+			clear_planet_modifiers = yes
+			random_list = {
+				20 = { set_planet_size = 31 }
+				20 = { set_planet_size = 32 }
+				20 = { set_planet_size = 33 }
+				20 = { set_planet_size = 34 }
+				20 = { set_planet_size = 35 }
+			}
+        }
+		every_galaxy_planet = {                 
+            limit = { 
+				is_planet_class = pc_tundra
+				system_star = { 
+					OR = { 
+						is_star_class = sc_k 
+						is_star_class = sc_trinary_3 
+						is_star_class = sc_binary_7 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			change_pc = pc_pd_cold_superhabitable 
+			reroll_planet = yes 
+			clear_planet_modifiers = yes
+			random_list = {
+				20 = { set_planet_size = 31 }
+				20 = { set_planet_size = 32 }
+				20 = { set_planet_size = 33 }
+				20 = { set_planet_size = 34 }
+				20 = { set_planet_size = 35 }
+			}
+        }
+	}
+}
+
+#This event makes sure Uncommon homeworlds have the correct deposits.
+country_event = {
+	id = pdengine.31
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#Superhabitable
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_superhabitable 
+				is_homeworld = yes 
+			} 
+			change_planet_size = +14 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Dry Superhabitable
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_superhabitable  
+				is_homeworld = yes 
+			} 
+			change_planet_size = +14 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Cold Superhabitable
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_superhabitable 
+				is_homeworld = yes 
+			} 
+			change_planet_size = +14 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+	}
+}
+
+#This event makes sure that Uncommon worlds don't have their uncommon classes as their nearby planets
+country_event = {
+	id = pdengine.32
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		#Wet Superhabitable Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_wet_superhabitable 
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_continental
+			random_list = {				
+				25 = {
+					add_modifier = { modifier = pd_continental }	 
+				}    
+				25 = { 
+					pd_retinal_world_effect = yes
+				}
+				25 = { 
+					pd_lake_world_effect = yes
+				}
+				25 = { 
+					pd_forest_world_effect = yes
+				}
+				25 = { 
+					pd_temperate_world_effect = yes
+				}
+				25 = { 
+					pd_tepid_world_effect = yes
+				}  
+				25 = { 
+					pd_mushroom_world_effect = yes
+				}  
+			}
+		}
+		#Dry Superhabitable Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_dry_superhabitable 
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_arid
+			random_list = {		
+				25 = {
+					add_modifier = { modifier = pd_arid }	 
+				}    
+				25 = { 
+					pd_mesa_world_effect = yes
+				}
+				25 = { 
+					pd_fog_desert_world_effect = yes
+				}
+				25 = { 
+					pd_mediterranean_world_effect = yes
+				}
+				25 = { 
+					pd_badlands_world_effect = yes
+				} 
+				25 = { 
+					pd_succulent_world_effect = yes
+				}
+			}
+		}
+		#Cold Superhabitable Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_cold_superhabitable 
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_arid
+			random_list = {	
+				25 = {
+					add_modifier = { modifier = pd_tundra }	 
+				}    
+				25 = { 
+					pd_bog_world_effect = yes
+				}
+				25 = { 
+					pd_mycelium_world_effect = yes
+				}
+				25 = { 
+					pd_mud_world_effect = yes
+				}
+				25 = { 
+					pd_basalt_world_effect = yes
+				} 
+				25 = { 
+					pd_tuya_world_effect = yes
+				}
+			}
+		}
+	}
+}

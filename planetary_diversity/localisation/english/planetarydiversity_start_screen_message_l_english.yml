@@ -1,0 +1,5 @@
+﻿l_english:
+
+START_SCREEN_PART_ONE_WET_SUPERHABITABLE: "In the eons, since the first primitive [GetSpeciesName] communities took shape among the rich jungles and shallow seas of [GetHomeWorldName], our civilization has spread and prospered."
+START_SCREEN_PART_ONE_DRY_SUPERHABITABLE: "In the eons, since the first primitive [GetSpeciesName] communities took shape in the lush river valleys [GetHomeWorldName], our civilization has spread and prospered."
+START_SCREEN_PART_ONE_COLD_SUPERHABITABLE: "In the eons, since the first primitive [GetSpeciesName] communities took shape in the rich boreal forests [GetHomeWorldName], our civilization has spread and prospered."

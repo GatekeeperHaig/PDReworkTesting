@@ -201,3 +201,19 @@ has_pd_modifier = {
 		has_modifier = pd_lichen
  	}
 }
+
+is_pd_planet_class_all = {
+	OR = {
+		is_planet_class = pc_pd_wet_superhabitable
+		is_planet_class = pc_pd_dry_superhabitable
+		is_planet_class = pc_pd_cold_superhabitable
+	}
+}
+
+is_pd_planet_class_superhabitable = {
+	OR = {
+		is_planet_class = pc_pd_wet_superhabitable
+		is_planet_class = pc_pd_dry_superhabitable
+		is_planet_class = pc_pd_cold_superhabitable
+	}
+}

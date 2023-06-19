@@ -1,0 +1,24 @@
+#Superhabitable
+pd_wet_superhabitable = {
+	district_mining_max = 1
+	district_farming_max = 2
+	district_generator_max = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_wet_superhabitable.dds"
+	icon_frame = 1
+}
+
+pd_dry_superhabitable = {
+	district_mining_max = 1
+	district_farming_max = 1
+	district_generator_max = 2
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_dry_superhabitable.dds"
+	icon_frame = 1
+}
+
+pd_cold_superhabitable = {
+	district_mining_max = 2
+	district_farming_max = 1
+	district_generator_max = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cold_superhabitable.dds"
+	icon_frame = 1
+}
