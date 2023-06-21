@@ -3916,7 +3916,7 @@ country_event = {
 	immediate = {
 		every_galaxy_planet = {                 
             limit = { 
-				is_planet_class = pc_continental 
+				is_wet = yes
 				system_star = { 
 					OR = { 
 						is_star_class = sc_k 
@@ -3940,9 +3940,13 @@ country_event = {
 					}
 				}
 			}
+			remove_pd_modifier = yes
 			change_pc = pc_pd_wet_superhabitable 
 			reroll_planet = yes 
-			clear_planet_modifiers = yes
+			add_modifier = {
+				modifier = pd_wet_superhabitable
+				days = -1
+			}
 			random_list = {
 				20 = { set_planet_size = 31 }
 				20 = { set_planet_size = 32 }
@@ -3953,7 +3957,7 @@ country_event = {
 		}
 		every_galaxy_planet = {                 
             limit = { 
-				is_planet_class = pc_arid
+				is_dry = yes
 				system_star = { 
 					OR = { 
 						is_star_class = sc_k 
@@ -3977,9 +3981,13 @@ country_event = {
 					}
 				}
 			}
+			remove_pd_modifier = yes
 			change_pc = pc_pd_dry_superhabitable 
+			add_modifier = {
+				modifier = pd_dry_superhabitable
+				days = -1
+			}
 			reroll_planet = yes 
-			clear_planet_modifiers = yes
 			random_list = {
 				20 = { set_planet_size = 31 }
 				20 = { set_planet_size = 32 }
@@ -3990,7 +3998,7 @@ country_event = {
         }
 		every_galaxy_planet = {                 
             limit = { 
-				is_planet_class = pc_tundra
+				is_cold = yes
 				system_star = { 
 					OR = { 
 						is_star_class = sc_k 
@@ -4014,9 +4022,13 @@ country_event = {
 					}
 				}
 			}
+			remove_pd_modifier = yes
 			change_pc = pc_pd_cold_superhabitable 
+			add_modifier = {
+				modifier = pd_cold_superhabitable
+				days = -1
+			}
 			reroll_planet = yes 
-			clear_planet_modifiers = yes
 			random_list = {
 				20 = { set_planet_size = 31 }
 				20 = { set_planet_size = 32 }
