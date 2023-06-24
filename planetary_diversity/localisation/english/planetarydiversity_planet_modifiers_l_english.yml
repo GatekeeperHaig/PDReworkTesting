@@ -173,3 +173,9 @@
  pd_dry_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. This dry world also has many canyons, allowing for rich hydroelectric opportunities."
  pd_cold_superhabitable: "Frozen Superhabitable World"
  pd_cold_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. This frozen planet has rich mining opportunities."
+ pd_gaia_superhabitable: "Gaia Superhabitable World"
+ pd_gaia_superhabitable_desc: "An ideally created world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+
+ #Gaia
+ pd_gaia_world: "Gaia World"
+ pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."

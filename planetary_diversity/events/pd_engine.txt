@@ -4177,6 +4177,7 @@ country_event = {
 	}
 }
 
+#This event sets up the Uncommon barren worlds.
 country_event = {
 	id = pdengine.33
 	hide_window = yes
@@ -4211,6 +4212,128 @@ country_event = {
 					}
 				}
 				93 = { }	
+			}
+		}
+	}
+}
+
+#This event removing modifiers from incorrect planets
+planet_event = {
+	id = pdengine.40
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		#Gaia World 
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_gaia 
+				} 
+			}
+			remove_modifier = pd_gaia_world
+		}
+		#Superhabtiables
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_wet_superhabitable 
+				} 
+			}
+			remove_modifier = pd_wet_superhabitable
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_dry_superhabitable 
+				} 
+			}
+			remove_modifier = pd_dry_superhabitable
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_cold_superhabitable 
+				} 
+			}
+			remove_modifier = pd_cold_superhabitable
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_gaia_superhabitable 
+				} 
+			}
+			remove_modifier = pd_gaia_superhabitable
+		}
+	}
+}
+
+#This event makes sure certain special classes get their modifier after terraforming or events
+planet_event = {
+	id = pdengine.41
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		#Gaia World 
+		if = { 
+			limit = { 
+				is_planet_class = pc_gaia 
+				NOT = {
+					has_modifier = pd_gaia_world
+				}
+			}
+			add_modifier = {
+				modifier = pd_gaia_world
+				days = -1
+			}
+		}
+		#Superhabtiables
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_superhabitable 
+				NOT = {
+					has_modifier = pd_wet_superhabitable
+				}
+			}
+			add_modifier = {
+				modifier = pd_wet_superhabitable
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_superhabitable 
+				NOT = {
+					has_modifier = pd_dry_superhabitable
+				}
+			}
+			add_modifier = {
+				modifier = pd_dry_superhabitable
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_superhabitable 
+				NOT = {
+					has_modifier = pd_cold_superhabitable
+				}
+			}
+			add_modifier = {
+				modifier = pd_cold_superhabitable
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_gaia_superhabitable 
+				NOT = {
+					has_modifier = pd_gaia_superhabitable
+				}
+			}
+			add_modifier = {
+				modifier = pd_gaia_superhabitable
+				days = -1
 			}
 		}
 	}

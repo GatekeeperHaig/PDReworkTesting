@@ -9,11 +9,15 @@ on_terraforming_complete = {
 	events = {
 		pdengine.20
 		pdengine.22
+		pdengine.40
+		pdengine.41
 	}
 }
 
 on_planet_class_changed = {
 	events = {
+		pdengine.40
+		pdengine.41
 	}
 }
 

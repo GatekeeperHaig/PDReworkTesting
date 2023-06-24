@@ -3,6 +3,8 @@ pd_wet_superhabitable = {
 	district_mining_max = 1
 	district_farming_max = 2
 	district_generator_max = 1
+	planet_max_districts_add = 2
+	pop_growth_speed = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_wet_superhabitable.dds"
 	icon_frame = 1
 }
@@ -11,6 +13,8 @@ pd_dry_superhabitable = {
 	district_mining_max = 1
 	district_farming_max = 1
 	district_generator_max = 2
+	planet_max_districts_add = 2
+	pop_growth_speed = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_dry_superhabitable.dds"
 	icon_frame = 1
 }
@@ -19,6 +23,16 @@ pd_cold_superhabitable = {
 	district_mining_max = 2
 	district_farming_max = 1
 	district_generator_max = 1
+	planet_max_districts_add = 2
+	pop_growth_speed = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cold_superhabitable.dds"
+	icon_frame = 1
+}
+
+pd_gaia_superhabitable = {
+	planet_amenities_add = 10
+	planet_max_districts_add = 6
+	pop_growth_speed = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
 	icon_frame = 1
 }
