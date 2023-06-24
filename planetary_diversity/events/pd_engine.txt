@@ -2651,7 +2651,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		remove_pd_modifier = yes
+		from = {
+			remove_pd_modifier = yes
+		}
 	}
 
 	#Continental
@@ -4223,6 +4225,87 @@ planet_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
+		#Continental
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_continental 
+				} 
+			}
+			remove_pd_continental_modifier = yes
+		}
+		#Ocean
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_ocean 
+				} 
+			}
+			remove_pd_ocean_modifier = yes
+		}
+		#Tropical
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_tropical
+				} 
+			}
+			remove_pd_tropical_modifier = yes
+		}
+		#Desert
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_desert
+				} 
+			}
+			remove_pd_desert_modifier = yes
+		}
+		#Arid
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_arid
+				} 
+			}
+			remove_pd_arid_modifier = yes
+		}
+		#Savannah
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_savannah
+				} 
+			}
+			remove_pd_savannah_modifier = yes
+		}
+		#Arctic
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_arctic
+				} 
+			}
+			remove_pd_savannah_modifier = yes
+		}
+		#Alpine
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_alpine
+				} 
+			}
+			remove_pd_alpine_modifier = yes
+		}
+		#Tundra
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_tundra
+				} 
+			}
+			remove_pd_tundra_modifier = yes
+		}
 		#Gaia World 
 		if = { 
 			limit = { 

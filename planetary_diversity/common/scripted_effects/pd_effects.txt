@@ -1,6 +1,27 @@
 #Removes PD Modifiers
 remove_pd_modifier = {
 	#Continental
+	remove_pd_continental_modifier = yes
+	#Ocean
+	remove_pd_ocean_modifier = yes
+	#Tropical
+	remove_pd_tropical_modifier = yes
+	#Desert
+	remove_pd_desert_modifier = yes
+	#Arid
+	remove_pd_arid_modifier = yes
+	#Savannah
+	remove_pd_savannah_modifier = yes
+	#Arctic
+	remove_pd_arctic_modifier = yes
+	#Alpine
+	remove_pd_alpine_modifier = yes
+	#Tundra
+	remove_pd_tundra_modifier = yes
+}
+
+remove_pd_continental_modifier = {
+	#Continental
 	if = {
 		limit = { has_modifier = pd_continental }
 		remove_modifier = pd_continental
@@ -37,6 +58,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_petrified }
 		remove_modifier = pd_petrified
 	}
+}
+
+remove_pd_ocean_modifier = {
 	#Ocean
 	if = {
 		limit = { has_modifier = pd_ocean }
@@ -70,6 +94,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_archipelago }
 		remove_modifier = pd_archipelago
 	}
+}
+
+remove_pd_tropical_modifier = {
 	#Tropical
 	if = {
 		limit = { has_modifier = pd_tropical }
@@ -103,6 +130,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_biolumen }
 		remove_modifier = pd_biolumen
 	}
+}
+
+remove_pd_desert_modifier = {
 	#Desert
 	if = {
 		limit = { has_modifier = pd_desert }
@@ -136,6 +166,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_aquifer }
 		remove_modifier = pd_aquifer
 	}
+}
+
+remove_pd_arid_modifier = {
 	#Arid
 	if = {
 		limit = { has_modifier = pd_arid }
@@ -169,6 +202,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_primal }
 		remove_modifier = pd_primal
 	}
+}
+
+remove_pd_savannah_modifier = {
 	#Savannah
 	if = {
 		limit = { has_modifier = pd_savannah }
@@ -202,6 +238,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_sinkhole }
 		remove_modifier = pd_sinkhole
 	}
+}
+
+remove_pd_arctic_modifier = {
 	#Arctic
 	if = {
 		limit = { has_modifier = pd_arctic }
@@ -235,6 +274,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_iceberg }
 		remove_modifier = pd_iceberg
 	}
+}
+
+remove_pd_alpine_modifier = {
 	#Alpine
 	if = {
 		limit = { has_modifier = pd_alpine }
@@ -268,6 +310,9 @@ remove_pd_modifier = {
 		limit = { has_modifier = pd_lanthanide }
 		remove_modifier = pd_lanthanide
 	}
+}
+
+remove_pd_tundra_modifier = {
 	#Tundra
 	if = {
 		limit = { has_modifier = pd_tundra }
