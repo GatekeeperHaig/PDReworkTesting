@@ -284,7 +284,7 @@ generate_pd_start_deposits_and_blockers = {
 
 	if = {
 		limit = {
-			is_planet_class = pc_pd_wet_tidally_locked
+			is_planet_class = pc_pd_wet_tidal_locked
 		}
 		
 		# 3 + 3 energy		
@@ -321,11 +321,11 @@ generate_pd_start_deposits_and_blockers = {
 		if = { 
 			limit = { 
 				not = { 
-					has_modifier = pd_wet_tidally_locked
+					has_modifier = pd_wet_tidal_locked
 				} 
 			} 
 			add_modifier = { 
-				modifier = pd_wet_tidally_locked
+				modifier = pd_wet_tidal_locked
 				days = -1 
 			} 
 		}	
@@ -334,7 +334,7 @@ generate_pd_start_deposits_and_blockers = {
 
 	if = {
 		limit = {
-			is_planet_class = pc_pd_dry_tidally_locked
+			is_planet_class = pc_pd_dry_tidal_locked
 		}
 		
 		# 3 + 3 energy		
@@ -374,11 +374,11 @@ generate_pd_start_deposits_and_blockers = {
 		if = { 
 			limit = { 
 				not = { 
-					has_modifier = pd_dry_tidally_locked
+					has_modifier = pd_dry_tidal_locked
 				} 
 			} 
 			add_modifier = { 
-				modifier = pd_dry_tidally_locked
+				modifier = pd_dry_tidal_locked
 				days = -1 
 			} 
 		}	
@@ -387,7 +387,7 @@ generate_pd_start_deposits_and_blockers = {
 
 	if = {
 		limit = {
-			is_planet_class = pc_pd_cold_tidally_locked
+			is_planet_class = pc_pd_cold_tidal_locked
 		}
 		
 		# 3 + 3 energy		
@@ -422,11 +422,11 @@ generate_pd_start_deposits_and_blockers = {
 		if = { 
 			limit = { 
 				not = { 
-					has_modifier = pd_cold_tidally_locked
+					has_modifier = pd_cold_tidal_locked
 				} 
 			} 
 			add_modifier = { 
-				modifier = pd_cold_tidally_locked
+				modifier = pd_cold_tidal_locked
 				days = -1 
 			} 
 		}	
