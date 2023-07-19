@@ -23,7 +23,7 @@
 
  #Ocean
  pd_ocean: "Ocean World"
- pd_ocean_desc: "Oceans cover more than §Y9%§! of the surface, with scattered islands making up the remaining percentage."
+ pd_ocean_desc: "Oceans cover more than §Y90%§! of the surface, with scattered islands making up the remaining percentage."
  pd_cascadian: "Cascadian World"
  pd_cascadian_desc: "Sub-temperate mountainous of coastal forests and towering mountain ranges. An active, stormy, hydrosphere with strong differences between snowy winters and short warmer summers."
  pd_swamp: "Swamp World"
