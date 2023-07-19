@@ -166,6 +166,7 @@
  pd_lichen_desc: "This world has a highly stable hydrosphere and generally predictable low temperatures, allowing giant planet-spanning lichen forests to grow between craggy mountains and glaciers which sap minerals from the local minerals for nutrients."
 
  ###Uncommon
+
  #Superhabitable
  pd_wet_superhabitable: "Wet Superhabitable World"
  pd_wet_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. Farming on this wet planet is particularly productive."
@@ -174,8 +175,18 @@
  pd_cold_superhabitable: "Frozen Superhabitable World"
  pd_cold_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. This frozen planet has rich mining opportunities."
  pd_gaia_superhabitable: "Gaia Superhabitable World"
- pd_gaia_superhabitable_desc: "An ideally created world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+ pd_gaia_superhabitable_desc: "An ideally created superhabitable sworld with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
- #Gaia
+ #Tidally Locked
+ pd_wet_tidally_locked: "Sunside World"
+ pd_wet_tidally_locked_desc: "This sunny, humid tidally locked world has plenty of opportunities to take advantage of the constant sunlight and strong winds."
+ pd_dry_tidally_locked: "Twilight World"
+ pd_dry_tidally_locked_desc: "The constant sunlight and strong winds make this tidally locked planet an ideal place for power generation and harvesting crops."
+ pd_cold_tidally_locked: "Eyeball World"
+ pd_cold_tidally_locked_desc: "Strong winds and ocean currents on the tidally locked planet's light side provide consistent energy generation, while rare ice formations on the planet's dark side allow unique research opportunities."
+ pd_gaia_tidally_locked: "Gaia Tidally Locked World"
+ pd_gaia_tidally_locked_desc: "An ideally created tidally locked world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+
+ ###Gaia
  pd_gaia_world: "Gaia World"
  pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."

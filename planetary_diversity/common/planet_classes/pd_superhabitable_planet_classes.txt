@@ -1,4 +1,4 @@
-###PD Base Classes	
+###PD Superhabitable Classes	
 # These classes are added by Planetary Diversity
 	
 #Wet

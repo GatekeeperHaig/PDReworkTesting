@@ -211,9 +211,11 @@ d_geothermal_vent = {
 	potential = {
 		OR = {
 			is_planet_class = pc_arctic
+			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_tundra
 			is_planet_class = pc_pd_cold_superhabitable
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
@@ -285,6 +287,7 @@ d_tempestous_mountain = {
 	potential = {
 		OR = {
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_alpine
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
@@ -328,6 +331,7 @@ d_veiny_cliffs = {
 		OR = {
 			is_planet_class = pc_alpine
 			is_planet_class = pc_arctic
+			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_continental
@@ -365,7 +369,9 @@ d_mineral_fields = {
 	potential = {
 		OR = {
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
 			is_planet_class = pc_ocean
 			is_planet_class = pc_tundra
@@ -403,7 +409,9 @@ d_prosperous_mesa = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_pd_wet_superhabitable
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
@@ -453,6 +461,7 @@ d_ore_rich_caverns = {
 			is_planet_class = pc_ocean
 			is_planet_class = pc_alpine
 			is_planet_class = pc_arctic
+			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_tundra
@@ -496,6 +505,7 @@ d_rich_mountain = {
 			is_planet_class = pc_desert
 			is_planet_class = pc_alpine
 			is_planet_class = pc_arctic
+			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_tundra
@@ -535,7 +545,9 @@ d_submerged_ore_veins = {
 		OR = {
 			is_planet_class = pc_ocean
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_nuked
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
@@ -581,6 +593,7 @@ d_lichen_fields = {
 		OR = {
 			is_planet_class = pc_nuked
 			is_planet_class = pc_arctic
+			is_planet_class = pc_pd_cold_tidally_locked
 		}
 	}
 
@@ -624,6 +637,7 @@ d_bountiful_plains = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 		}
 	}
 
@@ -695,6 +709,7 @@ d_green_hills = {
 		OR = {
 			is_planet_class = pc_ocean
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 		}
 	}
 
@@ -877,6 +892,7 @@ d_lush_jungle = {
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_ocean
 		}
 	}
@@ -911,6 +927,7 @@ d_fertile_lands = {
 	potential = {
 		OR = {
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_continental
 			is_planet_class = pc_pd_wet_superhabitable
 			is_planet_class = pc_gaia
@@ -988,6 +1005,7 @@ d_black_soil = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_pd_wet_superhabitable
 			is_planet_class = pc_savannah
+			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
 		}
@@ -1099,6 +1117,7 @@ d_tropical_island = {
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_desert
 			is_planet_class = pc_tropical
+			is_planet_class = pc_pd_wet_tidally_locked
 		}
 	}
 

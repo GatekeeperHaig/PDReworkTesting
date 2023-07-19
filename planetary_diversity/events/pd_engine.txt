@@ -4039,6 +4039,114 @@ country_event = {
 				20 = { set_planet_size = 35 }
 			}
         }
+		every_galaxy_planet = {                 
+            limit = { 
+				is_wet = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_m 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_6 
+						is_star_class = sc_trinary_1 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_wet_tidally_locked 
+			reroll_planet = yes 
+			add_modifier = {
+				modifier = pd_wet_tidally_locked 
+				days = -1
+			}
+		}
+		every_galaxy_planet = {                 
+            limit = { 
+				is_dry = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_m 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_6 
+						is_star_class = sc_trinary_1 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_dry_tidally_locked 
+			add_modifier = {
+				modifier = pd_dry_tidally_locked 
+				days = -1
+			}
+			reroll_planet = yes 
+        }
+		every_galaxy_planet = {                 
+            limit = { 
+				is_cold = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_m 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_3 
+						is_star_class = sc_binary_6 
+						is_star_class = sc_trinary_1 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_cold_tidally_locked 
+			add_modifier = {
+				modifier = pd_cold_tidally_locked 
+				days = -1
+			}
+			reroll_planet = yes 
+        }
 	}
 }
 
@@ -4049,7 +4157,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		#Superhabitable
+		#Wet Superhabitable
 		every_galaxy_planet = { 
 			limit = { 
 				is_planet_class = pc_pd_wet_superhabitable 
@@ -4074,6 +4182,30 @@ country_event = {
 				is_homeworld = yes 
 			} 
 			change_planet_size = +14 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Wet Tidally Locked
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_tidally_locked 
+				is_homeworld = yes 
+			} 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Dry Tidally Locked
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_tidally_locked   
+				is_homeworld = yes 
+			} 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Cold Tidally Locked
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_tidally_locked  
+				is_homeworld = yes 
+			} 
 			generate_pd_start_deposits_and_blockers = yes 
 		}
 	}
@@ -4154,9 +4286,10 @@ country_event = {
 				is_homeworld = no 
 				has_planet_flag = prescripted_ideal 
 			}
-			change_pc = pc_arid
+			change_pc = pc_tundra
 			random_list = {	
 				25 = {
+					change_pc = pc_tundra
 					add_modifier = { modifier = pd_tundra }	 
 				}    
 				25 = { 
@@ -4173,6 +4306,93 @@ country_event = {
 				} 
 				25 = { 
 					pd_tuya_world_effect = yes
+				}
+			}
+		}
+		#Wet Tidally Locked Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_wet_tidally_locked
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_tropical
+			random_list = {	
+				25 = {
+					add_modifier = { modifier = pd_tropical }	 
+				}    
+				25 = { 
+					pd_atoll_world_effect = yes
+				}
+				25 = { 
+					pd_tepui_world_effect = yes
+				}
+				25 = { 
+					pd_mangrove_world_effect = yes
+				}
+				25 = { 
+					pd_cenote_world_effect = yes
+				} 
+				25 = { 
+					pd_fungal_world_effect = yes
+				} 
+			}
+		}
+		#Dry Tidally Locked Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_dry_tidally_locked
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_savannah
+			random_list = {	
+				25 = {
+					add_modifier = { modifier = pd_savannah }	 
+				}    
+				25 = { 
+					pd_steppe_world_effect = yes
+				}
+				25 = { 
+					pd_prairie_world_effect = yes
+				}
+				25 = { 
+					pd_veld_world_effect = yes
+				}
+				25 = { 
+					pd_semi_arid_world_effect = yes
+				} 
+				25 = { 
+					pd_aspen_world_effect = yes
+				}
+			}
+		}
+		#Cold Tidally Locked Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_cold_tidally_locked
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_arctic
+			random_list = {	
+				25 = {
+					add_modifier = { modifier = pd_arctic }	 
+				}    
+				25 = { 
+					pd_cold_desert_world_effect = yes
+				}
+				25 = { 
+					pd_glacial_world_effect = yes
+				}
+				25 = { 
+					pd_antarctic_world_effect = yes
+				}
+				25 = { 
+					pd_aeolian_world_effect = yes
+				} 
+				25 = { 
+					pd_ice_spike_world_effect = yes
 				}
 			}
 		}
@@ -4348,6 +4568,39 @@ planet_event = {
 			}
 			remove_modifier = pd_gaia_superhabitable
 		}
+		#Tidally Locked
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_wet_tidally_locked
+				} 
+			}
+			remove_modifier = pd_wet_tidally_locked
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_dry_tidally_locked 
+				} 
+			}
+			remove_modifier = pd_dry_tidally_locked
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_cold_tidally_locked 
+				} 
+			}
+			remove_modifier = pd_cold_tidally_locked
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_gaia_tidally_locked
+				} 
+			}
+			remove_modifier = pd_gaia_tidally_locked
+		}
 	}
 }
 
@@ -4416,6 +4669,55 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pd_gaia_superhabitable
+				days = -1
+			}
+		}
+		#Tidally Locked
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_tidally_locked
+				NOT = {
+					has_modifier = pd_wet_tidally_locked
+				}
+			}
+			add_modifier = {
+				modifier = pd_wet_tidally_locked
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_tidally_locked
+				NOT = {
+					has_modifier = pd_dry_tidally_locked
+				}
+			}
+			add_modifier = {
+				modifier = pd_dry_tidally_locked
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_tidally_locked
+				NOT = {
+					has_modifier = pd_cold_tidally_locked
+				}
+			}
+			add_modifier = {
+				modifier = pd_cold_tidally_locked
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_gaia_tidally_locked
+				NOT = {
+					has_modifier = pd_gaia_tidally_locked
+				}
+			}
+			add_modifier = {
+				modifier = pd_gaia_tidally_locked
 				days = -1
 			}
 		}

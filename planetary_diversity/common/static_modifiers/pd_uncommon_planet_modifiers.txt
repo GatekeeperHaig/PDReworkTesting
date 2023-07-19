@@ -36,3 +36,37 @@ pd_gaia_superhabitable = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
 	icon_frame = 1
 }
+
+#Tidally Locked
+pd_wet_tidally_locked = {
+	district_farming_max = 3
+	district_generator_max = 1
+	planet_housing_mult = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_wet_tidally_locked.dds"
+	icon_frame = 1
+}
+
+pd_dry_tidally_locked = {
+	district_generator_max = 2
+	district_farming_max = 2
+	planet_amenities_mult = -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_dry_tidally_locked.dds"
+	icon_frame = 1
+}
+
+pd_cold_tidally_locked = {
+	district_generator_max = 3
+	district_farming_max = 1
+	planet_buildings_cost_mult = 0.1
+	planet_districts_cost_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cold_tidally_locked.dds"
+	icon_frame = 1
+}
+
+pd_gaia_tidally_locked = {
+	planet_amenities_add = 10
+	planet_max_districts_add = 6
+	pop_growth_speed = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
+	icon_frame = 1
+}

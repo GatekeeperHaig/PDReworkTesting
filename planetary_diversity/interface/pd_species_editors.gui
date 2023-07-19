@@ -1323,7 +1323,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_wet_superhabitable"
-				position = { x = 249 y = 250 }
+				position = { x = 249 y = 251 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1331,7 +1331,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_dry_superhabitable"
-				position = { x = 286 y = 250 }
+				position = { x = 286 y = 251 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1339,11 +1339,36 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_cold_superhabitable"
-				position = { x = 323 y = 250 }
+				position = { x = 323 y = 251 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_wet_superhabitable"
+			}
+			
+			buttonType = {
+				name = "pc_pd_wet_tidally_locked"
+				position = { x = 489 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_tidally_locked"
+			}
+			buttonType = {
+				name = "pc_pd_dry_tidally_locked"
+				position = { x = 526 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_tidally_locked"
+			}
+			buttonType = {
+				name = "pc_pd_cold_tidally_locked"
+				position = { x = 563 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_tidally_locked"
 			}
 
 

@@ -50,3 +50,48 @@ part = {
 		}
 	}
 }
+
+# Wet Tidally Locked World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_WET_TIDALLY_LOCKED"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_wet_tidally_locked
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+# Dry Tidally Locked World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_DRY_TIDALLY_LOCKED"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_dry_tidally_locked
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+# Cold Tidally Locked World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_COLD_TIDALLY_LOCKED"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_cold_tidally_locked
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

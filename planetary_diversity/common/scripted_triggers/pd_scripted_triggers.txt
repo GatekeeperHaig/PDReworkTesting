@@ -204,9 +204,8 @@ has_pd_modifier = {
 
 is_pd_planet_class_all = {
 	OR = {
-		is_planet_class = pc_pd_wet_superhabitable
-		is_planet_class = pc_pd_dry_superhabitable
-		is_planet_class = pc_pd_cold_superhabitable
+		is_pd_planet_class_superhabitable = yes
+		is_pd_planet_class_tidally_locked = yes
 	}
 }
 
@@ -215,5 +214,13 @@ is_pd_planet_class_superhabitable = {
 		is_planet_class = pc_pd_wet_superhabitable
 		is_planet_class = pc_pd_dry_superhabitable
 		is_planet_class = pc_pd_cold_superhabitable
+	}
+}
+
+is_pd_planet_class_tidally_locked = {
+	OR = {
+		is_planet_class = pc_pd_wet_idally_locked
+		is_planet_class = pc_pd_dry_idally_locked
+		is_planet_class = pc_pd_cold_idally_locked
 	}
 }
