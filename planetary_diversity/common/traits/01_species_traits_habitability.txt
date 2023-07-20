@@ -65,6 +65,9 @@ trait_pc_nuked_preference = {
 		pc_pd_wet_tidally_locked_habitability = @uncommmon
 		pc_pd_dry_tidally_locked_habitability = @uncommmon
 		pc_pd_cold_tidally_locked_habitability = @uncommmon
+		pc_pd_wet_cave_habitability = @uncommmon
+		pc_pd_dry_cave_habitability = @uncommmon
+		pc_pd_cold_cave_habitability = @uncommmon
 	}
 	ai_weight = {
 		weight = 0

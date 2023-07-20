@@ -95,3 +95,48 @@ part = {
 		}
 	}
 }
+
+# Wet Cave World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_WET_CAVE"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_wet_cave
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+# Dry Cave World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_DRY_CAVE"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_dry_cave
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+# Cold Cave World
+part = {
+	location = 0
+	localization = "START_SCREEN_PART_ONE_COLD_CAVE"
+	
+	trigger = {
+		ideal_planet_class = pc_pd_cold_cave
+		NOR = { 
+			has_country_flag = custom_start_screen 
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}

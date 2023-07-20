@@ -217,6 +217,7 @@ d_geothermal_vent = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 		}
@@ -254,6 +255,7 @@ d_underwater_vent = {
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_relic
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_nuked
 		}
 	}
@@ -289,6 +291,7 @@ d_tempestous_mountain = {
 			is_planet_class = pc_tropical
 			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_alpine
+			is_planet_class = pc_pd_cold_cave
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_relic
@@ -330,6 +333,7 @@ d_veiny_cliffs = {
 	potential = {
 		OR = {
 			is_planet_class = pc_alpine
+			is_planet_class = pc_pd_cold_cave
 			is_planet_class = pc_arctic
 			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
@@ -373,7 +377,9 @@ d_mineral_fields = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_tundra
 			is_planet_class = pc_pd_cold_superhabitable
 		}
@@ -413,6 +419,7 @@ d_prosperous_mesa = {
 			is_planet_class = pc_savannah
 			is_planet_class = pc_pd_dry_tidally_locked
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_relic
@@ -459,7 +466,9 @@ d_ore_rich_caverns = {
 	potential = {
 		OR = {
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_alpine
+			is_planet_class = pc_pd_cold_cave
 			is_planet_class = pc_arctic
 			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
@@ -503,7 +512,9 @@ d_rich_mountain = {
 			is_planet_class = pc_continental
 			is_planet_class = pc_pd_wet_superhabitable
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 			is_planet_class = pc_alpine
+			is_planet_class = pc_pd_cold_cave
 			is_planet_class = pc_arctic
 			is_planet_class = pc_pd_cold_tidally_locked
 			is_planet_class = pc_arid
@@ -544,6 +555,7 @@ d_submerged_ore_veins = {
 	potential = {
 		OR = {
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_tropical
 			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_savannah
@@ -708,6 +720,7 @@ d_green_hills = {
 	potential = {
 		OR = {
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_tropical
 			is_planet_class = pc_pd_wet_tidally_locked
 		}
@@ -747,6 +760,7 @@ d_forgiving_tundra = {
 	potential = {
 		OR = {
 			is_planet_class = pc_alpine
+			is_planet_class = pc_pd_cold_cave
 			is_planet_class = pc_tundra
 			is_planet_class = pc_pd_cold_superhabitable
 		}
@@ -894,6 +908,7 @@ d_lush_jungle = {
 			is_planet_class = pc_tropical
 			is_planet_class = pc_pd_wet_tidally_locked
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 		}
 	}
 
@@ -969,6 +984,7 @@ d_great_river = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 		}
 	}
 
@@ -1044,6 +1060,7 @@ d_teeming_reef = {
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 		}
 	}
 
@@ -1080,6 +1097,7 @@ d_marvelous_oasis = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 		}
 	}
 
@@ -1116,6 +1134,7 @@ d_tropical_island = {
 			is_planet_class = pc_arid
 			is_planet_class = pc_pd_dry_superhabitable
 			is_planet_class = pc_desert
+			is_planet_class = pc_pd_dry_cave
 			is_planet_class = pc_tropical
 			is_planet_class = pc_pd_wet_tidally_locked
 		}
@@ -1367,6 +1386,7 @@ d_crystal_forest = {
 		can_have_habitable_deposits = yes
 		NOR = {
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_nuked
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable
@@ -1408,6 +1428,7 @@ d_crystal_reef = {
 	potential = {
 		OR = {
 			is_planet_class = pc_ocean
+			is_planet_class = pc_pd_wet_cave
 			is_planet_class = pc_nuked
 			is_planet_class = pc_gaia
 			is_planet_class = pc_pd_gaia_superhabitable

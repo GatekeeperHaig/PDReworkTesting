@@ -31,7 +31,7 @@ pd_cold_superhabitable = {
 
 pd_gaia_superhabitable = {
 	planet_amenities_add = 10
-	planet_max_districts_add = 6
+	planet_max_districts_add = 4
 	pop_growth_speed = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
 	icon_frame = 1
@@ -65,7 +65,37 @@ pd_cold_tidally_locked = {
 
 pd_gaia_tidally_locked = {
 	planet_amenities_add = 10
-	planet_max_districts_add = 6
+	planet_max_districts_add = 4
+	pop_growth_speed = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
+	icon_frame = 1
+}
+
+#Cave
+pd_wet_cave = {
+	district_mining_max = 2
+	district_generator_max = 2
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_wet_cave.dds"
+	icon_frame = 1
+}
+
+pd_dry_cave = {
+	district_mining_max = 1
+	district_generator_max = 3
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_dry_cave.dds"
+	icon_frame = 1
+}
+
+pd_cold_cave = {
+	district_mining_max = 3
+	district_generator_max = 1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cold_cave.dds"
+	icon_frame = 1
+}
+
+pd_gaia_superhabitable = {
+	planet_amenities_add = 10
+	planet_max_districts_add = 4
 	pop_growth_speed = 0.05
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_gaia_world.dds"
 	icon_frame = 1

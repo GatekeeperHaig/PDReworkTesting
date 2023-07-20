@@ -187,6 +187,9 @@
  pd_gaia_tidally_locked: "Gaia Tidally Locked World"
  pd_gaia_tidally_locked_desc: "An ideally created tidally locked world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
+ #Cave
+
+
  ###Gaia
  pd_gaia_world: "Gaia World"
  pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."

@@ -1371,6 +1371,31 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_wet_tidally_locked"
 			}
 
+			buttonType = {
+				name = "pc_pd_wet_cave"
+				position = { x = 369 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_cave"
+			}
+			buttonType = {
+				name = "pc_pd_dry_cave"
+				position = { x = 406 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_cave"
+			}
+			buttonType = {
+				name = "pc_pd_cold_cave"
+				position = { x = 443 y = 251 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_wet_cave"
+			}
+
 
 
 			containerWindowType = {

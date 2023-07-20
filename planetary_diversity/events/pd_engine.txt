@@ -4147,6 +4147,117 @@ country_event = {
 			}
 			reroll_planet = yes 
         }
+		every_galaxy_planet = {                 
+            limit = { 
+				is_wet = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_f 
+						is_star_class = sc_binary_4 
+						is_star_class = sc_binary_7 
+						is_star_class = sc_binary_8 
+						is_star_class = sc_trinary_2 
+						is_star_class = sc_trinary_3 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_wet_cave
+			reroll_planet = yes 
+			add_modifier = {
+				modifier = pd_wet_cave
+				days = -1
+			}
+		}
+		every_galaxy_planet = {                 
+            limit = { 
+				is_cold = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_f 
+						is_star_class = sc_binary_4 
+						is_star_class = sc_binary_7 
+						is_star_class = sc_binary_8 
+						is_star_class = sc_trinary_2 
+						is_star_class = sc_trinary_3 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_cold_cave
+			reroll_planet = yes 
+			add_modifier = {
+				modifier = pd_cold_cave
+				days = -1
+			}
+		}
+		every_galaxy_planet = {                 
+            limit = { 
+				is_dry = yes
+				system_star = { 
+					OR = { 
+						is_star_class = sc_f 
+						is_star_class = sc_binary_4 
+						is_star_class = sc_binary_7 
+						is_star_class = sc_binary_8 
+						is_star_class = sc_trinary_2 
+						is_star_class = sc_trinary_3 
+					} 
+				} 
+				is_homeworld = no 
+				is_moon = no 
+				NOR = { 
+					has_planet_flag = prescripted_ideal 
+					has_planet_flag = pd_ignore 
+					has_planet_flag = planet_earth 
+					solar_system = { 
+						OR = {
+							has_star_flag = empire_cluster 
+							has_star_flag = empire_home_system
+							has_star_flag = sol_system
+							has_star_flag = sol
+						}
+					}
+				}
+			}
+			remove_pd_modifier = yes
+			change_pc = pc_pd_dry_cave
+			reroll_planet = yes 
+			add_modifier = {
+				modifier = pd_dry_cave
+				days = -1
+			}
+		}
 	}
 }
 
@@ -4204,6 +4315,30 @@ country_event = {
 		every_galaxy_planet = { 
 			limit = { 
 				is_planet_class = pc_pd_cold_tidally_locked  
+				is_homeworld = yes 
+			} 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Wet Cave
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_cave
+				is_homeworld = yes 
+			} 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Dry Cave
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_cave  
+				is_homeworld = yes 
+			} 
+			generate_pd_start_deposits_and_blockers = yes 
+		}
+		#Cold Cave
+		every_galaxy_planet = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_cave
 				is_homeworld = yes 
 			} 
 			generate_pd_start_deposits_and_blockers = yes 
@@ -4396,6 +4531,93 @@ country_event = {
 				}
 			}
 		}
+		#Wet Cave Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_wet_cave
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_ocean
+			random_list = {				
+				25 = {
+					add_modifier = { modifier = pd_ocean }	 
+				}    
+				25 = { 
+					pd_cascadian_world_effect = yes
+				}
+				25 = { 
+					pd_swamp_world_effect = yes
+				}
+				25 = { 
+					pd_crag_world_effect = yes
+				}
+				25 = { 
+					pd_fog_world_effect = yes
+				} 
+				25 = { 
+					pd_kelp_world_effect = yes
+				} 
+			}
+		} 	
+		#Dry Cave Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_dry_cave
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_desert
+			random_list = {			
+				25 = {
+					add_modifier = { modifier = pd_desert }	 
+				}    
+				25 = { 
+					pd_dune_world_effect = yes
+				}
+				25 = { 
+					pd_oasis_world_effect = yes
+				}
+				25 = { 
+					pd_outback_world_effect = yes
+				}
+				25 = { 
+					pd_coastal_world_effect = yes
+				} 
+				25 = { 
+					pd_fungi_world_effect = yes
+				}
+			}
+		} 
+		#Cold Cave Player Start
+		every_galaxy_planet = { 				
+			limit = { 
+				is_planet_class = pc_pd_cold_cave
+				is_homeworld = no 
+				has_planet_flag = prescripted_ideal 
+			}
+			change_pc = pc_alpine
+			random_list = {		
+				25 = {
+					add_modifier = { modifier = pd_alpine }	 
+				}    
+				25 = { 
+					pd_boreal_world_effect = yes
+				}
+				25 = { 
+					pd_snow_world_effect = yes
+				}
+				25 = { 
+					pd_highland_world_effect = yes
+				}
+				25 = { 
+					pd_dune_forest_world_effect = yes
+				} 
+				25 = { 
+					pd_fjord_world_effect = yes
+				}
+			}
+		} 
 	}
 }
 
@@ -4601,6 +4823,39 @@ planet_event = {
 			}
 			remove_modifier = pd_gaia_tidally_locked
 		}
+		#Caves
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_wet_cave
+				} 
+			}
+			remove_modifier = pd_wet_cave
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_dry_cave
+				} 
+			}
+			remove_modifier = pd_dry_cave
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_cold_cave
+				} 
+			}
+			remove_modifier = pd_cold_cave
+		}
+		if = { 
+			limit = { 
+				NOT = { 
+					is_planet_class = pc_pd_gaia_cave 
+				} 
+			}
+			remove_modifier = pd_gaia_cave
+		}
 	}
 }
 
@@ -4718,6 +4973,55 @@ planet_event = {
 			}
 			add_modifier = {
 				modifier = pd_gaia_tidally_locked
+				days = -1
+			}
+		}
+		#Caves
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_wet_cave 
+				NOT = {
+					has_modifier = pd_wet_cave
+				}
+			}
+			add_modifier = {
+				modifier = pd_wet_cave
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_dry_cave
+				NOT = {
+					has_modifier = pd_dry_cave
+				}
+			}
+			add_modifier = {
+				modifier = pd_dry_cave
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_cold_cave 
+				NOT = {
+					has_modifier = pd_cold_cave
+				}
+			}
+			add_modifier = {
+				modifier = pd_cold_cave
+				days = -1
+			}
+		}
+		if = { 
+			limit = { 
+				is_planet_class = pc_pd_gaia_cave 
+				NOT = {
+					has_modifier = pd_gaia_cave
+				}
+			}
+			add_modifier = {
+				modifier = pd_gaia_cave
 				days = -1
 			}
 		}
