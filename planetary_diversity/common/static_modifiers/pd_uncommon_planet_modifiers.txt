@@ -93,7 +93,7 @@ pd_cold_cave = {
 	icon_frame = 1
 }
 
-pd_gaia_superhabitable = {
+pd_gaia_cave = {
 	planet_amenities_add = 10
 	planet_max_districts_add = 4
 	pop_growth_speed = 0.05

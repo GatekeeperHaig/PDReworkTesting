@@ -188,7 +188,14 @@
  pd_gaia_tidally_locked_desc: "An ideally created tidally locked world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
  #Cave
-
+ pd_wet_cave:0 "Karst Cave World"
+ pd_wet_cave_desc:0 "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_dry_cave:0 "Sandstone Cave World"
+ pd_dry_cave_desc:0 "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_cold_cave:0 "Ice Cave World"
+ pd_cold_cave_desc:0 "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_gaia_cave:0 "Gaia Cave World"
+ pd_gaia_cave_desc:0 "An ideally created cave world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
  ###Gaia
  pd_gaia_world: "Gaia World"
