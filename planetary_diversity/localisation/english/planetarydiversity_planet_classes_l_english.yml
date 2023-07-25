@@ -225,6 +225,12 @@
  mod_pc_pd_primal_habitability: "Desert Habitability"
  trait_pc_pd_primal_preference: "Desert Preference"
  trait_pc_pd_primal_preference_desc: "$trait_pc_arctic_preference_desc$"
+ pc_pd_striped: "Striped World"
+ pc_pd_striped_desc: "This world has a striking mineralogical composition in a dry, rocky world with a nitrogen-oxygen atmosphere, with a dust-covered arid terrain."
+ pc_pd_striped_adj: "stripped"
+ mod_pc_pd_striped_habitability: "Arid Habitability"
+ trait_pc_pd_striped_preference: "Arid Preference"
+ trait_pc_pd_striped_preference_desc: "$trait_pc_arctic_preference_desc$"
 
 #Savannah
  pc_pd_steppe: "Steppe World"

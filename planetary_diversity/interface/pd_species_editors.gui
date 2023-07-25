@@ -479,7 +479,7 @@ guiTypes = {
 
 			@box_y = -7
 			@box_width = 87
-			@box_height = 190
+			@box_height = 230
 
 			containerWindowType = {
 				name = "setting_bg_box1"
@@ -954,6 +954,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_fog_desert"
 			}
 			buttonType = {
+				name = "pc_pd_striped"
+				position = { x = @planet_col9 y = @planet_row4 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "interface"
+				pdx_tooltip = "pc_pd_striped"
+			}
+			buttonType = {
 				name = "pc_pd_mediterranean"
 				position = { x = @planet_col10 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
@@ -980,7 +988,7 @@ guiTypes = {
 			#Rares
 			buttonType = {
 				name = "pc_pd_coral"
-				position = { x = @planet_col9 y = @planet_row4 }
+				position = { x = @planet_col9 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -988,7 +996,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_primal"
-				position = { x = @planet_col10 y = @planet_row4 }
+				position = { x = @planet_col10 y = @planet_row5 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"

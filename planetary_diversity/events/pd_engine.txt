@@ -231,6 +231,9 @@ country_event = {
 					pd_succulent_world_effect = yes
 				}
 				25 = { 
+					pd_striped_world_effect = yes
+				}
+				25 = { 
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal 
@@ -581,6 +584,9 @@ country_event = {
 				} 
 				25 = { 
 					pd_succulent_world_effect = yes
+				}
+				25 = { 
+					pd_striped_world_effect = yes
 				}
 			}
 		}
@@ -1254,6 +1260,20 @@ country_event = {
 			}  
 			change_pc = pc_arid         
 			pd_succulent_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_striped
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arid         
+			pd_striped_world_effect = yes
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -2211,6 +2231,19 @@ country_event = {
 		IF = {
 			limit = {
 				any_owned_species = {
+					has_trait =	trait_pc_pd_striped_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_striped_preference
+					add_trait = trait_pc_arid_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
 					has_trait =	trait_pc_pd_coral_preference
 				}
 			}
@@ -3106,6 +3139,17 @@ country_event = {
 		trigger = {
 			from = { is_planet_class = pc_arid }
 		}
+		name = pdengine.21.striped
+		hidden_effect = {   
+			from = {       
+				pd_striped_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arid }
+		}
 		name = pdengine.21.coral
 		hidden_effect = {   
 			from = {       
@@ -3711,6 +3755,9 @@ planet_event = {
 				}
 				25 = { 
 					pd_succulent_world_effect = yes
+				}
+				25 = { 
+					pd_striped_world_effect = yes
 				}
 				0 = { 
 					modifier = {
@@ -4410,7 +4457,7 @@ country_event = {
 					pd_badlands_world_effect = yes
 				} 
 				25 = { 
-					pd_succulent_world_effect = yes
+					pd_striped_world_effect = yes
 				}
 			}
 		}

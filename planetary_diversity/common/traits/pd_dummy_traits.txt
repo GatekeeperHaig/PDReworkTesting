@@ -887,6 +887,32 @@ trait_pc_pd_succulent_preference = {
 		weight = 0
 	}
 }
+trait_pc_pd_striped_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
+	sorting_priority = 30
+	modifier = {
+		pc_arid_habitability = @primary
+		pc_desert_habitability = @secondary
+		pc_savannah_habitability = @secondary
+
+		pc_tropical_habitability = @tertiary
+		pc_continental_habitability = @tertiary
+		pc_tundra_habitability = @tertiary
+		pc_arctic_habitability = @tertiary
+		pc_ocean_habitability = @tertiary
+		pc_alpine_habitability = @tertiary
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
 trait_pc_pd_coral_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
@@ -944,6 +970,12 @@ trait_pc_pd_primal_preference = {
 trait_pc_pd_steppe_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -964,6 +996,12 @@ trait_pc_pd_steppe_preference = {
 trait_pc_pd_prairie_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -984,6 +1022,12 @@ trait_pc_pd_prairie_preference = {
 trait_pc_pd_veld_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -1004,6 +1048,12 @@ trait_pc_pd_veld_preference = {
 trait_pc_pd_semi_arid_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -1024,6 +1074,12 @@ trait_pc_pd_semi_arid_preference = {
 trait_pc_pd_aspen_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -1044,6 +1100,12 @@ trait_pc_pd_aspen_preference = {
 trait_pc_pd_supercontinent_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -1064,6 +1126,12 @@ trait_pc_pd_supercontinent_preference = {
 trait_pc_pd_sinkhole_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_savannah_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_savannah_habitability = @primary
@@ -1086,6 +1154,12 @@ trait_pc_pd_sinkhole_preference = {
 trait_pc_pd_cold_desert_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1106,6 +1180,12 @@ trait_pc_pd_cold_desert_preference = {
 trait_pc_pd_glacial_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1126,6 +1206,12 @@ trait_pc_pd_glacial_preference = {
 trait_pc_pd_antarctic_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1146,6 +1232,12 @@ trait_pc_pd_antarctic_preference = {
 trait_pc_pd_aeolian_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1166,6 +1258,12 @@ trait_pc_pd_aeolian_preference = {
 trait_pc_pd_ice_spike_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1186,6 +1284,12 @@ trait_pc_pd_ice_spike_preference = {
 trait_pc_pd_storm_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1206,6 +1310,12 @@ trait_pc_pd_storm_preference = {
 trait_pc_pd_iceberg_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1228,6 +1338,12 @@ trait_pc_pd_iceberg_preference = {
 trait_pc_pd_boreal_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1248,6 +1364,12 @@ trait_pc_pd_boreal_preference = {
 trait_pc_pd_snow_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1268,6 +1390,12 @@ trait_pc_pd_snow_preference = {
 trait_pc_pd_highland_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1288,6 +1416,12 @@ trait_pc_pd_highland_preference = {
 trait_pc_pd_dune_forest_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1308,6 +1442,12 @@ trait_pc_pd_dune_forest_preference = {
 trait_pc_pd_fjord_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1328,6 +1468,12 @@ trait_pc_pd_fjord_preference = {
 trait_pc_pd_glaciovolcanic_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1348,6 +1494,12 @@ trait_pc_pd_glaciovolcanic_preference = {
 trait_pc_pd_lanthanide_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_alpine_habitability = @primary
@@ -1370,6 +1522,12 @@ trait_pc_pd_lanthanide_preference = {
 trait_pc_pd_bog_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1390,6 +1548,12 @@ trait_pc_pd_bog_preference = {
 trait_pc_pd_mycelium_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1410,6 +1574,12 @@ trait_pc_pd_mycelium_preference = {
 trait_pc_pd_mud_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1430,6 +1600,12 @@ trait_pc_pd_mud_preference = {
 trait_pc_pd_basalt_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1450,6 +1626,12 @@ trait_pc_pd_basalt_preference = {
 trait_pc_pd_tuya_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1470,6 +1652,12 @@ trait_pc_pd_tuya_preference = {
 trait_pc_pd_cryoflora_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary
@@ -1490,6 +1678,12 @@ trait_pc_pd_cryoflora_preference = {
 trait_pc_pd_lichen_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	species_potential_add = {
+		always = no
+	}
+	species_possible_merge_add = {
+		always = no
+	} 
 	sorting_priority = 30
 	modifier = {
 		pc_arctic_habitability = @primary

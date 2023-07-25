@@ -65,6 +65,10 @@ pd_succulent = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_succulent.dds"
 	icon_frame = 1
 }
+pd_striped = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_striped.dds"
+	icon_frame = 1
+}
 pd_coral = {	
 	district_mining_max = 4
 	pop_growth_speed = -0.05
