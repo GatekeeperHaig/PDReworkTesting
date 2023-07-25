@@ -107,6 +107,9 @@ pd_aspen = {
 	icon_frame = 1
 }
 pd_supercontinent = {
+	#planet_farmers_food_produces_add = 1
+	#planet_technician_energy_produces_add = 1
+	#planet_researchers_society_research_produces_add = 2
 	district_farming_max = 4
 	planet_housing_mult = 0.1
 	planet_amenities_mult = -0.1

@@ -5027,3 +5027,129 @@ planet_event = {
 		}
 	}
 }
+
+#This is a pre event that checks if tidally locked starting worlds are moons
+country_event = {
+	id = pdengine.50
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		every_galaxy_planet = {
+			limit = { 
+				OR = { 
+					is_planet_class = pc_pd_wet_tidally_locked 
+					is_planet_class = pc_pd_dry_tidally_locked 
+					is_planet_class = pc_pd_cold_tidally_locked 
+				} 
+				is_homeworld = yes 
+				is_moon = yes 
+			}
+			ROOT = { set_country_flag = pdtidallylockedhomeworldmoon }
+		}
+	}
+}
+
+#This is an event that changes the tidally locked homeworld to another planet if the empire starts on a moon
+country_event = {
+	id = pdengine.51
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+		
+	trigger	 = { 
+		has_country_flag = pdtidallylockedhomeworldmoon 
+		any_owned_planet = {
+			OR = {
+				is_planet_class = pc_pd_wet_tidally_locked 
+				is_planet_class = pc_pd_dry_tidally_locked 
+				is_planet_class = pc_pd_cold_tidally_locked 
+			}
+		}
+	}
+
+	immediate = {
+		random_planet_within_border = {
+			limit = { 
+				is_capital = no 
+				is_moon = no 
+				is_star = no 
+				is_asteroid = no 
+				NOT = { is_planet_class = pc_gas_giant } 
+				is_artificial = no 
+			}
+			set_planet_size = 20
+			if = {
+				limit = {
+					root = { any_planet_within_border = { is_planet_class = pc_pd_wet_tidally_locked } }
+				}
+				change_pc = pc_pd_wet_tidally_locked
+			}
+			if = {
+				limit = {
+					root = { any_planet_within_border = { is_planet_class = pc_pd_dry_tidally_locked } }
+				}
+				change_pc = pc_pd_dry_tidally_locked
+			}
+			if = {
+				limit = {
+					root = { any_planet_within_border = { is_planet_class = pc_pd_cold_tidally_locked } }
+				}
+				change_pc = pc_pd_cold_tidally_locked
+			}
+			if = {
+				limit = {
+					root = { 
+						has_origin = origin_default 
+						is_gestalt = no
+					}
+				}
+				add_modifier = { modifier = prosp_uni_mod days = 7200 }
+			}
+			if = {
+				limit = {
+					root = { 
+						has_origin = origin_default 
+						is_gestalt = yes
+					}
+				}
+				add_modifier = { modifier = prosp_uni_mod_gestalt days = 7200 }
+			}
+			generate_pd_start_deposits_and_blockers = yes
+			set_owner = ROOT
+			set_planet_flag = tidallylockedhomeworld
+			#All other pop types
+			create_pop = { 
+				species = owner_species
+				ethos = random
+			}	
+			set_capital = yes
+			generate_start_buildings_and_districts = yes
+			generate_start_pops = yes
+			IF = {
+				limit = { owner = { has_origin = origin_tree_of_life } }
+				add_deposit = d_tree_of_life_home
+				remove_modifier = no_lifetree
+			}
+		}
+		every_owned_pop = {
+			modify_species = {
+				species = this
+				ideal_planet_class = pc_pd_wet_tidally_locked
+				base = none # makes this replace parent species
+			}
+		}			
+		random_owned_planet = {
+			limit = { is_capital = no }
+			change_pc = pc_barren
+			reset_planet = yes
+		}
+		every_planet_within_border = {
+			limit = { 
+				is_star = yes 
+			}
+			change_pc = pc_m_star
+		}
+		solar_system = { set_star_class = sc_m }
+	}
+} 

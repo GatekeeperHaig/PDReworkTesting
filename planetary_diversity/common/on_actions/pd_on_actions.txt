@@ -96,6 +96,8 @@ on_press_begin = {
 		pdengine.31
 		pdengine.32
 		pdengine.33
+		pdengine.50
+		pdengine.51
 	}
 }
 
