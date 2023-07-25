@@ -441,7 +441,7 @@ country_event = {
 		#Continental Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_continental = yes
+				pd_is_continental = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -473,7 +473,7 @@ country_event = {
 		#Ocean Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_ocean = yes
+				pd_is_ocean = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 				NOT = { has_planet_flag = living_planet }
@@ -503,7 +503,7 @@ country_event = {
 		#Tropical Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_tropical = yes
+				pd_is_tropical = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -532,7 +532,7 @@ country_event = {
 		#Desert Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_desert = yes
+				pd_is_desert = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -561,7 +561,7 @@ country_event = {
 		#Arid Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_arid = yes
+				pd_is_arid = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -593,7 +593,7 @@ country_event = {
 		#Savannah Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_savannah = yes
+				pd_is_savannah = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -622,7 +622,7 @@ country_event = {
 		#Arctic Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_arctic = yes
+				pd_is_arctic = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -651,7 +651,7 @@ country_event = {
 		#Alpine Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_alpine = yes
+				pd_is_alpine = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 
@@ -680,7 +680,7 @@ country_event = {
 		#Tundra Planets
 		every_galaxy_planet = {         
 			limit = {
-				is_pd_tundra = yes
+				pd_is_tundra = yes
 				has_pd_modifier = no
 				is_homeworld = no 
 			} 

@@ -4,7 +4,7 @@
 has_planetary_diversity = { always = yes }
 
 #Categories
-is_pd_continental = {
+pd_is_continental = {
  	OR = {
  		is_planet_class = pc_continental
  		is_planet_class = pc_pd_forest
@@ -17,7 +17,7 @@ is_pd_continental = {
  		is_planet_class = pc_pd_megaflora
  	}
 }
-is_pd_ocean = {
+pd_is_ocean = {
  	OR = {
  		is_planet_class = pc_ocean
  		is_planet_class = pc_pd_cascadian
@@ -29,7 +29,7 @@ is_pd_ocean = {
  		is_planet_class = pc_pd_archipelago
  	}
 }
-is_pd_tropical = {
+pd_is_tropical = {
  	OR = {
  		is_planet_class = pc_tropical
  		is_planet_class = pc_pd_atoll
@@ -41,7 +41,7 @@ is_pd_tropical = {
  		is_planet_class = pc_pd_biolumen
  	}
 }
-is_pd_desert = {
+pd_is_desert = {
  	OR = {
  		is_planet_class = pc_desert
  		is_planet_class = pc_pd_dune
@@ -53,7 +53,7 @@ is_pd_desert = {
  		is_planet_class = pc_pd_aquifer
  	}
 }
-is_pd_arid = {
+pd_is_arid = {
  	OR = {
  		is_planet_class = pc_arid
  		is_planet_class = pc_pd_mesa
@@ -66,7 +66,7 @@ is_pd_arid = {
  		is_planet_class = pc_pd_primal
  	}
 }
-is_pd_savannah = {
+pd_is_savannah = {
  	OR = {
  		is_planet_class = pc_savannah
  		is_planet_class = pc_pd_steppe
@@ -78,7 +78,7 @@ is_pd_savannah = {
  		is_planet_class = pc_pd_sinkhole
  	}
 }
-is_pd_arctic = {
+pd_is_arctic = {
  	OR = {
  		is_planet_class = pc_arctic
  		is_planet_class = pc_pd_cold_desert
@@ -90,7 +90,7 @@ is_pd_arctic = {
  		is_planet_class = pc_pd_iceberg
  	}
 }
-is_pd_alpine = {
+pd_is_alpine = {
  	OR = {
  		is_planet_class = pc_alpine
  		is_planet_class = pc_pd_boreal
@@ -102,7 +102,7 @@ is_pd_alpine = {
  		is_planet_class = pc_pd_lanthanide
  	}
 }
-is_pd_tundra = {
+pd_is_tundra = {
  	OR = {
  		is_planet_class = pc_tundra
  		is_planet_class = pc_pd_bog
@@ -204,15 +204,15 @@ has_pd_modifier = {
  	}
 }
 
-is_pd_planet_class_all = {
+pd_is_planet_class_all = {
 	OR = {
-		is_pd_planet_class_superhabitable = yes
-		is_pd_planet_class_tidally_locked = yes
-		is_pd_planet_class_cave = yes
+		pd_is_planet_class_superhabitable = yes
+		pd_is_planet_class_tidally_locked = yes
+		pd_is_planet_class_cave = yes
 	}
 }
 
-is_pd_planet_class_superhabitable = {
+pd_is_planet_class_superhabitable = {
 	OR = {
 		is_planet_class = pc_pd_wet_superhabitable
 		is_planet_class = pc_pd_dry_superhabitable
@@ -220,7 +220,7 @@ is_pd_planet_class_superhabitable = {
 	}
 }
 
-is_pd_planet_class_tidally_locked = {
+pd_is_planet_class_tidally_locked = {
 	OR = {
 		is_planet_class = pc_pd_wet_tidally_locked
 		is_planet_class = pc_pd_dry_tidally_locked
@@ -228,7 +228,7 @@ is_pd_planet_class_tidally_locked = {
 	}
 }
 
-is_pd_planet_class_cave = {
+pd_is_planet_class_cave = {
 	OR = {
 		is_planet_class = pc_pd_wet_cave
 		is_planet_class = pc_pd_dry_cave
