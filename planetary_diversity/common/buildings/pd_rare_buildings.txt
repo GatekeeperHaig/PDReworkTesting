@@ -9,7 +9,7 @@ building_megalfora_mine = {
 	
 	potential = {
 		exists = owner
-		NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
+		#NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_megaflora
 		NOT = { has_building = building_megalfora_mine }
@@ -52,7 +52,7 @@ building_megalfora_lab = {
 	
 	potential = {
 		exists = owner
-		NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
+		#NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_megaflora
 		NOT = { has_building = building_megalfora_mine }
@@ -123,7 +123,7 @@ building_megalfora_grid = {
 	
 	potential = {
 		exists = owner
-		NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
+		#NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_megaflora
 		NOT = { has_building = building_megalfora_mine }
@@ -170,7 +170,7 @@ building_petrified_mine = {
 	
 	potential = {
 		exists = owner
-		NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
+		#NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_petrified
 		NOT = { has_building = building_petrified_mine }
@@ -238,7 +238,7 @@ building_petrified_lab = {
 	
 	potential = {
 		exists = owner
-		NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
+		#NOT = {	owner = { has_origin = origin_pd_tree_of_life } }
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_petrified
 		NOT = { has_building = building_petrified_mine }
@@ -498,7 +498,6 @@ building_archipelago_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -664,7 +663,6 @@ building_biolumen_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -990,7 +988,6 @@ building_aquifer_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -1362,7 +1359,6 @@ building_supercon_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -1632,7 +1628,7 @@ building_pd_sinkhole_guild = {
 
 #Arctic
 #Storm Buildings
-building_storm_lab_regular = {
+building_storm_lab = {
 	base_buildtime = 600
 
 	category = research
@@ -1895,7 +1891,6 @@ building_iceberg_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -2103,7 +2098,6 @@ building_lichen_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -2240,7 +2234,7 @@ building_glacio_foundry = {
 	
 	potential = {
 		NOT = { has_modifier = resort_colony }
-		has_modifier = pc_glacio
+		has_modifier = pd_glaciovolcanic
 		owner = { NOT = { is_catalytic_empire = yes } }
 		NOT = { has_building = building_glacio_foundry }
 		NOT = { has_building_construction = building_glacio_foundry }
@@ -2253,7 +2247,7 @@ building_glacio_foundry = {
 
 	destroy_trigger = {
 		planet = { 
-			NOT = { has_modifier = pc_glacio }
+			NOT = { has_modifier = pd_glaciovolcanic }
 		}
 	}	
 }
@@ -2264,7 +2258,7 @@ building_glacio_resort = {
 	
 	potential = {
 		owner = { is_gestalt = no }
-		has_modifier = pc_glacio
+		has_modifier = pd_glaciovolcanic
 		NOT = { has_building = building_glacio_foundry }
 		NOT = { has_building_construction = building_glacio_foundry }
 		NOT = { has_building = building_glacio_resort }
@@ -2277,7 +2271,7 @@ building_glacio_resort = {
 
 	destroy_trigger = {
 		planet = { 
-			NOT = { has_modifier = pc_glacio }
+			NOT = { has_modifier = pd_glaciovolcanic }
 		}
 	}	
 }
@@ -2288,7 +2282,7 @@ building_glacio_mine = {
 	
 	potential = {
 		NOT = { has_modifier = resort_colony }
-		has_modifier = pc_glacio
+		has_modifier = pd_glaciovolcanic
 		NOT = { has_building = building_glacio_foundry }
 		NOT = { has_building_construction = building_glacio_foundry }
 		NOT = { has_building = building_glacio_resort }
@@ -2318,7 +2312,7 @@ building_glacio_mine = {
 			}
 		}
 		planet = { 
-			NOT = { has_modifier = pc_glacio }
+			NOT = { has_modifier = pd_glaciovolcanic }
 		}
 	}	
 }
@@ -2496,7 +2490,6 @@ building_wet_td_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
@@ -2894,7 +2887,6 @@ building_superhab_farm = {
 				is_ai = yes
 				country_uses_food = no
 			}
-			has_modifier = pc_machine
 			has_modifier = resort_colony
 			has_modifier = crucible_colony
 			AND = {
