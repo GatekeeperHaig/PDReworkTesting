@@ -4307,7 +4307,6 @@ country_event = {
 		}
 	}
 }
-
 #This event makes sure Uncommon homeworlds have the correct deposits.
 country_event = {
 	id = pdengine.31
@@ -4392,7 +4391,6 @@ country_event = {
 		}
 	}
 }
-
 #This event makes sure that Uncommon worlds don't have their uncommon classes as their nearby planets
 country_event = {
 	id = pdengine.32
@@ -4667,7 +4665,6 @@ country_event = {
 		} 
 	}
 }
-
 #This event sets up the Uncommon barren worlds.
 country_event = {
 	id = pdengine.33
@@ -4905,7 +4902,6 @@ planet_event = {
 		}
 	}
 }
-
 #This event makes sure certain special classes get their modifier after terraforming or events
 planet_event = {
 	id = pdengine.41
@@ -5096,7 +5092,6 @@ country_event = {
 		}
 	}
 }
-
 #This is an event that changes the tidally locked homeworld to another planet if the empire starts on a moon
 country_event = {
 	id = pdengine.51
@@ -5783,4 +5778,252 @@ country_event = {
 		}
 	}
 }
-	
+
+#This event gives Sol it unique entities at game start
+country_event = {
+	id = pdengine.71
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_gas_giant       
+	            planet_size = 35     
+					}
+			set_planet_flag = pdjupiter
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_molten       
+				planet_size = 6   
+				is_moon = yes  
+					}
+			set_planet_flag = pdio
+			set_planet_entity = {
+				picture = pc_volcanic
+				entity = "volcanic_planet_01_entity"
+			}
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_frozen       
+				planet_size = 6   
+				is_moon = yes 
+					}
+			set_planet_flag = pdeuropa
+			set_planet_entity = {
+				picture = pc_subglacial
+				entity = "subglacial_planet_01_entity"
+			}
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_frozen       
+				planet_size = 9   
+				is_moon = yes 
+			}
+			set_planet_flag = pdganymede
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_gas_giant       
+	            planet_size = 30     
+					}
+			set_planet_flag = pdsaturn
+			set_planet_entity = {
+				entity = "gas_giant_saturn_entity"
+			}
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+	            is_planet_class = pc_frozen       
+				planet_size = 8   
+				is_moon = yes  
+					}
+			set_planet_flag = pdtitan
+			set_planet_entity = {
+				picture = pc_hydrocarbon
+				entity = "hydrocarbon_planet_01_entity"
+			}
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+				is_planet_class = pc_barren_cold
+				is_moon = yes				       
+	            planet_size = 5
+					}
+			set_planet_flag = pdluna
+		}
+		every_galaxy_planet = {
+			limit = {					
+                solar_system = { has_star_flag = sol }
+				is_planet_class = pc_barren		       
+				OR = {
+				planet_size = 13
+				planet_size = 11
+					}
+				}
+			set_planet_flag = pdmars
+			set_planet_entity = {
+				picture = pc_barren_mars
+				entity = "barren_planet_mars_entity"
+			}
+		}
+		every_galaxy_planet = { 
+			if = {
+				limit = {
+					solar_system = { has_star_flag = sol }
+						is_planet_class = pc_gaia       
+						has_planet_flag = planet_earth
+					}	
+				set_planet_entity = { entity = "gaia_planet_earth_entity" }
+			}
+		}
+        every_galaxy_planet = {
+            if = {
+                limit = {
+                    solar_system = { has_star_flag = sol }
+                    is_planet_class = pc_toxic       
+					is_moon = no
+				}
+				clear_deposits = yes 
+				clear_planet_modifiers = yes
+                add_modifier = { modifier = terraforming_candidate days = -1 }
+                add_modifier = { modifier = pd_hothouse days = -1 }
+                set_planet_flag = pdvenus
+				set_planet_size = 17
+            }
+		}
+	}
+}
+#This event makes sure Earth, Venus and Mars get the correct special entities
+planet_event = {
+	id = pdengine.72
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { 
+				has_planet_flag = planet_earth
+				is_planet_class = pc_gaia
+			}
+			set_planet_entity = {
+				entity = "gaia_planet_earth_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = planet_earth
+				is_planet_class = pc_nuked
+			}
+			set_planet_entity = {
+				entity = "nuked_planet_earth_entity"
+			}
+		}		
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				is_planet_class = pc_gaia
+			}
+			set_planet_entity = {
+				picture = pc_wet_mars
+				entity = "gaiamars_planet_entity"
+			}
+		}
+		#Venus
+		if = {
+			limit = { 
+				has_planet_flag = pdvenus
+				is_wet = yes
+			}
+			set_planet_entity = {
+				picture = pc_wetvenus
+				entity = "wetvenus_planet_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdvenus
+				is_dry = yes
+			}
+			set_planet_entity = {
+				picture = pc_dryvenus
+				entity = "dryvenus_planet_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdvenus
+				is_cold = yes
+			}
+			set_planet_entity = {
+				picture = pc_coldvenus
+				entity = "coldvenus_planet_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdvenus
+				is_planet_class = pc_gaia
+			}
+			set_planet_entity = {
+				picture = pc_wetvenus
+				entity = "gaiavenus_planet_entity"
+			}
+		}
+	}
+}
+#This event makes sure Earth gets the special entities on game start
+country_event = {
+	id = pdengine.73
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_galaxy_planet = {
+			has_planet_flag = planet_earth
+		}
+	}
+
+	immediate = {
+			every_galaxy_planet = {
+			if = {
+				limit = { 
+					has_planet_flag = planet_earth
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+					entity = "gaia_planet_earth_entity"
+				}
+			}
+			if = {
+				limit = { 
+					has_planet_flag = planet_earth
+					is_planet_class = pc_relic
+				}
+				set_planet_entity = {
+					entity = "relic_world_earth_01_entity"
+				}
+			}	
+			if = {
+				limit = { 
+					has_planet_flag = planet_earth
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+					entity = "nuked_planet_earth_entity"
+				}
+			}		
+		}
+	}
+}
