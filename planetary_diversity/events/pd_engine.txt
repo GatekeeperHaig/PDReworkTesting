@@ -706,6 +706,14 @@ country_event = {
 				}
 			}
 		}
+		#Gives Prescripted their correct deposits
+        every_galaxy_planet = {                 
+            limit = { 
+				has_planet_flag = prescripted_ideal
+			}
+			clear_deposits = yes
+			reroll_deposits = yes
+		}
 	}
 }
 #This Event Changes any homeworlds back into normal classes after game start

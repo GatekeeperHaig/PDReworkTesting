@@ -13,8 +13,7 @@ pc_pd_cold_cave = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tundra.dds"	
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }	
+	initial = yes	
 	planet_size = { min = 25 max = 30 }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	uses_alternative_skies_for_moons = no
@@ -43,8 +42,7 @@ pc_pd_dry_cave = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"	
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }	
+	initial = yes	
 	planet_size = { min = 25 max = 30 }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	uses_alternative_skies_for_moons = no
@@ -71,11 +69,9 @@ pc_pd_wet_cave = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
-	#modifier = { pop_environment_tolerance = 0.50 }	
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 	modifier = { 

@@ -16,8 +16,7 @@ pc_pd_dune = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -39,8 +38,7 @@ pc_pd_oasis = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -61,8 +59,7 @@ pc_pd_outback = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -84,8 +81,7 @@ pc_pd_coastal = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -107,8 +103,7 @@ pc_pd_fungi = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -130,8 +125,7 @@ pc_pd_salt = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	#modifier = { pop_environment_tolerance = 0.40 }	
@@ -152,8 +146,7 @@ pc_pd_aquifer = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_desert.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
@@ -174,8 +167,7 @@ pc_pd_mesa = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -197,8 +189,7 @@ pc_pd_fog_desert = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -220,8 +211,7 @@ pc_pd_mediterranean = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -243,8 +233,7 @@ pc_pd_badlands = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -266,8 +255,7 @@ pc_pd_succulent = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -289,8 +277,7 @@ pc_pd_striped = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -312,8 +299,7 @@ pc_pd_coral = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	#modifier = { pop_environment_tolerance = 0.40 }	
@@ -334,11 +320,9 @@ pc_pd_primal = {
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
-	#modifier = { pop_environment_tolerance = 0.50 }	
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 }
@@ -357,8 +341,7 @@ pc_pd_steppe = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -380,8 +363,7 @@ pc_pd_prairie = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -403,8 +385,7 @@ pc_pd_veld = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -426,8 +407,7 @@ pc_pd_semi_arid = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -449,8 +429,7 @@ pc_pd_aspen = {
 	#planet defines
 	climate = "dry"
 	colonizable = yes
-	initial = yes
-	#colonization_tech = { }		
+	initial = yes		
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -473,7 +452,6 @@ pc_pd_supercontinent = {
 	#planet defines
 	colonizable = yes
 	initial = yes
-	#colonization_tech = { }
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
@@ -495,7 +473,6 @@ pc_pd_sinkhole = {
 	#planet defines
 	colonizable = yes
 	initial = yes
-	#colonization_tech = { }
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
