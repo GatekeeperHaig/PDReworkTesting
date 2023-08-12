@@ -2968,6 +2968,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_tropical }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.geothermal
 		hidden_effect = {   
@@ -2979,6 +2982,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_tropical }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.biolumen
 		hidden_effect = {   
@@ -3057,6 +3063,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_desert }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.salt
 		hidden_effect = {   
@@ -3068,6 +3077,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_desert }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.aquifer
 		hidden_effect = {   
@@ -3157,6 +3169,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_arid }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.coral
 		hidden_effect = {   
@@ -3168,6 +3183,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_arid }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.primal
 		hidden_effect = {   
@@ -3246,6 +3264,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_savannah }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.supercontinent
 		hidden_effect = {   
@@ -3257,6 +3278,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_savannah }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.sinkhole
 		hidden_effect = {   
@@ -3335,6 +3359,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_arctic }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.storm
 		hidden_effect = {   
@@ -3346,6 +3373,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_arctic }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.iceberg
 		hidden_effect = {   
@@ -3424,6 +3454,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_alpine }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.glaciovolcanic
 		hidden_effect = {   
@@ -3435,6 +3468,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_alpine }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.lanthanide
 		hidden_effect = {   
@@ -3513,6 +3549,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_tundra }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.cryoflora
 		hidden_effect = {   
@@ -3524,6 +3563,9 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_tundra }
+			space_owner = {
+				has_ascension_perk = ap_world_shaper
+			}
 		}
 		name = pdengine.21.lichen
 		hidden_effect = {   

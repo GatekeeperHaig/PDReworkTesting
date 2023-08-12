@@ -519,3 +519,50 @@
  pc_cloudless_gas_giant_desc:0 "Gaseous planet with an atmosphere that does not form global cloud cover because it lacks suitable chemicals in the atmosphere to form clouds."
  pc_dwarf_gas_giant:0 "Gas Dwarf"
  pc_dwarf_gas_giant_desc:0 "Gaseous planet with an atmosphere primarily composed of hydrogen and helium surrounding a dense core. It has a thick hydrogen-helium atmosphere, with deep layers of ice, rock, or liquid oceans of water and ammonia."
+
+###Tooltips for Species Editor
+ #Template 
+ # "§Y$aa$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $$, $$ or £society£ £engineering£ §YResearch Points§!."
+ concept_pd_rare:0 "Rare Planet"
+ concept_pd_rares:0 "Rare Planets"
+ concept_pd_rares_desc:0 "Rare Planets habitability matches their parent class, but have low spawning odds.\n\nEach has a specific planet modifier and allows for constructing one of three possible planet unique buildings.\n\nYou can terraform other planets into Rare Planets once you have unlocked the §YWorld Shaper§! Ascension Perk."
+ pd_tooltip_minerals: "£minerals£ §YMinerals§!"
+ pd_tooltip_energy: "£energy£ §Y$energy$§!"
+ pd_tooltip_food: "£food£ §Y$food$§!"
+ pd_tooltip_consumer_goods: "£consumer_goods£ §Y$consumer_goods$§!"
+ pd_tooltip_alloys: "£alloys£ §Y$alloys$§!"
+ pd_tooltip_culture: "adds £mod_job_culture_worker_add£ §Y$job_culture_worker_plural$§!"
+ rare_building_warning: "Allows the construction of buildings that improve £job£ §YPop Job§! output for one of the following:"
+ #Megaflora
+ pc_pd_megaflora_tooltip: "§YMegaflora Worlds§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! & §Y$district_generator_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_energy$ or £society£ £engineering£ §YResearch Points§!."
+ #Petrified Woods
+ pc_pd_petrified_tooltip: "§YPetrified Wood Worlds§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
+ pc_pd_archipelago_tooltip: "§Y$pc_pd_archipelago$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_alloys$, $pd_tooltip_food$ or $pd_tooltip_culture$."
+ pc_pd_reef_tooltip: "§Y$pc_pd_reef$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
+ pc_pd_geothermal_tooltip: "§Y$pc_pd_geothermal$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_generator_plural$§! but has higher amenities, structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_energy$, $pd_tooltip_alloys$ or £engineering£ §YResearch Points§!."
+ pc_pd_biolumen_tooltip: "§Y$pc_pd_biolumen$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! and has higher pop happiness and immigration pull but less availble housing.\n\n$rare_building_warning$ $pd_tooltip_food$, £society£ §YResearch Points§! or $pd_tooltip_culture$."
+ pc_pd_salt_tooltip: "§Y$pc_pd_salt$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but less §Y$district_farming_plural$§! and has lower pop habitability.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_alloys$ or £engineering£ §YResearch Points§!."
+ pc_pd_aquifer_tooltip: "§Y$pc_pd_aquifer$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has less availble housing.\n\n$rare_building_warning$ $pd_tooltip_food$, £society£ §YResearch Points§! or $pd_tooltip_culture$."
+ pc_pd_coral_tooltip: "§Y$pc_pd_coral$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has lower biological growth speed and pop habitability.\n\n$rare_building_warning$ $pd_tooltip_consumer_goods$, £society£ £engineering£ §YResearch Points§! or $pd_tooltip_culture$."
+ pc_pd_primal_tooltip: "§Y$pc_pd_primal$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_generator_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_alloys$, $pd_tooltip_energy$ or $pd_tooltip_minerals$."
+ pc_pd_supercontinent_tooltip: "§Y$pc_pd_supercontinent$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has higher amenities use and better pop habitability.\n\n$rare_building_warning$ $pd_tooltip_food$, $pd_tooltip_energy$ or £physics£ £engineering£ §YResearch Points§!."
+ pc_pd_sinkhole_tooltip: "§Y$pc_pd_sinkhole$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! and higher max districts but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
+
+ pc_pd_storm_tooltip: 
+ pc_pd_iceberg_tooltip:
+ pc_pd_glaciovolcanic_tooltip:
+ pc_pd_lanthanide_tooltip: 
+ pc_pd_cryoflora_tooltip: 
+ pc_pd_lichen_tooltip: 
+
+ #Uncommon
+ pc_pd_wet_superhabitable_tooltip: 
+ pc_pd_wet_superhabitable_tooltip: 
+ pc_pd_wet_superhabitable_tooltip: 
+ pc_pd_wet_tidally_locked_tooltip: 
+ pc_pd_wet_tidally_locked_tooltip: 
+ pc_pd_wet_tidally_locked_tooltip: 
+ pc_pd_wet_cave_tooltip: 
+ pc_pd_wet_cave_tooltip: 
+ pc_pd_wet_cave_tooltip: 
+
