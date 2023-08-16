@@ -4680,6 +4680,12 @@ planet_event = {
 					days = -1
 				}
 			}
+			pd_tidally_locked_world = {
+				add_modifier = {
+					modifier = pd_arcology_tidally_locked
+					days = -1
+				}
+			}
 		}
 		planet_event = { id = pdengine.36 days = 1 }
 	}
@@ -4697,6 +4703,13 @@ planet_event = {
 				set_planet_entity = {
 					picture = pc_pd_arcology_cave
 					entity = "city_planet_cave_entity"
+					graphical_culture = owner
+				}
+			}
+			pd_tidally_locked_world = {
+				set_planet_entity = {
+					picture = pc_pd_arcology_tidally_locked
+					entity = "city_planet_tidally_locked_entity"
 					graphical_culture = owner
 				}
 			}
@@ -5172,6 +5185,7 @@ country_event = {
 				add_deposit = d_tree_of_life_home
 				remove_modifier = no_lifetree
 			}
+			set_planet_flag = pd_tidally_locked_world
 		}
 		every_owned_pop = {
 			modify_species = {

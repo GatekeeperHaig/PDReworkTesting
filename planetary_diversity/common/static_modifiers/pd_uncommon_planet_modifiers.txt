@@ -76,6 +76,12 @@ pd_gaia_tidally_locked = {
 	icon_frame = 1
 }
 
+pd_arcology_tidally_locked = {
+	planet_max_districts_mult = -0.30
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 1
+}
+
 #Cave
 pd_wet_cave = {
 	district_mining_max = 4

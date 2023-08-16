@@ -238,3 +238,13 @@ pd_is_planet_class_cave = {
 		is_planet_class = pc_pd_gaia_cave
 	}
 }
+
+pd_is_planet_class_gaia = {
+	OR = {
+		is_planet_class = pc_gaia
+		is_planet_class = pc_pd_gaia_superhabitable
+		is_planet_class = pc_pd_gaia_tidally_locked
+		is_planet_class = pc_pd_gaia_cave
+	}
+
+}
