@@ -410,19 +410,19 @@
 
 ###Superhabitable
  pc_pd_wet_superhabitable: "Wet Superhabitable World"
- pc_pd_wet_superhabitable_desc: "A wet, rocky super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere. It is a perfect cradle for evolving life, with average temperatures around 25 degrees Celsius and shallow ocean basins. Still, the heavy gravity would be a struggle for those unaccustomed to it."
+ pc_pd_wet_superhabitable_desc: "A wet, rocky super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere. It is a perfect cradle for evolving life, with average temperatures around 25 degrees Celsius and shallow ocean basins. Still, the heavy gravity is a struggle for those unaccustomed to it."
  pc_pd_wet_superhabitable_adj: "super-terrestrial"
  mod_pc_pd_wet_superhabitable_habitability: "Wet Superhabitable Habitability"
  trait_pc_pd_wet_superhabitable_preference: "Wet Superhabitable Preference"
  trait_pc_pd_wet_superhabitable_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_cold_superhabitable: "Frozen Superhabitable World"
- pc_pd_cold_superhabitable_desc: "A cold, rocky super-terrestrial super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere.  It is a perfect cradle for evolving life, with rich, productive tundras and shallow ocean basins. Still, the heavy gravity would be a struggle for those unaccustomed to it."
+ pc_pd_cold_superhabitable_desc: "A cold, rocky super-terrestrial super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere.  It is a perfect cradle for evolving life, with rich, productive tundras and shallow ocean basins. Still, the heavy gravity is a struggle for those unaccustomed to it."
  pc_pd_cold_superhabitable_adj: "super-terrestrial"
  mod_pc_pd_cold_superhabitable_habitability: "Frozen Superhabitable Habitability"
  trait_pc_pd_cold_superhabitable_preference: "Frozen Superhabitable Preference"
  trait_pc_pd_cold_superhabitable_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_dry_superhabitable: "Dry Superhabitable World"
- pc_pd_dry_superhabitable_desc: "A dry, rocky super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere. The dust-covered terrain consists mainly of mesas and canyons.  It is a perfect cradle for evolving life, with rich, productive shrublands and shallow river basins. Still, the heavy gravity would be a struggle for those unaccustomed to it."
+ pc_pd_dry_superhabitable_desc: "A dry, rocky super-terrestrial world, this planet has a dense nitrogen-oxygen atmosphere. The dust-covered terrain consists mainly of mesas and canyons.  It is a perfect cradle for evolving life, with rich, productive shrublands and shallow river basins. Still, the heavy gravity is a struggle for those unaccustomed to it."
  pc_pd_dry_superhabitable_adj: "super-terrestrial"
  mod_pc_pd_dry_superhabitable_habitability: "Dry Superhabitable Habitability"
  trait_pc_pd_dry_superhabitable_preference: "Dry Superhabitable Preference"
@@ -430,7 +430,7 @@
  pc_pd_barren_superhabitable: "Barren Superhabitable World"
  pc_pd_barren_superhabitable_desc: "Barren and rocky super-terrestrial world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and is completely devoid of life."
  pc_pd_gaia_superhabitable: "Gaia Superhabitable World"
- pc_pd_gaia_superhabitable_desc: "An ideal, temperate super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. It is a perfect cradle for evolving life, with rich, productive shrublands and shallow river basins. Still, the heavy gravity would be a struggle for those unaccustomed to it."
+ pc_pd_gaia_superhabitable_desc: "An ideal, temperate super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. It is a perfect cradle for evolving life, with rich, productive shrublands and shallow river basins. Still, the heavy gravity is a struggle for those unaccustomed to it."
  pc_pd_gaia_superhabitable_adj: "super-terrestrial" 
  mod_pc_pd_gaia_superhabitable_habitability: "Gaia Superhabitable Habitability"
  trait_pc_pd_gaia_superhabitable_preference: "Gaia Superhabitable Preference"
@@ -440,20 +440,20 @@
  pc_pd_wet_tidally_locked:0 "Wet Tidally Locked World"
  pc_pd_wet_tidally_locked_desc:0 "A humid, rocky world with a thick nitrogen-oxygen atmosphere, this tidally locked planet's temperature and stable hydrosphere allow for rich biodiversity in its dayside and twilight zones."
  pc_pd_wet_tidally_locked_adj:0 "tidally locked"
- mod_pc_pd_wet_tidally_locked_habitability:0 "Gaia Tidally Locked Habitability"
- trait_pc_pd_wet_tidally_locked_preference:0 "Gaia Tidally Locked Preference"
+ mod_pc_pd_wet_tidally_locked_habitability:0 "Wet Tidally Locked Habitability"
+ trait_pc_pd_wet_tidally_locked_preference:0 "Wet Tidally Locked Preference"
  trait_pc_pd_wet_tidally_locked_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  pc_pd_dry_tidally_locked:0 "Dry Tidally Locked World"
  pc_pd_dry_tidally_locked_desc:0 "A rocky world with a nitrogen-oxygen atmosphere, this tidally locked planet has one side in constant daylight while the other is in continuous night. A thin habitable zone exists in the twilight region. Constant sunlight and wind make for ideal food and energy generation."
  pc_pd_dry_tidally_locked_adj:0 "tidally locked"
- mod_pc_pd_dry_tidally_locked_habitability:0 "Gaia Tidally Locked Habitability"
- trait_pc_pd_dry_tidally_locked_preference:0 "Gaia Tidally Locked Preference"
+ mod_pc_pd_dry_tidally_locked_habitability:0 "Dry Tidally Locked Habitability"
+ trait_pc_pd_dry_tidally_locked_preference:0 "Dry Tidally Locked Preference"
  trait_pc_pd_dry_tidally_locked_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  pc_pd_cold_tidally_locked:0 "Cold Tidally Locked World"
  pc_pd_cold_tidally_locked_desc:0 "A rocky, frozen wet world with a nitrogen-oxygen atmosphere, this tidally locked to its parent star. The dayside side is a thawed ocean constantly bombarded by sunlight, while its night side consists of frozen glaciers. Strong winds and powerful currents meet at the edge of these two distinct sides."
  pc_pd_cold_tidally_locked_adj:0 "tidally locked"
- mod_pc_pd_cold_tidally_locked_habitability:0 "Gaia Tidally Locked Habitability"
- trait_pc_pd_cold_tidally_locked_preference:0 "Gaia Tidally Locked Preference"
+ mod_pc_pd_cold_tidally_locked_habitability:0 "Frozen Tidally Locked Habitability"
+ trait_pc_pd_cold_tidally_locked_preference:0 "Frozen Tidally Locked Preference"
  trait_pc_pd_cold_tidally_locked_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  pc_pd_gaia_tidally_locked:0 "Gaia Tidally Locked World"
  pc_pd_gaia_tidally_locked_desc:0 "An ideal, temperate, tidally locked world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
@@ -518,51 +518,66 @@
  pc_cloudless_gas_giant:0 "Cloudless Gas Giant"
  pc_cloudless_gas_giant_desc:0 "Gaseous planet with an atmosphere that does not form global cloud cover because it lacks suitable chemicals in the atmosphere to form clouds."
  pc_dwarf_gas_giant:0 "Gas Dwarf"
- pc_dwarf_gas_giant_desc:0 "Gaseous planet with an atmosphere primarily composed of hydrogen and helium surrounding a dense core. It has a thick hydrogen-helium atmosphere, with deep layers of ice, rock, or liquid oceans of water and ammonia."
+ pc_dwarf_gas_giant_desc:0 "Gaseous pla&net with an atmosphere primarily composed of hydrogen and helium surrounding a dense core. It has a thick hydrogen-helium atmosphere, with deep layers of ice, rock, or liquid oceans of water and ammonia."
 
 ###Tooltips for Species Editor
- #Template 
- # "§Y$aa$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $$, $$ or £society£ £engineering£ §YResearch Points§!."
  concept_pd_rare:0 "Rare Planet"
  concept_pd_rares:0 "Rare Planets"
- concept_pd_rares_desc:0 "Rare Planets habitability matches their parent class, but have low spawning odds.\n\nEach has a specific planet modifier and allows for constructing one of three possible planet unique buildings.\n\nYou can terraform other planets into Rare Planets once you have unlocked the §YWorld Shaper§! Ascension Perk."
- pd_tooltip_minerals: "£minerals£ §YMinerals§!"
- pd_tooltip_energy: "£energy£ §Y$energy$§!"
- pd_tooltip_food: "£food£ §Y$food$§!"
- pd_tooltip_consumer_goods: "£consumer_goods£ §Y$consumer_goods$§!"
- pd_tooltip_alloys: "£alloys£ §Y$alloys$§!"
- pd_tooltip_culture: "adds £mod_job_culture_worker_add£ §Y$job_culture_worker_plural$§!"
- rare_building_warning: "Allows the construction of buildings that improve £job£ §YPop Job§! output for one of the following:"
- #Megaflora
- pc_pd_megaflora_tooltip: "§YMegaflora Worlds§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! & §Y$district_generator_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_energy$ or £society£ £engineering£ §YResearch Points§!."
+ concept_pd_rares_desc:0 "- Habitability matches parent class\n- Has low natural spawning odds\n- Has a planet modifier with effects\n- Has three possible planet unique buildings\n- Terraformable with §YWorld Shaper§!"
+ pd_tooltip_minerals: "£minerals£ §YMinerals§! from £job_miner£ $job_miner_plural$"
+ pd_tooltip_energy: "£energy£ §Y$energy$§! from £job_technician£ $job_technician_plural$"
+ pd_tooltip_food: "£food£ §Y$food$§! from £job_farmer£ $job_farmer_plural$"
+ pd_tooltip_consumer_goods: "£consumer_goods£ §Y$consumer_goods$§! from £job_artisan£ $job_artisan_plural$"
+ pd_tooltip_alloys: "£alloys£ §Y$alloys$§! from £job_foundry£ $job_foundry_plural$"
+ pd_tooltip_culture: "Adds more £mod_job_culture_worker_add£ §Y$job_culture_worker_plural$§!"
+ pd_researcher_ending: "§YResearch Points§! from £job_researcher£ $job_researcher_plural$"
+ rare_building_warning: "Has mutually exclusive buildings that improve either:"
+ #Megaflora`
+ pc_pd_megaflora_tooltip: "§YMegaflora Worlds§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+2§!\n- £district£ §Y$district_generator_plural$§!: §G+2%§!\n- Building and District Cost: §R+20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_energy$\n$t$- £society£ £engineering£ $pd_researcher_ending$"
  #Petrified Woods
- pc_pd_petrified_tooltip: "§YPetrified Wood Worlds§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
- pc_pd_archipelago_tooltip: "§Y$pc_pd_archipelago$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_alloys$, $pd_tooltip_food$ or $pd_tooltip_culture$."
- pc_pd_reef_tooltip: "§Y$pc_pd_reef$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has higher structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
- pc_pd_geothermal_tooltip: "§Y$pc_pd_geothermal$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_generator_plural$§! but has higher amenities, structure cost and less availble housing.\n\n$rare_building_warning$ $pd_tooltip_energy$, $pd_tooltip_alloys$ or £engineering£ §YResearch Points§!."
- pc_pd_biolumen_tooltip: "§Y$pc_pd_biolumen$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! and has higher pop happiness and immigration pull but less availble housing.\n\n$rare_building_warning$ $pd_tooltip_food$, £society£ §YResearch Points§! or $pd_tooltip_culture$."
- pc_pd_salt_tooltip: "§Y$pc_pd_salt$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but less §Y$district_farming_plural$§! and has lower pop habitability.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_alloys$ or £engineering£ §YResearch Points§!."
- pc_pd_aquifer_tooltip: "§Y$pc_pd_aquifer$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has less availble housing.\n\n$rare_building_warning$ $pd_tooltip_food$, £society£ §YResearch Points§! or $pd_tooltip_culture$."
- pc_pd_coral_tooltip: "§Y$pc_pd_coral$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! but has lower biological growth speed and pop habitability.\n\n$rare_building_warning$ $pd_tooltip_consumer_goods$, £society£ £engineering£ §YResearch Points§! or $pd_tooltip_culture$."
- pc_pd_primal_tooltip: "§Y$pc_pd_primal$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_generator_plural$§! but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_alloys$, $pd_tooltip_energy$ or $pd_tooltip_minerals$."
- pc_pd_supercontinent_tooltip: "§Y$pc_pd_supercontinent$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_farming_plural$§! but has higher amenities use and better pop habitability.\n\n$rare_building_warning$ $pd_tooltip_food$, $pd_tooltip_energy$ or £physics£ £engineering£ §YResearch Points§!."
- pc_pd_sinkhole_tooltip: "§Y$pc_pd_sinkhole$s§! are ['concept_pd_rares'].\n\nProvides extra £district£ §Y$district_mining_plural$§! and higher max districts but has higher structure cost and upkeep.\n\n$rare_building_warning$ $pd_tooltip_minerals$, $pd_tooltip_consumer_goods$ or £society£ £engineering£ §YResearch Points§!."
-
- pc_pd_storm_tooltip: 
- pc_pd_iceberg_tooltip:
- pc_pd_glaciovolcanic_tooltip:
- pc_pd_lanthanide_tooltip: 
- pc_pd_cryoflora_tooltip: 
- pc_pd_lichen_tooltip: 
+ pc_pd_petrified_tooltip: "§YPetrified Wood Worlds§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £society£ £engineering£ $pd_researcher_ending$"
+ #Reef
+ pc_pd_reef_tooltip: "§Y$pc_pd_reef$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £society£ £engineering£ $pd_researcher_ending$"
+ #Archipelago
+ pc_pd_archipelago_tooltip: "§Y$pc_pd_archipelago$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§! \n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_alloys$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_culture$"
+ #Geothermal
+ pc_pd_geothermal_tooltip: "§Y$pc_pd_geothermal$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§! \n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_energy$\n$t$- $pd_tooltip_alloys$\n$t$- £engineering£ $pd_researcher_ending$"
+ #Biolumen
+ pc_pd_biolumen_tooltip: "§Y$pc_pd_biolumen$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Immigration Pull: §G25%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- £society£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$"
+ #Salt
+ pc_pd_salt_tooltip: "§Y$pc_pd_salt$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+6§!\n- £district£ §Y$district_farming_plural$§!: §R-2§!\n- Habitability: §R-20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_alloys$\n$t$- £engineering£ $pd_researcher_ending$"
+ #Aquifer
+ pc_pd_aquifer_tooltip: "§Y$pc_pd_aquifer$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Housing: §R-20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- £society£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$"
+ #Coral
+ pc_pd_coral_tooltip: "§Y$pc_pd_coral$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Habitability: §R-10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £society£ £engineering£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$"
+ #Primal
+ pc_pd_primal_tooltip: "§Y$pc_pd_primal$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_alloys$\n$t$- $pd_tooltip_energy$\n$t$- $pd_tooltip_minerals$"
+ #Supercontinent
+ pc_pd_supercontinent_tooltip: "§Y$pc_pd_supercontinent$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Housing: §R-10%§!\n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_energy$\n$t$- £physics£ £engineering£ $pd_researcher_ending$"
+ #Sinkhole
+ pc_pd_sinkhole_tooltip: "§Y$pc_pd_sinkhole$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Housing: §G10%§! \n- Building and District Cost: §R+15%§!\n- Building and District Upkeep: §R+15%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_energy$\n$t$- £physics£ £engineering£ $pd_researcher_ending$"
+ #Storm
+ pc_pd_storm_tooltip: "§Y$pc_pd_storm$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+6§!\n- £district£ §Y$district_farming_plural$§!: §R-2§!\n- Building and District Cost: §R+10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £society£ £engineering£ $pd_researcher_ending$"
+ #Iceberg
+ pc_pd_iceberg_tooltip: "§Y$pc_pd_iceberg$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_alloys$\n$t$- $pd_tooltip_food$\n$t$- £physics£ £society£ $pd_researcher_ending$"
+ #Glaciovolcanic
+ pc_pd_glaciovolcanic_tooltip: "§Y$pc_pd_glaciovolcanic$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+2§!\n- £district£ §Y$district_generator_plural$§!: §G+2§!\n- Habitability: §R-10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_alloys$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_culture$"
+ #Lanthanide
+ pc_pd_lanthanide_tooltip: "§Y$pc_pd_lanthanide$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £engineering£ $pd_researcher_ending$" 
+ #Cryoflora
+ pc_pd_cryoflora_tooltip: "§Y$pc_pd_cryoflora$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Habitability: §R-20%§!\n- Happiness: §G+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £society£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$" 
+ #Lichen
+ pc_pd_lichen_tooltip: "§Y$pc_pd_lichen$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+6§!\n- £district£ §Y$district_mining_plural$§!: §R-2§!\n- Habitability: §G+10%§!\n- Building and District Upkeep: §R+20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_energy$\n$t$- £society£ $pd_researcher_ending$" 
 
  #Uncommon
- pc_pd_wet_superhabitable_tooltip: 
- pc_pd_wet_superhabitable_tooltip: 
- pc_pd_wet_superhabitable_tooltip: 
- pc_pd_wet_tidally_locked_tooltip: 
- pc_pd_wet_tidally_locked_tooltip: 
- pc_pd_wet_tidally_locked_tooltip: 
- pc_pd_wet_cave_tooltip: 
- pc_pd_wet_cave_tooltip: 
- pc_pd_wet_cave_tooltip: 
+ concept_pd_uncommon: "Uncommon Planet"
+ concept_pd_uncommons: "Uncommon Planets"
+ concept_pd_uncommons_desc: "- Has lower habitability on regular planets\n- Has low spawning odds\n- Has unique terraforming candidates\n- Has special planet modifiers\n- Has mutually exclusive buildings\n- Guaranteed Habitable Worlds are changed to terraforming candidates"
+
+ #Superhabitables
+ pc_pd_superhabitable_tooltip: "§YSuperhabitable Worlds§! are ['concept_pd_uncommons']\n- Planet size is between §G31-35§!\n- Habitability bonuses on other §YSuperhabtiable Worlds§!\n- Can only be §YTerraformed§! between other §YSuperhabitable Worlds§!\n- £district£ §Y$district_farming_plural$§!: §G+4§!\n- Pop Growth Speed: §G+10%§!\n- Building and District Cost: §R+25%§!\n- Habitability: §R-20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_alloys$\n$t$- £society£ $pd_researcher_ending$"
+ #Tidally Locked
+ pc_pd_tidally_locked_tooltip: "§YTidally Locked Worlds§! are ['concept_pd_uncommons']\n- Habitability bonuses on other §YTidally Locked Worlds§!\n- Can only be §YTerraformed§! between other §YTidally Locked Worlds§!\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Max Districts: §R-30%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_energy$\n$t$- $pd_tooltip_food$\n$t$- £physics£ £society£ $pd_researcher_ending$"
+ #Cave
+ pc_pd_cave_tooltip: "§YCave Worlds§! are ['concept_pd_uncommons']\n- Habitability bonuses on other §YCave Worlds§!\n- Can only be §YTerraformed§! between other §YCave Worlds§!\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Orbital Bombardment Damage: §G-30%§!\n- Lithoid Pop Growth Speed: §G+10%§!\n- Biological Pop Growth Speed: §R-10%§!\n- Building and District Cost: §R10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_energy$\n$t$- $pd_tooltip_minerals$\n$t$- £engineering£ $pd_researcher_ending$"
 

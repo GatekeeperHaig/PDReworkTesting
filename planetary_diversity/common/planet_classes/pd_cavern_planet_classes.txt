@@ -17,14 +17,6 @@ pc_pd_cold_cave = {
 	planet_size = { min = 25 max = 30 }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	uses_alternative_skies_for_moons = no
-	modifier = { 
-		planet_orbital_bombardment_damage = -0.3
-		planet_buildings_upkeep_mult = 0.1
-		planet_districts_upkeep_mult = 0.1
-		pop_environment_tolerance = -0.10
-		biological_pop_growth_speed = -0.10
-		lithoid_pop_growth_speed = 0.10
-	}		
 	district_set = standard
 	can_be_moon = no
 	carry_cap_per_free_district = @carry_cap_normal
@@ -46,12 +38,6 @@ pc_pd_dry_cave = {
 	planet_size = { min = 25 max = 30 }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	uses_alternative_skies_for_moons = no
-	modifier = { 
-		planet_orbital_bombardment_damage = -0.3
-		planet_housing_mult = -0.2
-		pop_environment_tolerance = -0.05
-		pop_growth_speed = -0.05
-	}	
 	district_set = standard
 	can_be_moon = no
 	carry_cap_per_free_district = @carry_cap_normal
@@ -74,14 +60,6 @@ pc_pd_wet_cave = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-	modifier = { 
-		planet_orbital_bombardment_damage = -0.3
-		planet_buildings_upkeep_mult = 0.1
-		planet_districts_upkeep_mult = 0.1
-		pop_environment_tolerance = -0.10
-		biological_pop_growth_speed = -0.10
-		lithoid_pop_growth_speed = 0.10
-	}	
 }
 #Gaia
 pc_pd_gaia_cave = {
@@ -100,12 +78,6 @@ pc_pd_gaia_cave = {
 		planet_jobs_produces_mult = 0.10
 		biological_pop_happiness = 0.10
 		lithoid_pop_happiness = 0.10
-		planet_orbital_bombardment_damage = -0.3
-		planet_buildings_upkeep_mult = 0.1
-		planet_districts_upkeep_mult = 0.1
-		pop_environment_tolerance = -0.10
-		biological_pop_growth_speed = -0.10
-		lithoid_pop_growth_speed = 0.10
 	}
 
 	min_distance_from_sun = 60

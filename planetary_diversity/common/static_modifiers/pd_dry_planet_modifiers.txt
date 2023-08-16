@@ -26,14 +26,13 @@ pd_fungi = {
 pd_salt = {	
 	district_mining_max = 6
 	district_farming_max = -2
-	pop_environment_tolerance = -0.1
+	pop_environment_tolerance = -0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_salt.dds"
 	icon_frame = 1
 }
 pd_aquifer = {	
 	district_farming_max = 4
-	biological_pop_happiness = 0.1
-	pop_housing_usage_add = 0.1
+	pop_housing_usage_add = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aquifer.dds"
 	icon_frame = 1
 }
@@ -69,8 +68,8 @@ pd_striped = {
 }
 pd_coral = {	
 	district_mining_max = 4
-	pop_growth_speed = -0.05
-	pop_environment_tolerance = -0.05
+	pop_environment_tolerance = -0.1
+	pop_housing_usage_add = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_coral.dds"
 	icon_frame = 1
 }
@@ -110,14 +109,13 @@ pd_aspen = {
 pd_supercontinent = {
 	district_farming_max = 4
 	planet_housing_mult = 0.1
-	planet_amenities_mult = -0.1
-	pop_environment_tolerance = 0.05
+	planet_structures_upkeep_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_supercontinent.dds"
 	icon_frame = 1
 }
 pd_sinkhole = {
 	district_mining_max = 4
-	planet_max_districts_add = 2
+	planet_housing_mult = -0.1
 	planet_structures_upkeep_mult = 0.15
 	planet_structures_cost_mult = 0.15
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_sinkhole.dds"

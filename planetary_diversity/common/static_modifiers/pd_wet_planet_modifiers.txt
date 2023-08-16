@@ -30,8 +30,7 @@ pd_temperate = {
 pd_megaflora = {	
 	district_mining_max = 2
 	district_generator_max = 2
-	planet_structures_upkeep_mult = 0.05
-	planet_structures_cost_mult = 0.1
+	planet_structures_cost_mult = 0.2
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_megaflora.dds"
 	icon_frame = 1
 }
@@ -72,7 +71,7 @@ pd_reef = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_reef.dds"
 	icon_frame = 1
 	district_mining_max = 4
-	planet_housing_mult = -0.2
+	planet_housing_mult = -0.1
 	planet_structures_cost_mult = 0.1
 }
 pd_archipelago = {	
@@ -112,16 +111,13 @@ pd_geothermal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_geothermal.dds"
 	icon_frame = 1
 	district_generator_max = 4
-	planet_amenities_mult = 0.1
 	planet_structures_cost_mult = 0.1
-	planet_housing_mult = -0.2
+	planet_housing_mult = -0.1
 }
 pd_biolumen = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_biolumen.dds"
 	icon_frame = 1
 	district_farming_max = 4
-	biological_pop_happiness = 0.05
-	lithoid_pop_happiness = 0.05
 	planet_immigration_pull_mult = 0.25
 	planet_housing_mult = -0.1
 }

@@ -4451,268 +4451,71 @@ country_event = {
 		#Wet Superhabitable Player Start
 		every_galaxy_planet = { 				
 			limit = { 
-				is_planet_class = pc_pd_wet_superhabitable 
+				OR = {
+					is_planet_class = pc_pd_wet_superhabitable 
+					is_planet_class = pc_pd_dry_superhabitable 
+					is_planet_class = pc_pd_cold_superhabitable 
+				}
 				is_homeworld = no 
 				has_planet_flag = prescripted_ideal 
 			}
-			change_pc = pc_continental
+			change_pc = pc_pd_barren_superhabitable
+			add_modifier = {
+				modifier = terraforming_candidate
+				days = -1
+			}
 			random_list = {				
 				25 = {
-					add_modifier = { modifier = pd_continental }	 
+					set_planet_size = 31	 
 				}    
 				25 = { 
-					pd_retinal_world_effect = yes
+					set_planet_size = 32	
 				}
 				25 = { 
-					pd_lake_world_effect = yes
+					set_planet_size = 33	
 				}
 				25 = { 
-					pd_forest_world_effect = yes
+					set_planet_size = 34	
 				}
 				25 = { 
-					pd_temperate_world_effect = yes
-				}
-				25 = { 
-					pd_tepid_world_effect = yes
-				}  
-				25 = { 
-					pd_mushroom_world_effect = yes
-				}  
-			}
-		}
-		#Dry Superhabitable Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_dry_superhabitable 
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_arid
-			random_list = {		
-				25 = {
-					add_modifier = { modifier = pd_arid }	 
-				}    
-				25 = { 
-					pd_mesa_world_effect = yes
-				}
-				25 = { 
-					pd_fog_desert_world_effect = yes
-				}
-				25 = { 
-					pd_mediterranean_world_effect = yes
-				}
-				25 = { 
-					pd_badlands_world_effect = yes
-				} 
-				25 = { 
-					pd_striped_world_effect = yes
-				}
-			}
-		}
-		#Cold Superhabitable Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_cold_superhabitable 
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_tundra
-			random_list = {	
-				25 = {
-					change_pc = pc_tundra
-					add_modifier = { modifier = pd_tundra }	 
-				}    
-				25 = { 
-					pd_bog_world_effect = yes
-				}
-				25 = { 
-					pd_mycelium_world_effect = yes
-				}
-				25 = { 
-					pd_mud_world_effect = yes
-				}
-				25 = { 
-					pd_basalt_world_effect = yes
-				} 
-				25 = { 
-					pd_tuya_world_effect = yes
+					set_planet_size = 35	
 				}
 			}
 		}
 		#Wet Tidally Locked Player Start
 		every_galaxy_planet = { 				
 			limit = { 
-				is_planet_class = pc_pd_wet_tidally_locked
+				OR = {
+					is_planet_class = pc_pd_wet_tidally_locked
+					is_planet_class = pc_pd_dry_tidally_locked
+					is_planet_class = pc_pd_cold_tidally_locked
+				}
 				is_homeworld = no 
 				has_planet_flag = prescripted_ideal 
 			}
-			change_pc = pc_tropical
-			random_list = {	
-				25 = {
-					add_modifier = { modifier = pd_tropical }	 
-				}    
-				25 = { 
-					pd_atoll_world_effect = yes
-				}
-				25 = { 
-					pd_tepui_world_effect = yes
-				}
-				25 = { 
-					pd_mangrove_world_effect = yes
-				}
-				25 = { 
-					pd_cenote_world_effect = yes
-				} 
-				25 = { 
-					pd_fungal_world_effect = yes
-				} 
-			}
-		}
-		#Dry Tidally Locked Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_dry_tidally_locked
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_savannah
-			random_list = {	
-				25 = {
-					add_modifier = { modifier = pd_savannah }	 
-				}    
-				25 = { 
-					pd_steppe_world_effect = yes
-				}
-				25 = { 
-					pd_prairie_world_effect = yes
-				}
-				25 = { 
-					pd_veld_world_effect = yes
-				}
-				25 = { 
-					pd_semi_arid_world_effect = yes
-				} 
-				25 = { 
-					pd_aspen_world_effect = yes
-				}
-			}
-		}
-		#Cold Tidally Locked Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_cold_tidally_locked
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_arctic
-			random_list = {	
-				25 = {
-					add_modifier = { modifier = pd_arctic }	 
-				}    
-				25 = { 
-					pd_cold_desert_world_effect = yes
-				}
-				25 = { 
-					pd_glacial_world_effect = yes
-				}
-				25 = { 
-					pd_antarctic_world_effect = yes
-				}
-				25 = { 
-					pd_aeolian_world_effect = yes
-				} 
-				25 = { 
-					pd_ice_spike_world_effect = yes
-				}
+			change_pc = pc_pd_barren_tidally_locked
+			add_modifier = {
+				modifier = terraforming_candidate
+				days = -1
 			}
 		}
 		#Wet Cave Player Start
 		every_galaxy_planet = { 				
 			limit = { 
-				is_planet_class = pc_pd_wet_cave
+				OR = {
+					is_planet_class = pc_pd_wet_cave
+					is_planet_class = pc_pd_dry_cave
+					is_planet_class = pc_pd_cold_cave
+				}
 				is_homeworld = no 
 				has_planet_flag = prescripted_ideal 
 			}
-			change_pc = pc_ocean
-			random_list = {				
-				25 = {
-					add_modifier = { modifier = pd_ocean }	 
-				}    
-				25 = { 
-					pd_cascadian_world_effect = yes
-				}
-				25 = { 
-					pd_swamp_world_effect = yes
-				}
-				25 = { 
-					pd_crag_world_effect = yes
-				}
-				25 = { 
-					pd_fog_world_effect = yes
-				} 
-				25 = { 
-					pd_kelp_world_effect = yes
-				} 
-			}
+			change_pc = pc_pd_barren_cave
+			add_modifier = {
+				modifier = terraforming_candidate
+				days = -1
+			}				
 		} 	
-		#Dry Cave Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_dry_cave
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_desert
-			random_list = {			
-				25 = {
-					add_modifier = { modifier = pd_desert }	 
-				}    
-				25 = { 
-					pd_dune_world_effect = yes
-				}
-				25 = { 
-					pd_oasis_world_effect = yes
-				}
-				25 = { 
-					pd_outback_world_effect = yes
-				}
-				25 = { 
-					pd_coastal_world_effect = yes
-				} 
-				25 = { 
-					pd_fungi_world_effect = yes
-				}
-			}
-		} 
-		#Cold Cave Player Start
-		every_galaxy_planet = { 				
-			limit = { 
-				is_planet_class = pc_pd_cold_cave
-				is_homeworld = no 
-				has_planet_flag = prescripted_ideal 
-			}
-			change_pc = pc_alpine
-			random_list = {		
-				25 = {
-					add_modifier = { modifier = pd_alpine }	 
-				}    
-				25 = { 
-					pd_boreal_world_effect = yes
-				}
-				25 = { 
-					pd_snow_world_effect = yes
-				}
-				25 = { 
-					pd_highland_world_effect = yes
-				}
-				25 = { 
-					pd_dune_forest_world_effect = yes
-				} 
-				25 = { 
-					pd_fjord_world_effect = yes
-				}
-			}
-		} 
 	}
 }
 #This event sets up the Uncommon barren worlds.
@@ -4750,6 +4553,152 @@ country_event = {
 					}
 				}
 				93 = { }	
+			}
+		}
+		every_galaxy_planet = { 
+			limit = {  
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+				}
+				NOR = { 
+					has_modifier = terraforming_candidate
+					is_moon = yes
+				}	
+				planet_size > 9
+				planet_size < 31	
+				is_moon = no
+				has_moon = no
+				solar_system = { is_star_class = sc_m }
+			}	
+			random_list = {
+				10 = { 
+					change_pc = pc_pd_barren_tidally_locked
+					add_modifier = { modifier = terraforming_candidate days = -1 } 
+					random_list = {
+						20 = { set_planet_size = 31 }
+						20 = { set_planet_size = 32 }
+						20 = { set_planet_size = 33 }
+						20 = { set_planet_size = 34 }
+						20 = { set_planet_size = 35 }
+					}
+				}
+				90 = { }	
+			}
+		}
+		every_galaxy_planet = { 
+			limit = {  
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+				}
+				NOR = { 
+					has_modifier = terraforming_candidate
+					is_moon = yes
+				}	
+				planet_size > 9
+				planet_size < 31	
+				is_moon = no
+				solar_system = { is_star_class = sc_f }
+			}	
+			random_list = {
+				8 = { 
+					change_pc = pc_pd_barren_cave
+					add_modifier = { modifier = terraforming_candidate days = -1 } 
+					random_list = {
+						20 = { set_planet_size = 31 }
+						20 = { set_planet_size = 32 }
+						20 = { set_planet_size = 33 }
+						20 = { set_planet_size = 34 }
+						20 = { set_planet_size = 35 }
+					}
+				}
+				92 = { }	
+			}
+		}
+	}
+}
+#This event gives all the uncommon worlds flags
+country_event = {
+	id = pdengine.34
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		every_galaxy_planet = { 
+			limit = {  
+				OR = {
+					pd_is_planet_class_superhabitable = yes
+					is_planet_class = pc_pd_barren_superhabitable
+				}
+			}
+			set_planet_flag = pd_superhabitable_world
+		}
+		every_galaxy_planet = { 
+			limit = {  
+				OR = {
+					pd_is_planet_class_tidally_locked = yes
+					is_planet_class = pc_pd_barren_tidally_locked
+				}
+			}
+			set_planet_flag = pd_tidally_locked_world
+		}
+		every_galaxy_planet = { 
+			limit = {  
+				OR = {
+					pd_is_planet_class_cave = yes
+					is_planet_class = pc_pd_barren_cave
+				}
+			}
+			set_planet_flag = pd_cave_world
+		}
+	}
+}
+#This event gives uncommon arcologies their correct modifer
+planet_event = {
+	id = pdengine.35
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_planet_class = pc_city
+	}
+
+	immediate = {
+		switch = {
+		trigger = has_planet_flag
+			pd_superhabitable_world = {
+				add_modifier = {
+					modifier = pd_arcology_superhabitable
+					days = -1
+				}
+			}
+			pd_cave_world = {
+				add_modifier = {
+					modifier = pd_arcology_cave
+					days = -1
+				}
+			}
+		}
+		planet_event = { id = pdengine.36 days = 1 }
+	}
+}
+#This event gives uncommon arcologies their correct modifer
+planet_event = {
+	id = pdengine.36
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		switch = {
+		trigger = has_planet_flag
+			pd_cave_world = {
+				set_planet_entity = {
+					picture = pc_pd_arcology_cave
+					entity = "city_planet_cave_entity"
+					graphical_culture = owner
+				}
 			}
 		}
 	}
@@ -5246,7 +5195,7 @@ country_event = {
 	}
 } 
 
-#This event changes the adds deposits and updates the visuals of the special uninhatiable worlds
+#This event changes the adds deposits and updates the visuals of the special uninhabitable worlds
 country_event = {
 	id = pdengine.61
 	hide_window = yes

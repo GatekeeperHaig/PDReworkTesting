@@ -17,6 +17,7 @@ on_terraforming_complete = {
 
 on_planet_class_changed = {
 	events = {
+		pdengine.35
 		pdengine.40
 		pdengine.41
 		pdengine.72
@@ -98,6 +99,7 @@ on_press_begin = {
 		pdengine.31
 		pdengine.32
 		pdengine.33
+		pdengine.34
 		pdengine.50
 		pdengine.51
 		pdengine.61

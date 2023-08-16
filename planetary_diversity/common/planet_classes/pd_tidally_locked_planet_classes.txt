@@ -22,9 +22,6 @@ pc_pd_wet_tidally_locked = {
 	district_set = standard
 	can_be_moon = no
 	carry_cap_per_free_district = @carry_cap_normal
-	modifier = {
-		planet_max_districts_mult = -0.30
-	}
 }
 #Dry
 pc_pd_dry_tidally_locked = {
@@ -47,9 +44,6 @@ pc_pd_dry_tidally_locked = {
 	district_set = standard
 	can_be_moon = no
 	carry_cap_per_free_district = @carry_cap_normal
-	modifier = {
-		planet_max_districts_mult = -0.30
-	}
 }
 #Cold
 pc_pd_cold_tidally_locked = {
@@ -72,9 +66,6 @@ pc_pd_cold_tidally_locked = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-	modifier = {
-		planet_max_districts_mult = -0.30
-	}
 }
 #Gaia
 pc_pd_gaia_tidally_locked = {
@@ -98,7 +89,6 @@ pc_pd_gaia_tidally_locked = {
 		planet_jobs_produces_mult = 0.10 
 		biological_pop_happiness = 0.10 
 		lithoid_pop_happiness = 0.10 
-		planet_max_districts_mult = -0.30
 	}
 	colonizable = yes
 	district_set = standard

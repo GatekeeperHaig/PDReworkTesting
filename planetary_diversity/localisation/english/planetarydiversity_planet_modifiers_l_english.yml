@@ -171,13 +171,15 @@
 
  #Superhabitable
  pd_wet_superhabitable: "Wet Superhabitable World"
- pd_wet_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. Farming on this wet planet is particularly productive."
+ pd_wet_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. The heavy gravity make construction more expensive."
  pd_dry_superhabitable: "Dry Superhabitable World"
- pd_dry_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. This dry world also has many canyons, allowing for rich hydroelectric opportunities."
+ pd_dry_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. The heavy gravity make construction more expensive."
  pd_cold_superhabitable: "Frozen Superhabitable World"
- pd_cold_superhabitable_desc: "This superhabitable world has dense mineral deposits, a strong hydrosphere, and ideal farming conditions. This frozen planet has rich mining opportunities."
+ pd_cold_superhabitable_desc: "This superhabitable world has has a strong hydrosphere and ideal farming conditions. The heavy gravity make construction more expensive."
  pd_gaia_superhabitable: "Gaia Superhabitable World"
  pd_gaia_superhabitable_desc: "An ideally created superhabitable sworld with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+ pd_arcology_superhabitable: "Superhabitable Arcology"
+ pd_arcology_superhabitable_desc: "A superhabitable world completely engulfed by urban-industrial sprawl. The heavy gravity make construction more expensive."
 
  #Tidally Locked
  pd_wet_tidally_locked: "Sunside World"
@@ -191,13 +193,15 @@
 
  #Cave
  pd_wet_cave: "Karst Cave World"
- pd_wet_cave_desc: "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_wet_cave_desc: "The underground cave network stretches for the entire planet allowing for rare opportunities. Construction is expensive, but the ground above makes for good planetary defenses."
  pd_dry_cave: "Sandstone Cave World"
- pd_dry_cave_desc: "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_dry_cave_desc: "$pd_wet_cave_desc$"
  pd_cold_cave: "Ice Cave World"
- pd_cold_cave_desc: "The underground cave network stretches for the entire planet allowing for rare opportunities."
+ pd_cold_cave_desc: "$pd_wet_cave_desc$"
  pd_gaia_cave: "Gaia Cave World"
  pd_gaia_cave_desc: "An ideally created cave world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+ pd_arcology_cave: "Cave Arcology"
+ pd_arcology_cave_desc: "A cave world completely engulfed by urban-industrial sprawl. Construction is expensive, but the ground above makes for good planetary defenses."
 
  ###Gaia
  pd_gaia_world: "Gaia World"
