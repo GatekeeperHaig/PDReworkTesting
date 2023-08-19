@@ -12,8 +12,8 @@ building_gaiaseeders_1 = {
 			is_country_type = default
 			is_idyllic_bloom_empire = yes
 		}
+		pd_is_planet_class_gaia = no
 		NOR = {
-			is_planet_class = pc_gaia
 			is_planet_class = pc_city
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
@@ -28,7 +28,7 @@ building_gaiaseeders_1 = {
 
 	destroy_trigger = {
 		OR = {
-			is_planet_class = pc_gaia	# No double bonuses if player uses other tools to turn it into a Gaia world.
+			pd_is_planet_class_gaia = yes # No double bonuses if player uses other tools to turn it into a Gaia world.
 			is_planet_class = pc_city
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
@@ -79,7 +79,7 @@ building_gaiaseeders_2 = {
 
 	destroy_trigger = {
 		OR = {
-			is_planet_class = pc_gaia
+			pd_is_planet_class_gaia = yes
 			is_planet_class = pc_city
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
@@ -122,7 +122,7 @@ building_gaiaseeders_3 = {
 
 	destroy_trigger = {
 		OR = {
-			is_planet_class = pc_gaia
+			pd_is_planet_class_gaia = yes
 			is_planet_class = pc_city
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine

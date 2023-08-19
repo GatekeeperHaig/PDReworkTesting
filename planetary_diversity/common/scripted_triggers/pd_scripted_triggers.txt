@@ -246,5 +246,13 @@ pd_is_planet_class_gaia = {
 		is_planet_class = pc_pd_gaia_tidally_locked
 		is_planet_class = pc_pd_gaia_cave
 	}
+}
 
+pd_is_planet_class_nuked = {
+	OR = {
+		is_planet_class = pc_nuked
+		is_planet_class = pc_pd_nuked_superhabitable
+		is_planet_class = pc_pd_nuked_tidally_locked
+		is_planet_class = pc_pd_nuked_cave
+	}
 }

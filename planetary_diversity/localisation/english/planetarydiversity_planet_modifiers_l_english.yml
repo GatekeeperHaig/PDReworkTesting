@@ -204,10 +204,16 @@
  pd_gaia_cave_desc: "An ideally created cave world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
  pd_arcology_cave: "Cave Arcology"
  pd_arcology_cave_desc: "A cave world completely engulfed by urban-industrial sprawl. Construction is expensive, but the ground above makes for good planetary defenses."
+ pd_nuked_cave: "Nuked Cave World"
+ pd_nuked_cave_desc: "This cave world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life."
 
  ###Gaia
  pd_gaia_world: "Gaia World"
- pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
+ pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. It is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
+
+ #Arcology/Relic
+ pc_pd_nuked_arcology: "Nuked Relic World"
+ pc_pd_nuked_arcology_desc: "A city once stretched across this entire world. It is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
 
  #Uninhabitable Modifiers
  pd_diamond: "Diamond World"

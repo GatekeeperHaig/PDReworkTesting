@@ -1,0 +1,124 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+# Adapted Environment Gaia
+decision_engineered_environment_gaia = {
+	icon = decision_engineered_environment_gaia
+	owned_planets_only = yes
+
+	enactment_time = 1800
+	resources = {
+		category = decisions
+		cost = {
+			energy = 7500
+		}
+	}
+
+	allow = {
+		pd_is_planet_class_gaia = no
+		NOT = { has_modifier = engineered_environment_gaia }
+	}
+	
+	potential = {
+		is_artificial = no
+		NOR = {
+			is_planet_class = pc_relic
+			has_modifier = engineered_environment_gaia
+		}
+		owner = { has_ascension_perk = ap_world_shaper }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = engineered_environment_gaia
+			days = -1
+		}
+	}   
+	
+	ai_weight = {
+        weight = 1
+  	}
+}
+
+#Set off the Bombs
+decision_nuked_own_planet = {
+	owned_planets_only = yes
+	sound = event_red_alert
+	icon = decision_nuked_own_planet
+
+	enactment_time = 360
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			influence = 50
+		}
+	}
+
+	potential = { 
+		owner = { has_origin = origin_post_apocalyptic } 
+		pd_is_planet_class_nuked = no
+	}
+
+	allow = { 
+	}
+
+	effect = {
+		if = {
+			limit = { 
+				pd_is_planet_class_cave = yes
+			}
+			change_pc = pc_pd_nuked_cave
+		} 
+		if = {
+			limit = { 
+				pd_is_planet_class_superhabitable = yes
+			}
+			change_pc = pc_pd_nuked_superhabitable
+		} 
+		if = {
+			limit = { 
+				pd_is_planet_class_tidally_locked = yes
+			}
+			change_pc = pc_pd_nuked_tidally_locked
+		} 
+		if = {
+			limit = { 
+				OR = {
+					is_planet_class = pc_city
+					is_planet_class = pc_relic
+				}
+			}
+			change_pc = pc_relic
+			add_modifier = {
+				modifier = pc_pd_nuked_arcology
+				days = -1
+			}
+			set_planet_entity = {
+				picture = pc_pd_nuked_relic
+				entity = nuked_relic_world_01_entity
+			}
+		} 
+		if = {
+			limit = { 
+				NOR = {
+					is_planet_class = pc_city
+					is_planet_class = pc_relic
+					pd_is_planet_class_cave = yes
+					pd_is_planet_class_superhabitable = yes
+					pd_is_planet_class_tidally_locked = yes
+				}
+			}
+			change_pc = pc_nuked
+		} 
+		add_planet_devastation = 50
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+
