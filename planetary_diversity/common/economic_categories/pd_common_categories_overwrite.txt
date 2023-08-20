@@ -1,0 +1,12 @@
+planet_bio_trophies = {
+	parent = planet_jobs
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	generate_mult_modifiers = {
+		upkeep
+		cost
+	}
+	modifier_category = pop
+}

@@ -159,6 +159,25 @@
  building_superhab_foundry:0 "Superhabitable High Gravity Foundries"
  building_superhab_foundry_desc:0 "Making alloys on these high gravity means dense high-quality alloys are easier to make."
 
+ #Gaia Buildings
+ building_gaia_lab:0 "Gaia Research Centre"
+ building_gaia_lab_desc:0 "From this center, researchers control and maintain the planet's ideal environment, often providing novel research opportunities."
+ building_gaia_unity_admin:0 "Gaia Bureaucratic Coordination"
+ building_gaia_unity_admin_desc:0 "The labyrinthine offices of this coordination center are supplemented with stunning vistas and idyllic common areas, significantly improving the output of planetary bureaucrats."
+ building_gaia_unity_temple:0 "Gaia Ecclesiastical Coordination"
+ building_gaia_unity_temple_desc:0 "This palatial temple administration building is situated deep in the idyllic vegetation. The stunning vistas rejuvenate and inspire the clergy members who visit here."
+ building_gaia_unity_robot:0 "Gaia Coordination Hub"
+ building_gaia_unity_robot_desc:0 "This planet's ideal temperature and weather control systems improve the processing power of Coordinators housed here."
+ building_gaia_unity_servitor:0 "Gaia Bio-Trophy Paradise"
+ building_gaia_unity_servitor_desc:0 "With an ideal environment like this, satisfying every need of a sapient organic being is much easier, and cases of self-determination expression decline drastically. The organics within have their housing needs wholly fulfilled."
+ building_gaia_unity_hive:0 "Gaia Coordination Node"
+ building_gaia_unity_hive_desc:0 "This planet's ideal temperature and weather control systems provide such comfort for the drone on this world that they can focus much more of their mental capacity towards the cohesion of the hive."
+ building_gaia_resort:0 "Gaia Idyllic Resort"
+ building_gaia_resort_desc:0 "The controlled weather and breathtaking vistas allow for the pinnacle of resorts for both entertainment and medical needs."
+
  #Nuke Own Planet Decision
  decision_nuked_own_planet:0 "Nuke Environment"
  decision_nuked_own_planet_desc:0 "We require a radioactive environment to thrive. We can transform this world to our current needs using conventional nuclear warheads."
+
+ #Economic Categories
+ mod_planet_bio_trophies_unity_produces_add: "£unity£ $unity$ from £job_bio_trophy£ $job_bio_trophy_plural$"

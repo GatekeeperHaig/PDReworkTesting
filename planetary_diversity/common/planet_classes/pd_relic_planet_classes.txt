@@ -1,4 +1,4 @@
-# Put in for testing, did not use
+# Put in for testing, did not use, keeping if I change my mind
 #   pc_pd_nuked_relic = {
 # 	entity = "nuked_relic_world"
 # 	entity_scale = @planet_standard_scale
