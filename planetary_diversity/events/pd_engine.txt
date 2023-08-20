@@ -4898,6 +4898,15 @@ planet_event = {
 			}
 			remove_modifier = pd_gaia_cave
 		}
+		if = { 
+			limit = { 
+				NOR = { 
+					is_planet_class = pc_city 
+					is_planet_class = pc_relic 
+				} 
+			}
+			remove_modifier = pc_pd_nuked_arcology
+		}
 	}
 }
 #This event makes sure certain special classes get their modifier after terraforming or events

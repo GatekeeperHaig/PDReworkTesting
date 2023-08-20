@@ -171,15 +171,17 @@
 
  #Superhabitable
  pd_wet_superhabitable: "Wet Superhabitable World"
- pd_wet_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. The habitable zones are limited to the twilight regions where the two sides meet."
+ pd_wet_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_dry_superhabitable: "Dry Superhabitable World"
- pd_dry_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. The habitable zones are limited to the twilight regions where the two sides meet."
+ pd_dry_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_cold_superhabitable: "Frozen Superhabitable World"
- pd_cold_superhabitable_desc: "This superhabitable world has has a strong hydrosphere and ideal farming conditions. The habitable zones are limited to the twilight regions where the two sides meet."
+ pd_cold_superhabitable_desc: "This superhabitable world has has a strong hydrosphere and ideal farming conditions. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_gaia_superhabitable: "Gaia Superhabitable World"
- pd_gaia_superhabitable_desc: "An ideally created superhabitable sworld with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. The habitable zones are limited to the twilight regions where the two sides meet.""
+ pd_gaia_superhabitable_desc: "An ideally created superhabitable sworld with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_arcology_superhabitable: "Superhabitable Arcology"
- pd_arcology_superhabitable_desc: "A superhabitable world completely engulfed by urban-industrial sprawl. The habitable zones are limited to the twilight regions where the two sides meet."
+ pd_arcology_superhabitable_desc: "A superhabitable world completely engulfed by urban-industrial sprawl. This planet has warmer average temperatures but its heavy gravity is a struggle for those unaccustomed to it. "
+ pd_nuked_superhabitable: "Nuked Cave World"
+ pd_nuked_superhabitable_desc: "This superhabitable world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life. Its heavy gravity is a struggle for those unaccustomed to it."
 
  #Tidally Locked
  pd_wet_tidally_locked: "Sunside World"
@@ -192,6 +194,8 @@
  pd_gaia_tidally_locked_desc: "An ideally created tidally locked world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. Life is limited to the twilight regions where the two sides meet."
  pd_arcology_tidally_locked: "Tidally Locked Arcology"
  pd_arcology_tidally_locked_desc: "A tidally locked world completely engulfed by urban-industrial sprawl. The heavy gravity make construction more expensive. Life is limited to the twilight regions where the two sides meet."
+ pd_nuked_tidally_locked: "Nuked Tidally Locked World"
+ pd_nuked_tidally_locked_desc: "This tidally locked world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life."
 
  #Cave
  pd_wet_cave: "Karst Cave World"
@@ -209,11 +213,12 @@
 
  ###Gaia
  pd_gaia_world: "Gaia World"
- pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. It is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
+ pd_gaia_world_desc: "An ideally created super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
  #Arcology/Relic
  pc_pd_nuked_arcology: "Nuked Relic World"
  pc_pd_nuked_arcology_desc: "A city once stretched across this entire world. It is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
+ pc_pd_nuked_arcology_tooltip: "Habitability: §R-100%§!\nHabitability: §G+100%§! with §Y$trait_pc_nuked_preference$§! or §Y$trait_survivor$§! trait"
 
  #Uninhabitable Modifiers
  pd_diamond: "Diamond World"
@@ -242,3 +247,10 @@
  pd_subglacial_desc: "A rocky world covered in a thick layer of permanent ice, this planet's low temperatures and thin atmosphere precludes the existence of life on the surface. Below the solid ice surface, tidal heating or geothermal activity allows a subsurface ocean to form."
  pd_hothouse: "Hothouse World"
  pd_hothouse_desc: "A rocky world whose atmosphere is currently experiencing a runaway greenhouse effect. Lethal to all forms of life."
+
+ #Engineered Environment
+ decision_engineered_environment_gaia:0 "World Shaper Project"
+ decision_engineered_environment_gaia_desc:0 "We will use advanced terraforming techniques to shape this world into a paradise, giving it optimal conditions for all known higher life forms."
+ engineered_environment_gaia:0 "Perfectly Shaped World"
+ engineered_environment_gaia_desc:0 "Advanced terraforming techniques have shaped this world, and its ecosystem now has optimal conditions for all known higher life forms." 
+

@@ -37,7 +37,7 @@ planet_event = {
 			limit = { 
 				pd_is_planet_class_tidally_locked = no
 				pd_is_planet_class_superhabitable = no
-				pd_is_planet_class__cave = no
+				pd_is_planet_class_cave = no
 			}
 			change_pc = pc_gaia
 		}
@@ -143,7 +143,7 @@ country_event = {
 			if = {
 				limit = { 
 					pd_is_planet_class_tidally_locked = no
-					pc_pd_gaia_superhabitable = no
+					pd_is_planet_class_superhabitable = no
 					pd_is_planet_class_cave = no
 				}
 				change_pc = pc_gaia

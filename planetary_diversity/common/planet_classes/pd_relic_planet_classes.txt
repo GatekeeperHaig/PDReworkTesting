@@ -1,41 +1,29 @@
-###PD Relic World Skins
-#Nuked Relic
-entity = {
-	name = "nuked_relic_world_01_entity"
-	pdxmesh = "planet_clouded_mesh"
-
-	#planet surface texture override
-	meshsettings = {
-		name = "planet_geosphereShape"
-		texture_diffuse = "nuked_relic_world_01_diffuse.dds"
-		texture_normal = "relic_world_01_normal.dds"
-		texture_specular = "relic_world_01_specular.dds"
-		shader = "PdxMeshPlanetEmissive"
-	}
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "nuked_clouds_medium_diffuse.dds"
-	texture_normal = "nuked_clouds_medium_normal.dds"
-	texture_specular = "nuked_clouds_medium_specular.dds"
-	}
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "clouds_nuke_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-	##pole texture override
-	meshsettings = {
-		name = "polesShape"
-		texture_diffuse = "arctic_poles_01_diffuse.dds"
-		texture_normal = "arctic_poles_01_normals.dds"
-		texture_specular = "arctic_poles__01_spec.dds"
-	}
-
-	default_state = "idle"
-	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_world_relic" } }
-	}
-}
+# Put in for testing, did not use
+#   pc_pd_nuked_relic = {
+# 	entity = "nuked_relic_world"
+# 	entity_scale = @planet_standard_scale
+# 	icon = GFX_planet_type_nuked
+# 	climate = "dry"
+# 	atmosphere_color		= hsv { 0.6 0.5 0.5 }
+# 	atmosphere_intensity	= 1.2
+# 	atmosphere_width		= 0.85
+# 	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+# 	min_distance_from_sun = 60
+# 	max_distance_from_sun = 110
+# 	spawn_odds = 0
+# 	extra_orbit_size = 0
+# 	extra_planet_count = 0
+# 	chance_of_ring = 0.2
+# 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+# 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+# 	starting_planet = no
+# 	colonizable = yes
+# 	district_set = standard
+# 	ideal = no
+# 	show_city = no
+# 	uses_alternative_skies_for_moons = no
+# 	#modifier = {
+# 	#	pop_environment_tolerance = 0
+# 	#}
+# 	carry_cap_per_free_district = @carry_cap_normal
+#}
