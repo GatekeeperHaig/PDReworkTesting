@@ -573,10 +573,6 @@ building_gaia_resort = {
 		NOT = { has_building_construction = building_gaia_resort }
 	}
 
-	allow = {
-		has_upgraded_capital = yes
-	}
-
 	inline_script = "buildings/pd_rare_resort_building"
 
 	triggered_planet_modifier = {

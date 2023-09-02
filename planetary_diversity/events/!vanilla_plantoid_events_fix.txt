@@ -15,32 +15,7 @@ planet_event = {
 
 	immediate = {
 		# Turn planet into Gaia world.
-		if = {
-			limit = { 
-				pd_is_planet_class_tidally_locked = yes
-			}
-			change_pc = pc_pd_gaia_tidally_locked
-		}
-		if = {
-			limit = { 
-				pd_is_planet_class_superhabitable = yes
-			}
-			change_pc = pc_pd_gaia_superhabitable
-		}
-		if = {
-			limit = { 
-				pd_is_planet_class_cave = yes
-			}
-			change_pc = pc_pd_gaia_cave
-		}
-		if = {
-			limit = { 
-				pd_is_planet_class_tidally_locked = no
-				pd_is_planet_class_superhabitable = no
-				pd_is_planet_class_cave = no
-			}
-			change_pc = pc_gaia
-		}
+		pd_make_all_gaia_worlds_effect = yes
 
 		# Remove Gaia Seed building.
 		remove_building = building_gaiaseeders_4

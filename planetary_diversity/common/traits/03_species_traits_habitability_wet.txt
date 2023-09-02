@@ -30,6 +30,8 @@ trait_pc_tropical_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -55,6 +57,8 @@ trait_pc_continental_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -80,6 +84,8 @@ trait_pc_ocean_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	species_possible_remove = {
 		NOT = { has_trait = trait_aquatic }
@@ -110,6 +116,8 @@ trait_pc_pd_wet_superhabitable_preference = {
 		pc_savannah_habitability = @tertiary
 		pc_pd_wet_tidally_locked_habitability = @tertiary
 		pc_pd_wet_cave_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -137,6 +145,8 @@ trait_pc_pd_wet_tidally_locked_preference = {
 		pc_savannah_habitability = @tertiary
 		pc_pd_wet_superhabitable_habitability = @tertiary
 		pc_pd_wet_cave_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -164,6 +174,8 @@ trait_pc_pd_wet_cave_preference = {
 		pc_savannah_habitability = @tertiary
 		pc_pd_wet_superhabitable_habitability = @tertiary
 		pc_pd_wet_tidally_locked_habitability = @tertiary
+
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0

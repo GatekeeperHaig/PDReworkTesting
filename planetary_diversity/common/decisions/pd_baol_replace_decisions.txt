@@ -32,34 +32,11 @@ decision_baol_life_seed = {
 		custom_tooltip = decision_baol_life_seed_effects
 		hidden_effect = {
 			owner = { remove_country_flag = relic_last_baol_activated }
-			if = {
-				limit = { 
-					pd_is_planet_class_tidally_locked = yes
-				}
-				change_pc = pc_pd_gaia_tidally_locked
+			add_modifier = {
+				modifier = engineered_environment_gaia
+				days = -1
 			}
-			if = {
-				limit = { 
-					pd_is_planet_class_superhabitable = yes
-				}
-				change_pc = pc_pd_gaia_superhabitable
-			}
-			if = {
-				limit = { 
-					pd_is_planet_class_cave = yes
-				}
-				change_pc = pc_pd_gaia_cave
-			}
-			if = {
-				limit = { 
-					OR = {
-						pd_is_planet_class_tidally_locked = no
-						pd_is_planet_class_superhabitable = no
-						pd_is_planet_class_cave = no
-					}
-				}
-				change_pc = pc_gaia
-			}
+			pd_make_all_gaia_worlds_effect = yes
 			if = {
 				limit = { NOT = { exists = event_target:nu_baol_species } }
 				if = {

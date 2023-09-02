@@ -61,7 +61,7 @@ pc_pd_wet_cave = {
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 }
-#Gaia
+#Gaia - Dummy
 pc_pd_gaia_cave = {
 	entity = "pd_gaia_cave_planet"
 	entity_scale = @planet_standard_scale

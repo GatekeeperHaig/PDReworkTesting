@@ -37,6 +37,7 @@ decision_engineered_environment_gaia = {
 			modifier = engineered_environment_gaia
 			days = -1
 		}
+		pd_make_uncommon_gaia_worlds_effect = yes
 	}   
 	
 	ai_weight = {

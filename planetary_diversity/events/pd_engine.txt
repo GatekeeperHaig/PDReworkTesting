@@ -2647,7 +2647,7 @@ country_event = {
 }
 
 ###These are the Terraforming Events
-#This Event Fires After Terraforming to let you choose PD classes
+#This Event Fires After Terraforming to let you choose PD Classes
 #Has Planet Flag = pd_choose_every_planet_terraforming
 planet_event = {
 	id = pdengine.20
@@ -2688,7 +2688,7 @@ country_event = {
 	desc = pdengine.21.desc
 	picture = GFX_evt_shattered_planet
 	show_sound = event_ship_bridge
-	location = root
+	location = from
 	is_triggered_only = yes
 
 	immediate = {
@@ -3572,6 +3572,81 @@ country_event = {
 			from = {       
 				pd_lichen_world_effect = yes
 			}
+		}
+	}
+}
+#This Event Fires After Terraforming to let you choose Gaia Classes
+#Has Planet Flag = pd_choose_every_planet_terraforming
+planet_event = {
+	id = pdengine.23
+	hide_window = yes
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		space_owner = {
+			OR = {
+				has_policy_flag = pd_choose_every_planet_terraforming
+				has_country_flag = pd_choose_every_planet_terraforming
+			}
+		}
+		is_planet_class = pc_gaia
+	}
+
+	immediate = {
+		space_owner = { 
+			country_event = { id = pdengine.24 } 
+		}
+	}
+}
+country_event = {
+	id = pdengine.24
+	title = pdengine.24.name
+	desc = pdengine.24.desc
+	picture = GFX_evt_shattered_planet
+	show_sound = event_ship_bridge
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		from = {
+			remove_pd_modifier = yes
+		}
+	}
+
+	#Continental
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_gaia }
+		}
+		name = pdengine.24.wet_gaia
+		hidden_effect = {   
+			from = {       
+				pd_wet_gaia_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_gaia }
+		}
+		name = pdengine.24.dry_gaia
+		hidden_effect = {   
+			from = {       
+				pd_dry_gaia_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_gaia }
+		}
+		name = pdengine.24.cold_gaia
+		hidden_effect = {      
+			from = {       
+				pd_cold_gaia_world_effect = yes
+			}    
 		}
 	}
 }
@@ -4907,6 +4982,14 @@ planet_event = {
 			}
 			remove_modifier = pc_pd_nuked_arcology
 		}
+		if = { 
+			limit = { 
+				NOT = {
+					is_planet_class = pc_gaia 
+				}
+			}
+			remove_modifier = pd_gaia_world
+		}
 	}
 }
 #This event makes sure certain special classes get their modifier after terraforming or events
@@ -4919,7 +5002,7 @@ planet_event = {
 		if = { 
 			limit = { 
 				is_planet_class = pc_gaia 
-				NOT = {
+				NOR = {
 					has_modifier = pd_gaia_world
 				}
 			}
@@ -6032,6 +6115,237 @@ country_event = {
 					entity = "nuked_planet_earth_entity"
 				}
 			}		
+		}
+	}
+}
+
+#These are Events that Change Gaia world art on Game start.
+#This event gives every gaia world it's PD modifier
+country_event = {
+	id = pdengine.80
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_galaxy_planet = {
+			limit = {				
+				OR = {
+					is_planet_class = pc_gaia   
+					is_planet_class = pc_pd_dry_gaia   
+					is_planet_class = pc_pd_cold_gaia   
+					is_planet_class = pc_pd_wet_gaia   
+				}	      
+			}
+			IF = {
+				limit = {	
+					NOT = {
+						has_modifier = pd_gaia_world
+					}
+				}
+				add_modifier = {
+					modifier = pd_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+}
+#The next three events change fallen empire homeworlds to PD Gaia Worlds
+country_event = {
+	id = pdengine.81
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_fallen_empire = yes
+		owner_main_species = {
+			OR = {
+				has_trait = trait_pc_savannah_preference
+				has_trait = trait_pc_arid_preference
+				has_trait = trait_pc_desert_preference
+				has_trait = trait_pc_pd_dry_cave_preference
+				has_trait = trait_pc_pd_dry_superhabitable_preference
+				has_trait = trait_pc_pd_dry_tidally_locked_preference
+				has_trait = trait_pc_pd_dune_preference
+				has_trait = trait_pc_pd_oasis_preference
+				has_trait = trait_pc_pd_outback_preference
+				has_trait = trait_pc_pd_coastal_preference
+				has_trait = trait_pc_pd_fungi_preference
+				has_trait = trait_pc_pd_salt_preference
+				has_trait = trait_pc_pd_aquifer_preference
+				has_trait = trait_pc_pd_mesa_preference
+				has_trait = trait_pc_pd_fog_desert_preference
+				has_trait = trait_pc_pd_mediterranean_preference
+				has_trait = trait_pc_pd_badlands_preference
+				has_trait = trait_pc_pd_succulent_preference
+				has_trait = trait_pc_pd_striped_preference
+				has_trait = trait_pc_pd_coral_preference
+				has_trait = trait_pc_pd_primal_preference
+				has_trait = trait_pc_pd_steppe_preference
+				has_trait = trait_pc_pd_prairie_preference
+				has_trait = trait_pc_pd_veld_preference
+				has_trait = trait_pc_pd_semi_arid_preference
+				has_trait = trait_pc_pd_aspen_preference
+				has_trait = trait_pc_pd_supercontinent_preference
+				has_trait = trait_pc_pd_sinkhole_preference
+			}
+
+		}
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_planet_class = pc_gaia
+			}
+			pd_dry_gaia_world_effect = yes
+		}
+	}
+}
+country_event = {
+	id = pdengine.82
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_fallen_empire = yes
+		owner_main_species = {
+			OR = {
+				has_trait = trait_pc_continental_preference
+				has_trait = trait_pc_tropical_preference
+				has_trait = trait_pc_ocean_preference
+				has_trait = trait_pc_pd_wet_cave_preference
+				has_trait = trait_pc_pd_wet_superhabitable_preference
+				has_trait = trait_pc_pd_wet_tidally_locked_preference
+				has_trait = trait_pc_pd_forest_preference
+				has_trait = trait_pc_pd_tepid_preference
+				has_trait = trait_pc_pd_retinal_preference
+				has_trait = trait_pc_pd_lake_preference
+				has_trait = trait_pc_pd_temperate_preference
+				has_trait = trait_pc_pd_mushroom_preference
+				has_trait = trait_pc_pd_petrified_preference
+				has_trait = trait_pc_pd_megaflora_preference
+				has_trait = trait_pc_pd_fog_desert_preference
+				has_trait = trait_pc_pd_cascadian_preference
+				has_trait = trait_pc_pd_swamp_preference
+				has_trait = trait_pc_pd_crag_preference
+				has_trait = trait_pc_pd_fog_preference
+				has_trait = trait_pc_pd_kelp_preference
+				has_trait = trait_pc_pd_reef_preference
+				has_trait = trait_pc_pd_archipelago_preference
+				has_trait = trait_pc_pd_atoll_preference
+				has_trait = trait_pc_pd_tepui_preference
+				has_trait = trait_pc_pd_mangrove_preference
+				has_trait = trait_pc_pd_cenote_preference
+				has_trait = trait_pc_pd_fungal_preference
+				has_trait = trait_pc_pd_geothermal_preference
+				has_trait = trait_pc_pd_biolumen_preference
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_planet_class = pc_gaia
+			}
+			pd_wet_gaia_world_effect = yes
+		}
+	}
+}
+country_event = {
+	id = pdengine.83
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_fallen_empire = yes
+		owner_main_species = {
+			OR = {
+				has_trait = trait_pc_arctic_preference
+				has_trait = trait_pc_tundra_preference
+				has_trait = trait_pc_alpine_preference
+				has_trait = trait_pc_pd_cold_cave_preference
+				has_trait = trait_pc_pd_cold_superhabitable_preference
+				has_trait = trait_pc_pd_cold_tidally_locked_preference
+				has_trait = trait_pc_pd_cold_desert_preference
+				has_trait = trait_pc_pd_glacial_preference
+				has_trait = trait_pc_pd_antarctic_preference
+				has_trait = trait_pc_pd_aeolian_preference
+				has_trait = trait_pc_pd_ice_spike_preference
+				has_trait = trait_pc_pd_storm_preference
+				has_trait = trait_pc_pd_iceberg_preference
+				has_trait = trait_pc_pd_boreal_preference
+				has_trait = trait_pc_pd_snow_preference
+				has_trait = trait_pc_pd_highland_preference
+				has_trait = trait_pc_pd_dune_forest_preference
+				has_trait = trait_pc_pd_fjord_preference
+				has_trait = trait_pc_pd_glaciovolcanic_preference
+				has_trait = trait_pc_pd_lanthanide_preference
+				has_trait = trait_pc_pd_bog_preference
+				has_trait = trait_pc_pd_mycelium_preference
+				has_trait = trait_pc_pd_mud_preference
+				has_trait = trait_pc_pd_basalt_preference
+				has_trait = trait_pc_pd_tuya_preference
+				has_trait = trait_pc_pd_cryoflora_preference
+				has_trait = trait_pc_pd_lichen_preference
+			}
+		}
+	}
+
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				is_planet_class = pc_gaia
+			}
+			pd_cold_gaia_world_effect = yes
+		}
+	}
+}
+
+#This event is for Life Seeder Origin
+country_event = {
+	id = pdengine.90
+	title = pdengine.90.name
+	desc = pdengine.90.desc
+	picture = GFX_evt_gaia
+	show_sound = event_ship_bridge
+	location = root
+	is_triggered_only = yes
+	
+	trigger = {
+		has_origin = origin_life_seeded
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = pd_gaia_world
+			days = -1
+		}
+	}
+
+	#Gaia Choice
+	option = {
+		name = pdengine.90.wet_gaia
+		hidden_effect = {   
+			capital_scope = {       
+				pd_wet_gaia_world_effect = yes
+			}
+		}
+	}
+	option = {
+		name = pdengine.90.dry_gaia
+		hidden_effect = {   
+			capital_scope = {       
+				pd_dry_gaia_world_effect = yes
+			}
+		}
+	}
+	option = {
+		name = pdengine.90.cold_gaia
+		hidden_effect = {      
+			capital_scope = {       
+				pd_cold_gaia_world_effect = yes
+			}    
 		}
 	}
 }

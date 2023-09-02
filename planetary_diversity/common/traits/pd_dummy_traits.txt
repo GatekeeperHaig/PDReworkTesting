@@ -23,6 +23,7 @@ trait_pc_pd_forest_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -48,6 +49,7 @@ trait_pc_pd_tepid_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -73,6 +75,7 @@ trait_pc_pd_retinal_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -98,6 +101,7 @@ trait_pc_pd_lake_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -123,6 +127,7 @@ trait_pc_pd_temperate_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -148,6 +153,7 @@ trait_pc_pd_mushroom_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -173,6 +179,7 @@ trait_pc_pd_petrified_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -198,6 +205,7 @@ trait_pc_pd_megaflora_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -226,6 +234,7 @@ trait_pc_pd_cascadian_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -252,6 +261,7 @@ trait_pc_pd_swamp_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -278,6 +288,7 @@ trait_pc_pd_crag_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -304,6 +315,7 @@ trait_pc_pd_fog_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -330,6 +342,7 @@ trait_pc_pd_kelp_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -356,6 +369,7 @@ trait_pc_pd_reef_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -382,6 +396,7 @@ trait_pc_pd_archipelago_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -410,6 +425,7 @@ trait_pc_pd_atoll_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -436,6 +452,7 @@ trait_pc_pd_tepui_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -462,6 +479,7 @@ trait_pc_pd_mangrove_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -488,6 +506,7 @@ trait_pc_pd_cenote_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -514,6 +533,7 @@ trait_pc_pd_fungal_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -540,6 +560,7 @@ trait_pc_pd_geothermal_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -566,6 +587,7 @@ trait_pc_pd_biolumen_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_wet_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -594,6 +616,7 @@ trait_pc_pd_dune_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -620,6 +643,7 @@ trait_pc_pd_oasis_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -646,6 +670,7 @@ trait_pc_pd_outback_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -672,6 +697,7 @@ trait_pc_pd_coastal_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -698,6 +724,7 @@ trait_pc_pd_fungi_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -724,6 +751,7 @@ trait_pc_pd_salt_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -750,6 +778,7 @@ trait_pc_pd_aquifer_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -778,6 +807,7 @@ trait_pc_pd_mesa_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -804,6 +834,7 @@ trait_pc_pd_fog_desert_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -830,6 +861,7 @@ trait_pc_pd_mediterranean_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -856,6 +888,7 @@ trait_pc_pd_badlands_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -882,6 +915,7 @@ trait_pc_pd_succulent_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -908,6 +942,7 @@ trait_pc_pd_striped_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -934,6 +969,7 @@ trait_pc_pd_coral_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -960,6 +996,7 @@ trait_pc_pd_primal_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -988,6 +1025,7 @@ trait_pc_pd_steppe_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1014,6 +1052,7 @@ trait_pc_pd_prairie_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1040,6 +1079,7 @@ trait_pc_pd_veld_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1066,6 +1106,7 @@ trait_pc_pd_semi_arid_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1092,6 +1133,7 @@ trait_pc_pd_aspen_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1118,6 +1160,7 @@ trait_pc_pd_supercontinent_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1144,6 +1187,7 @@ trait_pc_pd_sinkhole_preference = {
 		pc_arctic_habitability = @tertiary
 		pc_ocean_habitability = @tertiary
 		pc_alpine_habitability = @tertiary
+		pc_pd_dry_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1172,6 +1216,7 @@ trait_pc_pd_cold_desert_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1198,6 +1243,7 @@ trait_pc_pd_glacial_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1224,6 +1270,7 @@ trait_pc_pd_antarctic_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1250,6 +1297,7 @@ trait_pc_pd_aeolian_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1276,6 +1324,7 @@ trait_pc_pd_ice_spike_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1302,6 +1351,7 @@ trait_pc_pd_storm_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1328,6 +1378,7 @@ trait_pc_pd_iceberg_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1356,6 +1407,7 @@ trait_pc_pd_boreal_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1382,6 +1434,7 @@ trait_pc_pd_snow_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1408,6 +1461,7 @@ trait_pc_pd_highland_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1434,6 +1488,7 @@ trait_pc_pd_dune_forest_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1460,6 +1515,7 @@ trait_pc_pd_fjord_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1486,6 +1542,7 @@ trait_pc_pd_glaciovolcanic_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1512,6 +1569,7 @@ trait_pc_pd_lanthanide_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1540,6 +1598,7 @@ trait_pc_pd_bog_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1566,6 +1625,7 @@ trait_pc_pd_mycelium_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1592,6 +1652,7 @@ trait_pc_pd_mud_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1618,6 +1679,7 @@ trait_pc_pd_basalt_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1644,6 +1706,7 @@ trait_pc_pd_tuya_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1670,6 +1733,7 @@ trait_pc_pd_cryoflora_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0
@@ -1696,6 +1760,7 @@ trait_pc_pd_lichen_preference = {
 		pc_continental_habitability = @tertiary
 		pc_arid_habitability = @tertiary
 		pc_savannah_habitability = @tertiary
+		pc_pd_cold_gaia_habitability = 1.0
 	}
 	ai_weight = {
 		weight = 0

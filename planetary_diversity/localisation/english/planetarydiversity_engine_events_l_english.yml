@@ -2,7 +2,7 @@
 
 ###Terraforming Event
  pdengine.21.name: "Terraforming Complete"
- pdengine.21.desc: "As we finish terraforming [Root.GetName] we have the opportunity to choose the new biome of this world."
+ pdengine.21.desc: "As we finish terraforming §Y[From.GetName]§! we have the opportunity to choose the new biome of this world."
  pdengine.21.continental: "$pc_continental$"
  pdengine.21.retinal: "$pc_pd_retinal$"
  pdengine.21.lake: "$pc_pd_lake$"
@@ -77,3 +77,20 @@
  pdengine.21.tuya: "$pc_pd_tuya$"
  pdengine.21.cryoflora: "$pc_pd_cryoflora$"
  pdengine.21.lichen: "$pc_pd_lichen$"
+
+###Gaia Terraforming Event
+ pdengine.24.name:0 "Gaia Terraforming Complete"
+ pdengine.24.desc:0 "As we finish terraforming §Y[Root.GetName]§! we have the opportunity to choose the new biome of this ideal world."
+ pdengine.24.wet_gaia:0 "$pc_pd_wet_gaia$"
+ pdengine.24.dry_gaia:0 "$pc_pd_dry_gaia$"
+ pdengine.24.cold_gaia:0 "$pc_pd_cold_gaia$"
+
+###Life Seeded Choice Event
+ pdengine.90.name: "$civic_life_seeded$ Biome"
+ pdengine.90.desc: "Our people evolved on this paradise of a planet we call §Y[Capital_scope.GetName]§!. What biome is our homeworld?"
+ pdengine.90.wet_gaia: "$pc_pd_wet_gaia$"
+ pdengine.90.dry_gaia: "$pc_pd_dry_gaia$"
+ pdengine.90.cold_gaia: "$pc_pd_cold_gaia$"
+ pdengine.90.superhabitable_gaia: "$pc_pd_gaia_superhabitable$"
+ pdengine.90.cave_gaia: "$pc_pd_gaia_cave$"
+ pdengine.90.tidally_locked_gaia: "$pc_pd_gaia_tidally_locked$"
