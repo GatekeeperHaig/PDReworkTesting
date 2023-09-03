@@ -23,6 +23,10 @@ pd_ice_spike = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_ice_spike.dds"
 	icon_frame = 1
 }
+pd_crevasse = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_crevasse.dds"
+	icon_frame = 1
+}
 pd_storm = {	
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_storm.dds"
 	icon_frame = 1

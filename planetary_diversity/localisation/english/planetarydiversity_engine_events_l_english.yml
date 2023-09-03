@@ -59,6 +59,7 @@
  pdengine.21.antarctic: "$pc_pd_antarctic$"
  pdengine.21.aeolian: "$pc_pd_aeolian$"
  pdengine.21.ice_spike: "$pc_pd_ice_spike$"
+ pdengine.21.crevasse: "$pc_pd_crevasse$"
  pdengine.21.storm: "$pc_pd_storm$"
  pdengine.21.iceberg: "$pc_pd_iceberg$"
  pdengine.21.alpine: "$pc_alpine$"

@@ -324,6 +324,9 @@ country_event = {
 					pd_ice_spike_world_effect = yes
 				}
 				25 = { 
+					pd_crevasse_world_effect = yes
+				}
+				25 = { 
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal 
@@ -645,6 +648,9 @@ country_event = {
 				} 
 				25 = { 
 					pd_ice_spike_world_effect = yes
+				}
+				25 = { 
+					pd_crevasse_world_effect = yes
 				}
 			}
 		}
@@ -1508,6 +1514,20 @@ country_event = {
 			}  
 			change_pc = pc_arctic         
 			pd_ice_spike_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_crevasse
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_arctic         
+			pd_crevasse_world_effect = yes
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -2429,6 +2449,19 @@ country_event = {
 			every_owned_species = {	
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_ice_spike_preference
+					add_trait = trait_pc_arctic_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_crevasse_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_crevasse_preference
 					add_trait = trait_pc_arctic_preference
 				}
 			}
@@ -3359,6 +3392,17 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_arctic }
+		}
+		name = pdengine.21.crevasse
+		hidden_effect = {   
+			from = {       
+				pd_crevasse_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_arctic }
 			space_owner = {
 				has_ascension_perk = ap_world_shaper
 			}
@@ -3968,6 +4012,9 @@ planet_event = {
 				}
 				25 = { 
 					pd_ice_spike_world_effect = yes
+				}
+				25 = { 
+					pd_crevasse_world_effect = yes
 				}
 				0 = { 
 					modifier = {
@@ -6309,6 +6356,7 @@ country_event = {
 				has_trait = trait_pc_pd_antarctic_preference
 				has_trait = trait_pc_pd_aeolian_preference
 				has_trait = trait_pc_pd_ice_spike_preference
+				has_trait = trait_pc_pd_crevasse_preference
 				has_trait = trait_pc_pd_storm_preference
 				has_trait = trait_pc_pd_iceberg_preference
 				has_trait = trait_pc_pd_boreal_preference

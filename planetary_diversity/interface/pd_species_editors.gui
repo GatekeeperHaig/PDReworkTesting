@@ -1096,6 +1096,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_glacial"
 			}
 			buttonType = {
+				name = "pc_pd_crevasse"
+				position = { x = @planet_col13 y = @planet_row4 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_crevasse"
+			}
+			buttonType = {
 				name = "pc_pd_antarctic"
 				position = { x = @planet_col14 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
