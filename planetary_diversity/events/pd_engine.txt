@@ -4077,6 +4077,27 @@ planet_event = {
 		}
 	}
 }
+#This event fires to keep the correct view for Uncommon Gaias
+#Has Country Flag = pd_random_same_class_terraforming
+planet_event = {
+	id = pdengine.25
+	hide_window = yes
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			pd_is_planet_class_superhabitable = yes
+			pd_is_planet_class_tidally_locked = yes
+			pd_is_planet_class_cave = yes
+		}
+		has_modifier = engineered_environment_gaia
+	}
+
+	immediate = {
+		pd_make_uncommon_gaia_worlds_effect = yes
+	}
+}
 
 #These Events are for Uncommon Worlds
 #This event changes some planets from Regular into Uncommon Worlds

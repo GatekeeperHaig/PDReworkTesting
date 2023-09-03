@@ -262,3 +262,14 @@ pd_is_planet_class_nuked = {
 		is_planet_class = pc_pd_nuked_cave
 	}
 }
+ 
+is_pd_planet_for_aqua_trait = {
+ 	OR = {
+		has_modifier = pd_reef
+		has_modifier = pd_archipelago
+		has_modifier = pd_atoll
+		has_modifier = pd_crag
+		has_modifier = pd_storm
+		has_modifier = pd_iceberg
+ 	}
+}

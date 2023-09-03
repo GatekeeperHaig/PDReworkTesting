@@ -1133,7 +1133,7 @@ pd_make_uncommon_gaia_worlds_effect = {
 		}
 		set_planet_entity = {
 			picture = pc_pd_dry_gaia_cave
-			entity = pd_dry_cave_planet_01_entity
+			entity = pd_gaia_dry_cave_planet_01_entity
 		}
 	}
 	if = {
@@ -1142,7 +1142,7 @@ pd_make_uncommon_gaia_worlds_effect = {
 		}
 		set_planet_entity = {
 			picture = pc_pd_cold_gaia_cave
-			entity = pd_cold_cave_planet_01_entity
+			entity = pd_gaia_cold_cave_planet_01_entity
 		}
 	}
 }
