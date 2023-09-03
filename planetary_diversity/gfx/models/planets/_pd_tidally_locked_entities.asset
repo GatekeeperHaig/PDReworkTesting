@@ -263,7 +263,7 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
-#Gaia
+#Gaia - Wet
 entity = {
     name = "tidallygaia_planet_01_entity"
  
@@ -286,6 +286,122 @@ entity = {
     meshsettings = {
     name = "planet_geosphereShape"
     texture_diffuse = "tidallygaia_01_diffuse.dds"
+    texture_normal = "tidallygaia_01_normal.dds"
+    texture_specular = "tidallygaia_01_spec.dds"
+    }
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "clouds_locked_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "nopoles_1_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	playback_rate = 1.0 # Animation speed 0
+	state = { name = "idle" animation = "idle" time_offset = { 15 0 } animation_speed = 0
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+#Gaia - Dry
+entity = {
+    name = "tidally_dry_gaia_planet_01_entity"
+ 
+    locator = { name = "tiltLoc" position = { 0 0 0 } rotation = { 0 95 0 } }
+ 
+    default_state = "idle"
+	playback_rate = 1.0 # Animation speed 0
+    state = { name = "idle" time_offset = { 15 0 } animation_speed = 0 }
+
+    attach = { "tiltLoc" = "tidally_dry_gaia_planet_mesh"}
+    attach = { "tiltLoc" = "tidallylocked_planet_cloud_mesh"}
+	
+	scale = 1.0
+
+}
+entity = {
+    name = "tidally_dry_gaia_planet_mesh"
+    pdxmesh = "planet_clouded_mesh"
+     
+    meshsettings = {
+    name = "planet_geosphereShape"
+    texture_diffuse = "tidally_dry_gaia_01_diffuse.dds"
+    texture_normal = "tidallygaia_01_normal.dds"
+    texture_specular = "tidallygaia_01_spec.dds"
+    }
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "clouds_locked_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "nopoles_1_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	playback_rate = 1.0 # Animation speed 0
+	state = { name = "idle" animation = "idle" time_offset = { 15 0 } animation_speed = 0
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+#Gaia - Cold
+entity = {
+    name = "tidally_cold_gaia_planet_01_entity"
+ 
+    locator = { name = "tiltLoc" position = { 0 0 0 } rotation = { 0 95 0 } }
+ 
+    default_state = "idle"
+	playback_rate = 1.0 # Animation speed 0
+    state = { name = "idle" time_offset = { 15 0 } animation_speed = 0 }
+
+    attach = { "tiltLoc" = "tidally_cold_gaia_planet_mesh"}
+    attach = { "tiltLoc" = "tidallylocked_planet_cloud_mesh"}
+	
+	scale = 1.0
+
+}
+entity = {
+    name = "tidally_cold_gaia_planet_mesh"
+    pdxmesh = "planet_clouded_mesh"
+     
+    meshsettings = {
+    name = "planet_geosphereShape"
+    texture_diffuse = "tidally_cold_gaia_01_diffuse.dds"
     texture_normal = "tidallygaia_01_normal.dds"
     texture_specular = "tidallygaia_01_spec.dds"
     }

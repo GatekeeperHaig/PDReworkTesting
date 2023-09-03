@@ -1073,20 +1073,20 @@ pd_make_uncommon_gaia_worlds_effect = {
 	}
 	if = {
 		limit = {
-			is_planet_class = pc_pd_dry_superhabitable
+			is_planet_class = pc_pd_dry_tidally_locked
 		}
 		set_planet_entity = {
 			picture = pc_pd_dry_gaia_tidally_locked
-			entity = pd_dry_gaia_tidally_locked_planet_01_entity
+			entity = tidally_dry_gaia_planet_01_entity
 		}
 	}
 	if = {
 		limit = {
-			is_planet_class = pc_pd_cold_superhabitable
+			is_planet_class = pc_pd_cold_tidally_locked
 		}
 		set_planet_entity = {
-			picture = pc_pd_cold_gaia_superhabitable
-			entity = pd_cold_gaia_tidally_locked_planet_01_entity
+			picture = pc_pd_cold_gaia_tidally_locked
+			entity = tidally_cold_gaia_planet_01_entity
 		}
 	}
 	#Superhabitables

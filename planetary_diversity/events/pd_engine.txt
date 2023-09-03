@@ -2648,7 +2648,7 @@ country_event = {
 
 ###These are the Terraforming Events
 #This Event Fires After Terraforming to let you choose PD Classes
-#Has Planet Flag = pd_choose_every_planet_terraforming
+#Has Country Flag = pd_choose_every_planet_terraforming
 planet_event = {
 	id = pdengine.20
 	hide_window = yes
@@ -3576,7 +3576,7 @@ country_event = {
 	}
 }
 #This Event Fires After Terraforming to let you choose Gaia Classes
-#Has Planet Flag = pd_choose_every_planet_terraforming
+#Has Country Flag = pd_choose_every_planet_terraforming
 planet_event = {
 	id = pdengine.23
 	hide_window = yes
@@ -3650,9 +3650,8 @@ country_event = {
 		}
 	}
 }
-
 #This Event Fires After Terraforming and fires a random class
-#Has Planet Flag = pd_random_same_class_terraforming
+#Has Country Flag = pd_random_same_class_terraforming
 planet_event = {
 	id = pdengine.22
 	hide_window = yes
@@ -4104,6 +4103,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4145,6 +4145,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4186,6 +4187,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4229,6 +4231,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4265,6 +4268,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4301,6 +4305,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4338,6 +4343,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4375,6 +4381,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -4412,6 +4419,7 @@ country_event = {
 					has_planet_flag = prescripted_ideal 
 					has_planet_flag = pd_ignore 
 					has_planet_flag = planet_earth 
+					has_planet_flag = fallen_empire_world
 					solar_system = { 
 						OR = {
 							has_star_flag = empire_cluster 
@@ -6146,6 +6154,14 @@ country_event = {
 					days = -1
 				}
 			}
+			IF = {
+				limit = {	
+					NOT = {
+						has_planet_flag = fallen_empire_world
+					}
+				}
+				pd_wet_gaia_world_effect = yes
+			}
 		}
 	}
 }
@@ -6302,7 +6318,7 @@ country_event = {
 	}
 }
 
-#This event is for Life Seeder Origin
+#This event is for Life Seeder Origin to choose which Gaia
 country_event = {
 	id = pdengine.90
 	title = pdengine.90.name
