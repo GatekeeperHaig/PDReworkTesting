@@ -2707,6 +2707,11 @@ planet_event = {
 			is_planet_class = pc_alpine
 			is_planet_class = pc_tundra
 		}
+		NOR = {
+			has_planet_flag = pdmars
+			has_planet_flag = planet_mars
+			has_planet_flag = pdvenus
+		}
 	}
 
 	immediate = {
@@ -6106,6 +6111,91 @@ planet_event = {
 				entity = "gaiamars_planet_entity"
 			}
 		}
+		#Mars	
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				is_wet = yes
+				NOR = { 
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_tropical
+				}
+			}
+			set_planet_entity = {
+				picture = pc_wet_mars
+				entity = "wetmars_planet_entity"
+			}
+		}	
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				OR = { 
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_tropical
+				}
+			}
+			set_planet_entity = {
+				picture = pc_wet_mars
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				is_dry = yes
+				NOR = {
+					is_planet_class = pc_desert
+					is_planet_class = pc_arid
+					is_planet_class = pc_savannah
+				}
+			}
+			set_planet_entity = {
+				picture = pc_dry_mars
+				entity = "drymars_planet_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				OR = {
+					is_planet_class = pc_desert
+					is_planet_class = pc_arid
+					is_planet_class = pc_savannah
+				}
+			}
+			set_planet_entity = {
+				picture = pc_dry_mars
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				is_cold = yes
+				NOR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_alpine
+				}
+			}
+			set_planet_entity = {
+				picture = pc_cold_mars
+				entity = "coldmars_planet_entity"
+			}
+		}
+		if = {
+			limit = { 
+				has_planet_flag = pdmars
+				OR = {
+					is_planet_class = pc_arctic
+					is_planet_class = pc_tundra
+					is_planet_class = pc_alpine
+				}
+			}
+			set_planet_entity = {
+				picture = pc_cold_mars
+			}
+		}
 		#Venus
 		if = {
 			limit = { 
@@ -6191,6 +6281,26 @@ country_event = {
 					entity = "nuked_planet_earth_entity"
 				}
 			}		
+		}
+		every_galaxy_planet = {
+            if = {
+                limit = {
+                    solar_system = { has_star_flag = sol }
+                    is_planet_class = pc_toxic       
+                    NOT = { has_planet_flag = pdvenusnoterraform }
+					#planet_size = 20
+					is_moon = no
+				}
+				clear_deposits = yes 
+				change_pc = pc_hothouse
+				set_planet_entity = {
+					entity = toxic_planet_venus_entity
+					picture = pc_hothouse_venus
+				}
+                add_modifier = { modifier = terraforming_candidate days = -1 }
+                set_planet_flag = pdvenus
+				set_planet_size = 17
+            }
 		}
 	}
 }
