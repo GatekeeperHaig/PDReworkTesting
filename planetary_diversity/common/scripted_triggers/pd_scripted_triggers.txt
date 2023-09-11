@@ -87,6 +87,7 @@ pd_is_arctic = {
  		is_planet_class = pc_pd_aeolian
  		is_planet_class = pc_pd_ice_spike
  		is_planet_class = pc_pd_crevasse
+ 		is_planet_class = pc_pd_ice_dunes
 		is_planet_class = pc_pd_storm
  		is_planet_class = pc_pd_iceberg
  	}
@@ -183,6 +184,7 @@ has_pd_modifier = {
 		has_modifier = pd_aeolian
 		has_modifier = pd_ice_spike
 		has_modifier = pd_crevasse
+		has_modifier = pd_ice_dunes
 		has_modifier = pd_storm
 		has_modifier = pd_iceberg
 		#Alpine

@@ -128,6 +128,8 @@
  pd_ice_spike_desc: "The intense tectonic activity below the surface hits against the deep ice layer, creating the towering ice spikes that dominate the landscape."
  pd_crevasse: "Crevasse World"
  pd_crevasse_desc: "While the surface of this frozen planet is inhospitable, geothermal energy from the planet's core keeps the bottom of this planet's many crevasses habitable."
+ pd_ice_dunes: "Ice Dunes World"
+ pd_ice_dunes_desc: "With temperatures below freezing most of the year, sand-like ice particles create this planet's dunes."
  pd_storm: "Storm"
  pd_storm_desc: "The planet's land masses are found at either pole, separated by a massive ocean that generates powerful storms year-round. Due to the extreme conditions, most of the planet's life is under the ocean's surface."
  pd_iceberg: "Iceberg World"

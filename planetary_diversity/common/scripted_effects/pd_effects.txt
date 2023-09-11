@@ -277,6 +277,10 @@ remove_pd_arctic_modifier = {
 		remove_modifier = pd_crevasse
 	}
 	if = {
+		limit = { has_modifier = pd_ice_dunes }
+		remove_modifier = pd_ice_dunes
+	}
+	if = {
 		limit = { has_modifier = pd_storm }
 		remove_modifier = pd_storm
 	}
@@ -870,6 +874,16 @@ pd_crevasse_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_crevasse
 		entity = "crevasse_planet_01_entity"
+	}
+}
+pd_ice_dunes_world_effect = {
+	add_modifier = { 
+		modifier = pd_ice_dunes
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_ice_dunes
+		entity = "ice_dunes_planet_01_entity"
 	}
 }
 pd_storm_world_effect = {
