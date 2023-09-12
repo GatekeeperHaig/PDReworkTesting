@@ -787,7 +787,7 @@ trait_pc_pd_aquifer_preference = {
 
 #Arid
 trait_pc_pd_mesa_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -814,7 +814,7 @@ trait_pc_pd_mesa_preference = {
 	}
 }
 trait_pc_pd_fog_desert_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -841,7 +841,7 @@ trait_pc_pd_fog_desert_preference = {
 	}
 }
 trait_pc_pd_mediterranean_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -868,7 +868,7 @@ trait_pc_pd_mediterranean_preference = {
 	}
 }
 trait_pc_pd_badlands_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -895,7 +895,7 @@ trait_pc_pd_badlands_preference = {
 	}
 }
 trait_pc_pd_succulent_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -949,7 +949,7 @@ trait_pc_pd_striped_preference = {
 	}
 }
 trait_pc_pd_coral_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -976,7 +976,7 @@ trait_pc_pd_coral_preference = {
 	}
 }
 trait_pc_pd_primal_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_desert_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_arid_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1441,7 +1441,7 @@ trait_pc_pd_iceberg_preference = {
 
 #Alpine
 trait_pc_pd_boreal_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1468,7 +1468,7 @@ trait_pc_pd_boreal_preference = {
 	}
 }
 trait_pc_pd_snow_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1495,7 +1495,7 @@ trait_pc_pd_snow_preference = {
 	}
 }
 trait_pc_pd_highland_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1522,7 +1522,7 @@ trait_pc_pd_highland_preference = {
 	}
 }
 trait_pc_pd_dune_forest_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1549,7 +1549,7 @@ trait_pc_pd_dune_forest_preference = {
 	}
 }
 trait_pc_pd_fjord_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1576,7 +1576,7 @@ trait_pc_pd_fjord_preference = {
 	}
 }
 trait_pc_pd_glaciovolcanic_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1603,7 +1603,7 @@ trait_pc_pd_glaciovolcanic_preference = {
 	}
 }
 trait_pc_pd_lanthanide_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_alpine_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1632,7 +1632,7 @@ trait_pc_pd_lanthanide_preference = {
 
 #Tundra
 trait_pc_pd_bog_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1659,7 +1659,7 @@ trait_pc_pd_bog_preference = {
 	}
 }
 trait_pc_pd_mycelium_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1686,7 +1686,7 @@ trait_pc_pd_mycelium_preference = {
 	}
 }
 trait_pc_pd_mud_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1713,7 +1713,7 @@ trait_pc_pd_mud_preference = {
 	}
 }
 trait_pc_pd_basalt_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1740,7 +1740,7 @@ trait_pc_pd_basalt_preference = {
 	}
 }
 trait_pc_pd_tuya_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1767,7 +1767,7 @@ trait_pc_pd_tuya_preference = {
 	}
 }
 trait_pc_pd_cryoflora_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
@@ -1794,7 +1794,7 @@ trait_pc_pd_cryoflora_preference = {
 	}
 }
 trait_pc_pd_lichen_preference = {
-	icon = "gfx/interface/icons/traits/trait_pc_arctic_preference.dds"
+	icon = "gfx/interface/icons/traits/trait_pc_tundra_preference.dds"
 	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
 	species_potential_add = {
 		always = no
