@@ -528,3 +528,53 @@ entity = {
 	playback_rate = 1.0 
 	state = { name = "idle" animation = "idle" time_offset = { 15 0 } animation_speed = 0 }
 }
+#TOL TL
+entity = {
+    name = "megafloratol_tidally_locked_planet_01_entity"
+    locator = { name = "tiltLoc" position = { 0 0 0 } rotation = { 0 95 0 } }
+    default_state = "idle"
+    playback_rate = 1.0 # Animation speed 0
+    state = { name = "idle" time_offset = { 0 100 } }
+    attach = { "tiltLoc" = "megaflorahivetl_planet_mesh"}
+    attach = { "tiltLoc" = "tidallylocked_planet_cloud_mesh"}
+    scale = 1.0
+}
+entity = {
+    name = "megaflorahivetl_planet_mesh"
+    pdxmesh = "planet_clouded_mesh"
+     
+    meshsettings = {
+    name = "planet_geosphereShape"
+	texture_diffuse = "megaflorahivetl_01_diffuse.dds"
+	texture_normal = "megaflorahivetl_01_normal.dds"
+	texture_specular = "megaflorahivetl_01_spec.dds"
+    }
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "nuked_clouds_medium_normal.dds"
+	texture_specular = "nuked_clouds_medium_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "planet_transparent_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "nopoles_1_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	playback_rate = 1.0 
+	state = { name = "idle" animation = "idle" time_offset = { 15 0 } animation_speed = 0 }
+}

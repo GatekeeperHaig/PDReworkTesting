@@ -8,7 +8,7 @@
 @primary = 0.80
 @secondary = 0.60
 @regular = 0.50
-@uncommmon = 0.40
+@uncommmon = 0.60
 @tertiary = 0.20
 
 trait_pc_tropical_preference = {

@@ -221,7 +221,6 @@ pd_is_planet_class_superhabitable = {
 		is_planet_class = pc_pd_wet_superhabitable
 		is_planet_class = pc_pd_dry_superhabitable
 		is_planet_class = pc_pd_cold_superhabitable
-		is_planet_class = pc_pd_gaia_superhabitable
 		is_planet_class = pc_pd_nuked_superhabitable
 	}
 }
@@ -231,7 +230,6 @@ pd_is_planet_class_tidally_locked = {
 		is_planet_class = pc_pd_wet_tidally_locked
 		is_planet_class = pc_pd_dry_tidally_locked
 		is_planet_class = pc_pd_cold_tidally_locked
-		is_planet_class = pc_pd_gaia_tidally_locked
 		is_planet_class = pc_pd_nuked_tidally_locked
 	}
 }
@@ -241,16 +239,21 @@ pd_is_planet_class_cave = {
 		is_planet_class = pc_pd_wet_cave
 		is_planet_class = pc_pd_dry_cave
 		is_planet_class = pc_pd_cold_cave
-		is_planet_class = pc_pd_gaia_cave
 		is_planet_class = pc_pd_nuked_cave
+	}
+}
+
+pd_gaia_class = {
+	OR = {
+		is_planet_class = pc_pd_wet_gaia
+		is_planet_class = pc_pd_dry_gaia
+		is_planet_class = pc_pd_cold_gaia
 	}
 }
 
 pd_is_planet_class_gaia = {
 	OR = {
 		is_planet_class = pc_gaia
-		is_planet_class = pc_pd_gaia_superhabitable
-		is_planet_class = pc_pd_gaia_tidally_locked
 		is_planet_class = pc_pd_gaia_cave
 		is_planet_class = pc_pd_wet_gaia
 		is_planet_class = pc_pd_dry_gaia
