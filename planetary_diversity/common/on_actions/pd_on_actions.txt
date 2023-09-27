@@ -161,16 +161,20 @@ on_monthly_pulse = {
 
 on_planet_transfer = {
 	events = {
+		pdtreeoflife.25
+		pdtreeoflife.45
 	}
 }
 
 on_colony_destroyed = {
 	events = {
+		pdtreeoflife.25
 	}
 }
 
 on_planet_bombarded = {
 	events = {
+		pdtreeoflife.40
 	}
 }
 

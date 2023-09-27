@@ -1,0 +1,6 @@
+# See traditions/README.txt for format
+ap_pd_tree_of_life_bloomed = {
+	potential = { always = no } 
+	possible = { always = no }
+	custom_tooltip = pd_placeholder_tooltip
+}

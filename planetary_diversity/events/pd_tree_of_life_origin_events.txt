@@ -16,7 +16,7 @@ planet_event = {
 	
 	trigger = {
 		owner = {
-			is_pd_aw_tree_of_life = yes
+			has_origin = origin_pd_aw_tree_of_life
 		}
 	}
 
@@ -288,6 +288,200 @@ planet_event = {
 					entity = megafloratol_planet_01_entity
 				}
 			}
+		}
+	}
+}
+
+#This event fires if the planet changes hands or is damaged, killing the tree
+#silently kill tree
+planet_event = {
+	id = pdtreeoflife.25
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			owner = { 
+				NOT = { 
+					has_origin = origin_pd_aw_tree_of_life 
+				} 
+			}
+			OR = {
+				has_deposit = d_pd_tree_of_life_home
+				has_deposit = d_pd_tree_of_life_colony
+				has_deposit = d_pd_tree_of_life_bloomed
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_deposit = d_pd_tree_of_life_home
+					has_deposit = d_pd_tree_of_life_colony
+					has_deposit = d_pd_tree_of_life_bloomed
+				}
+			}
+			remove_modifier = pd_tree_of_life_growing
+			remove_deposit = d_pd_tree_of_life_colony
+			switch = {
+				trigger = is_planet_class
+				pc_pd_wet_superhabitable = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_superhabitable
+						entity = superhabitable_planet
+					}
+				}
+				pc_pd_wet_tidally_locked = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_tidally_locked
+						entity = wettidallylocked_planet
+					}
+				}
+				pc_pd_wet_cave = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_cave
+						entity = karst_planet
+					}
+				}
+				pc_pd_wet_gaia = { 
+					remove_deposit = d_pd_tree_of_life_home
+					remove_deposit = d_pd_tree_of_life_bloomed
+					change_pc = pc_pd_wet_gaia
+					set_planet_entity = {
+						picture = pc_pd_wet_gaia
+						entity = gaia_planet
+					}
+				}
+			}
+		}
+		add_modifier = {
+			modifier = pd_no_lifetree
+			days = -1
+		}
+	}
+}
+
+#This event fires if the Tree dies, but this tells the player
+planet_event = {
+	id = pdtreeoflife.40
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		planet_devastation >= 50
+		OR = {
+			has_deposit = d_pd_tree_of_life_home
+			has_deposit = d_pd_tree_of_life_colony
+			has_deposit = d_pd_tree_of_life_bloomed
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_deposit = d_pd_tree_of_life_home
+					has_deposit = d_pd_tree_of_life_colony
+					has_deposit = d_pd_tree_of_life_bloomed
+				}
+			}
+			remove_modifier = pd_tree_of_life_growing
+			remove_deposit = d_pd_tree_of_life_colony
+			switch = {
+			trigger = is_planet_class
+				pc_pd_wet_superhabitable = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_superhabitable
+						entity = superhabitable_planet
+					}
+				}
+				pc_pd_wet_tidally_locked = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_tidally_locked
+						entity = wettidallylocked_planet
+					}
+				}
+				pc_pd_wet_cave = { 
+					remove_deposit = d_pd_tree_of_life_uncommon
+					set_planet_entity = {
+						picture = pc_pd_wet_cave
+						entity = karst_planet
+					}
+				}
+				pc_pd_wet_gaia = { 
+					remove_deposit = d_pd_tree_of_life_home
+					remove_deposit = d_pd_tree_of_life_bloomed
+					change_pc = pc_pd_wet_gaia
+					set_planet_entity = {
+						picture = pc_pd_wet_gaia
+						entity = gaia_planet
+					}
+				}
+			}
+		}
+		add_modifier = {
+			modifier = pd_no_lifetree
+			days = -1
+		}
+	}
+}
+
+#modify the modifier for lacking Tree
+planet_event = {
+	id = pdtreeoflife.45
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { days_passed < 1 }
+		OR = {
+			AND = {
+				FROM = { has_origin = origin_pd_aw_tree_of_life }
+				NOR = {
+					has_deposit = d_pd_tree_of_life_home
+					has_deposit = d_pd_tree_of_life_colony
+					has_deposit = d_pd_tree_of_life_bloomed
+				}
+			}
+			AND = { 
+				FROM = { 
+					NOT = { has_origin = origin_pd_aw_tree_of_life 	} 
+				}
+				has_modifier = pd_no_lifetree
+			}
+		}
+	
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				FROM = { has_origin = origin_pd_aw_tree_of_life }
+				NOR = {
+					has_deposit = d_pd_tree_of_life_home
+					has_deposit = d_pd_tree_of_life_colony
+					has_deposit = d_pd_tree_of_life_bloomed
+				}
+			}
+			add_modifier = { modifier = pd_no_lifetree }
+		}
+		if = {
+			limit = {
+				FROM = { 
+					NOT = { has_origin = origin_pd_aw_tree_of_life } 
+				}
+			}
+			remove_modifier = pd_no_lifetree
 		}
 	}
 }
