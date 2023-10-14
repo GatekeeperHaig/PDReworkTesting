@@ -81,8 +81,8 @@
  mod_pc_pd_kelp_habitability: "Ocean Habitability"
  trait_pc_pd_kelp_preference: "Ocean Preference"
  trait_pc_pd_kelp_preference_desc: "$trait_pc_arctic_preference_desc$"
- pc_pd_algae: "Algae World"
- pc_pd_algae_desc: "Rocky world with a nitrogen-oxygen atmosphere and a significant hydrosphere. Rich pink algae bloom filled oceans cover much of the surface."
+ pc_pd_algae: "Pink Algae World"
+ pc_pd_algae_desc: "A rocky world with a nitrogen-oxygen atmosphere and a significant hydrosphere, this planet's rich shallow seas and lakes support brilliant pink algae blooms, creating a visual spectacle visible from space."
  pc_pd_algae_adj: "pinkish"
  mod_pc_pd_algae_habitability: "Ocean Habitability"
  trait_pc_pd_algae_preference: "Ocean Preference"
@@ -640,3 +640,11 @@
  mod_pc_pd_wet_gaia_habitability:0 "Wet Gaia Habitability"
  trait_pc_pd_wet_gaia_preference:0 "Wet Gaia Preference"
  trait_pc_pd_wet_gaia_preference_desc:0 "$trait_pc_arctic_preference_desc$"
+
+#Uncommon Hive Worlds
+ pc_pd_hive_superhabitable: "Superhabitale Hive World"
+ pc_pd_hive_superhabitable_desc: "This superhabitable world is a giant living organism, psionically connected with the Hive Mind that shaped it. The terrain will attack any beings not part of the Hive that set foot here."
+ pc_pd_dry_gaia_adj:0 "hive"
+ mod_pc_pd_dry_gaia_habitability:0 "Hive World Habitability"
+ trait_pc_pd_dry_gaia_preference:0 "Hive World Preference"
+ trait_pc_pd_dry_gaia_preference_desc:0 "$trait_pc_arctic_preference_desc$"

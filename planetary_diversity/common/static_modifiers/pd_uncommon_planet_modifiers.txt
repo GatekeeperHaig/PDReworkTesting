@@ -51,6 +51,13 @@ pd_nuked_superhabitable = {
 	icon_frame = 1
 }
 
+pd_hive_superhabitable = {
+	planet_structures_cost_mult = 0.25
+	pop_environment_tolerance = -0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_hive.dds"
+	icon_frame = 1
+}
+
 #Tidally Locked
 pd_wet_tidally_locked = {
 	district_generator_max = 4

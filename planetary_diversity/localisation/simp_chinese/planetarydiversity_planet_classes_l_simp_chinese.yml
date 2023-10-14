@@ -77,7 +77,7 @@
  mod_pc_pd_kelp_habitability: "海洋星球宜居性"
  trait_pc_pd_kelp_preference: "海洋星球偏好"
  trait_pc_pd_kelp_preference_desc: "$trait_pc_arctic_preference_desc$"
- pc_pd_algae: "Algae World"
+ pc_pd_algae: "Pink Algae World"
  pc_pd_algae_desc: "Rocky world with a nitrogen-oxygen atmosphere and a significant hydrosphere. Rich pink algae bloom filled oceans cover much of the surface."
  pc_pd_algae_adj: "pinkish"
  mod_pc_pd_algae_habitability: "Ocean Habitability"

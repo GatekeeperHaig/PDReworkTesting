@@ -34,7 +34,7 @@
  pd_fog_desc: "Oceans cover much of the surface and extreme humity causes near constant fog moving over the moist forests and grasslands."
  pd_kelp: "Kelp World"
  pd_kelp_desc: "Oceans cover much of the surface of this planet. The rich shallow waters support planet-wide kelp forests and bio-diversity."
- pd_algae: "Algae World"
+ pd_algae: "Pink Algae World"
  pd_algae_desc: "This planet's rich shallow seas and lakes support brilliant pink algae blooms, creating a stunning visual spectacle that can be seen from space."
  pd_reef: "Reef World"
  pd_reef_desc: "Shallow oceans cover more than 9% of the surface and the under the surface significant reef systems can be seen from orbit. The only areas above water are where the reef system has grown high enough to create scattered island chains of coral."
@@ -173,9 +173,7 @@
  pd_lichen: "Lichen World"
  pd_lichen_desc: "This world has a highly stable hydrosphere and generally predictable low temperatures, allowing giant planet-spanning lichen forests to grow between craggy mountains and glaciers which sap minerals from the local minerals for nutrients."
 
- ###Uncommon
-
- #Superhabitable
+###Superhabitable
  pd_wet_superhabitable: "Wet Superhabitable World"
  pd_wet_superhabitable_desc: "This superhabitable world has a strong hydrosphere and ideal farming conditions. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_dry_superhabitable: "Dry Superhabitable World"
@@ -186,10 +184,10 @@
  pd_gaia_superhabitable_desc: "An ideally created superhabitable sworld with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. This planet has warmer average temperatures and shallow ocean basins, but its heavy gravity is a struggle for those unaccustomed to it."
  pd_arcology_superhabitable: "Superhabitable Arcology"
  pd_arcology_superhabitable_desc: "A superhabitable world completely engulfed by urban-industrial sprawl. This planet has warmer average temperatures but its heavy gravity is a struggle for those unaccustomed to it. "
- pd_nuked_superhabitable: "Nuked Cave World"
+ pd_nuked_superhabitable: "Nuked Superhabitable World"
  pd_nuked_superhabitable_desc: "This superhabitable world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life. Its heavy gravity is a struggle for those unaccustomed to it."
 
- #Tidally Locked
+###Tidally Locked
  pd_wet_tidally_locked: "Sunside World"
  pd_wet_tidally_locked_desc: "This warm, humid, tidally locked world has plenty of energy opportunities to take advantage of the constant sunlight and strong winds.  is limited to the twilight regions where the two sides meet."
  pd_dry_tidally_locked: "Twilight World"
@@ -203,7 +201,7 @@
  pd_nuked_tidally_locked: "Nuked Tidally Locked World"
  pd_nuked_tidally_locked_desc: "This tidally locked world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life."
 
- #Cave
+###Cave
  pd_wet_cave: "Karst Cave World"
  pd_wet_cave_desc: "The underground cave network stretches for the entire planet allowing for rare opportunities. Construction is expensive, but the ground above makes for good planetary defenses."
  pd_dry_cave: "Sandstone Cave World"
@@ -217,7 +215,7 @@
  pd_nuked_cave: "Nuked Cave World"
  pd_nuked_cave_desc: "This cave world is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of radiation. Minimal signs of life."
 
- ###Gaia
+###Gaia
  pd_gaia_world: "Gaia World"
  pd_gaia_world_desc: "An ideally created wet world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
  pd_dry_gaia_world: "Dry Gaia World"
@@ -227,12 +225,12 @@
  pd_uncommon_gaia_world: "Gaia World"
  pd_uncommongaia_world_desc: "An ideally created wet world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes."
 
- #Arcology/Relic
+###Arcology/Relic
  pc_pd_nuked_arcology: "Nuked Relic World"
  pc_pd_nuked_arcology_desc: "A city once stretched across this entire world. It is experiencing a nuclear winter, with dense layers of sooty aerosols in the atmosphere. High levels of surface radiation. Minimal signs of life."
  pc_pd_nuked_arcology_tooltip: "Habitability: §R-100%§!\nHabitability: §G+100%§! with §Y$trait_pc_nuked_preference$§! or §Y$trait_survivor$§! trait"
 
- #Uninhabitable Modifiers
+###Uninhabitable Modifiers
  pd_diamond: "Diamond World"
  pd_diamond_desc: "Due to high temperatures and planetary pressure, much of this world has formed into diamonds."
  pd_carbon: "Carbon World"
@@ -260,9 +258,12 @@
  pd_hothouse: "Hothouse World"
  pd_hothouse_desc: "A rocky world whose atmosphere is currently experiencing a runaway greenhouse effect. Lethal to all forms of life."
 
- #Engineered Environment
+#Engineered Environment
  decision_engineered_environment_gaia:0 "World Shaper Project"
  decision_engineered_environment_gaia_desc:0 "We will use advanced terraforming techniques to shape this world into a paradise, giving it optimal conditions for all known higher life forms."
  engineered_environment_gaia:0 "Perfectly Shaped World"
  engineered_environment_gaia_desc:0 "Advanced terraforming techniques have shaped this world, and its ecosystem now has optimal conditions for all known higher life forms." 
 
+#Uncommon Hive Worlds
+ pd_hive_superhabitable: "$pc_pd_hive_superhabitable$"
+ pd_hive_superhabitable_desc: "$pc_pd_hive_superhabitable_desc$"

@@ -282,3 +282,19 @@ is_pd_planet_for_aqua_trait = {
 		has_modifier = pd_iceberg
  	}
 }
+
+pd_is_hive_class = {
+	OR = {
+		is_planet_class = pc_pd_hive_superhabitable
+		is_planet_class = pc_pd_hive_tidally_locked
+		is_planet_class = pc_pd_hive_cave
+	}
+}
+
+pd_is_machine_class = {
+	OR = {
+		is_planet_class = pc_pd_machine_superhabitable
+		is_planet_class = pc_pd_machine_tidally_locked
+		is_planet_class = pc_pd_machine_cave
+	}
+}
