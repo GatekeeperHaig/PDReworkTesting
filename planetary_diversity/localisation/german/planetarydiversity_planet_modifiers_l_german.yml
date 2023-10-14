@@ -266,3 +266,19 @@
  engineered_environment_gaia:0 "Perfectly Shaped World"
  engineered_environment_gaia_desc:0 "Advanced terraforming techniques have shaped this world, and its ecosystem now has optimal conditions for all known higher life forms." 
 
+#Uncommon Hive Worlds
+ pd_hive_superhabitable: "$pc_pd_hive_superhabitable$"
+ pd_hive_superhabitable_desc: "$pc_pd_hive_superhabitable_desc$"
+ pd_hive_cave: "$pc_pd_hive_cave$"
+ pd_hive_cave_desc: "$pc_pd_hive_cave_desc$"
+ pd_hive_tidally_locked: "$pc_pd_hive_tidally_locked$"
+ pd_hive_tidally_locked_desc: "$pc_pd_hive_tidally_locked_desc$"
+
+#Uncommon Machine Worlds
+ pd_machine_superhabitable: "$pc_pd_machine_superhabitable$"
+ pd_machine_superhabitable_desc: "$pc_pd_machine_superhabitable_desc$"
+ pd_machine_cave: "$pc_pd_machine_cave$"
+ pd_machine_cave_desc: "$pc_pd_machine_cave_desc$"
+ pd_machine_tidally_locked: "$pc_pd_machine_tidally_locked$"
+ pd_machine_tidally_locked_desc: "$pc_pd_machine_tidally_locked_desc$"
+
