@@ -18,6 +18,7 @@ planet_event = {
 		owner = {
 			has_origin = origin_pd_aw_tree_of_life
 		}
+		NOT = { has_planet_flag = pd_unique_world }
 	}
 
 	immediate = {
@@ -451,6 +452,12 @@ planet_event = {
 					has_deposit = d_pd_tree_of_life_home
 					has_deposit = d_pd_tree_of_life_colony
 					has_deposit = d_pd_tree_of_life_bloomed
+				}
+				OR = {
+					pd_is_planet_class_superhabitable = yes
+					pd_is_planet_class_tidally_locked = yes
+					pd_is_planet_class_cave = yes
+					pd_gaia_class = yes
 				}
 			}
 			AND = { 

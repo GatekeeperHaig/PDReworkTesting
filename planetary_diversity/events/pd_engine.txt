@@ -4882,7 +4882,7 @@ planet_event = {
 		planet_event = { id = pdengine.36 days = 1 }
 	}
 }
-#This event gives uncommon arcologies their correct modifer
+#This event gives uncommon arcologies their correct view
 planet_event = {
 	id = pdengine.36
 	hide_window = yes
@@ -4909,7 +4909,7 @@ planet_event = {
 	}
 }
 
-#This event removing modifiers from incorrect planets
+#This event removing modifiers from incorrect planets after planet change and terraforming
 planet_event = {
 	id = pdengine.40
 	hide_window = yes
@@ -5115,8 +5115,11 @@ planet_event = {
 		}
 		if = { 
 			limit = { 
-				NOT = {
+				NOR = {
 					is_planet_class = pc_gaia 
+					is_planet_class = pc_pd_dry_gaia   
+					is_planet_class = pc_pd_cold_gaia   
+					is_planet_class = pc_pd_wet_gaia   
 				}
 			}
 			remove_modifier = pd_gaia_world
