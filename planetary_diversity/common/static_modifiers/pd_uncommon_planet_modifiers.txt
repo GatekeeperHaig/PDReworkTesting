@@ -58,6 +58,13 @@ pd_hive_superhabitable = {
 	icon_frame = 1
 }
 
+pd_machine_superhabitable = {
+	planet_structures_cost_mult = 0.25
+	pop_environment_tolerance = -0.2
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_machine.dds"
+	icon_frame = 1
+}
+
 #Tidally Locked
 pd_wet_tidally_locked = {
 	district_generator_max = 4
@@ -99,6 +106,18 @@ pd_arcology_tidally_locked = {
 pd_nuked_tidally_locked = {
 	planet_max_districts_mult = -0.30
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_nuked_planets.dds"
+	icon_frame = 1
+}
+
+pd_hive_tidally_locked = {
+	planet_max_districts_mult = -0.30
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_hive.dds"
+	icon_frame = 1
+}
+
+pd_machine_tidally_locked = {
+	planet_max_districts_mult = -0.30
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_machine.dds"
 	icon_frame = 1
 }
 
@@ -162,5 +181,23 @@ pd_nuked_cave = {
 	biological_pop_growth_speed = -0.10
 	planet_structures_cost_mult = 0.1
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_nuked_planets.dds"
+	icon_frame = 1
+}
+
+pd_hive_cave = {
+	planet_orbital_bombardment_damage = -0.3
+	lithoid_pop_growth_speed = 0.10
+	biological_pop_growth_speed = -0.10
+	planet_structures_cost_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_hive.dds"
+	icon_frame = 1
+}
+
+pd_machine_cave = {
+	planet_orbital_bombardment_damage = -0.3
+	lithoid_pop_growth_speed = 0.10
+	biological_pop_growth_speed = -0.10
+	planet_structures_cost_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_machine.dds"
 	icon_frame = 1
 }

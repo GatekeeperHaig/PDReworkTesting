@@ -239,8 +239,8 @@
  pd_chthonian_desc: "This planet was once a gas giant, but stellar winds have stripped away hydrogen and helium atmosphere, leaving only the barren metallic core."
  pd_iron: "Iron World"
  pd_iron_desc: "Barren and rocky world with a thin or non-existent atmosphere, this planet is devoid of life and covered in meteor impact craters. The planet consists primarily of an iron-rich core with little or no mantle."
- pd_volcanic: "Volcanic World"
- pd_volcanic_desc: "High geological activity from the interior causes constant volcanic eruptions. Plumes of sulfur can get as tall as 500 km above the surface."
+ pd_volcanic: "Volcanic World"Hivehive
+ pd_volcanic_desc: "High geological activity from the interior causes cocavenstant volcanic eruptions. Plumes of sulfur can get as tall as 500 km above the surface."
  pd_hydrocarbon: "Hydrocarbon World"
  pd_hydrocarbon_desc: "he dense opaque atmosphere of nitrogen, methane and ethane cloud and stable bodies of liquid hydrocarbons."
  pd_hot_gas_giant: "Hot Gas Giant World"
@@ -267,3 +267,15 @@
 #Uncommon Hive Worlds
  pd_hive_superhabitable: "$pc_pd_hive_superhabitable$"
  pd_hive_superhabitable_desc: "$pc_pd_hive_superhabitable_desc$"
+ pd_hive_cave: "$pc_pd_hive_cave$"
+ pd_hive_cave_desc: "$pc_pd_hive_cave_desc$"
+ pd_hive_tidally_locked: "$pc_pd_hive_tidally_locked$"
+ pd_hive_tidally_locked_desc: "$pc_pd_hive_tidally_locked_desc$"
+
+#Uncommon Machine Worlds
+ pd_machine_superhabitable: "$pc_pd_machine_superhabitable$"
+ pd_machine_superhabitable_desc: "$pc_pd_machine_superhabitable_desc$"
+ pd_machine_cave: "$pc_pd_machine_cave$"
+ pd_machine_cave_desc: "$pc_pd_machine_cave_desc$"
+ pd_machine_tidally_locked: "$pc_pd_machine_tidally_locked$"
+ pd_machine_tidally_locked_desc: "$pc_pd_machine_tidally_locked_desc$"

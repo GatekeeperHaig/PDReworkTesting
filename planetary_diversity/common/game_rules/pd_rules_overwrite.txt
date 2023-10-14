@@ -11,7 +11,7 @@ species_can_live_on_planet = {
 		root = { 
 			OR = {
 				is_planet_class = pc_machine
-				pd_is_machine_class = yes 
+				pd_is_planet_class_machine = yes 
 			}
 		}
 		NOR = {
@@ -32,9 +32,11 @@ species_can_live_on_planet = {
 	}
 	if = {
 		limit = {
-			OR = {
-				is_planet_class = pc_hive
-				pd_is_hive_class = yes 
+			root = { 
+				OR = {
+					is_planet_class = pc_hive
+					pd_is_planet_class_hive = yes 
+				}
 			}
 		}
 		OR = {

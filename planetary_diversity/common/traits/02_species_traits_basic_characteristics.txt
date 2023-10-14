@@ -231,7 +231,7 @@ trait_aquatic = {
 				OR = {
 					is_planet_class = pc_ocean
 					has_modifier = flooded_habitat
-					is_pd_planet_for_aqua_trait = yes
+					pd_is_planet_for_aqua_trait = yes
 				}
 			}
 		}
@@ -247,7 +247,7 @@ trait_aquatic = {
 				OR = {
 					is_planet_class = pc_ocean
 					has_modifier = flooded_habitat
-					is_pd_planet_for_aqua_trait = yes
+					pd_is_planet_for_aqua_trait = yes
 				}
 				exists = owner
 				owner = { has_ascension_perk = ap_hydrocentric }
@@ -265,7 +265,7 @@ trait_aquatic = {
 				NOR = {
 					has_climate = wet
 					has_modifier = flooded_habitat
-					is_pd_planet_for_aqua_trait = yes
+					pd_is_planet_for_aqua_trait = yes
 				}
 				is_ideal = no
 			}
@@ -282,7 +282,7 @@ trait_aquatic = {
 				NOR = {
 					has_climate = wet
 					has_modifier = flooded_habitat
-					is_pd_planet_for_aqua_trait = yes
+					pd_is_planet_for_aqua_trait = yes
 				}
 			}
 		}

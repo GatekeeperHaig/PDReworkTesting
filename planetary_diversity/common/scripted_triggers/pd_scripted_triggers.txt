@@ -272,7 +272,7 @@ pd_is_planet_class_nuked = {
 	}
 }
  
-is_pd_planet_for_aqua_trait = {
+pd_is_planet_for_aqua_trait = {
  	OR = {
 		has_modifier = pd_reef
 		has_modifier = pd_archipelago
@@ -283,7 +283,7 @@ is_pd_planet_for_aqua_trait = {
  	}
 }
 
-pd_is_hive_class = {
+pd_is_planet_class_hive = {
 	OR = {
 		is_planet_class = pc_pd_hive_superhabitable
 		is_planet_class = pc_pd_hive_tidally_locked
@@ -291,7 +291,7 @@ pd_is_hive_class = {
 	}
 }
 
-pd_is_machine_class = {
+pd_is_planet_class_machine = {
 	OR = {
 		is_planet_class = pc_pd_machine_superhabitable
 		is_planet_class = pc_pd_machine_tidally_locked
