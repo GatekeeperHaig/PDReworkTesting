@@ -67,6 +67,10 @@ pd_kelp = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_kelp.dds"
 	icon_frame = 1
 }
+pd_algae = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_algae.dds"
+	icon_frame = 1
+}
 pd_reef = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_reef.dds"
 	icon_frame = 1

@@ -96,6 +96,9 @@ country_event = {
 					pd_kelp_world_effect = yes
 				} 
 				25 = { 
+					pd_algae_world_effect = yes
+				} 
+				25 = { 
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal 
@@ -503,6 +506,9 @@ country_event = {
 				} 
 				25 = { 
 					pd_kelp_world_effect = yes
+				} 
+				25 = { 
+					pd_algae_world_effect = yes
 				} 
 			}
 		}
@@ -941,6 +947,20 @@ country_event = {
 			}  
 			change_pc = pc_ocean         
 			pd_kelp_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_algae
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_ocean         
+			pd_algae_world_effect = yes
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -2003,6 +2023,19 @@ country_event = {
 		IF = {
 			limit = {
 				any_owned_species = {
+					has_trait =	trait_pc_pd_algae_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_algae_preference
+					add_trait = trait_pc_ocean_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
 					has_trait =	trait_pc_pd_reef_preference
 				}
 			}
@@ -2944,6 +2977,17 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_ocean }
+		}
+		name = pdengine.21.algae
+		hidden_effect = {   
+			from = {       
+				pd_algae_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_ocean }
 			space_owner = {
 				has_ascension_perk = ap_world_shaper
 			}
@@ -3843,6 +3887,9 @@ planet_event = {
 				}
 				25 = { 
 					pd_kelp_world_effect = yes
+				}
+				25 = { 
+					pd_algae_world_effect = yes
 				}
 				0 = { 
 					modifier = {
@@ -6477,6 +6524,7 @@ country_event = {
 				has_trait = trait_pc_pd_crag_preference
 				has_trait = trait_pc_pd_fog_preference
 				has_trait = trait_pc_pd_kelp_preference
+				has_trait = trait_pc_pd_algae_preference
 				has_trait = trait_pc_pd_reef_preference
 				has_trait = trait_pc_pd_archipelago_preference
 				has_trait = trait_pc_pd_atoll_preference
