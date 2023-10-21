@@ -1,0 +1,44 @@
+namespace = pdascensionworlds
+
+# This event fires when certain planets get terraformed and makes sure that if they have the flooded planet modifier the planet view stays flooded 
+planet_event = {
+	id = pdascensionworlds.100
+	hide_window = yes
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = flooded_habitat
+	}
+
+	immediate = {
+		switch = {
+			trigger = is_planet_class
+			pc_pd_dry_gaia = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_cold_gaia = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_dry_superhabitable = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_cold_superhabitable = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_dry_cave = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_cold_cave = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_dry_tidally_locked = {		
+				remove_modifier = flooded_habitat
+			}
+			pc_pd_cold_tidally_locked = {		
+				remove_modifier = flooded_habitat
+			}
+		}
+	}
+}

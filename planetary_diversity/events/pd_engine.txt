@@ -5339,6 +5339,20 @@ planet_event = {
 				days = -1
 			}
 		}
+		if = { 
+			limit = { 
+				OR = {
+					is_planet_class = pc_gaia 
+					is_planet_class = pc_pd_dry_gaia   
+					is_planet_class = pc_pd_cold_gaia   
+					is_planet_class = pc_pd_wet_gaia   
+				}
+			}
+			add_modifier = {
+				modifier = pd_gaia_world
+				days = -1
+			}
+		}
 	}
 }
 
