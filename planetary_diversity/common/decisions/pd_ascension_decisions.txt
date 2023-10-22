@@ -183,7 +183,7 @@ decision_pd_flood_planet = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 100
+			influence = 50
 			energy = 2000
 		}
 	}
@@ -337,7 +337,7 @@ decision_pd_flood_planet = {
 					}
 				}
 				create_message = {
-					type = ICE_MINING_PLANET_SUCCESS
+					type = ICE_MINING_PD_PLANET_SUCCESS
 					localization = ICE_MINING_HABITAT_SUCCESS_BUT_EXHAUSTED_DESC
 					days = 20
 					target = root
@@ -350,8 +350,8 @@ decision_pd_flood_planet = {
 			}
 			else = {
 				create_message = {
-					type = ICE_MINING_PLANET_SUCCESS
-					localization = ICE_MINING_PLANET_SUCCESS_DESC
+					type = ICE_MINING_PD_PLANET_SUCCESS
+					localization = ICE_MINING_PD_PLANET_SUCCESS_DESC
 					days = 20
 					target = root
 					variable = {

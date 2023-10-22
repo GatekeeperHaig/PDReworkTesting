@@ -1239,3 +1239,7 @@ remove_pd_modifiers_and_add_continetal = {
 		days = -1
 	}
 }
+
+pd_remove_ocean_modifiers = {
+	remove_pd_modifier = yes
+}
