@@ -75,6 +75,7 @@ pd_is_savannah = {
  		is_planet_class = pc_pd_semi_arid
  		is_planet_class = pc_pd_veld
  		is_planet_class = pc_pd_aspen
+ 		is_planet_class = pc_pd_sandstone
 		is_planet_class = pc_pd_supercontinent
  		is_planet_class = pc_pd_sinkhole
  	}
@@ -176,6 +177,7 @@ has_pd_modifier = {
 		has_modifier = pd_veld
 		has_modifier = pd_semi_arid
 		has_modifier = pd_aspen
+		has_modifier = pd_sandstone
 		has_modifier = pd_supercontinent
 		has_modifier = pd_sinkhole
 		#Arctic

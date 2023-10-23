@@ -93,6 +93,8 @@
  pd_semi_arid_desc: "此处的水圈维系着短暂却雨量丰沛的湿季。广泛分布的数类杂草之外也有其他类型的草木，都集中生长在受遮蔽谷地和大型水域的周边地带。"
  pd_aspen: "森林草原世界"
  pd_aspen_desc: "森林与草原互相交错，是这里的主要环境。水圈的规模较小，却也非常稳定。溪流与河谷供养着此地的森林和茂盛的灌丛。"
+ pd_sandstone: "$pc_pd_sandstone$"
+ pd_sandstone_desc: "$pc_pd_sandstone_desc$"
  pd_supercontinent: "超大陆世界"
  pd_supercontinent_desc: "板块构造还处于单一的超大陆状态。临近沿海的地区拥有繁茂的草木，内陆的环境则截然不同，由草原逐渐过渡为庞大的干燥荒漠。"
  pd_sinkhole: "地陷世界"

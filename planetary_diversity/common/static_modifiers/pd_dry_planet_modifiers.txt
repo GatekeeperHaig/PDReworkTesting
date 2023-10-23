@@ -106,6 +106,10 @@ pd_aspen = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aspen.dds"
 	icon_frame = 1
 }
+pd_sandstone = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_sandstone.dds"
+	icon_frame = 1
+}
 pd_supercontinent = {
 	district_farming_max = 4
 	planet_housing_mult = 0.1

@@ -236,7 +236,7 @@
  pc_pd_striped_adj: "stripped"
  mod_pc_pd_striped_habitability: "Arid Habitability"
  trait_pc_pd_striped_preference: "Arid Preference"
- trait_pc_pd_striped_preference_desc: "$trait_pc_arctic_preference_desc$"
+ trait_pc_pd_striped_preference_desc: "$trait_pc_arctic_preference_desc$"02asp[en]
 
 #Savannah
  pc_pd_steppe: "Steppe World"
@@ -265,10 +265,16 @@
  trait_pc_pd_semi_arid_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_aspen: "Aspen World"
  pc_pd_aspen_desc: "Dry, rocky world with a nitrogen-oxygen atmosphere consists of groves of trees interspersed with grasslands. A small but stable hydrosphere of streams and river valleys support the forests and dense shrubbery."
- pc_pd_aspen_adj: "aspeny"
+ pc_pd_aspen_adj: "wooded"
  mod_pc_pd_aspen_habitability: "Savannah Habitability"
  trait_pc_pd_aspen_preference: "Savannah Preference"
  trait_pc_pd_aspen_preference_desc: "$trait_pc_arctic_preference_desc$"
+ pc_pd_sandstone: "Sandstone World"
+ pc_pd_sandstone_desc: "A dry and rocky world that possesses a nitrogen-oxygen atmosphere featuring vast grasslands and sandstone formations sculpted by the relentless winds. Its hydrosphere supports the resilient grasses that have adapted to thrive in this environment."
+ pc_pd_sandstone_adj: "windy"
+ mod_pc_pd_sandstone_habitability: "Savannah Habitability"
+ trait_pc_pd_sandstone_preference: "Savannah Preference"
+ trait_pc_pd_sandstone_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_supercontinent: "Supercontinent World"
  pc_pd_supercontinent_desc: "Rocky world of grasslands and deserts with a nitrogen-oxygen atmosphere, this planet's plate tectonics is currently in the state of a supercontinent. Immediate coastal areas are lush, but much of the inland terrain is grasslands which slowly turn into large arid deserts."
  pc_pd_supercontinent_adj: "supercontinental"

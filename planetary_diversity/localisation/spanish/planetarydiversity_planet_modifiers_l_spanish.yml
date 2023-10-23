@@ -110,6 +110,8 @@
  pd_semi_arid_desc: "The hydrosphere allows for a short but significant wet season. Still, aside from a few ubiquitous types of grass, vegetation is primarily concentrated around protected valleys and near large bodies of water."
  pd_aspen: "Aspen World"
  pd_aspen_desc: "Dry, rocky world with a nitrogen-oxygen atmosphere consists of groves of trees interspersed with grasslands. A small but stable hydrosphere of streams and river valleys support the forests and dense shrubbery."
+ pd_sandstone: "$pc_pd_sandstone$"
+ pd_sandstone_desc: "$pc_pd_sandstone_desc$"
  pd_supercontinent: "Supercontinent World"
  pd_supercontinent_desc: "This planet's plate tectonics is currently in the state of a supercontinent. Immediate coastal areas are lush, but much of the inland terrain is grasslands which slowly turn into large arid deserts."
  pd_sinkhole: "Sinkhole World"

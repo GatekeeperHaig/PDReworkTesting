@@ -241,6 +241,10 @@ remove_pd_savannah_modifier = {
 		remove_modifier = pd_aspen
 	}
 	if = {
+		limit = { has_modifier = pd_sandstone }
+		remove_modifier = pd_sandstone
+	}
+	if = {
 		limit = { has_modifier = pd_supercontinent }
 		remove_modifier = pd_supercontinent
 	}
@@ -806,6 +810,16 @@ pd_aspen_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_aspen
 		entity = "aspen_planet_01_entity"
+	}
+}
+pd_sandstone_world_effect = {
+	add_modifier = { 
+		modifier = pd_sandstone
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_sandstone
+		entity = "sandstone_planet_01_entity"
 	}
 }
 pd_supercontinent_world_effect = {

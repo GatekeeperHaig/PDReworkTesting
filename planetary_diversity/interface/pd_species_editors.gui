@@ -1037,6 +1037,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_prairie"
 			}
 			buttonType = {
+				name = "pc_pd_sandstone"
+				position = { x = @planet_col11 y = @planet_row4 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_sandstone"
+			}
+			buttonType = {
 				name = "pc_pd_veld"
 				position = { x = @planet_col12 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
