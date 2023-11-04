@@ -33,7 +33,7 @@ planet_event = {
 					pd_is_planet_class_superhabitable = yes
 					pd_is_planet_class_tidally_locked = yes
 					pd_is_planet_class_cave = yes
-					pd_gaia_class = yes
+					pd_is_planet_class_pd_gaia = yes
 				}
 			}
 			add_deposit = d_pd_tree_of_life_colony
@@ -457,7 +457,7 @@ planet_event = {
 					pd_is_planet_class_superhabitable = yes
 					pd_is_planet_class_tidally_locked = yes
 					pd_is_planet_class_cave = yes
-					pd_gaia_class = yes
+					pd_is_planet_class_pd_gaia = yes
 				}
 			}
 			AND = { 

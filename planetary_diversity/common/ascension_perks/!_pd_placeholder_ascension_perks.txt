@@ -4,3 +4,9 @@ ap_pd_tree_of_life_bloomed = {
 	possible = { always = no }
 	custom_tooltip = pd_placeholder_tooltip
 }
+
+ap_pd_wasteland_worlds = {
+	potential = { always = no } 
+	possible = { always = no }
+	custom_tooltip = pd_placeholder_tooltip
+}

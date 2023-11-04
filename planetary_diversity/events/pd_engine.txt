@@ -3411,7 +3411,7 @@ country_event = {
 	}
 	option = {
 		trigger = {
-			from = { is_planet_class = pc_sandstone }
+			from = { is_planet_class = pc_pd_sandstone }
 		}
 		name = pdengine.21.sandstone
 		hidden_effect = {   
@@ -5253,6 +5253,7 @@ planet_event = {
 				modifier = pd_gaia_world
 				days = -1
 			}
+			change_pc = pc_pd_wet_gaia
 		}
 		#Superhabtiables
 		if = { 

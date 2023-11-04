@@ -217,6 +217,7 @@ pd_is_planet_class_all = {
 		pd_is_planet_class_superhabitable = yes
 		pd_is_planet_class_tidally_locked = yes
 		pd_is_planet_class_cave = yes
+		pd_is_planet_class_pd_gaia = yes
 	}
 }
 
@@ -247,7 +248,7 @@ pd_is_planet_class_cave = {
 	}
 }
 
-pd_gaia_class = {
+pd_is_planet_class_pd_gaia = {
 	OR = {
 		is_planet_class = pc_pd_wet_gaia
 		is_planet_class = pc_pd_dry_gaia
