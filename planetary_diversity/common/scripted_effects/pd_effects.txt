@@ -1257,3 +1257,81 @@ remove_pd_modifiers_and_add_continetal = {
 pd_remove_ocean_modifiers = {
 	remove_pd_modifier = yes
 }
+
+pd_back_to_normal_view_effect = {
+	switch = {
+		trigger = is_planet_class
+		pc_pd_wet_gaia = {
+			set_planet_entity = {
+				picture = pc_pd_wet_gaia
+				entity = "gaia_planet"
+			}
+		}
+		pc_pd_dry_gaia = {
+			set_planet_entity = {
+				picture = pc_pd_dry_gaia
+				entity = "hot_gaia_planet"
+			}
+		}
+		pc_pd_cold_gaia = {
+			set_planet_entity = {
+				picture = pc_pd_cold_gaia
+				entity = "cold_gaia_planet"
+			}
+		}
+		pc_pd_wet_cave = {
+			set_planet_entity = {
+				picture = pc_pd_wet_cave
+				entity = "karst_planet"
+			}
+		}
+		pc_pd_dry_cave = {
+			set_planet_entity = {
+				picture = pc_pd_dry_cave
+				entity = "pd_dry_cave_planet"
+			}
+		}
+		pc_pd_cold_cave = {
+			set_planet_entity = {
+				picture = pc_pd_cold_cave
+				entity = "pd_cold_cave_planet"
+			}
+		}
+		pc_pd_wet_tidally_locked = {
+			set_planet_entity = {
+				picture = pc_pd_wet_tidally_locked
+				entity = "wettidallylocked_planet"
+			}
+		}
+		pc_pd_dry_tidally_locked = {
+			set_planet_entity = {
+				picture = pc_pd_dry_tidally_locked
+				entity = "tidallylocked_planet"
+			}
+		}
+		pc_pd_cold_tidally_locked = {
+			set_planet_entity = {
+				picture = pc_pd_cold_tidally_locked
+				entity = "eyeball_planet"
+			}
+		}
+		pc_pd_wet_superhabitable = {
+			set_planet_entity = {
+				picture = pc_pd_wet_superhabitable
+				entity = "superhabitable_planet"
+			}
+		}
+		pc_pd_dry_superhabitable = {
+			set_planet_entity = {
+				picture = pc_pd_dry_superhabitable
+				entity = "pd_cold_superhab_planet"
+			}
+		}
+		pc_pd_cold_superhabitable = {
+			set_planet_entity = {
+				picture = pc_pd_cold_superhabitable
+				entity = "pd_dry_superhab_planet"
+			}
+		}
+	}
+}
