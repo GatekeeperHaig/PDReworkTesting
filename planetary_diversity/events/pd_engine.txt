@@ -144,6 +144,9 @@ country_event = {
 					pd_fungal_world_effect = yes
 				}
 				25 = { 
+					pd_aerial_world_effect = yes
+				}
+				25 = { 
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal 
@@ -541,6 +544,9 @@ country_event = {
 				} 
 				25 = { 
 					pd_fungal_world_effect = yes
+				}
+				25 = { 
+					pd_aerial_world_effect = yes
 				}
 			}
 		}
@@ -1080,6 +1086,20 @@ country_event = {
 			}  
 			change_pc = pc_tropical         
 			pd_fungal_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {         
+			limit = {
+				is_planet_class = pc_pd_aerial
+				has_pd_modifier = no
+				is_homeworld = yes 
+			}  
+			change_pc = pc_tropical         
+			pd_aerial_world_effect = yes
 			clear_deposits = yes
 			remove_all_districts = yes
 			remove_all_buildings = yes
@@ -2148,6 +2168,19 @@ country_event = {
 		IF = {
 			limit = {
 				any_owned_species = {
+					has_trait =	trait_pc_pd_aerial_preference
+				}
+			}
+			every_owned_species = {	
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_aerial_preference
+					add_trait = trait_pc_tropical_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
 					has_trait =	trait_pc_pd_geothermal_preference
 				}
 			}
@@ -3116,6 +3149,17 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_tropical }
+		}
+		name = pdengine.21.aerial
+		hidden_effect = {   
+			from = {       
+				pd_aerial_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_tropical }
 			space_owner = {
 				has_ascension_perk = ap_world_shaper
 			}
@@ -3992,6 +4036,9 @@ planet_event = {
 				}
 				25 = { 
 					pd_fungal_world_effect = yes
+				}
+				25 = { 
+					pd_aerial_world_effect = yes
 				}
 				0 = { 
 					modifier = {
@@ -6610,6 +6657,7 @@ country_event = {
 				has_trait = trait_pc_pd_mangrove_preference
 				has_trait = trait_pc_pd_cenote_preference
 				has_trait = trait_pc_pd_fungal_preference
+				has_trait = trait_pc_pd_aerial_preference
 				has_trait = trait_pc_pd_geothermal_preference
 				has_trait = trait_pc_pd_biolumen_preference
 			}

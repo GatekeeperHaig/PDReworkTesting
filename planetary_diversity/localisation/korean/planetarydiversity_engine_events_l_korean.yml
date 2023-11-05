@@ -27,6 +27,7 @@
  pdengine.21.mangrove: "$pc_pd_mangrove$"
  pdengine.21.cenote: "$pc_pd_cenote$"
  pdengine.21.fungal: "$pc_pd_fungal$"
+ pdengine.21.aerial: "$pc_pd_aerial$"
  pdengine.21.geothermal: "$pc_pd_geothermal$"
  pdengine.21.biolumen: "$pc_pd_biolumen$"
  pdengine.21.desert: "$pc_desert$"

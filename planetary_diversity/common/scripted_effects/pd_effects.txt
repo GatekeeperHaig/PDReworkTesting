@@ -129,6 +129,10 @@ remove_pd_tropical_modifier = {
 		remove_modifier = pd_fungal
 	}
 	if = {
+		limit = { has_modifier = pd_aerial }
+		remove_modifier = pd_aerial
+	}
+	if = {
 		limit = { has_modifier = pd_geothermal }
 		remove_modifier = pd_geothermal
 	}
@@ -584,6 +588,16 @@ pd_fungal_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_fungal
 		entity = "fungal_planet_01_entity"
+	}
+}
+pd_aerial_world_effect = {
+	add_modifier = { 
+		modifier = pd_aerial
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_aerial
+		entity = "aerial_planet_01_entity"
 	}
 }
 pd_geothermal_world_effect = {

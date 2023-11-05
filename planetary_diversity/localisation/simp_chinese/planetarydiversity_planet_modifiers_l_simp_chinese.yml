@@ -45,6 +45,8 @@
  pd_cenote_desc: "在星球地表以下，巨大的地陷和地下水系构成复杂、蜿蜒的体系。陆地的多数区域都生长着繁茂的植被。"
  pd_fungal: "蕈菌丛林世界"
  pd_fungal_desc: "季节差异明显，绝大部分大陆上都覆盖着繁茂的蕈菌林。"
+ pd_aerial: "Aerial Seeds World"
+ pd_aerial_desc: "High above the landmasses cloaking in dense vegetation, colossal seed pods, borne by the planet's unique flora, glide through the skies like clouds."
  pd_geothermal: "地热世界"
  pd_geothermal_desc: "受到天然地热喷口加热的热带裂谷打破了广袤的冰层。冰雪融水和喷口中袅袅的蒸汽构成了这里的水圈。"
  pd_biolumen: "生物光世界"

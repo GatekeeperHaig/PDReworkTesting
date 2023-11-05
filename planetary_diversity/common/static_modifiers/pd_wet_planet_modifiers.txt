@@ -111,6 +111,10 @@ pd_fungal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fungal.dds"
 	icon_frame = 1
 }
+pd_aerial = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_aerial.dds"
+	icon_frame = 1
+}
 pd_geothermal = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_geothermal.dds"
 	icon_frame = 1
