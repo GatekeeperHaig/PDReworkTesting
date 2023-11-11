@@ -64,7 +64,7 @@ planet_event = {
 
 
 	trigger = {
-		last_building_changed = building_gaiaseeders_4
+		last_building_changed = building_gaiaseeders_pc_gaia
 		pd_is_planet_class_gaia = yes
 	}
 

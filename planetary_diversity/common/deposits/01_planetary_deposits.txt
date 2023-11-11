@@ -43,6 +43,14 @@ d_arid_highlands = {
 		district_generator_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		is_dry = yes
 	}
@@ -71,6 +79,14 @@ d_hot_springs = {
 
 	planet_modifier = {
 		district_generator_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 1
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -107,6 +123,14 @@ d_rushing_waterfalls = {
 		district_generator_max = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 2
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		is_wet = yes
 	}
@@ -135,6 +159,14 @@ d_searing_desert = {
 
 	planet_modifier = {
 		district_generator_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 2
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -173,6 +205,14 @@ d_frozen_gas_lake = {
 		district_generator_max = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 2
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
@@ -206,6 +246,14 @@ d_geothermal_vent = {
 
 	planet_modifier = {
 		district_generator_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -249,6 +297,14 @@ d_underwater_vent = {
 		district_generator_max = 3
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 3
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
@@ -284,6 +340,14 @@ d_tempestous_mountain = {
 
 	planet_modifier = {
 		district_generator_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_generator_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -330,6 +394,14 @@ d_veiny_cliffs = {
 		district_mining_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_alpine
@@ -368,6 +440,14 @@ d_mineral_fields = {
 
 	planet_modifier = {
 		district_mining_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 1
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -410,6 +490,14 @@ d_prosperous_mesa = {
 		district_mining_max = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 2
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_continental
@@ -449,6 +537,14 @@ d_ore_rich_caverns = {
 
 	planet_modifier = {
 		district_mining_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 2
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	triggered_planet_modifier = {
@@ -507,6 +603,14 @@ d_rich_mountain = {
 		district_mining_max = 3
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 3
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_continental
@@ -550,6 +654,14 @@ d_submerged_ore_veins = {
 
 	planet_modifier = {
 		district_mining_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_mining_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -601,6 +713,14 @@ d_lichen_fields = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_nuked
@@ -644,6 +764,14 @@ d_bountiful_plains = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_arid
@@ -682,6 +810,14 @@ d_rugged_woods = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		is_planet_class = pc_continental
 	}
@@ -715,6 +851,14 @@ d_green_hills = {
 
 	planet_modifier = {
 		district_farming_max = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -757,6 +901,14 @@ d_forgiving_tundra = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_alpine
@@ -797,6 +949,14 @@ d_boggy_fens = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		is_planet_class = pc_ocean
 	}
@@ -832,6 +992,14 @@ d_nutritious_mudland = {
 		district_farming_max = 1
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 1
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		is_planet_class = pc_desert
 	}
@@ -861,6 +1029,14 @@ d_fungal_caves = {
 
 	planet_modifier = {
 		district_farming_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 2
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -901,6 +1077,14 @@ d_lush_jungle = {
 		district_farming_max = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 2
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
@@ -937,6 +1121,14 @@ d_fertile_lands = {
 
 	planet_modifier = {
 		district_farming_max = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 2
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -979,6 +1171,14 @@ d_great_river = {
 		district_farming_max = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 2
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_arid
@@ -1014,6 +1214,14 @@ d_black_soil = {
 
 	planet_modifier = {
 		district_farming_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -1055,6 +1263,14 @@ d_teeming_reef = {
 		district_farming_max = 3
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 3
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_gaia
@@ -1090,6 +1306,14 @@ d_marvelous_oasis = {
 
 	planet_modifier = {
 		district_farming_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -1129,6 +1353,14 @@ d_tropical_island = {
 		district_farming_max = 3
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 3
+		mult = value:district_amount_mastery_of_nature
+	}
+
 	potential = {
 		OR = {
 			is_planet_class = pc_arid
@@ -1166,6 +1398,14 @@ d_fungal_forest = {
 
 	planet_modifier = {
 		district_farming_max = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		district_farming_max = 3
+		mult = value:district_amount_mastery_of_nature
 	}
 
 	potential = {
@@ -1623,8 +1863,30 @@ d_hab_gas_1 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_gas_extractors_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extractor_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extraction_drone_add = 1
+		}
 	}
 
 	drop_weight = {
@@ -1642,8 +1904,30 @@ d_hab_gas_2 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_gas_extractors_max = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extractor_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extraction_drone_add = 2
+		}
 	}
 
 	drop_weight = {
@@ -1661,8 +1945,30 @@ d_hab_gas_3 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_gas_extractors_max = 3
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extractor_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extraction_drone_add = 3
+		}
 	}
 
 	drop_weight = {
@@ -1680,8 +1986,30 @@ d_hab_gas_4 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_gas_extractors_max = 4
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extractor_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extraction_drone_add = 4
+		}
 	}
 
 	drop_weight = {
@@ -1699,8 +2027,30 @@ d_hab_gas_5 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_gas_extractors_max = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extractor_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_exotic_gases
+			}
+		}
+		modifier = {
+			job_gas_extraction_drone_add = 5
+		}
 	}
 
 	drop_weight = {
@@ -1718,8 +2068,30 @@ d_hab_crystal_1 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_crystal_mines_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_miner_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_mining_drone_add = 1
+		}
 	}
 
 	drop_weight = {
@@ -1737,8 +2109,30 @@ d_hab_crystal_2 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_crystal_mines_max = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_miner_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_mining_drone_add = 2
+		}
 	}
 
 	drop_weight = {
@@ -1756,8 +2150,30 @@ d_hab_crystal_3 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_crystal_mines_max = 3
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_miner_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_mining_drone_add = 3
+		}
 	}
 
 	drop_weight = {
@@ -1775,8 +2191,30 @@ d_hab_crystal_4 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_crystal_mines_max = 4
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_miner_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_mining_drone_add = 4
+		}
 	}
 
 	drop_weight = {
@@ -1794,8 +2232,30 @@ d_hab_crystal_5 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_crystal_mines_max = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_miner_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_rare_crystals
+			}
+		}
+		modifier = {
+			job_crystal_mining_drone_add = 5
+		}
 	}
 
 	drop_weight = {
@@ -1813,8 +2273,30 @@ d_hab_mote_1 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_mote_harvesters_max = 1
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvester_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvesting_drone_add = 1
+		}
 	}
 
 	drop_weight = {
@@ -1832,8 +2314,30 @@ d_hab_mote_2 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_mote_harvesters_max = 2
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvester_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvesting_drone_add = 2
+		}
 	}
 
 	drop_weight = {
@@ -1851,8 +2355,30 @@ d_hab_mote_3 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_mote_harvesters_max = 3
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvester_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvesting_drone_add = 3
+		}
 	}
 
 	drop_weight = {
@@ -1870,8 +2396,30 @@ d_hab_mote_4 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_mote_harvesters_max = 4
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvester_add = 4
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvesting_drone_add = 4
+		}
 	}
 
 	drop_weight = {
@@ -1889,8 +2437,30 @@ d_hab_mote_5 = {
 		is_planet_class = pc_habitat
 	}
 
-	planet_modifier = {
-		building_mote_harvesters_max = 5
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvester_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_mine_volatile_motes
+			}
+		}
+		modifier = {
+			job_mote_harvesting_drone_add = 5
+		}
 	}
 
 	drop_weight = {
@@ -1909,7 +2479,7 @@ d_hab_zro_1 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -1935,7 +2505,7 @@ d_hab_zro_2 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -1961,7 +2531,7 @@ d_hab_zro_3 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -1987,7 +2557,7 @@ d_hab_zro_4 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2013,7 +2583,7 @@ d_hab_zro_5 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2039,7 +2609,7 @@ d_hab_dark_matter_1 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2065,7 +2635,7 @@ d_hab_dark_matter_2 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2091,7 +2661,7 @@ d_hab_dark_matter_3 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2117,7 +2687,7 @@ d_hab_dark_matter_10 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2143,7 +2713,7 @@ d_hab_living_metal_1 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			trigger = {
 				exists = owner
@@ -2169,7 +2739,7 @@ d_hab_alloy_1 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 1
 		}
@@ -2191,7 +2761,7 @@ d_hab_alloy_2 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 2
 		}
@@ -2213,7 +2783,7 @@ d_hab_alloy_3 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 3
 		}
@@ -2235,7 +2805,7 @@ d_hab_alloy_4 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 4
 		}
@@ -2257,7 +2827,7 @@ d_hab_alloy_5 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 5
 		}
@@ -2279,7 +2849,7 @@ d_hab_alloy_10 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 10
 		}
@@ -2301,7 +2871,7 @@ d_hab_alloy_25 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_mining_deposits
 		produces = {
 			alloys = 25
 		}
@@ -2323,7 +2893,7 @@ d_hab_nanites_1 = {
 	}
 
 	resources = {
-		category = orbital_mining_deposits
+		category = hab_research_deposits
 		produces = {
 			nanites = 1
 		}
