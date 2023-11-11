@@ -4,12 +4,12 @@
 #Deposits
 d_pd_tree_of_life_uncommon: "Tree of Life"
 d_pd_tree_of_life_uncommon_desc: "An offshoot of the Great Tree, transplanted here by the Hive. While conditions are hospitable to the Tree, this planet's uncommon ecosystem doesn't allow it to grow to full size."
-d_pd_tree_of_life_home:0 "Tree of Life"
-d_pd_tree_of_life_home_desc:0 "The Tree of Life has sheltered and supported the Hive for untold generations."
-d_pd_tree_of_life_colony:0 "Tree of Life Sapling"
-d_pd_tree_of_life_colony_desc:0 "An offshoot of the Great Tree, transplanted here by the Hive. It will take time for it to mature fully."
-d_pd_tree_of_life_bloomed:0 "Bloomed Tree of Life"
-d_pd_tree_of_life_bloomed_desc:0 "The Great Tree has sheltered and supported the Hive for untold generations. Now in bloom, its beneficial effects can be felt by every drone."
+d_pd_tree_of_life_home: "Tree of Life"
+d_pd_tree_of_life_home_desc: "The Tree of Life has sheltered and supported the Hive for untold generations."
+d_pd_tree_of_life_colony: "Tree of Life Sapling"
+d_pd_tree_of_life_colony_desc: "An offshoot of the Great Tree, transplanted here by the Hive. It will take time for it to mature fully."
+d_pd_tree_of_life_bloomed: "Bloomed Tree of Life"
+d_pd_tree_of_life_bloomed_desc: "The Great Tree has sheltered and supported the Hive for untold generations. Now in bloom, its beneficial effects can be felt by every drone."
 
 #Decisions
 decision_pd_replant_tree_of_life: "Replant Tree of Life"
@@ -38,7 +38,7 @@ pd_placeholder_tooltip: "Placeholder AP - DO NOT USE"
 ###Wasteland
 #Decisions
 decision_pd_wasteland_planet:0 "Unregulated Industrial Standards"
-decision_pd_wasteland_planet_desc:0 "Environmental concerns do nothing but hold us back. By ignoring the state of the planet's natural ecosystem, we will unlock the planet's true industrial potential."
+decision_pd_wasteland_planet_desc:0 "Environmental concerns do nothing but hold us back. By ignoring the state of the planet's natural ecosystem, we will unlock its true industrial potential."
 decision_pd_wasteland_planet_effects_short: "§Y$pd_wasteland_planet$§! modifier added.\n\nIncreases §GIndustrial Output§! but reduces £mod_pop_environment_tolerance£ §RHabitability§!."
 decision_pd_wasteland_planet_cleanup: "Environmental Clean Up"
 decision_pd_wasteland_planet_cleanup_desc: "The severe environmental degradation on this planet has left its ecosystem in a precarious state. We will rectify the damage inflicted upon this world."
