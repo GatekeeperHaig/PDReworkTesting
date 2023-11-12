@@ -19,7 +19,7 @@ remove_pd_modifier = {
 	#Tundra
 	remove_pd_tundra_modifier = yes
 	#Gaia
-	remove_modifier = pd_gaia_world
+	#remove_modifier = pd_gaia_world
 }
 
 remove_pd_continental_modifier = {

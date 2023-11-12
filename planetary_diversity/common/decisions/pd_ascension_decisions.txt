@@ -138,7 +138,7 @@ decision_pd_bloom_tree_of_life = {
 	}
 }
 
-#Flooded Worlds
+###Flooded Worlds
 @expand_planetary_sea_length = 720
 decision_pd_flood_planet = {
 	owned_planets_only = yes
@@ -458,7 +458,7 @@ decision_pd_unflood_planet = {
 	}
 }
 
-#Toxic Wasteland Worlds
+###Toxic Wasteland Worlds
 #Clean Up Toxic Wasteland
 decision_pd_wasteland_planet_cleanup = {
 	owned_planets_only = yes
@@ -599,5 +599,178 @@ decision_pd_wasteland_planet = {
 
 	ai_weight = {
 		weight = 10
+	}
+}
+
+###Shroud Worlds
+#UnShroud World - Uncommon + PD Gaia
+decision_pd_shroud_planet_cleanup = {
+	owned_planets_only = yes
+	icon = decision_resort_colony
+
+	enactment_time = 3600
+
+	potential = {
+		exists = owner
+		owner = {
+			NOT = { has_tradition = tr_psionics_finish }
+		}
+		is_pd_aw_shroud_planet = yes
+		pd_is_planet_class_all = yes
+	}
+
+	allow = {
+		owner = { has_technology = tech_psionic_theory }
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 5000
+		}
+	}
+	
+	effect = {
+		remove_modifier = pd_aw_shroud_planet
+		custom_tooltip = decision_pd_shroud_planet_cleanup_tooltip
+		hidden_effect = {
+			pd_back_to_normal_view_effect = yes
+			create_message = {
+				type = MESSAGE_PD_SHROUD_CLEANUP_TYPE
+				localization = MESSAGE_PD_SHROUD_CLEANUP_DESC
+				days = 20
+				target = root
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#Make Shroud World - Uncommon + PD Gaia
+decision_pd_shroud_planet = {
+	owned_planets_only = yes
+	icon = decision_pd_aw_shroud
+
+	enactment_time = 3600
+
+	potential = {
+		has_global_flag = planetarydiversityascensionworlds
+		exists = owner
+		owner = {
+			has_tradition = tr_psionics_finish
+		}
+		pd_is_planet_class_all = yes
+		is_pd_aw_shroud_planet = no
+	}
+
+	allow = {
+		owner = {
+			has_tradition = tr_psionics_finish
+		}
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			sr_zro = 750
+		}
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = pd_aw_shroud_planet
+			days = -1
+		}
+		hidden_effect = {
+			IF = {
+				limit = {
+					pd_is_planet_class_superhabitable = yes
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_01_entity
+				}
+			}
+			IF = {
+				limit = {
+					pd_is_planet_class_tidally_locked = yes
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = tidallyshroud_planet_01_entity
+				}
+			}
+			IF = {
+				limit = {
+					pd_is_planet_class_cave = yes
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud_cave
+					entity = pdshroud_cave_planet_01_entity
+				}
+			}
+			IF = {
+				limit = {
+					pd_is_planet_class_pd_gaia = yes
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_01_entity
+				}
+			}
+			IF = {
+				limit = {
+					has_planet_flag = planet_earth
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_earth_entity
+				}
+			}
+			IF = {
+				limit = {
+					has_planet_flag = pdmars
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_mars_entity
+				}
+			}
+			IF = {
+				limit = {
+					has_planet_flag = pdvenus
+				}
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_venus_entity
+				}
+			}
+			remove_pd_modifier = yes
+			create_message = {
+				type = MESSAGE_PD_SHROUD_TYPE
+				localization = MESSAGE_PD_SHROUD_DESC
+				days = 20
+				target = root
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 1
 	}
 }

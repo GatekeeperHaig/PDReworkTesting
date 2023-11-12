@@ -1,6 +1,6 @@
 namespace = pdascensionworlds
 
-# This event fires when certain planets get terraformed and makes sure that if they have the flooded planet modifier the planet view stays flooded 
+# This event fires when certain planets get terraformed and removes the modifier if needed
 planet_event = {
 	id = pdascensionworlds.100
 	hide_window = yes
@@ -36,6 +36,56 @@ planet_event = {
 			}
 			pc_pd_cold_tidally_locked = {		
 				remove_modifier = flooded_habitat
+			}
+		}
+	}
+}
+
+#This event fires and makes sure Shrouded Worlds stay Shrouded after terraformining
+planet_event = {
+	id = pdascensionworlds.200
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pd_aw_shroud_planet
+	}
+
+	immediate = {
+		IF = {
+			limit = {
+				pd_is_planet_class_superhabitable = yes
+			}
+			set_planet_entity = {
+				picture = pc_pd_shroud
+				entity = pdshroud_planet_01_entity
+			}
+		}
+		IF = {
+			limit = {
+				pd_is_planet_class_tidally_locked = yes
+			}
+			set_planet_entity = {
+				picture = pc_pd_shroud
+				entity = tidallyshroud_planet_01_entity
+			}
+		}
+		IF = {
+			limit = {
+				pd_is_planet_class_cave = yes
+			}
+			set_planet_entity = {
+				picture = pc_pd_shroud_cave
+				entity = pdshroud_cave_planet_01_entity
+			}
+		}
+		IF = {
+			limit = {
+				pd_is_planet_class_pd_gaia = yes
+			}
+			set_planet_entity = {
+				picture = pc_pd_shroud
+				entity = pdshroud_planet_01_entity
 			}
 		}
 	}
