@@ -647,7 +647,7 @@
  trait_pc_pd_cold_gaia_preference:0 "Frozen Gaia Preference"
  trait_pc_pd_cold_gaia_preference_desc:0 "$trait_pc_arctic_preference_desc$"
  pc_pd_wet_gaia:0 "Wet Gaia World"
- pc_pd_wet_gaia_desc:0 "Wet Gaia World"
+ pc_pd_wet_gaia_desc:0 "$pc_gaia_desc$"
  pc_pd_wet_gaia_adj:0 "An ideal, wet world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life from wet worlds at different latitudes."
  mod_pc_pd_wet_gaia_habitability:0 "Wet Gaia Habitability"
  trait_pc_pd_wet_gaia_preference:0 "Wet Gaia Preference"

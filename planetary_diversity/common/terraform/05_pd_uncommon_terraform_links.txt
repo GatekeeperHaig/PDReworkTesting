@@ -22,7 +22,7 @@ terraform_link = {
 	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_technology = "tech_climate_restoration" }
-	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } } 
+	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } }
 	ai_weight = { weight = 0 modifier = { weight = 2 should_terraform_trigger = { CLASS_FROM = pc_pd_barren_superhabitable CLASS_TO = pc_pd_cold_superhabitable } } }
 }
 terraform_link = {
@@ -32,7 +32,7 @@ terraform_link = {
 	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_technology = "tech_climate_restoration" }
-	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } } 
+	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } }
 	ai_weight = { weight = 0 modifier = { weight = 2 should_terraform_trigger = { CLASS_FROM = pc_pd_barren_superhabitable CLASS_TO = pc_pd_wet_superhabitable } } }
 }
 terraform_link = {
@@ -42,7 +42,7 @@ terraform_link = {
 	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_technology = "tech_climate_restoration" }
-	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } } 
+	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } }
 	ai_weight = { weight = 0 modifier = { weight = 2 should_terraform_trigger = { CLASS_FROM = pc_pd_barren_superhabitable CLASS_TO = pc_pd_dry_superhabitable } } }
 }
 #Regular
@@ -100,17 +100,6 @@ terraform_link = {
 	condition = { has_technology = tech_terrestrial_sculpting NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 }
-# #Gaia
-# terraform_link = {
-# 	from = pc_pd_barren_superhabitable
-# 	to = pc_pd_gaia_superhabitable
-#     resources = { category = terraforming cost = { energy = @terraforming_cost_level_4 } }
-# 	duration = @terraforming_duration_level_4
-# 	potential = { has_ascension_perk = ap_world_shaper from = { has_modifier = terraforming_candidate } }
-# 	condition = { has_technology = "tech_climate_restoration" has_ascension_perk = ap_world_shaper }
-# 	effect = { from = { remove_modifier = terraforming_candidate reroll_deposits = yes } }
-# 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
-# }
 terraform_link = {
 	from = pc_pd_dry_superhabitable
 	to = pc_pd_gaia_superhabitable
@@ -120,8 +109,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_dry_superhabitable 
+		from = {
+			change_pc = pc_pd_dry_superhabitable
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -139,8 +128,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_wet_superhabitable 
+		from = {
+			change_pc = pc_pd_wet_superhabitable
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -158,8 +147,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_cold_superhabitable 
+		from = {
+			change_pc = pc_pd_cold_superhabitable
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -275,8 +264,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_dry_tidally_locked 
+		from = {
+			change_pc = pc_pd_dry_tidally_locked
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -294,8 +283,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_wet_tidally_locked 
+		from = {
+			change_pc = pc_pd_wet_tidally_locked
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -313,8 +302,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_cold_tidally_locked 
+		from = {
+			change_pc = pc_pd_cold_tidally_locked
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -429,8 +418,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_dry_cave 
+		from = {
+			change_pc = pc_pd_dry_cave
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -448,8 +437,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_wet_cave 
+		from = {
+			change_pc = pc_pd_wet_cave
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -467,8 +456,8 @@ terraform_link = {
 	condition = { has_ascension_perk = ap_world_shaper NOT = { from = { has_modifier = pd_uncommon_gaia_world } } }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
 	effect = {
-		from = { 
-			change_pc = pc_pd_cold_cave 
+		from = {
+			change_pc = pc_pd_cold_cave
 			pd_make_uncommon_gaia_worlds_effect = yes
 			add_modifier = {
 				modifier = pd_uncommon_gaia_world
@@ -487,7 +476,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_superhabitable
 				days = -1
@@ -504,7 +493,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_superhabitable
 				days = -1
@@ -521,7 +510,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_superhabitable
 				days = -1
@@ -538,7 +527,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_superhabitable
 				days = -1
@@ -601,7 +590,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_tidally_locked
 				days = -1
@@ -618,7 +607,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_tidally_locked
 				days = -1
@@ -635,7 +624,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_tidally_locked
 				days = -1
@@ -652,7 +641,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_tidally_locked
 				days = -1
@@ -715,7 +704,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_cave
 				days = -1
@@ -732,7 +721,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_cave
 				days = -1
@@ -749,7 +738,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_cave
 				days = -1
@@ -766,7 +755,7 @@ terraform_link = {
 	condition = { exists = owner has_ascension_perk = ap_hive_worlds }
 	ai_weight = { weight = 10 modifier = { factor = 0 NOT = { has_origin = origin_necrophage } from = { any_owned_species = { NOT = { has_trait = trait_hive_mind } is_sapient = yes } } } }
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_hive_cave
 				days = -1
@@ -827,9 +816,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_superhabitable
 				days = -1
@@ -844,9 +847,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_superhabitable
 				days = -1
@@ -861,9 +878,43 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
+			add_modifier = {
+				modifier = pd_machine_superhabitable
+				days = -1
+			}
+		}
+	}
+}
+terraform_link = {
+	from = pc_pd_barren_superhabitable
+	to = pc_pd_machine_superhabitable
+	resources = { category = terraforming cost = { energy = @machineCost } }
+	duration = @machineTime
+	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 20
+		#It's a barren world!
+	}
+	effect = {
+		from = {
+			remove_modifier = terraforming_candidate }
 			add_modifier = {
 				modifier = pd_machine_superhabitable
 				days = -1
@@ -878,9 +929,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_superhabitable
 				days = -1
@@ -933,7 +998,7 @@ terraform_link = {
 		}
 	}
 }
-#machine Worlds Tidally Locked
+#Machine Worlds Tidally Locked
 terraform_link = {
 	from = pc_pd_wet_tidally_locked
 	to = pc_pd_machine_tidally_locked
@@ -941,9 +1006,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_tidally_locked
 				days = -1
@@ -958,9 +1037,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_tidally_locked
 				days = -1
@@ -975,9 +1068,43 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
+			add_modifier = {
+				modifier = pd_machine_tidally_locked
+				days = -1
+			}
+		}
+	}
+}
+terraform_link = {
+	from = pc_pd_barren_tidally_locked
+	to = pc_pd_machine_tidally_locked
+	resources = { category = terraforming cost = { energy = @machineCost } }
+	duration = @machineTime
+	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 20
+		#It's a barren world!
+	}
+	effect = {
+		from = {
+			remove_modifier = terraforming_candidate
 			add_modifier = {
 				modifier = pd_machine_tidally_locked
 				days = -1
@@ -992,9 +1119,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_tidally_locked
 				days = -1
@@ -1055,9 +1196,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_cave
 				days = -1
@@ -1072,9 +1227,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_cave
 				days = -1
@@ -1089,9 +1258,43 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
+			add_modifier = {
+				modifier = pd_machine_cave
+				days = -1
+			}
+		}
+	}
+}
+terraform_link = {
+	from = pc_pd_barren_cave
+	to = pc_pd_machine_cave
+	resources = { category = terraforming cost = { energy = @machineCost } }
+	duration = @machineTime
+	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
+	ai_weight = {
+		weight = 20
+		#It's a barren world!
+	}
+	effect = {
+		from = {
+			remove_modifier = terraforming_candidate
 			add_modifier = {
 				modifier = pd_machine_cave
 				days = -1
@@ -1106,9 +1309,23 @@ terraform_link = {
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds }
 	condition = { exists = owner has_ascension_perk = ap_machine_worlds }
-	ai_weight = { weight = 20 modifier = { factor = 0 from = { any_owned_pop = { NOR = { has_trait = trait_machine_unit	has_trait = trait_mechanical } } } } modifier = { factor = 0	from = { is_colony = no } } }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = {
+				any_owned_species = {
+					NOR = {
+						has_trait = trait_machine_unit
+						has_trait = trait_mechanical
+					}
+					is_sapient = yes
+				}
+			}
+		}
+	}
 	effect = {
-		from = { 
+		from = {
 			add_modifier = {
 				modifier = pd_machine_cave
 				days = -1

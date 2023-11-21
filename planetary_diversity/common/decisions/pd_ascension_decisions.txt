@@ -16,6 +16,7 @@ decision_pd_replant_tree_of_life = {
 	}
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		has_modifier = pd_no_lifetree
 		OR = {
 			pd_is_planet_class_superhabitable = yes
@@ -24,7 +25,7 @@ decision_pd_replant_tree_of_life = {
 		}
 	}
 
-	allow = { 
+	allow = {
 		has_modifier = pd_no_lifetree
 		OR = {
 			pd_is_planet_class_superhabitable = yes
@@ -53,21 +54,21 @@ decision_pd_replant_tree_of_life = {
 						days = 9000
 					}
 				}
-				pc_continental = { 
+				pc_continental = {
 					planet_event = { id = pdtreeoflife.21 days = 9000 }
 					add_modifier = {
 						modifier = pd_tree_of_life_growing
 						days = 9000
 					}
 				}
-				pc_tropical = { 
+				pc_tropical = {
 					planet_event = { id = pdtreeoflife.21 days = 9000 }
 					add_modifier = {
 						modifier = pd_tree_of_life_growing
 						days = 9000
 					}
 				}
-				pc_ocean = { 
+				pc_ocean = {
 					planet_event = { id = pdtreeoflife.21 days = 9000 }
 					add_modifier = {
 						modifier = pd_tree_of_life_growing
@@ -389,8 +390,8 @@ decision_pd_unflood_planet = {
 		}
 		exists = owner
 		has_modifier = flooded_habitat
-		owner = { 
-			NOT = { has_ascension_perk = ap_hydrocentric } 
+		owner = {
+			NOT = { has_ascension_perk = ap_hydrocentric }
 		}
 	}
 
@@ -467,6 +468,7 @@ decision_pd_wasteland_planet_cleanup = {
 	enactment_time = 3600
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		exists = owner
 		owner = {
 			NOT = { has_ascension_perk = ap_pd_wasteland_worlds }
@@ -487,7 +489,7 @@ decision_pd_wasteland_planet_cleanup = {
 			energy = 5000
 		}
 	}
-	
+
 	effect = {
 		remove_modifier = pd_wasteland_planet
 		custom_tooltip = decision_pd_wasteland_planet_cleanup_tooltip
@@ -520,6 +522,7 @@ decision_pd_wasteland_planet = {
 	enactment_time = 3600
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = {
@@ -537,7 +540,7 @@ decision_pd_wasteland_planet = {
 			energy = 5000
 		}
 	}
-	
+
 	effect = {
 		add_modifier = {
 			modifier = pd_wasteland_planet
@@ -611,6 +614,7 @@ decision_pd_shroud_planet_cleanup = {
 	enactment_time = 3600
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		exists = owner
 		owner = {
 			NOT = { has_tradition = tr_psionics_finish }
@@ -630,7 +634,7 @@ decision_pd_shroud_planet_cleanup = {
 			energy = 5000
 		}
 	}
-	
+
 	effect = {
 		remove_modifier = pd_aw_shroud_planet
 		custom_tooltip = decision_pd_shroud_planet_cleanup_tooltip
@@ -685,7 +689,7 @@ decision_pd_shroud_planet = {
 			sr_zro = 750
 		}
 	}
-	
+
 	effect = {
 		add_modifier = {
 			modifier = pd_aw_shroud_planet

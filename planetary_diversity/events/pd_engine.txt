@@ -5069,6 +5069,7 @@ planet_event = {
 	}
 }
 
+#These events check modifiers after terraforming
 #This event removing modifiers from incorrect planets after planet change and terraforming
 planet_event = {
 	id = pdengine.40
@@ -5136,7 +5137,7 @@ planet_event = {
 					is_planet_class = pc_arctic
 				} 
 			}
-			remove_pd_savannah_modifier = yes
+			remove_pd_arctic_modifier = yes
 		}
 		#Alpine
 		if = { 
@@ -5470,6 +5471,7 @@ planet_event = {
 	}
 }
 
+#These are checks for Starting on a Tidally Locked World
 #This is a pre event that checks if tidally locked starting worlds are moons
 country_event = {
 	id = pdengine.50
@@ -5596,6 +5598,7 @@ country_event = {
 	}
 } 
 
+#These events are for Uninhabitable Planets
 #This event changes the adds deposits and updates the visuals of the special uninhabitable worlds
 country_event = {
 	id = pdengine.61
@@ -6179,6 +6182,7 @@ country_event = {
 	}
 }
 
+#These Events for the Sol System
 #This event gives Sol it unique entities at game start
 country_event = {
 	id = pdengine.71
