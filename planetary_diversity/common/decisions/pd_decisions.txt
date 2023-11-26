@@ -20,7 +20,7 @@ decision_engineered_environment_gaia = {
 		pd_is_planet_class_gaia = no
 		NOT = { has_modifier = engineered_environment_gaia }
 	}
-	
+
 	potential = {
 		is_artificial = no
 		pd_is_planet_class_nuked = no
@@ -39,8 +39,8 @@ decision_engineered_environment_gaia = {
 			days = -1
 		}
 		#pd_make_uncommon_gaia_worlds_effect = yes
-	}   
-	
+	}
+
 	ai_weight = {
         weight = 1
   	}
@@ -62,35 +62,35 @@ decision_nuked_own_planet = {
 		}
 	}
 
-	potential = { 
-		owner = { has_origin = origin_post_apocalyptic } 
+	potential = {
+		owner = { has_origin = origin_post_apocalyptic }
 		pd_is_planet_class_nuked = no
 	}
 
-	allow = { 
+	allow = {
 	}
 
 	effect = {
 		if = {
-			limit = { 
+			limit = {
 				pd_is_planet_class_cave = yes
 			}
 			change_pc = pc_pd_nuked_cave
-		} 
+		}
 		if = {
-			limit = { 
+			limit = {
 				pd_is_planet_class_superhabitable = yes
 			}
 			change_pc = pc_pd_nuked_superhabitable
-		} 
+		}
 		if = {
-			limit = { 
+			limit = {
 				pd_is_planet_class_tidally_locked = yes
 			}
 			change_pc = pc_pd_nuked_tidally_locked
-		} 
+		}
 		if = {
-			limit = { 
+			limit = {
 				is_planet_class = pc_city
 			}
 			change_pc = pc_relic
@@ -102,9 +102,9 @@ decision_nuked_own_planet = {
 				picture = pc_pd_nuked_relic
 				entity = nuked_relic_world_01_entity
 			}
-		} 
+		}
 		if = {
-			limit = { 
+			limit = {
 				is_planet_class = pc_relic
 			}
 			add_modifier = {
@@ -115,9 +115,9 @@ decision_nuked_own_planet = {
 				picture = pc_pd_nuked_relic
 				entity = nuked_relic_world_01_entity
 			}
-		} 
+		}
 		if = {
-			limit = { 
+			limit = {
 				NOR = {
 					is_planet_class = pc_city
 					is_planet_class = pc_relic
@@ -127,7 +127,7 @@ decision_nuked_own_planet = {
 				}
 			}
 			change_pc = pc_nuked
-		} 
+		}
 		add_planet_devastation = 50
 	}
 
@@ -136,4 +136,44 @@ decision_nuked_own_planet = {
 	}
 }
 
+#PD Dayside
+decision_pd_build_dayside_farm = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_divine_algorithm
+	enactment_time = 900
+
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+		}
+	}
+
+	potential = {
+		exists = owner
+		pd_is_planet_class_tidally_locked = yes
+		is_moon = no
+		owner = {
+			has_technology = tech_power_hub_1
+		}
+		NOT = { has_depsoit = d_dayside_farm }
+	}
+
+	effect = {
+		add_deposit = d_dayside_farm
+	}
+
+	ai_weight = {
+		weight = 1
+
+		modifier = { # don't end if less than 1 housing
+			factor = 0
+			NOR = {
+				has_building = building_energy_grid
+				has_building = building_energy_nexus
+			}
+		}
+	}
+}
 

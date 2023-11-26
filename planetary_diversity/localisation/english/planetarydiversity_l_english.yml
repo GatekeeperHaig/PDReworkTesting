@@ -119,7 +119,7 @@
  building_cryo_guild_desc:0 "The cryo-protein has many industrial applications and artisans on this planet can create amazing unique products."
  mod_planet_artisans_unity_produces_add:0 "£unity£ $unity$ from [GetArtisanIcon] [GetArtisanPlural]"
  building_cryo_grid:0 "Cyro-Protein Utilization Grid"
- building_cryo_grid_desc:0 "Here we process the Cyroflora for its rare proteins to improve energy generation." 
+ building_cryo_grid_desc:0 "Here we process the Cyroflora for its rare proteins to improve energy generation."
  building_lichen_farm:0 "Lichen Farm"
  building_lichen_farm_desc:0 "These farms utilize the lichen here to improve output."
  building_lichen_grid:0 "Lichen Bio-Reactor"
@@ -190,3 +190,7 @@
 
  ICE_MINING_PD_PLANET_SUCCESS_TITLE: "Planet Flooded"
  ICE_MINING_PD_PLANET_SUCCESS_DESC: "Using ice mined from the $SYSTEM|Y$ system, we have managed to flood §Y[This.GetName]§!."
+
+ decision_pd_build_dayside_farm: "decision_build_dayside_farm"
+ decision_pd_build_dayside_farm_desc: "$decision_build_dayside_farm_desc$"
+ decision_pd_build_dayside_farm_effects_short: "$decision_build_dayside_farm_effects_short$."

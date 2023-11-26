@@ -1,6 +1,3 @@
-##########################################################################
-# Ancient Relics Decisions
-##########################################################################
 @minor_artifact_decision_cost = 100
 @minor_artifact_decision_duration = 3600
 
@@ -11,7 +8,7 @@ decision_baol_life_seed = {
 	icon = decision_resort_colony
 
 	enactment_time = 720
-	
+
 	potential = {
 		NOR = {
 			is_planet_class = pc_city
@@ -24,9 +21,9 @@ decision_baol_life_seed = {
 			has_country_flag = not_activated_baol
 		}
 	}
-	
+
 	allow = { }
-	
+
 	effect = {
 		# Convert to Gaia world, spawn Nu-Baol pops
 		custom_tooltip = decision_baol_life_seed_effects
@@ -62,7 +59,7 @@ decision_baol_life_seed = {
 			}
 			planet_event = { id = ancrel.2025 } #Notification event
 			if = {
-				limit = { 
+				limit = {
 					has_planet_flag = planet_earth
 				}
 				set_planet_entity = {
@@ -70,7 +67,7 @@ decision_baol_life_seed = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_planet_flag = pdmars
 				}
 				set_planet_entity = {
@@ -79,7 +76,7 @@ decision_baol_life_seed = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_planet_flag = pdvenus
 				}
 				set_planet_entity = {
@@ -88,7 +85,7 @@ decision_baol_life_seed = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_planet_flag = pdaquapicture
 				}
 				remove_planet_flag = pdaquapicture
@@ -103,9 +100,55 @@ decision_baol_life_seed = {
 	on_unqueued = {
 		owner = { set_country_flag = not_activated_baol }
 	}
-	
+
 	ai_weight = {
 		weight = 0
 	}
 }
 
+decision_tidal_lock_planet = {
+	owned_planets_only = yes
+	sound = event_energy_field
+	icon = decision_tidal_lock_planet
+
+	potential = {
+		owner = {
+			has_country_flag = tidal_lock_knowledge
+		}
+		OR = {
+			is_moon = yes
+			has_moon = yes
+		}
+		NOR = {
+			has_modifier = intentionally_tidally_locked
+			has_planet_flag = tidally_locked_world
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_tidal_lock_planet_tt
+		set_planet_flag = tidally_locked_world
+		if = {
+			limit = {
+				is_wet = yes
+			}
+			change_pc = pc_pd_wet_tidally_locked
+		}
+		if = {
+			limit = {
+				is_dry = yes
+			}
+			change_pc = pc_pd_dry_tidally_locked
+		}
+		if = {
+			limit = {
+				is_cold = yes
+			}
+			change_pc = pc_pd_cold_tidally_locked
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

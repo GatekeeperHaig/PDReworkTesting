@@ -4916,7 +4916,7 @@ country_event = {
 				solar_system = { is_star_class = sc_k }
 			}
 			random_list = {
-				7 = {
+				5 = {
 					change_pc = pc_pd_barren_superhabitable
 					add_modifier = { modifier = terraforming_candidate days = -1 }
 					random_list = {
@@ -4927,7 +4927,7 @@ country_event = {
 						20 = { set_planet_size = 35 }
 					}
 				}
-				93 = { }
+				95 = { }
 			}
 		}
 		every_galaxy_planet = {
@@ -4947,11 +4947,11 @@ country_event = {
 				solar_system = { is_star_class = sc_m }
 			}
 			random_list = {
-				10 = {
+				8 = {
 					change_pc = pc_pd_barren_tidally_locked
 					add_modifier = { modifier = terraforming_candidate days = -1 }
 				}
-				90 = { }
+				92 = { }
 			}
 		}
 		every_galaxy_planet = {
@@ -4970,11 +4970,11 @@ country_event = {
 				solar_system = { is_star_class = sc_f }
 			}
 			random_list = {
-				8 = {
+				6 = {
 					change_pc = pc_pd_barren_cave
 					add_modifier = { modifier = terraforming_candidate days = -1 }
 				}
-				92 = { }
+				94 = { }
 			}
 		}
 	}
