@@ -157,7 +157,7 @@ decision_pd_build_dayside_farm = {
 		owner = {
 			has_technology = tech_power_hub_1
 		}
-		NOT = { has_depsoit = d_dayside_farm }
+		NOT = { has_deposit = d_dayside_farm }
 	}
 
 	effect = {

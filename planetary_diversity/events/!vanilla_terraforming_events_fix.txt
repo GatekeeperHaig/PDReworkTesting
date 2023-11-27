@@ -14,31 +14,33 @@ country_event = {
 	}
 	option = {
 		name = terra.40.b
-		From = { set_planet_flag = tidally_locked_world }
+		from = { set_planet_flag = tidally_locked_world }
 		custom_tooltip = terra.40.b.tooltip
-		if = {
-			limit = {
-				is_moon = no
-				is_wet = yes
+		from = {
+			if = {
+				limit = {
+					is_moon = no
+					is_wet = yes
+				}
+				change_pc = pc_pd_wet_tidally_locked
 			}
-			change_pc = pc_pd_wet_tidally_locked
-		}
-		if = {
-			limit = {
-				is_moon = no
-				is_dry = yes
+			if = {
+				limit = {
+					is_moon = no
+					is_dry = yes
+				}
+				change_pc = pc_pd_dry_tidally_locked
 			}
-			change_pc = pc_pd_dry_tidally_locked
-		}
-		if = {
-			limit = {
-				is_moon = no
-				is_cold = yes
+			if = {
+				limit = {
+					is_moon = no
+					is_cold = yes
+				}
+				change_pc = pc_pd_cold_tidally_locked
 			}
-			change_pc = pc_pd_cold_tidally_locked
-		}
-		else_if = {
-			add_modifier = { modifier = intentionally_tidally_locked }
+			else_if = {
+				add_modifier = { modifier = intentionally_tidally_locked }
+			}
 		}
 	}
 }

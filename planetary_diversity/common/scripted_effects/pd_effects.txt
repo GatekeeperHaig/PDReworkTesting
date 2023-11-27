@@ -1129,7 +1129,7 @@ pd_make_all_gaia_worlds_effect = {
     set_global_flag = pd_terraforming
     pd_make_uncommon_gaia_worlds_effect = yes
     pd_make_regular_gaia_worlds_effect = yes
-    clear_global_flag = pd_terraforming
+    remove_global_flag = pd_terraforming
 }
 
 pd_make_uncommon_gaia_worlds_effect = {
