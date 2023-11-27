@@ -377,69 +377,69 @@ remove_pd_tundra_modifier = {
 ###Create Visual Planets Effects
 #Continental
 pd_retinal_world_effect = {
-	add_modifier = { 
-		modifier = pd_retinal 
+	add_modifier = {
+		modifier = pd_retinal
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_retinal
 		entity = "retinal_planet_01_entity"
 	}
 }
 pd_lake_world_effect = {
-	add_modifier = { 
-		modifier = pd_lake 
+	add_modifier = {
+		modifier = pd_lake
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_lake
 		entity = "lake_planet_01_entity"
 	}
 }
 pd_tepid_world_effect = {
-	add_modifier = { 
-		modifier = pd_tepid 
+	add_modifier = {
+		modifier = pd_tepid
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_tepid
 		entity = "tepid_planet_01_entity"
 	}
 }
 pd_mushroom_world_effect = {
-	add_modifier = { 
-		modifier = pd_mushroom 
+	add_modifier = {
+		modifier = pd_mushroom
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_mushroom
 		entity = "mushroom_planet_01_entity"
 	}
 }
 pd_temperate_world_effect = {
-	add_modifier = { 
-		modifier = pd_temperate 
+	add_modifier = {
+		modifier = pd_temperate
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_temperate
 		entity = "temperate_planet_01_entity"
 	}
 }
 pd_forest_world_effect = {
-	add_modifier = { 
-		modifier = pd_forest 
+	add_modifier = {
+		modifier = pd_forest
 		days = -1
-	}	
+	}
 	set_planet_entity = {
 		picture = pc_pd_forest
 		entity = "forest_planet_01_entity"
 	}
 }
 pd_megaflora_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_megaflora
-		days = -1 
+		days = -1
 	}
 	set_planet_entity = {
 		picture = pc_pd_megaflora
@@ -447,59 +447,59 @@ pd_megaflora_world_effect = {
 	}
 }
 pd_petrified_world_effect = {
-	add_modifier = { 
-		modifier = pd_petrified 
+	add_modifier = {
+		modifier = pd_petrified
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_petrified						
+		picture = pc_pd_petrified
 		entity = "pd_petrified_planet_01_entity"
 	}
 }
 
 #Ocean
 pd_cascadian_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_cascadian
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_cascadian	
+		picture = pc_pd_cascadian
 		entity = "cascadian_planet_01_entity"
 	}
 }
 pd_swamp_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_swamp
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_swamp	
+		picture = pc_pd_swamp
 		entity = "wetswamp_planet_01_entity"
 	}
 }
 pd_crag_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_crag
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_crag	
+		picture = pc_pd_crag
 		entity = "subarctic_planet_01_entity"
 	}
 }
 pd_fog_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_fog
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_fog	
+		picture = pc_pd_fog
 		entity = "fog_planet_01_entity"
 	}
 }
 pd_kelp_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_kelp
 		days = -1
 	}
@@ -509,7 +509,7 @@ pd_kelp_world_effect = {
 	}
 }
 pd_algae_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_algae
 		days = -1
 	}
@@ -519,49 +519,49 @@ pd_algae_world_effect = {
 	}
 }
 pd_reef_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_reef
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_reef	
+		picture = pc_pd_reef
 		entity = "reef_planet_01_entity"
 	}
 }
 pd_archipelago_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_archipelago
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_archipelago	
+		picture = pc_pd_archipelago
 		entity = "pd_archipelago_planet_01_entity"
 	}
 }
 
 #Tropical
 pd_atoll_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_atoll
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_atoll	
+		picture = pc_pd_atoll
 		entity = "desertislands_planet_01_entity"
 	}
 }
 pd_tepui_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_tepui
 		days = -1
 	}
 	set_planet_entity = {
-		picture = pc_pd_tepui	
+		picture = pc_pd_tepui
 		entity = "hajungle_planet_01_entity"
 	}
 }
 pd_mangrove_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_mangrove
 		days = -1
 	}
@@ -571,7 +571,7 @@ pd_mangrove_world_effect = {
 	}
 }
 pd_cenote_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_cenote
 		days = -1
 	}
@@ -581,7 +581,7 @@ pd_cenote_world_effect = {
 	}
 }
 pd_fungal_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_fungal
 		days = -1
 	}
@@ -591,7 +591,7 @@ pd_fungal_world_effect = {
 	}
 }
 pd_aerial_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_aerial
 		days = -1
 	}
@@ -601,7 +601,7 @@ pd_aerial_world_effect = {
 	}
 }
 pd_geothermal_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_geothermal
 		days = -1
 	}
@@ -611,7 +611,7 @@ pd_geothermal_world_effect = {
 	}
 }
 pd_biolumen_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_biolumen
 		days = -1
 	}
@@ -623,7 +623,7 @@ pd_biolumen_world_effect = {
 
 #Desert
 pd_dune_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_dune
 		days = -1
 	}
@@ -633,7 +633,7 @@ pd_dune_world_effect = {
 	}
 }
 pd_oasis_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_oasis
 		days = -1
 	}
@@ -643,7 +643,7 @@ pd_oasis_world_effect = {
 	}
 }
 pd_outback_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_outback
 		days = -1
 	}
@@ -653,7 +653,7 @@ pd_outback_world_effect = {
 	}
 }
 pd_coastal_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_coastal
 		days = -1
 	}
@@ -663,7 +663,7 @@ pd_coastal_world_effect = {
 	}
 }
 pd_fungi_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_fungi
 		days = -1
 	}
@@ -673,7 +673,7 @@ pd_fungi_world_effect = {
 	}
 }
 pd_salt_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_salt
 		days = -1
 	}
@@ -683,7 +683,7 @@ pd_salt_world_effect = {
 	}
 }
 pd_aquifer_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_aquifer
 		days = -1
 	}
@@ -695,7 +695,7 @@ pd_aquifer_world_effect = {
 
 #Arid
 pd_mesa_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_mesa
 		days = -1
 	}
@@ -705,7 +705,7 @@ pd_mesa_world_effect = {
 	}
 }
 pd_fog_desert_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_fog_desert
 		days = -1
 	}
@@ -715,7 +715,7 @@ pd_fog_desert_world_effect = {
 	}
 }
 pd_mediterranean_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_mediterranean
 		days = -1
 	}
@@ -725,7 +725,7 @@ pd_mediterranean_world_effect = {
 	}
 }
 pd_badlands_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_badlands
 		days = -1
 	}
@@ -735,7 +735,7 @@ pd_badlands_world_effect = {
 	}
 }
 pd_succulent_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_succulent
 		days = -1
 	}
@@ -745,7 +745,7 @@ pd_succulent_world_effect = {
 	}
 }
 pd_striped_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_striped
 		days = -1
 	}
@@ -755,7 +755,7 @@ pd_striped_world_effect = {
 	}
 }
 pd_coral_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_coral
 		days = -1
 	}
@@ -765,7 +765,7 @@ pd_coral_world_effect = {
 	}
 }
 pd_primal_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_primal
 		days = -1
 	}
@@ -777,7 +777,7 @@ pd_primal_world_effect = {
 
 #Savannah
 pd_steppe_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_steppe
 		days = -1
 	}
@@ -787,7 +787,7 @@ pd_steppe_world_effect = {
 	}
 }
 pd_prairie_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_prairie
 		days = -1
 	}
@@ -797,7 +797,7 @@ pd_prairie_world_effect = {
 	}
 }
 pd_veld_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_veld
 		days = -1
 	}
@@ -807,7 +807,7 @@ pd_veld_world_effect = {
 	}
 }
 pd_semi_arid_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_semi_arid
 		days = -1
 	}
@@ -817,7 +817,7 @@ pd_semi_arid_world_effect = {
 	}
 }
 pd_aspen_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_aspen
 		days = -1
 	}
@@ -827,7 +827,7 @@ pd_aspen_world_effect = {
 	}
 }
 pd_sandstone_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_sandstone
 		days = -1
 	}
@@ -837,7 +837,7 @@ pd_sandstone_world_effect = {
 	}
 }
 pd_supercontinent_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_supercontinent
 		days = -1
 	}
@@ -847,7 +847,7 @@ pd_supercontinent_world_effect = {
 	}
 }
 pd_sinkhole_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_sinkhole
 		days = -1
 	}
@@ -859,7 +859,7 @@ pd_sinkhole_world_effect = {
 
 #Arctic
 pd_cold_desert_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_cold_desert
 		days = -1
 	}
@@ -869,7 +869,7 @@ pd_cold_desert_world_effect = {
 	}
 }
 pd_glacial_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_glacial
 		days = -1
 	}
@@ -879,7 +879,7 @@ pd_glacial_world_effect = {
 	}
 }
 pd_antarctic_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_antarctic
 		days = -1
 	}
@@ -889,7 +889,7 @@ pd_antarctic_world_effect = {
 	}
 }
 pd_aeolian_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_aeolian
 		days = -1
 	}
@@ -899,7 +899,7 @@ pd_aeolian_world_effect = {
 	}
 }
 pd_ice_spike_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_ice_spike
 		days = -1
 	}
@@ -909,7 +909,7 @@ pd_ice_spike_world_effect = {
 	}
 }
 pd_crevasse_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_crevasse
 		days = -1
 	}
@@ -919,7 +919,7 @@ pd_crevasse_world_effect = {
 	}
 }
 pd_ice_dunes_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_ice_dunes
 		days = -1
 	}
@@ -929,7 +929,7 @@ pd_ice_dunes_world_effect = {
 	}
 }
 pd_storm_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_storm
 		days = -1
 	}
@@ -939,7 +939,7 @@ pd_storm_world_effect = {
 	}
 }
 pd_iceberg_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_iceberg
 		days = -1
 	}
@@ -951,7 +951,7 @@ pd_iceberg_world_effect = {
 
 #Alpine
 pd_boreal_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_boreal
 		days = -1
 	}
@@ -961,7 +961,7 @@ pd_boreal_world_effect = {
 	}
 }
 pd_snow_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_snow
 		days = -1
 	}
@@ -971,7 +971,7 @@ pd_snow_world_effect = {
 	}
 }
 pd_highland_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_highland
 		days = -1
 	}
@@ -981,7 +981,7 @@ pd_highland_world_effect = {
 	}
 }
 pd_dune_forest_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_dune_forest
 		days = -1
 	}
@@ -991,7 +991,7 @@ pd_dune_forest_world_effect = {
 	}
 }
 pd_fjord_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_fjord
 		days = -1
 	}
@@ -1001,7 +1001,7 @@ pd_fjord_world_effect = {
 	}
 }
 pd_glaciovolcanic_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_glaciovolcanic
 		days = -1
 	}
@@ -1011,7 +1011,7 @@ pd_glaciovolcanic_world_effect = {
 	}
 }
 pd_lanthanide_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_lanthanide
 		days = -1
 	}
@@ -1023,7 +1023,7 @@ pd_lanthanide_world_effect = {
 
 #Tundra
 pd_bog_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_bog
 		days = -1
 	}
@@ -1033,7 +1033,7 @@ pd_bog_world_effect = {
 	}
 }
 pd_mycelium_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_mycelium
 		days = -1
 	}
@@ -1043,7 +1043,7 @@ pd_mycelium_world_effect = {
 	}
 }
 pd_mud_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_mud
 		days = -1
 	}
@@ -1053,7 +1053,7 @@ pd_mud_world_effect = {
 	}
 }
 pd_basalt_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_basalt
 		days = -1
 	}
@@ -1063,7 +1063,7 @@ pd_basalt_world_effect = {
 	}
 }
 pd_tuya_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_tuya
 		days = -1
 	}
@@ -1073,7 +1073,7 @@ pd_tuya_world_effect = {
 	}
 }
 pd_cryoflora_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_cryoflora
 		days = -1
 	}
@@ -1083,7 +1083,7 @@ pd_cryoflora_world_effect = {
 	}
 }
 pd_lichen_world_effect = {
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_lichen
 		days = -1
 	}
@@ -1096,7 +1096,7 @@ pd_lichen_world_effect = {
 #Gaia Worlds
 pd_wet_gaia_world_effect = {
 	change_pc = pc_pd_wet_gaia
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_gaia_world
 		days = -1
 	}
@@ -1107,7 +1107,7 @@ pd_dry_gaia_world_effect = {
 		entity = "hot_gaia_planet_01_entity"
 	}
 	change_pc = pc_pd_dry_gaia
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_gaia_world
 		days = -1
 	}
@@ -1118,7 +1118,7 @@ pd_cold_gaia_world_effect = {
 		entity = "cold_gaia_planet_01_entity"
 	}
 	change_pc = pc_pd_cold_gaia
-	add_modifier = { 
+	add_modifier = {
 		modifier = pd_gaia_world
 		days = -1
 	}
@@ -1126,8 +1126,10 @@ pd_cold_gaia_world_effect = {
 
 #Make Gaia
 pd_make_all_gaia_worlds_effect = {
-	pd_make_uncommon_gaia_worlds_effect = yes
-	pd_make_regular_gaia_worlds_effect = yes
+    set_global_flag = pd_terraforming
+    pd_make_uncommon_gaia_worlds_effect = yes
+    pd_make_regular_gaia_worlds_effect = yes
+    clear_global_flag = pd_terraforming
 }
 
 pd_make_uncommon_gaia_worlds_effect = {
@@ -1220,7 +1222,7 @@ pd_make_uncommon_gaia_worlds_effect = {
 pd_make_regular_gaia_worlds_effect = {
 	#Regular
 	if = {
-		limit = { 
+		limit = {
 			OR = {
 				pd_is_planet_class_tidally_locked = no
 				pd_is_planet_class_superhabitable = no
@@ -1261,7 +1263,7 @@ pd_make_regular_gaia_worlds_effect = {
 }
 
 remove_pd_modifiers_and_add_continetal = {
-	remove_pd_continental_modifier = yes	
+	remove_pd_continental_modifier = yes
 	add_modifier = {
 		modifier = pd_continental
 		days = -1

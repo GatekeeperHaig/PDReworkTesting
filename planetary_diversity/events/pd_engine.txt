@@ -4359,7 +4359,7 @@ planet_event = {
 			pd_is_planet_class_tidally_locked = yes
 			pd_is_planet_class_cave = yes
 		}
-		has_modifier = engineered_environment_gaia
+		has_modifier = pd_uncommon_gaia_world
 	}
 
 	immediate = {
@@ -4388,6 +4388,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4431,6 +4433,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4473,6 +4477,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4517,6 +4523,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4555,6 +4563,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4592,6 +4602,8 @@ country_event = {
 				}
 				is_homeworld = no
 				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4629,7 +4641,8 @@ country_event = {
 					}
 				}
 				is_homeworld = no
-				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4668,7 +4681,8 @@ country_event = {
 					}
 				}
 				is_homeworld = no
-				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -4706,7 +4720,8 @@ country_event = {
 					}
 				}
 				is_homeworld = no
-				is_moon = no
+				planet_size > 9
+				planet_size < 31
 				NOR = {
 					has_planet_flag = prescripted_ideal
 					has_planet_flag = pd_ignore
@@ -6785,6 +6800,196 @@ country_event = {
 		hidden_effect = {
 			capital_scope = {
 				pd_cold_gaia_world_effect = yes
+			}
+		}
+	}
+}
+
+#This event makes sure Uncommon planets with Gaia modifiers Keep their class
+#This Event Fires After Terraforming to let you choose Gaia Classes
+#Has Country Flag = pd_choose_every_planet_terraforming
+planet_event = {
+	id = pdengine.95
+	hide_window = yes
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		exists = space_owner
+		space_owner = {
+			OR = {
+				has_policy_flag = pd_choose_every_planet_terraforming
+				has_country_flag = pd_choose_every_planet_terraforming
+			}
+		}
+		OR = {
+			is_planet_class = pc_pd_gaia_cave
+			is_planet_class = pc_pd_gaia_superhabitable
+			is_planet_class = pc_pd_gaia_tidally_locked
+		}
+		is_pd_aw_shroud_planet = no
+		is_pd_aw_wasteland_planet = no
+	}
+
+	immediate = {
+		space_owner = {
+			country_event = { id = pdengine.96 }
+		}
+	}
+}
+country_event = {
+	id = pdengine.96
+	title = pdengine.96.name
+	desc = pdengine.96.desc
+	picture = GFX_evt_shattered_planet
+	show_sound = event_ship_bridge
+	location = root
+	is_triggered_only = yes
+
+	#Cave
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_cave }
+		}
+		name = pdengine.96.wet_gaia_cave
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_wet_cave
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_cave }
+		}
+		name = pdengine.96.dry_gaia_cave
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_dry_cave
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_cave }
+		}
+		name = pdengine.96.cold_gaia_cave
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_cold_cave
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	#Superhabitable
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_superhabitable }
+		}
+		name = pdengine.96.wet_gaia_superhabitable
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_wet_superhabitable
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_superhabitable }
+		}
+		name = pdengine.96.dry_gaia_superhabitable
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_dry_superhabitable
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_superhabitable }
+		}
+		name = pdengine.96.cold_gaia_superhabitable
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_cold_superhabitable
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	#Tidally Locked
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_tidally_locked }
+		}
+		name = pdengine.96.wet_gaia_tidally_locked
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_wet_tidally_locked
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_tidally_locked }
+		}
+		name = pdengine.96.dry_gaia_tidally_locked
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_dry_tidally_locked
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_pd_gaia_tidally_locked }
+		}
+		name = pdengine.96.cold_gaia_tidally_locked
+		hidden_effect = {
+			from = {
+				change_pc = pc_pd_cold_tidally_locked
+				pd_make_uncommon_gaia_worlds_effect = yes
+				add_modifier = {
+					modifier = pd_uncommon_gaia_world
+					days = -1
+				}
 			}
 		}
 	}
