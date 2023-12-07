@@ -119,7 +119,7 @@ pd_is_tundra = {
  		is_planet_class = pc_pd_lichen
  	}
 }
- 
+
 #Any PD Modifier
 has_pd_modifier = {
  	OR = {
@@ -276,7 +276,7 @@ pd_is_planet_class_nuked = {
 		is_planet_class = pc_pd_nuked_cave
 	}
 }
- 
+
 pd_is_planet_for_aqua_trait = {
  	OR = {
 		has_modifier = pd_reef
