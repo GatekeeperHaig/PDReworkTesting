@@ -31,7 +31,7 @@ pd_ice_dunes = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_ice_dunes.dds"
 	icon_frame = 1
 }
-pd_storm = {	
+pd_storm = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_storm.dds"
 	icon_frame = 1
 	district_generator_max = 6
@@ -39,7 +39,7 @@ pd_storm = {
 	planet_structures_cost_mult = 0.10
 	planet_housing_mult = -0.1
 }
-pd_iceberg = {	
+pd_iceberg = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_iceberg.dds"
 	icon_frame = 1
 	district_farming_max = 4
@@ -72,7 +72,11 @@ pd_fjord = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_fjord.dds"
 	icon_frame = 1
 }
-pd_glaciovolcanic = {	
+pd_blossom = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_pd_blossom.dds"
+	icon_frame = 1
+}
+pd_glaciovolcanic = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_glaciovolcanic.dds"
 	icon_frame = 1
 	district_mining_max = 2
@@ -80,7 +84,7 @@ pd_glaciovolcanic = {
 	pop_environment_tolerance = -0.1
 	planet_housing_mult = -0.1
 }
-pd_lanthanide = {	
+pd_lanthanide = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lanthanide.dds"
 	icon_frame = 1
 	district_mining_max = 4
@@ -113,14 +117,14 @@ pd_tuya = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_tuya.dds"
 	icon_frame = 1
 }
-pd_cryoflora = {	
+pd_cryoflora = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_cryoflora.dds"
 	icon_frame = 1
 	district_generator_max = 4
 	pop_environment_tolerance = -0.20
 	pop_happiness = 0.1
 }
-pd_lichen = {	
+pd_lichen = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_pd_lichen.dds"
 	icon_frame = 1
 	district_farming_max = 6

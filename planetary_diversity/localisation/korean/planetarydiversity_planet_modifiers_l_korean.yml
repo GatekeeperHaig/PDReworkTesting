@@ -154,6 +154,8 @@
  pd_dune_forest_desc: "This planet receives high levels of fog but low precipitation. Much of the lowlands are dry dunes, but the hydrosphere supports snowy forested mountains."
  pd_fjord: "Fjord World"
  pd_fjord_desc: "This planet has a significant hydrosphere with oceans that cut deep narrow inlets into the landmasses. Seasonal variation allows for productive subarctic rainforests along the coast and grassy alpine climates in higher elevations."
+ pd_blossom: "Blossom World"
+ pd_blossom_desc: "This planet's rich grasslands are adorned with vibrant flowering flora, presenting a spectacle visible from orbit."
  pd_glaciovolcanic: "Glaciovolcanic World"
  pd_glaciovolcanic_desc: "This planet has high levels of volcanic activity.  This results in large geothermal warmed lakes that cover the surface, which bring rare minerals and energy to the otherwise frozen surface."
  pd_lanthanide: "Lanthanide World"
@@ -268,7 +270,7 @@
  decision_engineered_environment_gaia:0 "World Shaper Project"
  decision_engineered_environment_gaia_desc:0 "We will use advanced terraforming techniques to shape this world into a paradise, giving it optimal conditions for all known higher life forms."
  engineered_environment_gaia:0 "Perfectly Shaped World"
- engineered_environment_gaia_desc:0 "Advanced terraforming techniques have shaped this world, and its ecosystem now has optimal conditions for all known higher life forms." 
+ engineered_environment_gaia_desc:0 "Advanced terraforming techniques have shaped this world, and its ecosystem now has optimal conditions for all known higher life forms."
 
 #Uncommon Hive Worlds
  pd_hive_superhabitable: "$pc_pd_hive_superhabitable$"

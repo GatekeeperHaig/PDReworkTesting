@@ -8,7 +8,7 @@
  trait_pc_pd_retinal_preference: "Continental Preference"
  trait_pc_pd_retinal_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_lake: "Lake World"
- pc_pd_lake_desc: "Rocky world with a nitrogen-oxygen atmosphere. Extremely active and stable hydrosphere. The landmass is a single area covered in millions of lakes of all sizes while the climate ranges from subtropical to subartic." 
+ pc_pd_lake_desc: "Rocky world with a nitrogen-oxygen atmosphere. Extremely active and stable hydrosphere. The landmass is a single area covered in millions of lakes of all sizes while the climate ranges from subtropical to subartic."
  pc_pd_lake_adj: "laked"
  mod_pc_pd_lake_habitability: "Continental Habitability"
  trait_pc_pd_lake_preference: "Continental Preference"
@@ -26,7 +26,7 @@
  trait_pc_pd_tepid_preference: "Continental Preference"
  trait_pc_pd_tepid_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_temperate: "Temperate World"
- pc_pd_temperate_desc: "Rocky world with a nitrogen-oxygen atmosphere. Active and stable hydrosphere with great land masses that are separated by oceans." 
+ pc_pd_temperate_desc: "Rocky world with a nitrogen-oxygen atmosphere. Active and stable hydrosphere with great land masses that are separated by oceans."
  pc_pd_temperate_adj: "temperate"
  mod_pc_pd_temperate_habitability: "Continental Habitability"
  trait_pc_pd_temperate_preference: "Continental Preference"
@@ -381,6 +381,12 @@
  mod_pc_pd_fjord_habitability: "Alpine Habitability"
  trait_pc_pd_fjord_preference: "Alpine Preference"
  trait_pc_pd_fjord_preference_desc: "$trait_pc_arctic_preference_desc$"
+ pc_pd_blossom: "Blossom World"
+ pc_pd_blossom_desc: "This mountainous world features a nitrogen-oxygen atmosphere and a limited hydrosphere, undergoing dynamic seasonal shifts. The rich grasslands, adorned with vibrant flowering flora, present a spectacle visible from orbit."
+ pc_pd_blossom_adj: "flowery"
+ mod_pc_pd_blossom_habitability: "Alpine Habitability"
+ trait_pc_pd_blossom_preference: "Alpine Preference"
+ trait_pc_pd_blossom_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_glaciovolcanic: "Glaciovolcanic World"
  pc_pd_glaciovolcanic_desc: "Mountainous, frozen world with a nitrogen-oxygen atmosphere, this planet has high levels of volcanic activity.  This results in large geothermal warmed lakes that cover the surface, which bring rare minerals and energy to the otherwise frozen surface."
  pc_pd_glaciovolcanic_adj: "volcanic"
@@ -461,7 +467,7 @@
  pc_pd_barren_superhabitable_desc: "Barren and rocky super-terrestrial world with a thin or non-existent atmosphere. The surface is covered in meteor impact craters and is completely devoid of life."
  pc_pd_gaia_superhabitable: "Gaia Superhabitable World"
  pc_pd_gaia_superhabitable_desc: "An ideal, temperate super-terrestrial world with a nitrogen-oxygen atmosphere and a resilient ecosystem. Optimal conditions for all known higher forms of life at different latitudes. It is a perfect cradle for evolving life, with rich, productive shrublands and shallow river basins. Still, the heavy gravity is a struggle for those unaccustomed to it."
- pc_pd_gaia_superhabitable_adj: "super-terrestrial" 
+ pc_pd_gaia_superhabitable_adj: "super-terrestrial"
  mod_pc_pd_gaia_superhabitable_habitability: "Gaia Superhabitable Habitability"
  trait_pc_pd_gaia_superhabitable_preference: "Gaia Superhabitable Preference"
  trait_pc_pd_gaia_superhabitable_preference_desc: "$trait_pc_arctic_preference_desc$"
@@ -550,7 +556,7 @@
  pc_hydrocarbon:0 "Hydrocarbon World"
  pc_hydrocarbon_desc:0 "A rocky world covered in a thick layer of permanently frozen ice and rocky material. The dense opaque atmosphere of nitrogen, methane, and ethane clouds. Liquid hydrocarbon lakes and seas can be found in this lifeless world."
  pc_hothouse:0 "Hothouse World"
- pc_hothouse_desc:0 "A rocky world with an atmosphere experiencing a runaway greenhouse effect. Lethal to all forms of life." 
+ pc_hothouse_desc:0 "A rocky world with an atmosphere experiencing a runaway greenhouse effect. Lethal to all forms of life."
  pc_ethane_ocean:0 "Ethane Ocean World"
  pc_ethane_ocean_desc:0 "A rocky planet with a thick atmosphere lethal to all known higher forms of life. This world is covered in liquid hydro-carbon ethane oceans."
  pc_diamond:0 "Diamond World"
@@ -611,11 +617,11 @@
  #Glaciovolcanic
  pc_pd_glaciovolcanic_tooltip: "§Y$pc_pd_glaciovolcanic$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+2§!\n- £district£ §Y$district_generator_plural$§!: §G+2§!\n- Habitability: §R-10%§!\n- Housing: §R-10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_alloys$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_culture$"
  #Lanthanide
- pc_pd_lanthanide_tooltip: "§Y$pc_pd_lanthanide$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £engineering£ $pd_researcher_ending$" 
+ pc_pd_lanthanide_tooltip: "§Y$pc_pd_lanthanide$s§! are ['concept_pd_rares']\n- £district£ §Y$district_mining_plural$§!: §G+4§!\n- Building and District Cost: §R+10%§!\n- Building and District Upkeep: §R+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_minerals$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £engineering£ $pd_researcher_ending$"
  #Cryoflora
- pc_pd_cryoflora_tooltip: "§Y$pc_pd_cryoflora$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Habitability: §R-20%§!\n- Happiness: §G+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £society£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$" 
+ pc_pd_cryoflora_tooltip: "§Y$pc_pd_cryoflora$s§! are ['concept_pd_rares']\n- £district£ §Y$district_generator_plural$§!: §G+4§!\n- Habitability: §R-20%§!\n- Happiness: §G+10%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_consumer_goods$\n$t$- £physics£ £society£ $pd_researcher_ending$\n$t$- $pd_tooltip_culture$"
  #Lichen
- pc_pd_lichen_tooltip: "§Y$pc_pd_lichen$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+6§!\n- £district£ §Y$district_mining_plural$§!: §R-2§!\n- Habitability: §G+10%§!\n- Building and District Upkeep: §R+20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_energy$\n$t$- £society£ $pd_researcher_ending$" 
+ pc_pd_lichen_tooltip: "§Y$pc_pd_lichen$s§! are ['concept_pd_rares']\n- £district£ §Y$district_farming_plural$§!: §G+6§!\n- £district£ §Y$district_mining_plural$§!: §R-2§!\n- Habitability: §G+10%§!\n- Building and District Upkeep: §R+20%§!\n- $rare_building_warning$\n$t$- $pd_tooltip_food$\n$t$- $pd_tooltip_energy$\n$t$- £society£ $pd_researcher_ending$"
 
  #Uncommon Concepts
  concept_pd_uncommon: "Uncommon Planet"

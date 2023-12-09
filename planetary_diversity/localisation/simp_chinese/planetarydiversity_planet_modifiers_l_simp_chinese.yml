@@ -129,6 +129,8 @@
  pd_dune_forest_desc: "这里雾气丰沛，不过降水较少；低地都是干燥的沙丘，山上则森林茂密、白雪皑皑。"
  pd_fjord: "峡湾世界"
  pd_fjord_desc: "这里拥有巨大的海洋，深邃狭长的海湾深深嵌入陆地之中。季节之间有明显变化，沿海生长着丰饶的副极地雨林，山地气候的高海拔地带也是草木繁茂。"
+ pd_blossom: "Blossom World"
+ pd_blossom_desc: "This planet's rich grasslands are adorned with vibrant flowering flora, presenting a spectacle visible from orbit."
  pd_glaciovolcanic: "冰川火山世界"
  pd_glaciovolcanic_desc: "这里的火山活动非常活跃，因而形成了丰富的地热湖泊，将罕见的矿物和能源带到冰封的地表。"
  pd_lanthanide: "镧星"

@@ -392,6 +392,9 @@ country_event = {
 					pd_fjord_world_effect = yes
 				}
 				25 = {
+					pd_blossom_world_effect = yes
+				}
+				25 = {
 					modifier = {
 						factor = 0
 						has_planet_flag = prescripted_ideal
@@ -713,6 +716,9 @@ country_event = {
 				}
 				25 = {
 					pd_fjord_world_effect = yes
+				}
+				25 = {
+					pd_blossom_world_effect = yes
 				}
 			}
 		}
@@ -1738,6 +1744,20 @@ country_event = {
 		}
 		every_galaxy_planet = {
 			limit = {
+				is_planet_class = pc_pd_blossom
+				has_pd_modifier = no
+				is_homeworld = yes
+			}
+			change_pc = pc_alpine
+			pd_blossom_world_effect = yes
+			clear_deposits = yes
+			remove_all_districts = yes
+			remove_all_buildings = yes
+			generate_start_deposits_and_blockers = yes
+			generate_start_buildings_and_districts = yes
+		}
+		every_galaxy_planet = {
+			limit = {
 				is_planet_class = pc_pd_glaciovolcanic
 				has_pd_modifier = no
 				is_homeworld = yes
@@ -2695,6 +2715,19 @@ country_event = {
 			every_owned_species = {
 				change_species_characteristics = {
 					remove_trait = trait_pc_pd_fjord_preference
+					add_trait = trait_pc_alpine_preference
+				}
+			}
+		}
+		IF = {
+			limit = {
+				any_owned_species = {
+					has_trait =	trait_pc_pd_blossom_preference
+				}
+			}
+			every_owned_species = {
+				change_species_characteristics = {
+					remove_trait = trait_pc_pd_blossom_preference
 					add_trait = trait_pc_alpine_preference
 				}
 			}
@@ -3690,6 +3723,17 @@ country_event = {
 	option = {
 		trigger = {
 			from = { is_planet_class = pc_alpine }
+		}
+		name = pdengine.21.blossom
+		hidden_effect = {
+			from = {
+				pd_blossom_world_effect = yes
+			}
+		}
+	}
+	option = {
+		trigger = {
+			from = { is_planet_class = pc_alpine }
 			space_owner = {
 				has_ascension_perk = ap_world_shaper
 			}
@@ -4279,6 +4323,9 @@ planet_event = {
 				}
 				25 = {
 					pd_fjord_world_effect = yes
+				}
+				25 = {
+					pd_blossom_world_effect = yes
 				}
 				0 = {
 					modifier = {
@@ -6734,6 +6781,7 @@ country_event = {
 				has_trait = trait_pc_pd_highland_preference
 				has_trait = trait_pc_pd_dune_forest_preference
 				has_trait = trait_pc_pd_fjord_preference
+				has_trait = trait_pc_pd_blossom_preference
 				has_trait = trait_pc_pd_glaciovolcanic_preference
 				has_trait = trait_pc_pd_lanthanide_preference
 				has_trait = trait_pc_pd_bog_preference

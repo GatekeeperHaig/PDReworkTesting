@@ -329,6 +329,10 @@ remove_pd_alpine_modifier = {
 		remove_modifier = pd_fjord
 	}
 	if = {
+		limit = { has_modifier = pd_blossom }
+		remove_modifier = pd_blossom
+	}
+	if = {
 		limit = { has_modifier = pd_glaciovolcanic }
 		remove_modifier = pd_glaciovolcanic
 	}
@@ -998,6 +1002,16 @@ pd_fjord_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_fjord
 		entity = "fjord_planet_01_entity"
+	}
+}
+pd_blossom_world_effect = {
+	add_modifier = {
+		modifier = pd_blossom
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_blossom
+		entity = "blossom_planet_01_entity"
 	}
 }
 pd_glaciovolcanic_world_effect = {

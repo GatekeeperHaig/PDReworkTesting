@@ -25,7 +25,7 @@ guiTypes = {
 		position = { x = @editor_x y = @editor_y }
 		size = { width = @editor_w height = @editor_h }
 		orientation = @editor_o
-		
+
 		background = {
 			name = "background"
 			spriteType = "GFX_subwindow_tile_plain_solid"
@@ -37,13 +37,13 @@ guiTypes = {
 			position = { x = -10 y = -8 }
 			alwaysTransparent = yes
 		}
-		
+
 		iconType = {
 			name = "header_line"
 			spriteType = "GFX_line"
 			position = { x = 6 y = 26 }
 		}
-		
+
 		instantTextBoxType = {
 			name = "label"
 			font = "malgun_goth_24"
@@ -55,9 +55,9 @@ guiTypes = {
 		}
 
 		@bg_x = 10
-		@eb_x = 20 
+		@eb_x = 20
 		@label_x = 12
-		
+
 		###
 		instantTextBoxType = {
 			name = "lbl1"
@@ -108,7 +108,7 @@ guiTypes = {
 			pdx_tooltip = "EDIT_SPECIES_NAME_RANDOMIZE_TOOLTIP"
 			clicksound = randomizer_click
 		}
-		
+
 		###
 		instantTextBoxType = {
 			name = "lbl2"
@@ -152,7 +152,7 @@ guiTypes = {
 			maxWidth = 400
 			text =	 "ADJECTIVE"
 			alwaysTransparent = yes
-		}	
+		}
 		buttonType = {
 			name = "bg3"
 			position = { x = @bg_x y = 225 }
@@ -189,7 +189,7 @@ guiTypes = {
 			spriteType = "GFX_button_update"
 			pdx_tooltip = "EDIT_SPECIES_NAME_GENERATE_ADJECTIVE"
 		}
-		
+
 		###
 		instantTextBoxType = {
 			name = "lblbio"
@@ -203,7 +203,7 @@ guiTypes = {
 			name = "black_background_box_01"
 			size = { width = 610 height = 260 }
 			position = { x = 405 y = 35 }
-			
+
 			background = {
 				name = "black"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -226,8 +226,8 @@ guiTypes = {
 				position = { x = 405 y = 35 }
 				size = { x = 610 y = 260 }
 			}
-		}		
-			
+		}
+
 		buttonType = {
 			name = "cancel"
 			quadTextureSprite = "GFX_invisible"
@@ -236,7 +236,7 @@ guiTypes = {
 			shortCut = "ESCAPE"
 			pdx_tooltip = "CLOSE_TITLE"
 			clicksound = "back_click"
-		}		
+		}
 		buttonType={
 			name = "back"
 			font = "cg_16b"
@@ -254,7 +254,7 @@ guiTypes = {
 			shortcut = "RETURN"
 		}
 	}
-	
+
 	#######################
 	# Planet class
 	#######################
@@ -430,10 +430,10 @@ guiTypes = {
 			position = { x = 40 y = 100 }
 
 			@PDSIZE = 38
-			
+
 			@planet_row0 = 1
 			@planet_row1 = 15
-			@planet_row2 = 56			
+			@planet_row2 = 56
 			@planet_row3 = 96
 			@planet_row4 = 135
 			@planet_row5 = 176
@@ -662,7 +662,7 @@ guiTypes = {
 				text_color_code = "E"
 				format = center
 			}
-			
+
 			buttonType = {
 				name = "pc_continental"
 				position = { x = @planet_col1 y = @planet_row1 }
@@ -678,7 +678,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_retinal"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_lake"
 				position = { x = @planet_col1 y = @planet_row3 }
@@ -686,7 +686,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_lake"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_forest"
 				position = { x = @planet_col2 y = @planet_row1 }
@@ -729,14 +729,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_petrified_tooltip"
 			}
 
-			buttonType = {		
+			buttonType = {
 				name = "pc_ocean"
 				position = { x = @planet_col3 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_ocean"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_cascadian"
 				position = { x = @planet_col3 y = @planet_row2 }
@@ -760,7 +760,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_algae"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_crag"
 				position = { x = @planet_col4 y = @planet_row1 }
@@ -768,7 +768,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_crag"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_fog"
 				position = { x = @planet_col4 y = @planet_row2 }
@@ -776,7 +776,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_fog"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_kelp"
 				position = { x = @planet_col4 y = @planet_row3 }
@@ -784,7 +784,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_kelp"
-			}	
+			}
 			#Rares
 			buttonType = {
 				name = "pc_pd_archipelago"
@@ -793,7 +793,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_archipelago_tooltip"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_reef"
 				position = { x = @planet_col4 y = @planet_row5 }
@@ -810,7 +810,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_tropical"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_atoll"
 				position = { x = @planet_col5 y = @planet_row2 }
@@ -818,7 +818,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_atoll"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_mangrove"
 				position = { x = @planet_col5 y = @planet_row3 }
@@ -826,7 +826,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_mangrove"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_aerial"
 				position = { x = @planet_col5 y = @planet_row4 }
@@ -875,8 +875,8 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_biolumen_tooltip"
-			}	
-			
+			}
+
 			#Dry
 			buttonType = {
 				name = "pc_desert"
@@ -1027,7 +1027,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_savannah"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_steppe"
 				position = { x = @planet_col11 y = @planet_row2 }
@@ -1203,6 +1203,14 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_boreal"
 			}
 			buttonType = {
+				name = "pc_pd_blossom"
+				position = { x = @planet_col15 y = @planet_row4 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_blossom"
+			}
+			buttonType = {
 				name = "pc_pd_snow"
 				position = { x = @planet_col16 y = @planet_row1 }
 				spriteType = "GFX_dummy_3d_home_world_new"
@@ -1260,7 +1268,7 @@ guiTypes = {
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_bog"
-			}	
+			}
 			buttonType = {
 				name = "pc_pd_mycelium"
 				position = { x = @planet_col17 y = @planet_row3 }
@@ -1395,7 +1403,7 @@ guiTypes = {
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_superhabitable_tooltip"
 			}
-			
+
 			buttonType = {
 				name = "pc_pd_wet_tidally_locked"
 				position = { x = 489 y = 251 }
