@@ -5356,6 +5356,18 @@ planet_event = {
 			}
 			remove_modifier = pd_gaia_world
 		}
+		#This makes sure gaias don't get the gaia modifier as well
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_pd_dry_gaia
+					is_planet_class = pc_pd_cold_gaia
+					is_planet_class = pc_pd_wet_gaia
+				}
+			}
+			remove_modifier = engineered_environment_gaia
+		}
 	}
 }
 #This event makes sure certain special classes get their modifier after terraforming or events
@@ -6356,8 +6368,11 @@ country_event = {
 			if = {
 				limit = {
 					solar_system = { has_star_flag = sol }
+					OR = {
 						is_planet_class = pc_gaia
-						has_planet_flag = planet_earth
+						is_planet_class = pc_pd_wet_gaia
+					}
+					has_planet_flag = planet_earth
 					}
 				set_planet_entity = { entity = "gaia_planet_earth_entity" }
 			}
@@ -6389,7 +6404,10 @@ planet_event = {
 		if = {
 			limit = {
 				has_planet_flag = planet_earth
-				is_planet_class = pc_gaia
+				OR = {
+					is_planet_class = pc_gaia
+					is_planet_class = pc_pd_wet_gaia
+				}
 			}
 			set_planet_entity = {
 				entity = "gaia_planet_earth_entity"
@@ -6560,7 +6578,10 @@ country_event = {
 			if = {
 				limit = {
 					has_planet_flag = planet_earth
-					is_planet_class = pc_gaia
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_pd_wet_gaia
+					}
 				}
 				set_planet_entity = {
 					entity = "gaia_planet_earth_entity"
@@ -6853,7 +6874,6 @@ country_event = {
 	}
 }
 
-#This event makes sure Uncommon planets with Gaia modifiers Keep their class
 #This Event Fires After Terraforming to let you choose Gaia Classes
 #Has Country Flag = pd_choose_every_planet_terraforming
 planet_event = {

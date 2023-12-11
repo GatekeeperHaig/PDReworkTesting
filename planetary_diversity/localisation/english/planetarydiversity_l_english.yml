@@ -191,6 +191,6 @@
  ICE_MINING_PD_PLANET_SUCCESS_TITLE: "Planet Flooded"
  ICE_MINING_PD_PLANET_SUCCESS_DESC: "Using ice mined from the $SYSTEM|Y$ system, we have managed to flood §Y[This.GetName]§!."
 
- decision_pd_build_dayside_farm: "decision_build_dayside_farm"
+ decision_pd_build_dayside_farm: "$decision_build_dayside_farm$"
  decision_pd_build_dayside_farm_desc: "$decision_build_dayside_farm_desc$"
  decision_pd_build_dayside_farm_effects_short: "$decision_build_dayside_farm_effects_short$."
