@@ -193,4 +193,4 @@
 
  decision_pd_build_dayside_farm: "$decision_build_dayside_farm$"
  decision_pd_build_dayside_farm_desc: "$decision_build_dayside_farm_desc$"
- decision_pd_build_dayside_farm_effects_short: "$decision_build_dayside_farm_effects_short$."
+ decision_pd_build_dayside_farm_effects_short: "$decision_build_dayside_farm_effects_short$"
