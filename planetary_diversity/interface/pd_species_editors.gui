@@ -859,6 +859,14 @@ guiTypes = {
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_fungal"
 			}
+			buttonType = {
+				name = "pc_pd_lilypad"
+				position = { x = @planet_col6 y = @planet_row4 }
+				spriteType = "GFX_dummy_3d_home_world_new"
+				size = { x = @PDSIZE y = @PDSIZE }
+				clicksound = "select_click"
+				pdx_tooltip = "pc_pd_lilypad"
+			}
 			#Rares
 			buttonType = {
 				name = "pc_pd_geothermal"

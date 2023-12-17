@@ -1,5 +1,5 @@
-###PD Base Classes	
-# These are dummy classes and are not to be used, they are just for reference for the engine to turn them into the correct class. 
+###PD Base Classes
+# These are dummy classes and are not to be used, they are just for reference for the engine to turn them into the correct class.
 # Used in terraforming, and on game start.
 
 ###Continental
@@ -7,14 +7,14 @@ pc_pd_retinal = {
 	entity = "retinal_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -26,14 +26,14 @@ pc_pd_lake = {
 	entity = "lake_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -45,14 +45,14 @@ pc_pd_forest = {
 	entity = "forest_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -64,14 +64,14 @@ pc_pd_tepid = {
 	entity = "tepid_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_continental
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -84,7 +84,7 @@ pc_pd_mushroom = {
 	entity = "mushroom_planet"
 	icon = GFX_planet_type_mushroom
 	entity_scale = @planet_standard_scale
-	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
@@ -102,7 +102,7 @@ pc_pd_temperate = {
 	entity = "temperate_planet"
 	icon = GFX_planet_type_continental
 	entity_scale = @planet_standard_scale
-	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
@@ -122,13 +122,13 @@ pc_pd_petrified = {
 	icon = GFX_planet_type_continental
 	climate = "wet"
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
@@ -143,15 +143,15 @@ pc_pd_megaflora = {
 	icon = GFX_planet_type_continental
 	climate = "wet"
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 	starting_planet = no
@@ -163,34 +163,34 @@ pc_pd_cascadian = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
+	atmosphere_color 		= hsv { 0.58 0.5 0.9 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}		
+}
 
 pc_pd_swamp = {
 	entity = "wetswamp_planet"
 	entity_scale = @planet_standard_scale
-	icon = GFX_planet_type_ocean 
+	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -204,76 +204,76 @@ pc_pd_crag = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.50 0.2 0.8 }		
+	atmosphere_color 		= hsv { 0.50 0.2 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}		
-	
+}
+
 pc_pd_fog = {
 	entity = "fog_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	uses_alternative_skies_for_moons = no
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}		
-	
+}
+
 pc_pd_kelp = {
 	entity = "kelp_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	uses_alternative_skies_for_moons = no
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
-	
+}
+
 pc_pd_algae = {
 	entity = "algae_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_ocean
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		
+	atmosphere_color 		= hsv { 0.58 0.3 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -288,13 +288,13 @@ pc_pd_reef = {
 	icon = GFX_planet_type_ocean
 	climate = "wet"
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
@@ -307,13 +307,13 @@ pc_pd_archipelago = {
 	icon = GFX_planet_type_ocean
 	climate = "wet"
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_ocean.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
@@ -326,14 +326,14 @@ pc_pd_atoll = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_atoll.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
@@ -346,100 +346,120 @@ pc_pd_tepui = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tepui.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
 
 pc_pd_mangrove = {
 	entity = "mangrove_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_mangrove.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
 
 pc_pd_cenote = {
 	entity = "cenote_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.50 0.3 0.7 }	
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_cenote.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
 
 pc_pd_fungal = {
 	entity = "fungal_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
+	atmosphere_color 		= hsv { 0.58 0.5 0.9 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_fungal.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
 
 pc_pd_aerial = {
 	entity = "aerial_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.5 0.9 }			
+	atmosphere_color 		= hsv { 0.58 0.5 0.9 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
 	#planet defines
 	climate = "wet"
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	spawn_odds = 0
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
+
+pc_pd_lilypad = {
+	entity = "lilypad_planet"
+	entity_scale = @planet_standard_scale
+	icon = GFX_planet_type_tropical
+	#appearance
+	atmosphere_color 		= hsv { 0.58 0.5 0.9 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+	#planet defines
+	climate = "wet"
+	colonizable = yes
+	initial = yes
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+	spawn_odds = 0
+	district_set = standard
+	carry_cap_per_free_district = @carry_cap_normal
+}
 
 pc_pd_geothermal = {
 	entity = "geothermal_planet"
@@ -447,33 +467,33 @@ pc_pd_geothermal = {
 	icon = GFX_planet_type_tropical
 	climate = "wet"
 	#appearance
-	atmosphere_color 		= hsv { 0.58 0.3 0.7 }			
+	atmosphere_color 		= hsv { 0.58 0.3 0.7 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
 	city_color_lut = "gfx/portraits/misc/colorcorrection_geothermal.dds"
 	#planet defines
 	colonizable = yes
-	initial = yes		
+	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
-}	
+}
 
 pc_pd_biolumen = {
 	entity = "biolumen_planet"
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_tropical
 	climate = "wet"
-	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }
 	atmosphere_intensity 	= 1.0
 	atmosphere_width 		= 0.5
-	city_color_lut = "gfx/portraits/misc/colorcorrection_biolumen.dds"	
+	city_color_lut = "gfx/portraits/misc/colorcorrection_biolumen.dds"
 	#planet defines
 	colonizable = yes
 	initial = yes
 	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }	
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 	district_set = standard
 	carry_cap_per_free_district = @carry_cap_normal
 }

@@ -131,6 +131,12 @@
  mod_pc_pd_aerial_habitability: "Tropical Habitability"
  trait_pc_pd_aerial_preference: "Tropical Preference"
  trait_pc_pd_aerial_preference_desc: "$trait_pc_arctic_preference_desc$"
+ pc_
+ pc_pd_lilypad_desc: "This lush, rocky world enveloped in a thick nitrogen-oxygen atmosphere cradles warm, shallow oceans with vibrant biodiversity. At the surface, sturdy leaves from aquatic flora form a secondary surface-based ecosystem."
+ pc_pd_lilypad_adj: "floating"
+ mod_pc_pd_lilypad_habitability: "Tropical Habitability"
+ trait_pc_pd_lilypad_preference: "Tropical Preference"
+ trait_pc_pd_lilypad_preference_desc: "$trait_pc_arctic_preference_desc$"
  pc_pd_geothermal: "地热星球"
  pc_pd_geothermal_desc: "拥有氮氧大气层的寒冷冰封星球，有受到天然地热喷口加热的热带裂谷，打破了广袤的冰层。冰雪融水和喷口中袅袅的蒸汽构成了这里的水圈。"
  pc_pd_geothermal_adj: "地热"

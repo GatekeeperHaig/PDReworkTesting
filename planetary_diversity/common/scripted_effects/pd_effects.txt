@@ -133,6 +133,10 @@ remove_pd_tropical_modifier = {
 		remove_modifier = pd_aerial
 	}
 	if = {
+		limit = { has_modifier = pd_lilypad }
+		remove_modifier = pd_lilypad
+	}
+	if = {
 		limit = { has_modifier = pd_geothermal }
 		remove_modifier = pd_geothermal
 	}
@@ -602,6 +606,16 @@ pd_aerial_world_effect = {
 	set_planet_entity = {
 		picture = pc_pd_aerial
 		entity = "aerial_planet_01_entity"
+	}
+}
+pd_lilypad_world_effect = {
+	add_modifier = {
+		modifier = pd_lilypad
+		days = -1
+	}
+	set_planet_entity = {
+		picture = pc_pd_lilypad
+		entity = "lilypad_planet_01_entity"
 	}
 }
 pd_geothermal_world_effect = {
