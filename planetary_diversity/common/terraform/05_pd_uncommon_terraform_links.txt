@@ -806,13 +806,13 @@ terraform_link = {
 	resources = { category = terraforming cost = { energy = @machineCost } }
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
-	effect = { from = { remove_modifier = terraforming_candidate } }
 	ai_weight = {
 		weight = 20
 		#It's a barren world!
 	}
 	effect = {
 		from = {
+			remove_modifier = terraforming_candidate
 			add_modifier = {
 				modifier = pd_machine_superhabitable
 				days = -1
@@ -996,13 +996,13 @@ terraform_link = {
 	resources = { category = terraforming cost = { energy = @machineCost } }
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
-	effect = { from = { remove_modifier = terraforming_candidate } }
 	ai_weight = {
 		weight = 20
 		#It's a barren world!
 	}
 	effect = {
 		from = {
+			remove_modifier = terraforming_candidate
 			add_modifier = {
 				modifier = pd_machine_tidally_locked
 				days = -1
@@ -1186,13 +1186,13 @@ terraform_link = {
 	resources = { category = terraforming cost = { energy = @machineCost } }
 	duration = @machineTime
 	potential = { exists = owner has_ascension_perk = ap_machine_worlds from = { has_modifier = terraforming_candidate } }
-	effect = { from = { remove_modifier = terraforming_candidate } }
 	ai_weight = {
 		weight = 20
 		#It's a barren world!
 	}
 	effect = {
 		from = {
+			remove_modifier = terraforming_candidate
 			add_modifier = {
 				modifier = pd_machine_cave
 				days = -1
