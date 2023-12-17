@@ -3889,6 +3889,17 @@ planet_event = {
 		}
 		IF = {
 			limit = {
+				has_modifier = flooded_habitat
+				has_modifier = pd_aw_shroud_planet
+			}
+			change_pc = pc_pd_wet_gaia
+			set_planet_entity = {
+				picture = pc_aquatic_shroud_hot
+				entity = ocean_paradise_shroud_planet_01_entity
+			}
+		}
+		IF = {
+			limit = {
 				NOT = {	has_modifier = flooded_habitat }
 			}
 			space_owner = {

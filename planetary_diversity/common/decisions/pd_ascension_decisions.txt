@@ -292,40 +292,89 @@ decision_pd_flood_planet = {
 			}
 			IF = {
 				limit = {
-					is_planet_class = pc_pd_wet_gaia
+					NOT = {
+						has_modifier = pd_aw_shroud_planet
+					}
 				}
-				set_planet_entity = {
-					picture = pc_aquatic_hot
-					entity = ocean_paradise_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_gaia
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_superhabitable
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_tidally_locked
+					}
+					set_planet_entity = {
+						picture = pc_aquatic
+						entity = tidallyaquatic_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_cave
+					}
+					set_planet_entity = {
+						picture = pc_pd_aquatic_cave
+						entity = aquatic_cave_planet_01_entity
+					}
 				}
 			}
 			IF = {
 				limit = {
-					is_planet_class = pc_pd_wet_superhabitable
+					has_modifier = pd_aw_shroud_planet
 				}
-				set_planet_entity = {
-					picture = pc_aquatic_hot
-					entity = ocean_paradise_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_gaia
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud_hot
+						entity = ocean_paradise_shroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_superhabitable
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud_hot
+						entity = ocean_paradise_shroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_tidally_locked
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud
+						entity = tidallyaquatic_shroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_cave
+					}
+					set_planet_entity = {
+						picture = pc_pd_aquatic_shroud_cave
+						entity = aquatic_shroud_cave_planet_01_entity
+					}
 				}
 			}
-			IF = {
-				limit = {
-					is_planet_class = pc_pd_wet_tidally_locked
-				}
-				set_planet_entity = {
-					picture = pc_aquatic
-					entity = tidallyaquatic_planet_01_entity
-				}
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_pd_wet_cave
-				}
-				set_planet_entity = {
-					picture = pc_pd_aquatic_cave
-					entity = aquatic_cave_planet_01_entity
-				}
-			}
+
 			ice_mining_depletion_effect = yes
 
 			if = {
@@ -411,38 +460,86 @@ decision_pd_unflood_planet = {
 		hidden_effect = {
 			IF = {
 				limit = {
-					is_planet_class = pc_pd_wet_gaia
+					NOT = {
+						has_modifier = pd_aw_shroud_planet
+					}
 				}
-				set_planet_entity = {
-					picture = pc_pd_wet_gaia
-					entity = gaia_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_gaia
+					}
+					set_planet_entity = {
+						picture = pc_pd_wet_gaia
+						entity = gaia_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_superhabitable
+					}
+					set_planet_entity = {
+						picture = pc_pd_wet_superhabitable
+						entity = superhabitable_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_tidally_locked
+					}
+					set_planet_entity = {
+						picture = pc_pd_wet_tidally_locked
+						entity = wettidallylocked_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_cave
+					}
+					set_planet_entity = {
+						picture = pc_pd_wet_cave
+						entity = karst_planet_01_entity
+					}
 				}
 			}
 			IF = {
 				limit = {
-					is_planet_class = pc_pd_wet_superhabitable
+					has_modifier = pd_aw_shroud_planet
 				}
-				set_planet_entity = {
-					picture = pc_pd_wet_superhabitable
-					entity = superhabitable_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_gaia
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_01_entity
+					}
 				}
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_pd_wet_tidally_locked
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_superhabitable
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_01_entity
+					}
 				}
-				set_planet_entity = {
-					picture = pc_pd_wet_tidally_locked
-					entity = wettidallylocked_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_tidally_locked
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = tidallyshroud_planet_01_entity
+					}
 				}
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_pd_wet_cave
-				}
-				set_planet_entity = {
-					picture = pc_pd_wet_cave
-					entity = karst_planet_01_entity
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_cave
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud_cave
+						entity = pdshroud_cave_planet_01_entity
+					}
 				}
 			}
 		}
@@ -639,7 +736,6 @@ decision_pd_shroud_planet_cleanup = {
 		remove_modifier = pd_aw_shroud_planet
 		custom_tooltip = decision_pd_shroud_planet_cleanup_tooltip
 		hidden_effect = {
-			pd_back_to_normal_view_effect = yes
 			create_message = {
 				type = MESSAGE_PD_SHROUD_CLEANUP_TYPE
 				localization = MESSAGE_PD_SHROUD_CLEANUP_DESC
@@ -649,6 +745,55 @@ decision_pd_shroud_planet_cleanup = {
 					type = name
 					localization = PLANET
 					scope = this
+				}
+			}
+			IF = {
+				limit = {
+					NOT = {
+						has_modifier = flooded_habitat
+					}
+				}
+				pd_back_to_normal_view_effect = yes
+			}
+			IF = {
+				limit = {
+					has_modifier = flooded_habitat
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_gaia
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_superhabitable
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_tidally_locked
+					}
+					set_planet_entity = {
+						picture = pc_aquatic
+						entity = tidallyaquatic_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						is_planet_class = pc_pd_wet_cave
+					}
+					set_planet_entity = {
+						picture = pc_pd_aquatic_cave
+						entity = aquatic_cave_planet_01_entity
+					}
 				}
 			}
 		}
@@ -698,65 +843,113 @@ decision_pd_shroud_planet = {
 		hidden_effect = {
 			IF = {
 				limit = {
-					pd_is_planet_class_superhabitable = yes
+					NOT = {
+						has_modifier = flooded_habitat
+					}
 				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = pdshroud_planet_01_entity
+				IF = {
+					limit = {
+						pd_is_planet_class_superhabitable = yes
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						pd_is_planet_class_tidally_locked = yes
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = tidallyshroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						pd_is_planet_class_cave = yes
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud_cave
+						entity = pdshroud_cave_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						pd_is_planet_class_pd_gaia = yes
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_01_entity
+					}
+				}
+				IF = {
+					limit = {
+						has_planet_flag = planet_earth
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_earth_entity
+					}
+				}
+				IF = {
+					limit = {
+						has_planet_flag = pdmars
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_mars_entity
+					}
+				}
+				IF = {
+					limit = {
+						has_planet_flag = pdvenus
+					}
+					set_planet_entity = {
+						picture = pc_pd_shroud
+						entity = pdshroud_planet_venus_entity
+					}
 				}
 			}
 			IF = {
 				limit = {
-					pd_is_planet_class_tidally_locked = yes
+					has_modifier = flooded_habitat
 				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = tidallyshroud_planet_01_entity
+				IF = {
+					limit = {
+						pd_is_planet_class_superhabitable = yes
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud_hot
+						entity = ocean_paradise_shroud_planet_01_entity
+					}
 				}
-			}
-			IF = {
-				limit = {
-					pd_is_planet_class_cave = yes
+				IF = {
+					limit = {
+						pd_is_planet_class_tidally_locked = yes
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud
+						entity = tidallyaquatic_shroud_planet_01_entity
+					}
 				}
-				set_planet_entity = {
-					picture = pc_pd_shroud_cave
-					entity = pdshroud_cave_planet_01_entity
+				IF = {
+					limit = {
+						pd_is_planet_class_cave = yes
+					}
+					set_planet_entity = {
+						picture = pc_pd_aquatic_shroud_cave
+						entity = aquatic_shroud_cave_planet_01_entity
+					}
 				}
-			}
-			IF = {
-				limit = {
-					pd_is_planet_class_pd_gaia = yes
-				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = pdshroud_planet_01_entity
-				}
-			}
-			IF = {
-				limit = {
-					has_planet_flag = planet_earth
-				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = pdshroud_planet_earth_entity
-				}
-			}
-			IF = {
-				limit = {
-					has_planet_flag = pdmars
-				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = pdshroud_planet_mars_entity
-				}
-			}
-			IF = {
-				limit = {
-					has_planet_flag = pdvenus
-				}
-				set_planet_entity = {
-					picture = pc_pd_shroud
-					entity = pdshroud_planet_venus_entity
+				IF = {
+					limit = {
+						pd_is_planet_class_pd_gaia = yes
+					}
+					set_planet_entity = {
+						picture = pc_aquatic_shroud_hot
+						entity = ocean_paradise_shroud_planet_01_entity
+					}
 				}
 			}
 			remove_pd_modifier = yes
