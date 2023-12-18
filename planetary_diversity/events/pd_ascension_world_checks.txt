@@ -1,6 +1,6 @@
 namespace = pdascensionworlds
 
-# This event fires when certain planets get terraformed and removes the modifier if needed
+# This event fires when certain planets get terraformed and removes the modifier if needed, or changes the planet art
 planet_event = {
 	id = pdascensionworlds.100
 	hide_window = yes
@@ -14,6 +14,30 @@ planet_event = {
 	immediate = {
 		switch = {
 			trigger = is_planet_class
+			pc_pd_wet_gaia = {
+				set_planet_entity = {
+					picture = pc_aquatic_hot
+					entity = ocean_paradise_planet_01_entity
+				}
+			}
+			pc_pd_wet_superhabitable = {
+				set_planet_entity = {
+					picture = pc_pd_aquatic_cave
+					entity = aquatic_cave_planet_01_entity
+				}
+			}
+			pc_pd_wet_cave = {
+				set_planet_entity = {
+					picture = pc_pd_shroud
+					entity = pdshroud_planet_01_entity
+				}
+			}
+			pc_pd_wet_tidally_locked = {
+				set_planet_entity = {
+					picture = pc_aquatic
+					entity = tidallyaquatic_planet_01_entity
+				}
+			}
 			pc_pd_dry_gaia = {
 				remove_modifier = flooded_habitat
 			}
