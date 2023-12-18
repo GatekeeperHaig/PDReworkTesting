@@ -6889,8 +6889,64 @@ planet_event = {
 	}
 
 	immediate = {
-		space_owner = {
-			country_event = { id = pdengine.96 }
+		IF = {
+			limit = {
+				NOT = {	has_modifier = flooded_habitat }
+			}
+			space_owner = {
+				country_event = { id = pdengine.96 }
+			}
+		}
+		IF = {
+			limit = {
+				has_modifier = flooded_habitat
+			}
+			switch = {
+				trigger = is_planet_class
+				pc_pd_wet_gaia = {
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+					add_modifier = {
+						modifier = pd_uncommon_gaia_world
+						days = -1
+					}
+				}
+				pc_pd_gaia_cave = {
+					change_pc = pc_pd_wet_cave
+					set_planet_entity = {
+						picture = pc_pd_aquatic_cave
+						entity = aquatic_cave_planet_01_entity
+					}
+					add_modifier = {
+						modifier = pd_uncommon_gaia_world
+						days = -1
+					}
+				}
+				pc_pd_gaia_superhabitable = {
+					change_pc = pc_pd_wet_superhabitable
+					set_planet_entity = {
+						picture = pc_aquatic_hot
+						entity = ocean_paradise_planet_01_entity
+					}
+					add_modifier = {
+						modifier = pd_uncommon_gaia_world
+						days = -1
+					}
+				}
+				pc_pd_gaia_tidally_locked = {
+					change_pc = pc_pd_wet_tidally_locked
+					set_planet_entity = {
+						picture = pc_aquatic
+						entity = tidallyaquatic_planet_01_entity
+					}
+					add_modifier = {
+						modifier = pd_uncommon_gaia_world
+						days = -1
+					}
+				}
+			}
 		}
 	}
 }
