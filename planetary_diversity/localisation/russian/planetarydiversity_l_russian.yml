@@ -119,7 +119,7 @@
  building_cryo_guild_desc:0 "The cryo-protein has many industrial applications and artisans on this planet can create amazing unique products."
  mod_planet_artisans_unity_produces_add:0 "£unity£ $unity$ from [GetArtisanIcon] [GetArtisanPlural]"
  building_cryo_grid:0 "Cyro-Protein Utilization Grid"
- building_cryo_grid_desc:0 "Here we process the Cyroflora for its rare proteins to improve energy generation." 
+ building_cryo_grid_desc:0 "Here we process the Cyroflora for its rare proteins to improve energy generation."
  building_lichen_farm:0 "Lichen Farm"
  building_lichen_farm_desc:0 "These farms utilize the lichen here to improve output."
  building_lichen_grid:0 "Lichen Bio-Reactor"
@@ -183,7 +183,7 @@
  mod_planet_bio_trophies_unity_produces_add: "£unity£ $unity$ from £job_bio_trophy£ $job_bio_trophy_plural$"
 
  #Flooding Ascension
- decision_pd_flood_planet: "Flood Planet"
+ decision_pd_flood_planet: "Expand Planetary Sea"
  decision_pd_flood_planet_desc: "This oceanic planet has the potential to be an ideal home for our people. By adjusting sea levels and moving cities underwater, we can ensure that life flourishes for those adapted to live beneath the waves."
  decision_pd_flood_planet_tooltip: "Ice will be harvested from a systems with an §Y$sm_ice_mining_station$§!\n§Y$pd_aw_flooded_planet$§! modifer added:\n$pd_aw_flooded_planet_tooltip$"
  pd_aw_flooded_planet: "Flooded World"

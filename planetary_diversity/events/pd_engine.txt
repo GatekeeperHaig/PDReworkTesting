@@ -899,7 +899,11 @@ country_event = {
 				is_planet_class = pc_ocean
 				has_pd_modifier = no
 				is_homeworld = yes
-				NOT = { has_planet_flag = prescripted_ideal }
+				NOR = {
+					has_planet_flag = prescripted_ideal
+					has_modifier = ocean_paradise
+					has_modifier = ocean_paradise_hive
+				}
 			}
 			IF = {
 				limit = {

@@ -140,7 +140,7 @@ decision_pd_bloom_tree_of_life = {
 }
 
 ###Flooded Worlds
-@expand_planetary_sea_length = 720
+@expand_planetary_sea_length = 1800
 decision_pd_flood_planet = {
 	owned_planets_only = yes
 	icon = decision_pd_flooding
