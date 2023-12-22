@@ -3,3 +3,6 @@ is_pd_aw_shroud_planet = {
 
 is_pd_aw_wasteland_planet = {
 }
+
+is_pd_aw_necro_planet = {
+}
