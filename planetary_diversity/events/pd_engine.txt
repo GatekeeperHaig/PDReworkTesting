@@ -6408,6 +6408,16 @@ planet_event = {
 		if = {
 			limit = {
 				has_planet_flag = planet_earth
+				is_planet_class = pc_continental
+			}
+			set_planet_entity = {
+				picture = pc_continental_earth
+				entity = continental_planet_earth_entity
+			}
+		}
+		if = {
+			limit = {
+				has_planet_flag = planet_earth
 				is_planet_class = pc_nuked
 			}
 			set_planet_entity = {
@@ -6595,6 +6605,16 @@ country_event = {
 				}
 				set_planet_entity = {
 					entity = "nuked_planet_earth_entity"
+				}
+			}
+			if = {
+				limit = {
+					has_planet_flag = planet_earth
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+					picture = pc_continental_earth
+					entity = continental_planet_earth_entity
 				}
 			}
 		}
