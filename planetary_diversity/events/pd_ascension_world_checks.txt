@@ -7,7 +7,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_modifier = flooded_habitat
+		pd_is_flooded_planet = yes
 		not = {	has_modifier = pd_aw_shroud_planet }
 	}
 
@@ -148,7 +148,7 @@ planet_event = {
 
 	trigger = {
 		has_modifier = pd_aw_shroud_planet
-		has_modifier = flooded_habitat
+		pd_is_flooded_planet = yes
 	}
 
 	immediate = {
@@ -199,7 +199,9 @@ planet_event = {
 
 	trigger = {
 		has_modifier = pd_aw_shroud_planet
-		not = {	has_modifier = flooded_habitat }
+		NOT = {
+			pd_is_flooded_planet = yes
+		}
 	}
 
 	immediate = {

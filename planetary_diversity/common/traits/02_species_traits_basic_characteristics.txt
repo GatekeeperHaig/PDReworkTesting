@@ -230,7 +230,7 @@ trait_aquatic = {
 			planet = {
 				OR = {
 					is_planet_class = pc_ocean
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 					pd_is_planet_for_aqua_trait = yes
 				}
 			}
@@ -246,7 +246,7 @@ trait_aquatic = {
 			planet = {
 				OR = {
 					is_planet_class = pc_ocean
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 					pd_is_planet_for_aqua_trait = yes
 				}
 				exists = owner
@@ -264,7 +264,7 @@ trait_aquatic = {
 			planet = {
 				NOR = {
 					has_climate = wet
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 					pd_is_planet_for_aqua_trait = yes
 				}
 				is_ideal = no
@@ -281,7 +281,7 @@ trait_aquatic = {
 				is_ideal = no
 				NOR = {
 					has_climate = wet
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 					pd_is_planet_for_aqua_trait = yes
 				}
 			}
@@ -293,7 +293,7 @@ trait_aquatic = {
 		potential = {
 			NOR = {
 				has_climate = wet
-				has_modifier = flooded_habitat
+				pd_is_flooded_planet = yes
 			}
 			is_ideal = no
 		}
@@ -303,7 +303,7 @@ trait_aquatic = {
 		potential = {
 			NOR = {
 				has_climate = wet
-				has_modifier = flooded_habitat
+				pd_is_flooded_planet = yes
 			}
 			is_ideal = no
 			exists = owner
@@ -313,7 +313,7 @@ trait_aquatic = {
 	}
 	triggered_planet_growth_habitability_modifier = {
 		potential = {
-			has_modifier = flooded_habitat
+			pd_is_flooded_planet = yes
 		}
 		pop_environment_tolerance = 0.2
 	}
@@ -329,7 +329,7 @@ trait_aquatic = {
 			from = {
 				OR = {
 					is_planet_class = pc_ocean
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 				}
 			}
 		}
@@ -339,7 +339,7 @@ trait_aquatic = {
 			from = {
 				NOR = {
 					has_climate = wet
-					has_modifier = flooded_habitat
+					pd_is_flooded_planet = yes
 				}
 				is_ideal = no
 			}

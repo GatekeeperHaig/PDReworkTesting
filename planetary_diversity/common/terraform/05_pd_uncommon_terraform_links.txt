@@ -48,8 +48,8 @@ terraform_link = {
 terraform_link = {
 	from = pc_pd_barren_superhabitable
 	to = pc_pd_gaia_superhabitable
-    resources = { category = terraforming cost = { energy = @terraforming_cost_gaia } }
-	duration = @terraforming_duration_gaia
+    resources = { category = terraforming cost = { energy = @terraforming_cost_level_4 } }
+	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_ascension_perk = ap_world_shaper }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
@@ -165,8 +165,8 @@ terraform_link = {
 terraform_link = {
 	from = pc_pd_barren_tidally_locked
 	to = pc_pd_gaia_tidally_locked
-    resources = { category = terraforming cost = { energy = @terraforming_cost_gaia } }
-	duration = @terraforming_duration_gaia
+    resources = { category = terraforming cost = { energy = @terraforming_cost_level_4 } }
+	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_ascension_perk = ap_world_shaper }
 	effect = { from = { remove_modifier = terraforming_candidate  } }
@@ -282,8 +282,8 @@ terraform_link = {
 terraform_link = {
 	from = pc_pd_barren_cave
 	to = pc_pd_gaia_cave
-    resources = { category = terraforming cost = { energy = @terraforming_cost_gaia } }
-	duration = @terraforming_duration_gaia
+    resources = { category = terraforming cost = { energy = @terraforming_cost_level_4 } }
+	duration = @terraforming_duration_level_3
 	potential = { from = { has_modifier = terraforming_candidate } }
 	condition = { has_ascension_perk = ap_world_shaper }
 	ai_weight = { weight = 2 modifier = { factor = 0 resource_stockpile_compare = { resource = energy value < 40000 } } modifier = { factor = 0	OR = { is_mechanical_empire = yes is_cyborg_empire = yes has_authority = auth_machine_intelligence } } }
