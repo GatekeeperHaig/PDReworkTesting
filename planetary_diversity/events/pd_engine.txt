@@ -2851,8 +2851,8 @@ planet_event = {
 			has_planet_flag = pdmars
 			has_planet_flag = planet_mars
 			has_planet_flag = pdvenus
-			is_pd_aw_shroud_planet = yes
-			is_pd_aw_wasteland_planet = yes
+			pd_aw_is_shroud_planet = yes
+			pd_aw_is_wasteland_planet = yes
 		}
 	}
 
@@ -3849,8 +3849,8 @@ planet_event = {
 			}
 		}
 		is_planet_class = pc_gaia
-		is_pd_aw_shroud_planet = no
-		is_pd_aw_wasteland_planet = no
+		pd_aw_is_shroud_planet = no
+		pd_aw_is_wasteland_planet = no
 	}
 
 	immediate = {
@@ -6908,8 +6908,8 @@ planet_event = {
 			is_planet_class = pc_pd_gaia_superhabitable
 			is_planet_class = pc_pd_gaia_tidally_locked
 		}
-		is_pd_aw_shroud_planet = no
-		is_pd_aw_wasteland_planet = no
+		pd_aw_is_shroud_planet = no
+		pd_aw_is_wasteland_planet = no
 	}
 
 	immediate = {

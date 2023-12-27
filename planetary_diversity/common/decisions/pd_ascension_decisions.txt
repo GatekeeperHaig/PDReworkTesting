@@ -716,7 +716,7 @@ decision_pd_shroud_planet_cleanup = {
 		owner = {
 			NOT = { has_tradition = tr_psionics_finish }
 		}
-		is_pd_aw_shroud_planet = yes
+		pd_aw_is_shroud_planet = yes
 		pd_is_planet_class_all = yes
 	}
 
@@ -818,7 +818,7 @@ decision_pd_shroud_planet = {
 			has_tradition = tr_psionics_finish
 		}
 		pd_is_planet_class_all = yes
-		is_pd_aw_shroud_planet = no
+		pd_aw_is_shroud_planet = no
 	}
 
 	allow = {
