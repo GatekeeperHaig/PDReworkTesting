@@ -66,6 +66,7 @@ decision_nuked_own_planet = {
 	potential = {
 		owner = { has_origin = origin_post_apocalyptic }
 		pd_is_planet_class_nuked = no
+		is_artificial = no
 		NOR = {
 			is_planet_class = pc_habitat
 			is_planet_class = pc_ringworld_habitable
