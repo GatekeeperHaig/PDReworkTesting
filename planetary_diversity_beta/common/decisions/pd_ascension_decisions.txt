@@ -296,83 +296,13 @@ decision_pd_flood_planet = {
 						has_modifier = pd_aw_shroud_planet
 					}
 				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_gaia
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_hot
-						entity = ocean_paradise_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_superhabitable
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_hot
-						entity = ocean_paradise_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_tidally_locked
-					}
-					set_planet_entity = {
-						picture = pc_aquatic
-						entity = tidallyaquatic_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_cave
-					}
-					set_planet_entity = {
-						picture = pc_pd_aquatic_cave
-						entity = aquatic_cave_planet_01_entity
-					}
-				}
+				pd_create_aquatic_world_effect = yes
 			}
 			IF = {
 				limit = {
 					has_modifier = pd_aw_shroud_planet
 				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_gaia
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud_hot
-						entity = ocean_paradise_shroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_superhabitable
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud_hot
-						entity = ocean_paradise_shroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_tidally_locked
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud
-						entity = tidallyaquatic_shroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_cave
-					}
-					set_planet_entity = {
-						picture = pc_pd_aquatic_shroud_cave
-						entity = aquatic_shroud_cave_planet_01_entity
-					}
-				}
+				pd_create_aquatic_shroud_world_effect = yes
 			}
 
 			ice_mining_depletion_effect = yes
@@ -464,83 +394,13 @@ decision_pd_unflood_planet = {
 						has_modifier = pd_aw_shroud_planet
 					}
 				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_gaia
-					}
-					set_planet_entity = {
-						picture = pc_pd_wet_gaia
-						entity = gaia_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_superhabitable
-					}
-					set_planet_entity = {
-						picture = pc_pd_wet_superhabitable
-						entity = superhabitable_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_tidally_locked
-					}
-					set_planet_entity = {
-						picture = pc_pd_wet_tidally_locked
-						entity = wettidallylocked_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_cave
-					}
-					set_planet_entity = {
-						picture = pc_pd_wet_cave
-						entity = karst_planet_01_entity
-					}
-				}
+				pd_back_to_normal_view_effect = yes
 			}
 			IF = {
 				limit = {
 					has_modifier = pd_aw_shroud_planet
 				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_gaia
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_superhabitable
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_tidally_locked
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = tidallyshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_cave
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud_cave
-						entity = pdshroud_cave_planet_01_entity
-					}
-				}
+				pd_create_shroud_world_effect = yes
 			}
 		}
 	}
@@ -562,7 +422,7 @@ decision_pd_wasteland_planet_cleanup = {
 	owned_planets_only = yes
 	icon = decision_resort_colony
 
-	enactment_time = 3600
+	enactment_time = 1800
 
 	potential = {
 		has_global_flag = planetarydiversityascensionworlds
@@ -616,7 +476,7 @@ decision_pd_wasteland_planet = {
 	owned_planets_only = yes
 	icon = decision_pd_aw_wasteland
 
-	enactment_time = 3600
+	enactment_time = 1800
 
 	potential = {
 		has_global_flag = planetarydiversityascensionworlds
@@ -644,56 +504,7 @@ decision_pd_wasteland_planet = {
 			days = -1
 		}
 		hidden_effect = {
-			IF = {
-				limit = {
-					OR = {
-						pd_is_planet_class_superhabitable = yes
-						pd_is_planet_class_pd_gaia = yes
-					}
-				}
-				set_planet_entity = {
-					picture = pc_pd_wasteland
-					entity = pd_wasteland_planet_01_entity
-				}
-			}
-			IF = {
-				limit = {
-					pd_is_planet_class_tidally_locked = yes
-				}
-				set_planet_entity = {
-					picture = pc_pd_wasteland
-					entity = pd_tidally_wasteland_planet_01_entity
-				}
-			}
-			IF = {
-				limit = {
-					pd_is_planet_class_cave = yes
-				}
-				set_planet_entity = {
-					picture = pc_pd_wasteland_cave
-					entity = pd_wasteland_cave_planet_01_entity
-				}
-			}
-			while = {
-				limit = { num_districts = { type = district_farming value > 0 } }
-				remove_district = district_farming
-			}
-			while = {
-				limit = { num_districts = { type = district_farming_uncapped value > 0 } }
-				remove_district = district_farming_uncapped
-			}
-			remove_pd_modifier = yes
-			create_message = {
-				type = MESSAGE_PD_WASTELAND_TYPE
-				localization = MESSAGE_PD_WASTELAND_DESC
-				days = 20
-				target = root
-				variable = {
-					type = name
-					localization = PLANET
-					scope = this
-				}
-			}
+			pd_create_wasteland_world_effect = yes
 		}
 	}
 
@@ -708,7 +519,7 @@ decision_pd_shroud_planet_cleanup = {
 	owned_planets_only = yes
 	icon = decision_resort_colony
 
-	enactment_time = 3600
+	enactment_time = 1800
 
 	potential = {
 		has_global_flag = planetarydiversityascensionworlds
@@ -759,42 +570,7 @@ decision_pd_shroud_planet_cleanup = {
 				limit = {
 					has_modifier = flooded_habitat
 				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_gaia
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_hot
-						entity = ocean_paradise_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_superhabitable
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_hot
-						entity = ocean_paradise_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_tidally_locked
-					}
-					set_planet_entity = {
-						picture = pc_aquatic
-						entity = tidallyaquatic_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						is_planet_class = pc_pd_wet_cave
-					}
-					set_planet_entity = {
-						picture = pc_pd_aquatic_cave
-						entity = aquatic_cave_planet_01_entity
-					}
-				}
+				pd_create_aquatic_world_effect = yes
 			}
 		}
 	}
@@ -809,7 +585,7 @@ decision_pd_shroud_planet = {
 	owned_planets_only = yes
 	icon = decision_pd_aw_shroud
 
-	enactment_time = 3600
+	enactment_time = 1800
 
 	potential = {
 		has_global_flag = planetarydiversityascensionworlds
@@ -847,110 +623,13 @@ decision_pd_shroud_planet = {
 						has_modifier = flooded_habitat
 					}
 				}
-				IF = {
-					limit = {
-						pd_is_planet_class_superhabitable = yes
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_tidally_locked = yes
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = tidallyshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_cave = yes
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud_cave
-						entity = pdshroud_cave_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_pd_gaia = yes
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						has_planet_flag = planet_earth
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_earth_entity
-					}
-				}
-				IF = {
-					limit = {
-						has_planet_flag = pdmars
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_mars_entity
-					}
-				}
-				IF = {
-					limit = {
-						has_planet_flag = pdvenus
-					}
-					set_planet_entity = {
-						picture = pc_pd_shroud
-						entity = pdshroud_planet_venus_entity
-					}
-				}
+				pd_create_shroud_world_effect = yes
 			}
 			IF = {
 				limit = {
 					has_modifier = flooded_habitat
 				}
-				IF = {
-					limit = {
-						pd_is_planet_class_superhabitable = yes
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud_hot
-						entity = ocean_paradise_shroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_tidally_locked = yes
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud
-						entity = tidallyaquatic_shroud_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_cave = yes
-					}
-					set_planet_entity = {
-						picture = pc_pd_aquatic_shroud_cave
-						entity = aquatic_shroud_cave_planet_01_entity
-					}
-				}
-				IF = {
-					limit = {
-						pd_is_planet_class_pd_gaia = yes
-					}
-					set_planet_entity = {
-						picture = pc_aquatic_shroud_hot
-						entity = ocean_paradise_shroud_planet_01_entity
-					}
-				}
+				pd_create_aquatic_shroud_world_effect = yes
 			}
 			remove_pd_modifier = yes
 			create_message = {
@@ -969,5 +648,132 @@ decision_pd_shroud_planet = {
 
 	ai_weight = {
 		weight = 1
+	}
+}
+
+@pd_necro_time = 1800
+###Necro Worlds
+#Remove Necro Modifier - Uncommon + PD Gaia
+decision_pd_necro_planet_cleanup = {
+	owned_planets_only = yes
+	icon = decision_resort_colony
+
+	enactment_time = @pd_necro_time
+
+	potential = {
+		pd_aw_is_necro_planet = yes
+		pd_is_planet_class_all = yes
+		exists = owner
+		owner = { NOT = { has_ascension_perk = ap_pd_necro_worlds } }
+	}
+
+	allow = {
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			energy = 5000
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			IF = {
+				limit = {
+					pd_aw_is_necro_planet = yes
+				}
+				remove_modifier = pd_aw_necro_planet
+				remove_modifier = pd_aw_necro_city_planet
+				remove_modifier = pd_necro_planet
+				IF = {
+					limit = {
+						pd_aw_is_shroud_planet = yes
+					}
+					pd_create_shroud_world_effect = yes
+				}
+				IF = {
+					limit = {
+						NOT = { pd_aw_is_shroud_planet = yes }
+					}
+					pd_back_to_normal_view_effect = yes
+				}
+			}
+			create_message = {
+				type = MESSAGE_PD_NECRO_CLEANUP_TYPE
+				localization = MESSAGE_PD_NECRO_CLEANUP_DESC
+				days = 20
+				target = root
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#Make Necro World - Uncommon + PD Gaia
+decision_pd_necro_planet = {
+	owned_planets_only = yes
+	icon = decision_pd_necro
+
+	enactment_time = @pd_necro_time
+
+	potential = {
+		pd_is_planet_class_all = yes
+		exists = owner
+		owner = { has_ascension_perk = ap_pd_necro_worlds }
+		pd_aw_is_necro_planet = no
+		pd_aw_is_wasteland_planet = no
+		NOT = { has_planet_flag = pd_unique_world }
+	}
+
+	allow = {
+	}
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 5000
+		}
+	}
+
+	effect = {
+		IF = {
+			limit = {
+				NOT = {	has_modifier = pd_aw_shroud_planet }
+			}
+			pd_create_necro_world_effect = yes
+		}
+		IF = {
+			limit = {
+				has_modifier = pd_aw_shroud_planet
+			}
+			pd_create_necro_shroud_world_effect = yes
+		}
+		remove_pd_modifier = yes
+		create_message = {
+			type = MESSAGE_PD_NECRO_TYPE
+			localization = MESSAGE_PD_NECRO_DESC
+			days = 20
+			target = root
+			variable = {
+				type = name
+				localization = PLANET
+				scope = this
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
 	}
 }
