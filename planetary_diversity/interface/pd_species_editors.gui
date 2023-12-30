@@ -297,15 +297,16 @@ guiTypes = {
 
 		buttonType = {
 			name = "randomize_name"
-			position = { x = 224 y = 59 }
+			position = { x = 945 y = 39 }
 			spriteType = "GFX_button_randomize"
 			pdx_tooltip = "EDIT_SPECIES_NAME_RANDOMIZE_TOOLTIP"
 			clicksound = randomizer_click
 		}
+
 		containerWindowType = {
 			name = "homeworld_box"
 			size = { width = 100 height = 100 }
-			position = { x = 0 y = 30 }
+			position = { x = 724 y = 10 }
 
 			instantTextBoxType = {
 				name = "lbl1"
@@ -334,7 +335,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "system_box"
 			size = { width = 100 height = 100 }
-			position = { x = 256 y = 30 }
+			position = { x = 724 y = 64 }
 
 			instantTextBoxType = {
 				name = "lbl1"
@@ -363,7 +364,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "initializer_box"
 			size = { width = 300 height = 70 }
-			position = { x = 448 y = 24 }
+			position = { x = 400 y = 24 }
 
 			instantTextBoxType = {
 				name = "lbl1"
@@ -431,16 +432,16 @@ guiTypes = {
 
 			@PDSIZE = 38
 
-			@planet_row0 = 1
-			@planet_row1 = 15
-			@planet_row2 = 56
-			@planet_row3 = 96
-			@planet_row4 = 135
-			@planet_row5 = 176
-			@planet_row6 = 216
-			@planet_row7 = 256
-			@planet_row8 = 296
-			@planet_row9 = 336
+			@planet_row0 = 10
+			@planet_row1 = 24
+			@planet_row2 = 64
+			@planet_row3 = 103
+			@planet_row4 = 142
+			@planet_row5 = 181
+			@planet_row6 = 220
+			@planet_row7 = 259
+			@planet_row8 = 298
+			@planet_row9 = 337
 
 			#Con
 			@planet_col1 = -35
@@ -477,7 +478,7 @@ guiTypes = {
 			@planet_col7half = 563
 			@planet_col8half = 605
 
-			@box_y = -7
+			@box_y = 2
 			@box_width = 87
 			@box_height = 230
 
@@ -563,11 +564,12 @@ guiTypes = {
 				}
 			}
 
+			@textline = -43
 			instantTextBoxType = {
 				name = "TYPE_HEADER_02"
 				font = "cg_16b"
 				text = "climate_continental"
-				position = { x = -98 y = -52 }
+				position = { x = -98 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -578,7 +580,7 @@ guiTypes = {
 				name = "TYPE_HEADER_01"
 				font = "cg_16b"
 				text = "climate_ocean"
-				position = { x = -15 y = -52 }
+				position = { x = -15 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -589,7 +591,7 @@ guiTypes = {
 				name = "TYPE_HEADER_03"
 				font = "cg_16b"
 				text = "climate_tropical"
-				position = { x = 65 y = -52 }
+				position = { x = 65 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -600,7 +602,7 @@ guiTypes = {
 				name = "TYPE_HEADER_04"
 				font = "cg_16b"
 				text = "climate_desert"
-				position = { x = 147 y = -52 }
+				position = { x = 147 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -611,7 +613,7 @@ guiTypes = {
 				name = "TYPE_HEADER_05"
 				font = "cg_16b"
 				text = "climate_arid"
-				position = { x = 228 y = -52 }
+				position = { x = 228 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -622,7 +624,7 @@ guiTypes = {
 				name = "TYPE_HEADER_06"
 				font = "cg_16b"
 				text = "climate_savannah"
-				position = { x = 308 y = -52 }
+				position = { x = 308 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -633,7 +635,7 @@ guiTypes = {
 				name = "TYPE_HEADER_07"
 				font = "cg_16b"
 				text = "climate_arctic"
-				position = { x = 390 y = -52 }
+				position = { x = 390 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -644,7 +646,7 @@ guiTypes = {
 				name = "TYPE_HEADER_08"
 				font = "cg_16b"
 				text = "climate_alpine"
-				position = { x = 472 y = -52 }
+				position = { x = 472 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -655,7 +657,7 @@ guiTypes = {
 				name = "TYPE_HEADER_09"
 				font = "cg_16b"
 				text = "climate_tundra"
-				position = { x = 551 y = -52 }
+				position = { x = 551 y = @textline }
 				maxWidth = 100
 				maxHeight = 20
 				Orientation = "CENTER"
@@ -1327,69 +1329,38 @@ guiTypes = {
 				pdx_tooltip = "pc_pd_lichen_tooltip"
 			}
 
-			instantTextBoxType = {
-				name = "TYPE_HEADER_10"
-				font = "cg_16b"
-				text = "climate_superhabitables"
-				position = { x = 195 y = 183 }
-				maxWidth = 120
-				maxHeight = 20
-				Orientation = "CENTER"
-				text_color_code = "E"
-				format = center
-			}
+			@uncommon_row = -36
+
 			containerWindowType = {
-				name = "setting_bg_box10"
-				size = { width = 126 height = 68 }
-				position = { x = 242 y = 228 }
-				background = {
-					name = "setting_bg_frame"
-					spriteType = "GFX_clean_frame_area"
+				name = "pd_superhabitables"
+				size = { width = 300 height = 70 }
+				position = { x = -41 y = -60 }
+
+				instantTextBoxType = {
+					name = "TYPE_HEADER_10"
+					font = "cg_16b"
+					text = "climate_superhabitables"
+					position = { x = -147 y = -29 }
+					maxWidth = 120
+					maxHeight = 20
+					Orientation = "CENTER"
+					text_color_code = "E"
+					format = center
+				}
+				containerWindowType = {
+					name = "setting_bg_box10"
+					size = { width = 126 height = 68 }
+					position = { x = 0 y = 0 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
 				}
 			}
-			instantTextBoxType = {
-				name = "TYPE_HEADER_11"
-				font = "cg_16b"
-				text = "climate_cavern"
-				position = { x = 325 y = 185 }
-				maxWidth = 100
-				maxHeight = 20
-				Orientation = "CENTER"
-				text_color_code = "E"
-				format = center
-			}
-			containerWindowType = {
-				name = "setting_bg_box11"
-				size = { width = 126 height = 68 }
-				position = { x = 362 y = 228 }
-				background = {
-					name = "setting_bg_frame"
-					spriteType = "GFX_clean_frame_area"
-				}
-			}
-			instantTextBoxType = {
-				name = "TYPE_HEADER_12"
-				font = "cg_16b"
-				text = "climate_tidallyocked"
-				position = { x = 433 y = 185 }
-				maxWidth = 125
-				maxHeight = 20
-				Orientation = "CENTER"
-				text_color_code = "E"
-				format = center
-			}
-			containerWindowType = {
-				name = "setting_bg_box12"
-				size = { width = 126 height = 68 }
-				position = { x = 482 y = 228 }
-				background = {
-					name = "setting_bg_frame"
-					spriteType = "GFX_clean_frame_area"
-				}
-			}
+
 			buttonType = {
 				name = "pc_pd_wet_superhabitable"
-				position = { x = 249 y = 251 }
+				position = { x = -34 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1397,7 +1368,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_dry_superhabitable"
-				position = { x = 286 y = 251 }
+				position = { x = 3 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1405,16 +1376,43 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_cold_superhabitable"
-				position = { x = 323 y = 251 }
+				position = { x = 40 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_superhabitable_tooltip"
 			}
 
+			containerWindowType = {
+				name = "pd_cavern"
+				size = { width = 300 height = 70 }
+				position = { x = 79 y = -60 }
+
+				instantTextBoxType = {
+					name = "TYPE_HEADER_10"
+					font = "cg_16b"
+					text = "climate_cavern"
+					position = { x = -147 y = -29 }
+					maxWidth = 120
+					maxHeight = 20
+					Orientation = "CENTER"
+					text_color_code = "E"
+					format = center
+				}
+				containerWindowType = {
+					name = "setting_bg_box11"
+					size = { width = 126 height = 68 }
+					position = { x = 0 y = 0 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+				}
+			}
+
 			buttonType = {
 				name = "pc_pd_wet_tidally_locked"
-				position = { x = 489 y = 251 }
+				position = { x = 85 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1422,7 +1420,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_dry_tidally_locked"
-				position = { x = 526 y = 251 }
+				position = { x = 122 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1430,16 +1428,43 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_cold_tidally_locked"
-				position = { x = 563 y = 251 }
+				position = { x = 159 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
 				pdx_tooltip = "pc_pd_tidally_locked_tooltip"
 			}
 
+			containerWindowType = {
+				name = "pd_tidally_locked"
+				size = { width = 300 height = 70 }
+				position = { x = 193 y = -60 }
+
+				instantTextBoxType = {
+					name = "TYPE_HEADER_10"
+					font = "cg_16b"
+					text = "climate_tidallyocked"
+					position = { x = -147 y = -29 }
+					maxWidth = 120
+					maxHeight = 20
+					Orientation = "CENTER"
+					text_color_code = "E"
+					format = center
+				}
+				containerWindowType = {
+					name = "setting_bg_box12"
+					size = { width = 126 height = 68 }
+					position = { x = 0 y = 0 }
+					background = {
+						name = "setting_bg_frame"
+						spriteType = "GFX_clean_frame_area"
+					}
+				}
+			}
+
 			buttonType = {
 				name = "pc_pd_wet_cave"
-				position = { x = 369 y = 251 }
+				position = { x = 202 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1447,7 +1472,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_dry_cave"
-				position = { x = 406 y = 251 }
+				position = { x = 239 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1455,7 +1480,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "pc_pd_cold_cave"
-				position = { x = 443 y = 251 }
+				position = { x = 276 y = @uncommon_row }
 				spriteType = "GFX_dummy_3d_home_world_new"
 				size = { x = @PDSIZE y = @PDSIZE }
 				clicksound = "select_click"
@@ -1490,8 +1515,8 @@ guiTypes = {
 		### details
 		containerWindowType = {
 			name = "details"
-			size = { width = 292 height = 313 }
-			position = { x = 733 y = 48 }
+			size = { width = 292 height = 230 }
+			position = { x = 733 y = 130 }
 
 			background = {
 				name = "bg"
@@ -1512,7 +1537,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "desc"
 				font = "cg_16b"
-				position = { x = 9 y = 40 }
+				position = { x = 9 y = 32 }
 				maxWidth = 290
 				text = ""
 				format = left
@@ -1524,7 +1549,7 @@ guiTypes = {
 				name = "preference_trait"
 				orientation = lower_left
 				origo = lower_left
-				size = { width = 290 height = 50 }
+				size = { width = 290 height = 30 }
 				position = { x = 10 y = -3 }
 
 				background = {
@@ -1535,15 +1560,15 @@ guiTypes = {
 				iconType = {
 					name = "icon"
 					quadTextureSprite = "GFX_traits"
-					position = { x = 0 y = 0 }
+					position = { x = -5 y = 0 }
 					alwaysTransparent = yes
 				}
 
 				instantTextBoxType = {
 					name = "name"
 					font = "malgun_goth_24"
-					position = { x = 35 y = 1 }
-					maxWidth = 230
+					position = { x = 29 y = 1 }
+					maxWidth = 290
 					text =	 ""
 					format = left
 					alwaysTransparent = yes
