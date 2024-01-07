@@ -307,3 +307,6 @@ pd_is_planet_class_machine = {
 		is_planet_class = pc_pd_machine_cave
 	}
 }
+
+
+pd_is_wet_gaia_class = { is_planet_class = pc_pd_wet_gaia }

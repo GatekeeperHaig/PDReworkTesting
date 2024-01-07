@@ -213,3 +213,11 @@ on_megastructure_upgraded = {
 	events = {
 	}
 }
+
+# Executed when a country picks an ascension perk
+# THIS = country
+on_ascension_perk_picked = {
+	events = {
+		pdascensionworlds.300
+	}
+}

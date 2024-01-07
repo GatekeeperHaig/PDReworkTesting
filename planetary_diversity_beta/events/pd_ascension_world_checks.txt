@@ -243,3 +243,25 @@ planet_event = {
 		}
 	}
 }
+
+#This event fires to give Necro Empires their Uncommon Tomb Habitability
+country_event = {
+	id = pdascensionworlds.300
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_pd_necro_worlds
+		NOT = {
+			has_country_flag = ap_pd_necro_worlds_uncommon_modifiers
+		}
+	}
+
+	immediate = {
+		give_technology = {
+			tech = tech_pd_uncommon_necro_habitability
+			message = no
+		}
+		set_country_flag = ap_pd_necro_worlds_uncommon_modifiers
+	}
+}
