@@ -4799,7 +4799,7 @@ country_event = {
 				is_homeworld = yes
 			}
 			change_planet_size = +14
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Dry Superhabitable
 		every_galaxy_planet = {
@@ -4808,7 +4808,7 @@ country_event = {
 				is_homeworld = yes
 			}
 			change_planet_size = +14
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Cold Superhabitable
 		every_galaxy_planet = {
@@ -4817,7 +4817,7 @@ country_event = {
 				is_homeworld = yes
 			}
 			change_planet_size = +14
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Wet Tidally Locked
 		every_galaxy_planet = {
@@ -4825,7 +4825,7 @@ country_event = {
 				is_planet_class = pc_pd_wet_tidally_locked
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Dry Tidally Locked
 		every_galaxy_planet = {
@@ -4833,7 +4833,7 @@ country_event = {
 				is_planet_class = pc_pd_dry_tidally_locked
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Cold Tidally Locked
 		every_galaxy_planet = {
@@ -4841,7 +4841,7 @@ country_event = {
 				is_planet_class = pc_pd_cold_tidally_locked
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Wet Cave
 		every_galaxy_planet = {
@@ -4849,7 +4849,7 @@ country_event = {
 				is_planet_class = pc_pd_wet_cave
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Dry Cave
 		every_galaxy_planet = {
@@ -4857,7 +4857,7 @@ country_event = {
 				is_planet_class = pc_pd_dry_cave
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 		#Cold Cave
 		every_galaxy_planet = {
@@ -4865,7 +4865,7 @@ country_event = {
 				is_planet_class = pc_pd_cold_cave
 				is_homeworld = yes
 			}
-			generate_pd_start_deposits_and_blockers = yes
+			generate_pd_uncommon_planet = yes
 		}
 	}
 }

@@ -599,3 +599,10 @@ generate_pd_regular_planet = {
 	generate_home_planet_final_pass = yes
 	generate_double_check_pass = yes
 }
+
+generate_pd_uncommon_planet = {
+	generate_pd_start_deposits_and_blockers = yes
+	#generate_start_buildings_and_districts = yes
+	generate_home_planet_final_pass = yes
+	generate_double_check_pass = yes
+}

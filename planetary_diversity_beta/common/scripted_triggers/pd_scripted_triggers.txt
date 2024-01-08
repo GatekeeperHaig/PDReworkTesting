@@ -233,6 +233,8 @@ pd_is_planet_class_superhabitable = {
 		is_planet_class = pc_pd_dry_superhabitable
 		is_planet_class = pc_pd_cold_superhabitable
 		is_planet_class = pc_pd_nuked_superhabitable
+		is_planet_class = pc_pd_hive_superhabitable
+		is_planet_class = pc_pd_machine_superhabitable
 	}
 }
 
@@ -242,6 +244,8 @@ pd_is_planet_class_tidally_locked = {
 		is_planet_class = pc_pd_dry_tidally_locked
 		is_planet_class = pc_pd_cold_tidally_locked
 		is_planet_class = pc_pd_nuked_tidally_locked
+		is_planet_class = pc_pd_hive_tidally_locked
+		is_planet_class = pc_pd_machine_tidally_locked
 	}
 }
 
@@ -251,6 +255,8 @@ pd_is_planet_class_cave = {
 		is_planet_class = pc_pd_dry_cave
 		is_planet_class = pc_pd_cold_cave
 		is_planet_class = pc_pd_nuked_cave
+		is_planet_class = pc_pd_hive_cave
+		is_planet_class = pc_pd_machine_cave
 	}
 }
 

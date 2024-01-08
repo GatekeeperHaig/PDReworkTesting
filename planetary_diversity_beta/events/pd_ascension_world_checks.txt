@@ -265,3 +265,18 @@ country_event = {
 		set_country_flag = ap_pd_necro_worlds_uncommon_modifiers
 	}
 }
+
+planet_event = {
+	id = pdascensionworlds.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		pd_aw_is_lithoid_planet = yes
+		pd_is_planet_class_all = yes
+	}
+
+	immediate = {
+		pd_create_lithoid_world_effect = yes
+	}
+}
