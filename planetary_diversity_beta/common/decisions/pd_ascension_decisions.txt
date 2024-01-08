@@ -165,6 +165,10 @@ decision_pd_flood_planet = {
 			has_modifier = ocean_paradise_hive
 			has_planet_flag = pd_unique_world
 		}
+		pd_is_flooded_planet = no
+		pd_aw_is_wasteland_planet = no
+		pd_aw_is_lithoid_planet = no
+		pd_aw_is_necro_planet = no
 	}
 
 	allow = {
@@ -465,7 +469,10 @@ decision_pd_wasteland_planet = {
 		owner = {
 			has_ascension_perk = ap_pd_wasteland_worlds
 		}
-		pd_is_aw_world = no
+		pd_is_flooded_planet = no
+		pd_aw_is_wasteland_planet = no
+		pd_aw_is_lithoid_planet = no
+		pd_aw_is_necro_planet = no
 	}
 
 	allow = {
@@ -760,8 +767,10 @@ decision_pd_necro_planet = {
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { has_ascension_perk = ap_pd_necro_worlds }
-		pd_aw_is_necro_planet = no
+		pd_is_flooded_planet = no
 		pd_aw_is_wasteland_planet = no
+		pd_aw_is_lithoid_planet = no
+		pd_aw_is_necro_planet = no
 		NOT = { has_planet_flag = pd_unique_world }
 	}
 
@@ -918,8 +927,10 @@ decision_pd_lithoid_planet = {
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { has_ascension_perk = ap_pd_lithoid_worlds }
+		pd_is_flooded_planet = no
 		pd_aw_is_wasteland_planet = no
 		pd_aw_is_lithoid_planet = no
+		pd_aw_is_necro_planet = no
 		NOT = { has_planet_flag = pd_unique_world }
 	}
 
