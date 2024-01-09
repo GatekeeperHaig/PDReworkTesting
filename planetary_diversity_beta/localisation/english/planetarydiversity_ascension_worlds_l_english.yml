@@ -49,7 +49,7 @@
  pd_wasteland_planet_tooltip: "Unlocks £district£ §YGenerator Districts§! and §YMining District§!\nBlocks all §YAgriculture  Districts§!"
  pd_aw_wasteland_planet: "Industrial Wasteland"
  pd_aw_wasteland_planet_desc: "$decision_pd_wasteland_planet_desc$"
- pd_aw_wasteland_planet_tooltip: "$pd_wasteland_planet_tooltip$"
+ pd_aw_wasteland_planet_tooltip: "Unlocks £district£ §YGenerator Districts§! and §YMining District§!\nBlocks all §YAgriculture Districts§!"
 
  #Notification Message
  MESSAGE_PD_WASTELAND_DESC:1 "$PLANET|Y$ now has §Y$decision_pd_wasteland_planet$§!"
