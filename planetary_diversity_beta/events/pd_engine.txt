@@ -4796,7 +4796,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_wet_superhabitable
-				is_homeworld = yes
+				is_capital = yes
 			}
 			change_planet_size = +14
 			generate_pd_uncommon_planet = yes
@@ -4805,7 +4805,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_dry_superhabitable
-				is_homeworld = yes
+				is_capital = yes
 			}
 			change_planet_size = +14
 			generate_pd_uncommon_planet = yes
@@ -4814,7 +4814,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_cold_superhabitable
-				is_homeworld = yes
+				is_capital = yes
 			}
 			change_planet_size = +14
 			generate_pd_uncommon_planet = yes
@@ -4823,7 +4823,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_wet_tidally_locked
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}
@@ -4831,7 +4831,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_dry_tidally_locked
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}
@@ -4839,7 +4839,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_cold_tidally_locked
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}
@@ -4847,7 +4847,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_wet_cave
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}
@@ -4855,7 +4855,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_dry_cave
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}
@@ -4863,7 +4863,7 @@ country_event = {
 		every_galaxy_planet = {
 			limit = {
 				is_planet_class = pc_pd_cold_cave
-				is_homeworld = yes
+				is_capital = yes
 			}
 			generate_pd_uncommon_planet = yes
 		}

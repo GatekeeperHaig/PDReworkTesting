@@ -1384,14 +1384,14 @@ guiTypes = {
 			}
 
 			containerWindowType = {
-				name = "pd_cavern"
+				name = "pd_tidally_locked"
 				size = { width = 300 height = 70 }
 				position = { x = 79 y = -60 }
 
 				instantTextBoxType = {
 					name = "TYPE_HEADER_10"
 					font = "cg_16b"
-					text = "climate_cavern"
+					text = "climate_tidallyocked"
 					position = { x = -147 y = -29 }
 					maxWidth = 120
 					maxHeight = 20
@@ -1436,14 +1436,14 @@ guiTypes = {
 			}
 
 			containerWindowType = {
-				name = "pd_tidally_locked"
+				name = "pd_cavern"
 				size = { width = 300 height = 70 }
 				position = { x = 193 y = -60 }
 
 				instantTextBoxType = {
 					name = "TYPE_HEADER_10"
 					font = "cg_16b"
-					text = "climate_tidallyocked"
+					text = "climate_cavern"
 					position = { x = -147 y = -29 }
 					maxWidth = 120
 					maxHeight = 20
