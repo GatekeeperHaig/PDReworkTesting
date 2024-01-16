@@ -844,6 +844,11 @@ decision_pd_necro_planet_cleanup = {
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { NOT = { has_ascension_perk = ap_pd_necro_worlds } }
+		OR = {
+			has_modifier = pd_aw_necro_planet
+			has_modifier = pd_aw_necro_city_planet
+			has_modifier = pd_necro_planet
+		}
 	}
 
 	allow = {

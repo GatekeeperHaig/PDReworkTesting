@@ -6,7 +6,7 @@ building_megalfora_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -24,7 +24,7 @@ building_megalfora_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -39,16 +39,16 @@ building_megalfora_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_megaflora }
 		}
-	}	
+	}
 }
 building_megalfora_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -64,7 +64,7 @@ building_megalfora_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_engineering_building"
 	inline_script = "buildings/pd_rare_society_building"
 
@@ -77,7 +77,7 @@ building_megalfora_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -87,7 +87,7 @@ building_megalfora_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -97,7 +97,7 @@ building_megalfora_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -106,19 +106,19 @@ building_megalfora_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_megaflora }
 		}
-	}	
+	}
 }
 building_megalfora_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -153,10 +153,10 @@ building_megalfora_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_megaflora } 
+		planet = {
+			NOT = { has_modifier = pd_megaflora }
 		}
-	}	
+	}
 }
 
 #Petrified Buildings
@@ -164,7 +164,7 @@ building_petrified_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -182,7 +182,7 @@ building_petrified_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -197,7 +197,7 @@ building_petrified_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_petrified }
 		}
 	}
@@ -206,7 +206,7 @@ building_petrified_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = resort_colony }
@@ -222,16 +222,16 @@ building_petrified_guild = {
 	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_petrified }
 		}
-	}	
+	}
 }
 building_petrified_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -247,7 +247,7 @@ building_petrified_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_engineering_building"
 	inline_script = "buildings/pd_rare_society_building"
 
@@ -260,7 +260,7 @@ building_petrified_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -270,7 +270,7 @@ building_petrified_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -280,7 +280,7 @@ building_petrified_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -289,13 +289,13 @@ building_petrified_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_petrified }
 		}
-	}	
+	}
 }
 
 #Ocean
@@ -304,7 +304,7 @@ building_reef_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -320,7 +320,7 @@ building_reef_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_engineering_building"
 	inline_script = "buildings/pd_rare_society_building"
 
@@ -333,7 +333,7 @@ building_reef_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -343,7 +343,7 @@ building_reef_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -353,7 +353,7 @@ building_reef_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -362,17 +362,17 @@ building_reef_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_reef } }
-	} 
+	}
 }
 building_reef_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
@@ -386,17 +386,17 @@ building_reef_guild = {
 		NOT = { has_building_construction = building_reef_mine }
 	}
 
-	inline_script = "buildings/pd_rare_consumer_goods_building"	
+	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_reef } }
-	} 
+	}
 }
 building_reef_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -414,8 +414,8 @@ building_reef_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
-	inline_script = "buildings/pd_rare_mining_building"		
+
+	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
 		OR = {
@@ -429,7 +429,7 @@ building_reef_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_reef }
 		}
 	}
@@ -440,7 +440,7 @@ building_archipelago_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		owner = { NOT = { is_catalytic_empire = yes } }
@@ -457,13 +457,13 @@ building_archipelago_foundry = {
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_archipelago } }
-	} 
+	}
 }
 building_archipelago_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -485,7 +485,13 @@ building_archipelago_farm = {
 		}
 	}
 
-	inline_script = "buildings/pd_rare_farm_building"	
+	inline_script = "buildings/pd_rare_farm_building"
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
 
 	destroy_trigger = {
 		OR = {
@@ -503,13 +509,13 @@ building_archipelago_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_archipelago } }
 		}
-	}	
+	}
 }
 building_archipelago_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		has_modifier = pd_archipelago
@@ -525,7 +531,7 @@ building_archipelago_resort = {
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_archipelago  } }
-	} 
+	}
 }
 
 #Tropical
@@ -534,7 +540,7 @@ building_biolumen_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -550,7 +556,7 @@ building_biolumen_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_society_building"
 	inline_script = "buildings/pd_rare_society_building"
 
@@ -563,7 +569,7 @@ building_biolumen_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -573,7 +579,7 @@ building_biolumen_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -583,7 +589,7 @@ building_biolumen_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -592,19 +598,19 @@ building_biolumen_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_biolumen } 
+		planet = {
+			NOT = { has_modifier = pd_biolumen }
 		}
-	} 
+	}
 }
 building_biolumen_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		has_modifier = pd_biolumen
@@ -619,8 +625,8 @@ building_biolumen_resort = {
 	inline_script = "buildings/pd_rare_resort_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_biolumen } 
+		planet = {
+			NOT = { has_modifier = pd_biolumen }
 		}
 	}
 }
@@ -628,7 +634,7 @@ building_biolumen_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -650,7 +656,13 @@ building_biolumen_farm = {
 		}
 	}
 
-	inline_script = "buildings/pd_rare_farm_building"	
+	inline_script = "buildings/pd_rare_farm_building"
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
 
 	destroy_trigger = {
 		OR = {
@@ -668,7 +680,7 @@ building_biolumen_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_biolumen } }
 		}
-	}	
+	}
 }
 
 #Geothermal Buildings
@@ -676,7 +688,7 @@ building_geothermal_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -711,16 +723,16 @@ building_geothermal_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_geothermal } 
+		planet = {
+			NOT = { has_modifier = pd_geothermal }
 		}
-	}	
+	}
 }
 building_geothermal_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		owner = { NOT = { is_catalytic_empire = yes } }
@@ -736,8 +748,8 @@ building_geothermal_foundry = {
 	inline_script = "buildings/pd_rare_foundry_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_geothermal } 
+		planet = {
+			NOT = { has_modifier = pd_geothermal }
 		}
 	}
 }
@@ -745,7 +757,7 @@ building_geothermal_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -774,7 +786,7 @@ building_geothermal_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -784,7 +796,7 @@ building_geothermal_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -794,7 +806,7 @@ building_geothermal_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -803,11 +815,11 @@ building_geothermal_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_geothermal } 
+		planet = {
+			NOT = { has_modifier = pd_geothermal }
 		}
 	}
 }
@@ -818,7 +830,7 @@ building_salt_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -847,7 +859,7 @@ building_salt_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -857,7 +869,7 @@ building_salt_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -867,7 +879,7 @@ building_salt_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -876,17 +888,17 @@ building_salt_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}		
+	}
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_salt } }
-	} 
+	}
 }
 building_salt_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		owner = { NOT = { is_catalytic_empire = yes } }
@@ -903,13 +915,13 @@ building_salt_foundry = {
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_salt } }
-	} 
+	}
 }
 building_salt_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -927,7 +939,7 @@ building_salt_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -942,7 +954,7 @@ building_salt_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_salt }
 		}
 	}
@@ -953,7 +965,7 @@ building_aquifer_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -976,6 +988,12 @@ building_aquifer_farm = {
 	}
 
 	inline_script = "buildings/pd_rare_farm_building"
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
 
 	destroy_trigger = {
 		OR = {
@@ -993,13 +1011,13 @@ building_aquifer_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_aquifer } }
 		}
-	}	
+	}
 }
 building_aquifer_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1028,7 +1046,7 @@ building_aquifer_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1038,7 +1056,7 @@ building_aquifer_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1048,7 +1066,7 @@ building_aquifer_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1057,17 +1075,17 @@ building_aquifer_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_aquifer } }
-	} 
+	}
 }
 building_aquifer_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		has_modifier = pd_aquifer
@@ -1083,7 +1101,7 @@ building_aquifer_resort = {
 
 	destroy_trigger = {
 		planet = { NOT = { has_modifier = pd_aquifer } }
-	} 
+	}
 }
 
 #Arid
@@ -1092,7 +1110,7 @@ building_primal_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		owner = { NOT = { is_catalytic_empire = yes } }
@@ -1108,8 +1126,8 @@ building_primal_foundry = {
 	inline_script = "buildings/pd_rare_foundry_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_primal } 
+		planet = {
+			NOT = { has_modifier = pd_primal }
 		}
 	}
 }
@@ -1117,7 +1135,7 @@ building_primal_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1152,16 +1170,16 @@ building_primal_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_primal } 
+		planet = {
+			NOT = { has_modifier = pd_primal }
 		}
-	}	
+	}
 }
 building_primal_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1179,7 +1197,7 @@ building_primal_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -1194,7 +1212,7 @@ building_primal_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_primal }
 		}
 	}
@@ -1205,7 +1223,7 @@ building_coral_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		has_modifier = pd_coral
@@ -1220,8 +1238,8 @@ building_coral_resort = {
 	inline_script = "buildings/pd_rare_resort_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_coral } 
+		planet = {
+			NOT = { has_modifier = pd_coral }
 		}
 	}
 }
@@ -1229,7 +1247,7 @@ building_coral_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1241,7 +1259,7 @@ building_coral_lab = {
 		NOT = { has_building = building_coral_guild }
 		NOT = { has_building_construction = building_coral_guild }
 	}
-		
+
 	inline_script = "buildings/pd_rare_society_building"
 	inline_script = "buildings/pd_rare_engineering_building"
 
@@ -1254,7 +1272,7 @@ building_coral_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1264,7 +1282,7 @@ building_coral_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1274,7 +1292,7 @@ building_coral_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1283,11 +1301,11 @@ building_coral_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_coral } 
+		planet = {
+			NOT = { has_modifier = pd_coral }
 		}
 	}
 }
@@ -1295,7 +1313,7 @@ building_coral_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
@@ -1312,8 +1330,8 @@ building_coral_guild = {
 	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_coral } 
+		planet = {
+			NOT = { has_modifier = pd_coral }
 		}
 	}
 }
@@ -1324,7 +1342,7 @@ building_supercon_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -1347,6 +1365,12 @@ building_supercon_farm = {
 	}
 
 	inline_script = "buildings/pd_rare_farm_building"
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
 
 	destroy_trigger = {
 		OR = {
@@ -1364,13 +1388,13 @@ building_supercon_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_supercontinent } }
 		}
-	}	
+	}
 }
 building_supercon_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1386,7 +1410,7 @@ building_supercon_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_physics_building"
 	inline_script = "buildings/pd_rare_society_building"
 
@@ -1399,7 +1423,7 @@ building_supercon_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1409,7 +1433,7 @@ building_supercon_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1419,7 +1443,7 @@ building_supercon_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1428,19 +1452,19 @@ building_supercon_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_supercontinent } 
+		planet = {
+			NOT = { has_modifier = pd_supercontinent }
 		}
-	}	
+	}
 }
 building_supercon_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1475,10 +1499,10 @@ building_supercon_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_supercontinent } 
+		planet = {
+			NOT = { has_modifier = pd_supercontinent }
 		}
-	}	
+	}
 }
 
 #Sinkhole Buildings
@@ -1486,7 +1510,7 @@ building_pd_sinkhole_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1515,7 +1539,7 @@ building_pd_sinkhole_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1525,7 +1549,7 @@ building_pd_sinkhole_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1535,7 +1559,7 @@ building_pd_sinkhole_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1544,19 +1568,19 @@ building_pd_sinkhole_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_sinkhole } 
+		planet = {
+			NOT = { has_modifier = pd_sinkhole }
 		}
-	}	
+	}
 }
 building_pd_sinkhole_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1574,7 +1598,7 @@ building_pd_sinkhole_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -1589,7 +1613,7 @@ building_pd_sinkhole_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_sinkhole }
 		}
 	}
@@ -1598,7 +1622,7 @@ building_pd_sinkhole_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		exists = owner
 		owner = { is_gestalt = no }
@@ -1615,10 +1639,10 @@ building_pd_sinkhole_guild = {
 	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_sinkhole } 
+		planet = {
+			NOT = { has_modifier = pd_sinkhole }
 		}
-	}	
+	}
 }
 
 #Arctic
@@ -1627,7 +1651,7 @@ building_storm_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1656,7 +1680,7 @@ building_storm_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1666,7 +1690,7 @@ building_storm_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1676,7 +1700,7 @@ building_storm_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1685,11 +1709,11 @@ building_storm_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_storm } 
+		planet = {
+			NOT = { has_modifier = pd_storm }
 		}
 	}
 }
@@ -1697,7 +1721,7 @@ building_storm_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1732,16 +1756,16 @@ building_storm_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_storm } 
+		planet = {
+			NOT = { has_modifier = pd_storm }
 		}
-	}	
+	}
 }
 building_storm_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1759,7 +1783,7 @@ building_storm_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -1774,7 +1798,7 @@ building_storm_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_storm }
 		}
 	}
@@ -1786,7 +1810,7 @@ building_iceberg_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -1815,7 +1839,7 @@ building_iceberg_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1825,7 +1849,7 @@ building_iceberg_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1835,7 +1859,7 @@ building_iceberg_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1844,11 +1868,11 @@ building_iceberg_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_iceberg } 
+		planet = {
+			NOT = { has_modifier = pd_iceberg }
 		}
 	}
 }
@@ -1856,7 +1880,7 @@ building_iceberg_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -1878,7 +1902,13 @@ building_iceberg_farm = {
 		}
 	}
 
-	inline_script = "buildings/pd_rare_farm_building"	
+	inline_script = "buildings/pd_rare_farm_building"
+
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
 
 	destroy_trigger = {
 		OR = {
@@ -1896,13 +1926,13 @@ building_iceberg_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_iceberg } }
 		}
-	}	
+	}
 }
 building_iceberg_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		owner = { NOT = { is_catalytic_empire = yes } }
@@ -1918,8 +1948,8 @@ building_iceberg_foundry = {
 	inline_script = "buildings/pd_rare_foundry_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_iceberg } 
+		planet = {
+			NOT = { has_modifier = pd_iceberg }
 		}
 	}
 }
@@ -1930,7 +1960,7 @@ building_cryo_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_cryoflora
@@ -1958,7 +1988,7 @@ building_cryo_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1968,7 +1998,7 @@ building_cryo_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -1978,7 +2008,7 @@ building_cryo_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -1987,13 +2017,13 @@ building_cryo_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_cryoflora } 
+		planet = {
+			NOT = { has_modifier = pd_cryoflora }
 		}
-	}		
+	}
 
 	ai_resource_production = {
 		trigger = {
@@ -2011,7 +2041,7 @@ building_cryo_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = resort_colony }
@@ -2027,16 +2057,16 @@ building_cryo_guild = {
 	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_cryoflora } 
+		planet = {
+			NOT = { has_modifier = pd_cryoflora }
 		}
-	}	
+	}
 }
 building_cryo_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		#NOT = { has_modifier = resort_colony }
@@ -2052,10 +2082,10 @@ building_cryo_resort = {
 	inline_script = "buildings/pd_rare_resort_building"
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_cryoflora } 
+		planet = {
+			NOT = { has_modifier = pd_cryoflora }
 		}
-	}	
+	}
 }
 
 #Lichen Buildings
@@ -2063,7 +2093,7 @@ building_lichen_farm = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		owner = {
@@ -2087,6 +2117,12 @@ building_lichen_farm = {
 
 	inline_script = "buildings/pd_rare_farm_building"
 
+	inline_script = {
+		script = jobs/farmers_add
+		FARMER_AMOUNT = 2
+		ANGLER_AMOUNT = 2
+	}
+
 	destroy_trigger = {
 		OR = {
 			owner = {
@@ -2103,13 +2139,13 @@ building_lichen_farm = {
 			}
 			planet = { NOT = { has_modifier = pd_lichen } }
 		}
-	}	 
+	}
 }
 building_lichen_grid = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -2144,16 +2180,16 @@ building_lichen_grid = {
 				has_any_generator_district_or_building = no
 			}
 		}
-		planet = { 
-			NOT = { has_modifier = pd_lichen } 
+		planet = {
+			NOT = { has_modifier = pd_lichen }
 		}
-	}	 
+	}
 }
 building_lichen_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -2182,7 +2218,7 @@ building_lichen_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2192,7 +2228,7 @@ building_lichen_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2202,7 +2238,7 @@ building_lichen_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2211,13 +2247,13 @@ building_lichen_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
-			NOT = { has_modifier = pd_lichen } 
+		planet = {
+			NOT = { has_modifier = pd_lichen }
 		}
-	}	 
+	}
 }
 
 #Alpine
@@ -2226,7 +2262,7 @@ building_glacio_foundry = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_glaciovolcanic
@@ -2241,16 +2277,16 @@ building_glacio_foundry = {
 	inline_script = "buildings/pd_rare_foundry_building"
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_glaciovolcanic }
 		}
-	}	
+	}
 }
 building_glacio_resort = {
 	base_buildtime = 600
 
 	category = trade
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		has_modifier = pd_glaciovolcanic
@@ -2265,16 +2301,16 @@ building_glacio_resort = {
 	inline_script = "buildings/pd_rare_resort_building"
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_glaciovolcanic }
 		}
-	}	
+	}
 }
 building_glacio_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_glaciovolcanic
@@ -2291,7 +2327,7 @@ building_glacio_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -2306,10 +2342,10 @@ building_glacio_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_glaciovolcanic }
 		}
-	}	
+	}
 }
 
 #Lanthanide Buildings
@@ -2317,7 +2353,7 @@ building_lanthanide_mine = {
 	base_buildtime = 600
 
 	category = resource
-	
+
 	potential = {
 		NOT = { has_modifier = resort_colony }
 		has_modifier = pd_lanthanide
@@ -2334,7 +2370,7 @@ building_lanthanide_mine = {
 			has_any_mining_district = yes
 		}
 	}
-	
+
 	inline_script = "buildings/pd_rare_mining_building"
 
 	destroy_trigger = {
@@ -2349,7 +2385,7 @@ building_lanthanide_mine = {
 				has_any_mining_district = no
 			}
 		}
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_lanthanide }
 		}
 	}
@@ -2358,7 +2394,7 @@ building_lanthanide_guild = {
 	base_buildtime = 600
 
 	category = manufacturing
-	
+
 	potential = {
 		owner = { is_gestalt = no }
 		NOT = { has_modifier = resort_colony }
@@ -2374,16 +2410,16 @@ building_lanthanide_guild = {
 	inline_script = "buildings/pd_rare_consumer_goods_building"
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_lanthanide }
 		}
-	}	
+	}
 }
 building_lanthanide_lab = {
 	base_buildtime = 600
 
 	category = research
-	
+
 	potential = {
 		exists = owner
 		NOT = { has_modifier = resort_colony }
@@ -2399,7 +2435,7 @@ building_lanthanide_lab = {
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	inline_script = "buildings/pd_rare_engineering_building"
 	inline_script = "buildings/pd_rare_physics_building"
 
@@ -2412,7 +2448,7 @@ building_lanthanide_lab = {
 			job_head_researcher_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2422,7 +2458,7 @@ building_lanthanide_lab = {
 			job_brain_drone_add = 1
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -2432,7 +2468,7 @@ building_lanthanide_lab = {
 			job_calculator_add = 1
 		}
 	}
-	
+
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -2441,11 +2477,11 @@ building_lanthanide_lab = {
 		upkeep = {
 			energy = 4
 		}
-	}	
+	}
 
 	destroy_trigger = {
-		planet = { 
+		planet = {
 			NOT = { has_modifier = pd_lanthanide }
 		}
-	}	
+	}
 }
