@@ -109,6 +109,7 @@ decision_pd_bloom_tree_of_life = {
 	}
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		has_modifier = pd_tree_of_life_home
 		has_deposit = d_pd_tree_of_life_home
 		owner = {
@@ -764,6 +765,7 @@ decision_pd_necro_planet = {
 	enactment_time = @pd_necro_time
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { has_ascension_perk = ap_pd_necro_worlds }
@@ -840,6 +842,7 @@ decision_pd_necro_planet_cleanup = {
 	enactment_time = @pd_necro_time
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_aw_is_necro_planet = yes
 		pd_is_planet_class_all = yes
 		exists = owner
@@ -929,6 +932,7 @@ decision_pd_lithoid_planet = {
 	enactment_time = @pd_lithoid_time
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { has_ascension_perk = ap_pd_lithoid_worlds }
@@ -984,6 +988,7 @@ decision_pd_lithoid_planet_cleanup = {
 	enactment_time = @pd_lithoid_time
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_is_planet_class_all = yes
 		exists = owner
 		owner = { NOT = { has_ascension_perk = ap_pd_lithoid_worlds } }
@@ -1087,6 +1092,7 @@ decision_pd_lithoid_change_frequency = {
 	enactment_time = 360
 
 	potential = {
+		has_global_flag = planetarydiversityascensionworlds
 		pd_is_planet_class_all = yes
 		OR = {
 			has_modifier = pd_aw_lithoid_planet_cyan
