@@ -151,13 +151,20 @@ on_planet_attackers_win = {
 	}
 }
 
+#A building construction has been completed.
+# This = Planet
 on_building_complete = {
 	events = {
+		pdplanetaryinfesters.100
 	}
 }
 
+# A building construction has been completed, which is an upgrade of previous building.
+# This = Planet
 on_building_upgraded = {
 	events = {
+		pdplanetaryinfesters.110
+		pdplanetaryinfesters.120
 	}
 }
 
